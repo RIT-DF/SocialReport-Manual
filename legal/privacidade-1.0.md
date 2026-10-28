@@ -3,7 +3,7 @@ title: "Privacidade — versão 1.0 (arquivada)"
 nav_exclude: true
 permalink: /privacidade/1.0/
 version: "1.0"
-status: "proposta para revisão"
+status: "aprovada"
 change_summary: "Publicação inicial da versão 1.0."
 requires_reconsent: true
 archived: true
@@ -12,10 +12,9 @@ sitemap: false
 
 # Política de Privacidade — SocialReport
 
-**Vigência:** 28 de outubro de 2026 _(proposta para revisão — ainda não vigente)_
+**Vigência:** 28 de outubro de 2026
 **Versão:** 1.0
 
-> Este texto é uma **proposta para revisão** e ainda não está em vigor.
 {: .warning }
 
 ---
