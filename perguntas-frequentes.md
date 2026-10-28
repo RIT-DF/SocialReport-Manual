@@ -72,7 +72,7 @@ A equipe liga o site no cadastro do cliente, na seção "Site", escolhendo o sit
 
 ### O que é o V3RAnalytics? É gratuito?
 
-É o plugin da casa que roda no site da organização: mede as visitas sem cookies, cria as metas de conversão (formulários, WhatsApp, e-mail, telefone), registra a loja e gera os links marcados. As condições de uso dependem da organização responsável pela sua instalação do SocialReport; pergunte a ela.
+É o plugin da casa que roda no site da organização: mede as visitas sem cookies, cria as metas de conversão (formulários, WhatsApp, e-mail, telefone), registra a loja e gera os links marcados. **Sim, é gratuito.** Ele é distribuído pela V3RTECH, desenvolvedora do SocialReport, e se atualiza sozinho no site. Como instalar e conectar está na [parte 5]({{ '/site-e-plugin/' | relative_url }}).
 
 ## Sobre dados e privacidade
 
