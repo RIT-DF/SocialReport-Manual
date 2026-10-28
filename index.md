@@ -1,23 +1,25 @@
 ---
 title: Início
 nav_order: 1
+permalink: /
 ---
 
 # Manual do SocialReport
 
-Esqueleto criado em 26/10/2026. O manual de verdade é escrito pela skill
-`user-manual`, organizado por papel e por tarefa.
+O SocialReport transforma os números das redes sociais de uma organização, e do site dela, em um relatório mensal que qualquer pessoa consegue ler e usar para decidir o que fazer no mês seguinte. Este manual serve a quem **produz** o relatório (a equipe de mídias sociais) e a quem **o recebe** (a diretoria, a coordenação e os parceiros da organização).
 
-Enquanto isso, esta página existe por um motivo prático: o GitHub Pages não
-publica repositório vazio. Com ela, o endereço já responde e o
-`bin/publish-manual.sh` já tem o que empurrar.
+> **Recebeu o relatório e quer entender o que está olhando?**
+> Vá direto para **[Como ler o seu relatório]({{ '/como-ler-o-relatorio/' | relative_url }})**. Foi escrita para quem não é da área: explica cada página do relatório, o que cada número quer dizer, para que serve e as leituras erradas mais comuns.
+{: .important }
 
-## Por onde começar
+## As sete partes do manual
 
-1. Escrever a visão geral: o que o SocialReport resolve, para quem.
-2. Uma página por tarefa que o usuário precisa realizar.
-3. Prints das telas (capturados com Playwright, nunca à mão).
-
-> Domínio próprio ainda não definido. Quando existir, preencha
-> `MANUAL_CUSTOM_DOMAIN` em `Projeto/bin/config.sh` — e só então, porque CNAME
-> apontando para domínio que não resolve tira o manual do ar.
+| Parte | Para quem | Situação |
+|---|---|---|
+| 1. [Por que medir]({{ '/por-que-medir/' | relative_url }}) | todos | em preparação |
+| 2. [Conceitos explicados]({{ '/conceitos/' | relative_url }}) | todos | em preparação |
+| 3. [O mês do analista]({{ '/mes-do-analista/' | relative_url }}) | equipe que faz o relatório | em preparação |
+| 4. **[Como ler o seu relatório]({{ '/como-ler-o-relatorio/' | relative_url }})** | **quem recebe o relatório** | **pronta para revisão** |
+| 5. [O site do cliente e o plugin V3RAnalytics]({{ '/site-e-plugin/' | relative_url }}) | equipe e administrador do site | em preparação |
+| 6. [Administração]({{ '/administracao/' | relative_url }}) | administradores do sistema | em preparação |
+| 7. [Boas práticas, perguntas frequentes e glossário]({{ '/boas-praticas/' | relative_url }}) | todos | em preparação |
