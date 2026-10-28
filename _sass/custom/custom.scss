@@ -41,10 +41,9 @@ blockquote.destaque a { color: #0F4855; font-weight: 700; }
 
 // Bloco do curso da RIT (página de entrada da parte 4): imagem a 1/3 da largura, texto à direita,
 // sem caixa nem fundo, só a borda lateral roxa para diferenciar dos outros destaques.
-.curso-bloco { display: flex; gap: 1.5rem; align-items: flex-start; margin: 1rem 0 1.5rem; padding-left: 1rem; border-left: 4px solid #622599; }
-.curso-imagem { flex: 0 0 33%; border-radius: 8px; overflow: hidden; }
+.curso-bloco { display: flow-root; margin: 1rem 0 1.5rem; padding-left: 1rem; border-left: 4px solid #622599; }
+.curso-imagem { float: left; width: 33%; margin: 0 1.5rem 0.5rem 0; border-radius: 8px; overflow: hidden; } /* o texto contorna a imagem */
 .curso-imagem img { display: block; width: 100%; height: auto; }
-.curso-texto { flex: 1; min-width: 0; }
 .curso-texto > p:first-child { margin-top: -0.3rem; } /* compensa o respiro da linha: as letras começam no topo da imagem */
 .curso-texto > :last-child { margin-bottom: 0; }
-@media (max-width: 600px) { .curso-bloco { flex-direction: column; } .curso-imagem { flex-basis: auto; width: 100%; } .curso-texto > p:first-child { margin-top: 0; } }
+@media (max-width: 600px) { .curso-imagem { float: none; width: 100%; margin: 0 0 1rem; } .curso-texto > p:first-child { margin-top: 0; } }
