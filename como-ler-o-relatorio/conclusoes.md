@@ -80,13 +80,18 @@ São as recomendações numeradas, baseadas nos números do mês (por exemplo: r
 
 A última página fecha o relatório com uma **síntese estratégica**: o mês em um parágrafo, com o que se consolidou e qual é o próximo salto. Se você tem só dois minutos, leia a visão executiva e esta síntese.
 
-## Quer ir além?
+## Quer ir além do relatório?
 
-<a class="curso-destaque" href="https://cursos.rit.org.br/course/view.php?id=37" title="Curso gratuito Redes Sociais na Mão: do Zero ao Impacto"><img class="no-zoom" src="{{ '/assets/img/curso-redes-sociais-na-mao.jpg' | relative_url }}" alt="Curso gratuito da RIT Redes Sociais na Mão: do Zero ao Impacto — ilustração de pessoas planejando e publicando conteúdo pelo celular"></a>
+<div class="curso-bloco">
+<a class="curso-imagem" href="https://cursos.rit.org.br/course/view.php?id=37" title="Curso gratuito Redes Sociais na Mão: do Zero ao Impacto"><img class="no-zoom" src="{{ '/assets/img/curso-redes-sociais-na-mao.jpg' | relative_url }}" alt="Curso gratuito da RIT Redes Sociais na Mão: do Zero ao Impacto"></a>
+<div class="curso-texto" markdown="1">
 
-O relatório mostra **o que funcionou**. Para aprender a **fazer mais do que funciona**, a RIT oferece o curso gratuito **[Redes Sociais na Mão: do Zero ao Impacto](https://cursos.rit.org.br/course/view.php?id=37)**. Ele ensina organizações e pequenos negócios a produzir conteúdo com direção: definir a pauta, construir a mensagem, preparar imagem e vídeo curto, escrever a chamada para ação e montar uma rotina de publicação.
+O relatório mostra **o que funcionou**.
 
-O curso **não trata de métricas**. Ele complementa este relatório: a análise diz que tipo de publicação o seu público procura, e o curso ensina a produzi-la com mais segurança e menos esforço.
+Para aprender a **fazer mais do que funciona**, a RIT oferece o curso gratuito *[Redes Sociais na Mão: do Zero ao Impacto](https://cursos.rit.org.br/course/view.php?id=37)*, que ensina organizações e pequenos negócios a produzir conteúdo com direção: pauta, mensagem, imagem, vídeo curto, chamada para ação e rotina de publicação. O curso complementa o SocialReport: o relatório aponta o que o seu público valoriza, e o curso ajuda a produzir mais desse conteúdo, com menos esforço, para que os números do próximo mês reflitam o trabalho.
+
+</div>
+</div>
 
 > **Sugestão de uso:** na reunião de resultados, escolha a recomendação do mês que depende de **produzir melhor** (um formato novo, uma série, um convite mais claro) e indique o curso a quem vai executá-la.
 {: .tip }
