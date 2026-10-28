@@ -82,9 +82,7 @@ A última página fecha o relatório com uma **síntese estratégica**: o mês e
 
 ## Quer ir além?
 
-<a class="curso-destaque" href="https://cursos.rit.org.br/course/view.php?id=37" title="Curso gratuito Redes Sociais na Mão: do Zero ao Impacto"><img class="no-zoom" src="{{ '/assets/img/curso-redes-sociais-na-mao.jpg' | relative_url }}" alt="Curso gratuito da RIT Redes Sociais na Mão: do Zero ao Impacto — ilustração de pessoas planejando e publicando conteúdo pelo celular"></a>
-
-O relatório mostra **o que funcionou**. Para aprender a **fazer mais do que funciona**, a RIT oferece o curso gratuito **[Redes Sociais na Mão: do Zero ao Impacto](https://cursos.rit.org.br/course/view.php?id=37)**. Ele ensina organizações e pequenos negócios a produzir conteúdo com direção: definir a pauta, construir a mensagem, preparar imagem e vídeo curto, escrever a chamada para ação e montar uma rotina de publicação.
+<a class="curso-destaque" href="https://cursos.rit.org.br/course/view.php?id=37" title="Curso gratuito Redes Sociais na Mão: do Zero ao Impacto"><img class="no-zoom" src="{{ '/assets/img/curso-redes-sociais-na-mao.jpg' | relative_url }}" alt="Curso gratuito da RIT Redes Sociais na Mão: do Zero ao Impacto — ilustração de pessoas planejando e publicando conteúdo pelo celular"></a>O relatório mostra **o que funcionou**. Para aprender a **fazer mais do que funciona**, a RIT oferece o curso gratuito **[Redes Sociais na Mão: do Zero ao Impacto](https://cursos.rit.org.br/course/view.php?id=37)**. Ele ensina organizações e pequenos negócios a produzir conteúdo com direção: definir a pauta, construir a mensagem, preparar imagem e vídeo curto, escrever a chamada para ação e montar uma rotina de publicação.
 
 O curso **não trata de métricas**. Ele complementa este relatório: a análise diz que tipo de publicação o seu público procura, e o curso ensina a produzi-la com mais segurança e menos esforço.
 
