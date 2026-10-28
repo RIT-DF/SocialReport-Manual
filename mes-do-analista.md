@@ -255,13 +255,11 @@ Na revisão, o bloco **Narrativa Executiva Assistida por IA** reúne os textos: 
 
 **Por que importa.** O estado do relatório (**validado** ou **emitido**) diz ao resto da equipe em que ponto ele está, e determina o que o sistema deixa fazer (por exemplo, períodos já emitidos **não** podem ser excluídos em lote).
 
-No alto da revisão há dois botões:
+No alto da revisão há três botões, e cada um faz uma coisa só:
 
-- **Salvar Rascunho:** guarda o que você fez (textos, prints, campanhas dos posts) e marca o período como **validado**. Pode ser feito quantas vezes quiser.
-- **Visualizar Book 16:9 & Exportar:** guarda tudo, marca o período como **emitido** e abre o relatório para você ver e exportar.
-
-> **Atenção.** **Visualizar Book 16:9 & Exportar grava e emite.** Para só olhar, sem alterar o estado, use **Visualizar Book 16:9** na página Períodos & Emissão, que apenas abre o relatório.
-{: .warning }
+- **Salvar Alterações:** guarda o que você fez (textos, prints, campanhas dos posts) e marca o período como **validado**. Pode ser feito quantas vezes quiser, e nunca desfaz uma emissão.
+- **Visualizar Book 16:9:** abre o relatório com as edições que estão na tela, para você conferir. **Não grava nada.** O que você não salvou continua só na tela: o link do cliente mostra sempre a última versão salva.
+- **Emitir Relatório:** grava e marca o período como **emitido**, a versão que vai para o cliente. Períodos emitidos ficam protegidos contra exclusão em lote.
 
 > **Dica.** Antes de emitir, abra o relatório pelo **Visualizar Book 16:9** (sem gravar) e percorra todos os slides, como o cliente fará: setas ou teclado, página por página. Se algum texto cortou ou ficou estranho, é aqui que se corrige.
 {: .tip }

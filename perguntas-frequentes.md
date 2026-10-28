@@ -50,7 +50,7 @@ Ele abre o relatório sem senha, mas o endereço é um código aleatório, difí
 
 ### O link vazou. O que fazer?
 
-Avise a equipe do SocialReport. Ela pode **gerar um novo link**, e o antigo deixa de abrir. *Esta função chega na próxima versão do sistema; até lá, avise a equipe para avaliar o que fazer.*
+Avise a equipe do SocialReport. Ela pode **gerar um novo link**, e o antigo deixa de abrir.
 
 ### Posso baixar o relatório em PDF?
 
@@ -79,6 +79,12 @@ A equipe liga o site no cadastro do cliente, na seção "Site", escolhendo o sit
 ### Onde está a política de privacidade?
 
 Em [Privacidade]({{ '/privacidade/' | relative_url }}). Os [Termos de Uso]({{ '/termos/' | relative_url }}) estão na página ao lado.
+
+Dentro do SocialReport, os links para a Privacidade e os Termos ficam no rodapé da barra lateral e na tela de entrada.
+
+### Como abro este manual de dentro do SocialReport?
+
+Pelo ícone **?**, ao lado do seu nome, no alto de qualquer tela. O manual abre numa aba nova, sem tirar você do que estava fazendo.
 
 ### O relatório mostra dados de pessoas?
 
