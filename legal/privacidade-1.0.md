@@ -30,9 +30,10 @@ Para que esta política sirva a qualquer instalação do SocialReport, usamos os
 - **Cliente:** a organização cujo relatório é produzido — uma ONG ou um pequeno negócio, por exemplo. O cliente responde pelos próprios dados e pelos dados de quem visita o site dele.
 - **Equipe:** as pessoas que usam a instalação com conta, nos papéis de **analista** ou **super-admin**.
 - **Desenvolvedora:** a **V3RTECH TECNOLOGIA, CONSULTORIA E INOVACAO LTDA**, CNPJ 58.550.029/0001-27, com sede em Q SMPW Quadra 25, Conjunto 4, Un C, Lote 10, Park Way, Brasília – DF, CEP 71.745-504. Ela fornece o software. Quando também hospeda a instalação ou envia os e-mails dela, atua como **operadora**, em nome da organização responsável.
+- **Distribuidora:** organização autorizada pela desenvolvedora a oferecer a aplicação a outras organizações (por exemplo, a organizações do terceiro setor). A distribuidora pode também instalar, hospedar ou operar a instalação para elas. Quando faz isso para outra organização, atua como **operadora**, em nome dela. Se a distribuidora roda uma instalação para si mesma, ela é a organização responsável por essa instalação.
 - **Encarregado de dados:** a pessoa ou o canal indicado pela organização responsável para tratar de proteção de dados.
 
-Os dados da organização responsável por **esta** instalação — nome, CNPJ, endereço, encarregado de dados e contato, local dos servidores, quem hospeda e quem envia os e-mails — aparecem na própria aplicação, na página de Privacidade e Termos e na tela de aceite.
+Os dados da organização responsável por **cada** instalação — nome, CNPJ, endereço, encarregado de dados e contato, local dos servidores, quem hospeda e quem envia os e-mails — são informados **dentro da própria instalação**: na tela de aceite que a equipe vê no primeiro acesso e a cada nova versão, e numa área de informações da instalação acessível a quem a usa. Estas páginas públicas valem para qualquer instalação e não trazem dados de nenhuma organização. Quem é cliente pode pedir esses dados à organização que produz o seu relatório.
 
 ---
 
@@ -43,6 +44,7 @@ Cada organização responde pelo que **ela** decide:
 - **A organização responsável é controladora** dos dados da equipe (contas, login, registros de acesso) e dos dados que ela usa para produzir os relatórios: cadastro de cada cliente, publicações e métricas das redes sociais, clipping de imprensa, estatísticas do site e os próprios relatórios. É ela quem decide quais fontes usar, quais métricas calcular e se usa inteligência artificial.
 - **O cliente é controlador dos dados de quem visita o site dele.** As visitas são medidas no site do cliente, e é ele quem informa seus visitantes. Nesse ponto, a organização responsável apenas processa os dados **por conta do cliente**, como operadora.
 - **A desenvolvedora** fornece o software. Quando hospeda a instalação ou envia os e-mails, atua como **operadora** da organização responsável, seguindo as instruções dela.
+- **A distribuidora**, quando houver, oferece a aplicação e pode instalar, hospedar ou operar a instalação para a organização responsável. Nesse caso, também atua como **operadora**, em nome dela. A organização responsável continua sendo a controladora; se a distribuidora roda a instalação para si mesma, é ela a organização responsável.
 
 | Tipo de dado | Quem decide sobre ele | Papel da organização responsável |
 |---|---|---|
@@ -168,13 +170,13 @@ Os dados são usados exclusivamente para:
 
 ## 6. Operadores e transferências internacionais de dados
 
-Para funcionar, a instalação usa os serviços abaixo. Quem presta cada um deles nesta instalação, e onde ficam os servidores, aparece na própria aplicação, na página de Privacidade e Termos.
+Para funcionar, a instalação usa os serviços abaixo. Quem presta cada um deles em cada instalação, e onde ficam os servidores, é informado dentro da própria instalação (na tela de aceite e na área de informações da instalação).
 
 | Serviço | Finalidade | Localização |
 |---|---|---|
-| **Hospedagem** | Servidor da aplicação, banco de dados, servidor de autenticação e cópias de segurança | Informada na aplicação |
-| **Serviço de estatísticas (Matomo)** | Estatísticas agregadas do site do cliente | Informada na aplicação |
-| **Envio de e-mail** | E-mails de convite e recuperação de senha | Informada na aplicação |
+| **Hospedagem** (desenvolvedora, distribuidora ou a própria organização responsável) | Servidor da aplicação, banco de dados, servidor de autenticação e cópias de segurança | Informada dentro da instalação |
+| **Serviço de estatísticas (Matomo)** (desenvolvedora, distribuidora ou a própria organização responsável) | Estatísticas agregadas do site do cliente | Informada dentro da instalação |
+| **Envio de e-mail** (desenvolvedora, distribuidora ou a própria organização responsável) | E-mails de convite e recuperação de senha | Informada dentro da instalação |
 | **Google** (login com Google) | Autenticação, quando a pessoa escolhe entrar com o Google | Fora do Brasil (Estados Unidos) |
 | **Google Gemini** | Textos de análise e imagens de capa, quando configurado | Fora do Brasil |
 | **OpenAI** | Textos de análise e imagens de capa, quando configurado | Fora do Brasil |
@@ -203,7 +205,7 @@ O serviço de estatísticas do site do cliente também **mede sem cookies** (se�
 | Dados detalhados de visitas ao site do cliente, no serviço de estatísticas | **13 meses**; os resumos mensais permanecem (seção 4.4) |
 | Cópias de segurança do banco de dados | Conforme a política de backup da organização responsável (abaixo) |
 
-**Cópias de segurança:** cada organização responsável define a **sua política de backup** na própria aplicação: por quanto tempo as cópias ficam guardadas e onde. As cópias contêm os mesmos dados da instalação e são guardadas com acesso restrito. A política desta instalação aparece na própria aplicação, na página de Privacidade e Termos.
+**Cópias de segurança:** cada organização responsável define a **sua política de backup** na própria aplicação: por quanto tempo as cópias ficam guardadas e onde. As cópias contêm os mesmos dados da instalação e são guardadas com acesso restrito. A política de cada instalação é informada dentro da própria instalação (na tela de aceite e na área de informações da instalação).
 
 Após os prazos acima, os dados são eliminados de forma segura ou anonimizados de modo irreversível.
 
@@ -234,7 +236,7 @@ Se você não tem conta — porque aparece numa publicação, numa matéria do c
 - **Sobre a sua conta, sobre os relatórios e sobre o conteúdo neles** — fale com o **encarregado de dados da organização responsável** por esta instalação.
 - **Sobre a sua visita ao site de um cliente** — fale com o **cliente**, dono do site. A organização responsável dá apoio a ele e encaminha o que chegar até ela.
 
-O contato do encarregado aparece na própria aplicação, na página de Privacidade e Termos e na tela de aceite. O prazo de resposta é de até **15 dias úteis**.
+O contato do encarregado é informado dentro da própria instalação (na tela de aceite e na área de informações da instalação); quem não tem conta pode pedi-lo à organização que produz o relatório. O prazo de resposta é de até **15 dias úteis**.
 
 ---
 

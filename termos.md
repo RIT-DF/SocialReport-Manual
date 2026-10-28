@@ -26,8 +26,9 @@ requires_reconsent: true
 - **Cliente:** a organização cujo relatório é produzido. O cliente responde pelos próprios dados e pelos dados de quem visita o site dele.
 - **Equipe:** as pessoas que usam a instalação com conta, nos papéis de **analista** ou **super-admin**.
 - **Desenvolvedora:** a **V3RTECH TECNOLOGIA, CONSULTORIA E INOVACAO LTDA**, CNPJ 58.550.029/0001-27, com sede em Q SMPW Quadra 25, Conjunto 4, Un C, Lote 10, Park Way, Brasília – DF, CEP 71.745-504. Ela fornece o software. Quando também hospeda a instalação ou envia os e-mails dela, atua como operadora, em nome da organização responsável.
+- **Distribuidora:** organização autorizada pela desenvolvedora a oferecer a aplicação a outras organizações (por exemplo, a organizações do terceiro setor). A distribuidora pode também instalar, hospedar ou operar a instalação para elas. Quando faz isso para outra organização, atua como **operadora**, em nome dela. Se a distribuidora roda uma instalação para si mesma, ela é a organização responsável por essa instalação.
 
-Os dados da organização responsável por **esta** instalação — nome, CNPJ, endereço, encarregado de dados e contato, local dos servidores, quem hospeda e quem envia os e-mails — aparecem na própria aplicação, na página de Privacidade e Termos e na tela de aceite.
+Os dados da organização responsável por **cada** instalação — nome, CNPJ, endereço, encarregado de dados e contato, local dos servidores, quem hospeda e quem envia os e-mails — são informados **dentro da própria instalação**: na tela de aceite que a equipe vê no primeiro acesso e a cada nova versão, e numa área de informações da instalação acessível a quem a usa. Estas páginas públicas valem para qualquer instalação e não trazem dados de nenhuma organização. Quem é cliente pode pedir esses dados à organização que produz o seu relatório.
 
 ---
 
@@ -112,7 +113,7 @@ O relatório pode ser compartilhado por um **link público**: quem tem o link v�
 
 ## 9. Propriedade do software, dos dados e dos relatórios
 
-A **aplicação** — código, design, marca e documentação — é propriedade da **desenvolvedora**, que a licencia à organização responsável. Estes Termos não transferem a ninguém direito de propriedade intelectual sobre a aplicação.
+A **aplicação** — código, design, marca e documentação — é propriedade da **desenvolvedora**, que a licencia à organização responsável diretamente ou por meio de uma distribuidora. Estes Termos não transferem a ninguém direito de propriedade intelectual sobre a aplicação.
 
 Os **dados do cliente** — cadastro, publicações e métricas, clipping, estatísticas do site — **pertencem ao cliente** e são usados exclusivamente para produzir os relatórios dele.
 
@@ -124,7 +125,7 @@ Os **relatórios pertencem ao cliente**. A organização responsável pode usá-
 
 A aplicação é fornecida **"no estado em que se encontra"**. Estes Termos não estabelecem compromisso de disponibilidade nem de prazo de entrega; se houver, ele constará do contrato com o cliente. A instalação pode ficar fora do ar para atualização ou manutenção.
 
-A organização responsável e a desenvolvedora não se responsabilizam por:
+A organização responsável, a desenvolvedora e a distribuidora, quando houver, não se responsabilizam por:
 
 - falhas ou indisponibilidade de serviços de terceiros de que a aplicação depende — as redes sociais e suas exportações, os provedores de IA e o login com Google;
 - números errados que venham das planilhas exportadas pelas redes ou das estatísticas do site;
@@ -136,7 +137,7 @@ A organização responsável e a desenvolvedora não se responsabilizam por:
 
 O tratamento de dados pessoais é regido pela [Política de Privacidade]({{ '/privacidade/' | relative_url }}), que é parte integrante destes Termos. Em caso de conflito entre os dois documentos em matéria de dados pessoais, prevalece a Política de Privacidade.
 
-A **organização responsável é a controladora** dos dados da equipe e dos dados usados para produzir os relatórios. O **cliente é o controlador** dos dados de quem visita o site dele, que a organização responsável apenas processa por conta dele. A **desenvolvedora**, quando hospeda a instalação ou envia os e-mails, atua como operadora da organização responsável.
+A **organização responsável é a controladora** dos dados da equipe e dos dados usados para produzir os relatórios. O **cliente é o controlador** dos dados de quem visita o site dele, que a organização responsável apenas processa por conta dele. A **desenvolvedora**, quando hospeda a instalação ou envia os e-mails, e a **distribuidora**, quando instala, hospeda ou opera a instalação para outra organização, atuam como operadoras da organização responsável. Se a distribuidora roda a instalação para si mesma, ela é a organização responsável.
 
 ---
 
