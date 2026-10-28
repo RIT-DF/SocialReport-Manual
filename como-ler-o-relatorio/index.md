@@ -58,8 +58,15 @@ Quer um resumo de uma página só, com os cuidados antes de tirar qualquer concl
 3. **Pergunte o que mudou na ação.** Quando um número sobe ou cai, a pergunta útil é "o que fizemos de diferente neste mês?", e não "de quem é a culpa?".
 4. **Desconfie de zero e de mês pela metade.** Um zero quase sempre quer dizer "não foi medido", não "não aconteceu". E um mês que começou a ser medido no meio não pode ser comparado com um mês inteiro.
 
-> **Quer ir além do relatório?**
-> O relatório mostra **o que funcionou**. Para aprender a **fazer mais do que funciona**, a RIT oferece o curso gratuito [Redes Sociais na Mão: do Zero ao Impacto](https://cursos.rit.org.br/course/view.php?id=37), que ensina organizações e pequenos negócios a produzir conteúdo com direção: pauta, mensagem, imagem, vídeo curto, chamada para ação e rotina de publicação. O curso não trata de métricas; é o complemento natural deste relatório.
-{: .tip }
+## Quer ir além do relatório?
 
-<a class="curso-destaque" href="https://cursos.rit.org.br/course/view.php?id=37" title="Curso gratuito Redes Sociais na Mão: do Zero ao Impacto"><img class="no-zoom" src="{{ '/assets/img/curso-redes-sociais-na-mao.jpg' | relative_url }}" alt="Curso gratuito da RIT Redes Sociais na Mão: do Zero ao Impacto"></a>
+<div class="curso-bloco">
+<a class="curso-imagem" href="https://cursos.rit.org.br/course/view.php?id=37" title="Curso gratuito Redes Sociais na Mão: do Zero ao Impacto"><img class="no-zoom" src="{{ '/assets/img/curso-redes-sociais-na-mao.jpg' | relative_url }}" alt="Curso gratuito da RIT Redes Sociais na Mão: do Zero ao Impacto"></a>
+<div class="curso-texto" markdown="1">
+
+O relatório mostra **o que funcionou**.
+
+Para aprender a **fazer mais do que funciona**, a RIT oferece o curso gratuito *[Redes Sociais na Mão: do Zero ao Impacto](https://cursos.rit.org.br/course/view.php?id=37)*, que ensina organizações e pequenos negócios a produzir conteúdo com direção: pauta, mensagem, imagem, vídeo curto, chamada para ação e rotina de publicação. O curso complementa o SocialReport: o relatório aponta o que o seu público valoriza, e o curso ajuda a produzir mais desse conteúdo, com menos esforço, para que os números do próximo mês reflitam o trabalho.
+
+</div>
+</div>
