@@ -90,4 +90,3 @@ O curso **não trata de métricas**. Ele complementa este relatório: a análise
 
 > **Sugestão de uso:** na reunião de resultados, escolha a recomendação do mês que depende de **produzir melhor** (um formato novo, uma série, um convite mais claro) e indique o curso a quem vai executá-la.
 {: .tip }
-<div class="curso-fim"></div>
