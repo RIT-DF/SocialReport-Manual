@@ -10,7 +10,7 @@ O SocialReport transforma os números das redes sociais de uma organização, e 
 
 > **Recebeu o relatório e quer entender o que está olhando?**
 > Vá direto para **[Como ler o seu relatório]({{ '/como-ler-o-relatorio/' | relative_url }})**. Foi escrita para quem não é da área: explica cada página do relatório, o que cada número quer dizer, para que serve e as leituras erradas mais comuns.
-{: .important }
+{: .destaque }
 
 ## As sete partes do manual
 

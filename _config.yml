@@ -4,6 +4,8 @@ lang: pt-BR
 permalink: pretty
 
 remote_theme: just-the-docs/just-the-docs
+color_scheme: socialreport
+logo: "/assets/img/marca/socialreport-logo.svg"
 plugins:
   - jekyll-remote-theme
 

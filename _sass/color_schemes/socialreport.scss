@@ -1,0 +1,26 @@
+/* Identidade do SocialReport (Code/tailwind.config.js). Legibilidade acima de identidade. */
+$socialreport-teal: #0F4855;
+$socialreport-teal-dark: #0A333D;
+$socialreport-teal-light: #1B6575;
+$socialreport-teal-surface: #F0F6F7;
+$socialreport-purple: #622599;
+$socialreport-purple-surface: #F8F4FC;
+$socialreport-orange: #F49E27;
+$socialreport-orange-text: #A8500A;
+
+$color-scheme: light;
+$body-background-color: #FFFFFF;
+$body-heading-color: $socialreport-teal-dark;
+$body-text-color: #1E293B;
+$link-color: $socialreport-teal;
+$nav-child-link-color: #1E293B;
+$sidebar-color: $socialreport-teal-surface;
+$base-button-color: $socialreport-teal-surface;
+$btn-primary-color: $socialreport-teal;
+$code-background-color: $socialreport-teal-surface;
+$feedback-color: darken($socialreport-teal-surface, 3%);
+$table-background-color: #FFFFFF;
+$search-background-color: #FFFFFF;
+$search-result-preview-color: #334155;
+
+@import "./vendor/accessible-pygments/github-light";
