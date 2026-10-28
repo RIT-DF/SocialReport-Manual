@@ -18,7 +18,7 @@ O caminho que o relatório acompanha é este: **publicação → visita ao site 
 
 Em quase todas as páginas do capítulo você vai ver uma etiqueta amarela, **"Medição desde 28/10"**, logo abaixo do título.
 
-> **O que ela quer dizer:** a medição do site **começou em 28/10**, no meio do ciclo. Todos os números do capítulo cobrem só **de 28/10 até o fim do ciclo**, e não o mês inteiro. Por isso o relatório **não compara** com o mês anterior (os selos mostram **"Base"**, que quer dizer "ponto de partida, sem comparação").
+> **O que ela quer dizer:** a medição do site **começou em 28/10**, no meio do ciclo. Todos os números do capítulo cobrem só **de 28/10 até o fim do ciclo**, e não o mês inteiro. Por isso o relatório **não compara** com o mês anterior.
 {: .important }
 
 Esta é a leitura errada mais comum do capítulo: tratar um mês parcial como mês inteiro. Pouco movimento num mês de poucos dias não significa pouco movimento no mês. O primeiro mês completo é que serve de **base** para os seguintes.
@@ -188,5 +188,5 @@ A linha mostra as **visitas por dia**. As **marcas laranja** indicam os dias em 
 
 **Decisão que ajuda a tomar:** repetir o dia e o tipo de publicação que fez a linha subir, e marcar o link nos que não fizeram.
 
-> **Leitura errada comum: a linha reta antes do dia da medição.** No exemplo, a linha fica **zerada** de 01/10 até 27/10 e só sobe no dia 28. Isso **não quer dizer que ninguém visitou o site** nesses dias: a medição só começou em 28/10 (veja "Medição desde"). Antes disso o dado simplesmente **não existe**.
+> **Leitura errada comum: os dias antes da medição.** No exemplo, os dias de 01/10 a 27/10 aparecem numa faixa cinza marcada **"sem medição"**, e a linha só começa no dia 28. Isso **não quer dizer que ninguém visitou o site** nesses dias: a medição só começou em 28/10 (veja "Medição desde"). Antes disso o dado simplesmente **não existe**, e não é tráfego zero.
 {: .warning }

@@ -119,7 +119,7 @@ Cada conceito abaixo segue a mesma ordem: **o que é**, um **exemplo**, a **deci
 
 ### "Medição desde"
 
-**O que é:** a etiqueta que avisa que a medição do site começou no meio do ciclo, na data indicada. Os números cobrem só **a partir dela**, e por isso o relatório não compara com o mês anterior (os selos mostram "Base").
+**O que é:** a etiqueta que avisa que a medição do site começou no meio do ciclo, na data indicada. Os números cobrem só **a partir dela**, e por isso o relatório não compara com o mês anterior; os cartões ficam sem selo de variação.
 
 **Exemplo:** "Medição desde 28/10" num ciclo de 1º a 31 de outubro: o relatório cobre quatro dias, não o mês.
 
