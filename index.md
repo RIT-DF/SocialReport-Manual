@@ -12,7 +12,7 @@ O SocialReport transforma os números das redes sociais de uma organização, e 
 > Vá direto para **[Como ler o seu relatório]({{ '/como-ler-o-relatorio/' | relative_url }})**. Foi escrita para quem não é da área: explica cada página do relatório, o que cada número quer dizer, para que serve e as leituras erradas mais comuns.
 {: .destaque }
 
-## As sete partes do manual
+## As partes do manual
 
 | Parte | Para quem | Situação |
 |---|---|---|
@@ -22,4 +22,6 @@ O SocialReport transforma os números das redes sociais de uma organização, e 
 | 4. **[Como ler o seu relatório]({{ '/como-ler-o-relatorio/' | relative_url }})** | **quem recebe o relatório** | **pronta para revisão** |
 | 5. [O site do cliente e o plugin V3RAnalytics]({{ '/site-e-plugin/' | relative_url }}) | equipe e administrador do site | em preparação |
 | 6. [Administração]({{ '/administracao/' | relative_url }}) | administradores do sistema | em preparação |
-| 7. [Boas práticas, perguntas frequentes e glossário]({{ '/boas-praticas/' | relative_url }}) | todos | em preparação |
+| 7. [Boas práticas]({{ '/boas-praticas/' | relative_url }}) | todos | em preparação |
+| 8. [Perguntas frequentes]({{ '/perguntas-frequentes/' | relative_url }}) | todos | em preparação |
+| 9. [Glossário]({{ '/glossario/' | relative_url }}) | todos | em preparação |

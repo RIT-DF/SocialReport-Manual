@@ -61,3 +61,5 @@ Quer um resumo de uma página só, com os cuidados antes de tirar qualquer concl
 > **Quer ir além do relatório?**
 > O relatório mostra **o que funcionou**. Para aprender a **fazer mais do que funciona**, a RIT oferece o curso gratuito [Redes Sociais na Mão: do Zero ao Impacto](https://cursos.rit.org.br/course/view.php?id=37), que ensina organizações e pequenos negócios a produzir conteúdo com direção: pauta, mensagem, imagem, vídeo curto, chamada para ação e rotina de publicação. O curso não trata de métricas; é o complemento natural deste relatório.
 {: .tip }
+
+<a class="curso-destaque" href="https://cursos.rit.org.br/course/view.php?id=37" title="Curso gratuito Redes Sociais na Mão: do Zero ao Impacto"><img class="no-zoom" src="{{ '/assets/img/curso-redes-sociais-na-mao.jpg' | relative_url }}" alt="Curso gratuito da RIT Redes Sociais na Mão: do Zero ao Impacto"></a>

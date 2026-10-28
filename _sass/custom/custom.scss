@@ -29,3 +29,12 @@ $name: example;   @include callout(#F8F4FC, #7A32BD, #481973);
 /* Caixa de destaque do produto (entrada da parte 4 na página inicial): laranja só no fundo e na borda; texto escuro. */
 blockquote.destaque { background-color: #FFF4E5; border: 1px solid #F49E27; border-left: 6px solid #F49E27; border-radius: 6px; color: #1E293B; padding: 1rem 1.25rem; font-size: 1.05rem; }
 blockquote.destaque a { color: #0F4855; font-weight: 700; }
+
+// Cabeçalho: símbolo do SocialReport ao lado do nome.
+.site-title { display: flex; align-items: center; gap: 0.6rem; }
+.sr-logo { width: 32px; height: 32px; flex: none; }
+.sr-nome { color: #0F4855; font-size: 1.25rem; }
+
+// Destaque do curso da RIT: imagem clicável que leva ao curso.
+.curso-destaque { display: block; margin: 1rem 0; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 10px rgba(15, 72, 85, 0.15); }
+.curso-destaque img { display: block; width: 100%; height: auto; }
