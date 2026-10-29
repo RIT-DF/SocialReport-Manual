@@ -2,16 +2,16 @@
 title: "Privacidade"
 nav_order: 90
 permalink: /privacidade/
-version: "1.0"
+version: "1.1"
 status: "aprovada"
-change_summary: "Publicação inicial da versão 1.0."
+change_summary: "Inclui os destinatários do relatório por e-mail, a leitura das plataformas de cursos, a foto do perfil, as sugestões enviadas pela equipe, como são as cópias de segurança e os prazos que faltavam."
 requires_reconsent: true
 ---
 
 # Política de Privacidade — SocialReport
 
-**Vigência:** 28 de outubro de 2026
-**Versão:** 1.0
+**Vigência:** 29 de outubro de 2026
+**Versão:** 1.1
 
 {: .warning }
 
@@ -52,6 +52,8 @@ Cada organização responde pelo que **ela** decide:
 | Publicações e métricas das redes sociais do cliente | Organização responsável | Controladora |
 | Clipping de imprensa | Organização responsável | Controladora |
 | Relatórios, inclusive textos e imagens gerados com IA | Organização responsável | Controladora |
+| Destinatários do relatório: nome e e-mail, e o registro dos envios | Organização responsável | Controladora |
+| Números da plataforma de cursos do cliente (inscrições e conclusões somadas) | Organização responsável | Controladora |
 | Visitas ao site do cliente | O cliente | Operadora |
 
 Com quem falar em cada caso está na **seção 10**.
@@ -63,7 +65,7 @@ Com quem falar em cada caso está na **seção 10**.
 Esta política se aplica às pessoas físicas cujos dados passam pela instalação. São quatro situações:
 
 - **Equipe** — quem tem conta na instalação.
-- **Quem recebe o relatório** — diretoria, coordenação e parceiros do cliente, que abrem o relatório por link ou em PDF, **sem conta**.
+- **Quem recebe o relatório** — diretoria, coordenação e parceiros do cliente, que abrem o relatório por link ou em PDF, **sem conta**. Quando o cliente pede, o **nome** e o **e-mail** dessas pessoas são cadastrados para que o link seja enviado por e-mail (seção 4.6).
 - **Pessoas que aparecem no conteúdo do cliente** — por exemplo, alguém citado na legenda de uma publicação, retratado numa imagem de post ou mencionado numa matéria de imprensa do clipping.
 - **Visitantes do site do cliente** — cujas visitas entram no relatório **apenas como números somados**, sem identificação (seção 4.4).
 
@@ -82,10 +84,12 @@ O cadastro na instalação **só acontece por convite** de um super-admin. Não 
 | Senha | Autenticação (guardada de forma protegida pelo servidor de autenticação, nunca em texto aberto) | Idem |
 | Dados recebidos da conta Google, quando você entra com o Google | Autenticação sem senha própria | Idem |
 | Papel (analista ou super-admin) | Controle de acesso e permissões | Idem |
+| Foto do perfil, quando a pessoa envia uma | Exibição na aplicação | Execução de contrato ou do vínculo com a organização responsável (Art. 7º, V) |
+| Sugestões e relatos de problema enviados pela equipe (texto, a tela onde estava e o e-mail de quem enviou) | Responder a quem enviou e melhorar a aplicação | Legítimo interesse (Art. 7º, IX) |
 | Registro do aceite desta política e dos Termos de Uso | Comprovar o aceite de cada versão | Legítimo interesse (Art. 7º, IX) |
 | Registros de acesso | Segurança e rastreabilidade | Legítimo interesse (Art. 7º, IX) e obrigação legal (Art. 7º, II; Marco Civil da Internet, Art. 15) |
 
-**Login com Google:** a instalação tem servidor de autenticação próprio, sem serviço de login de terceiros. Quando você escolhe entrar com o Google, o Google confirma a sua identidade e informa dados básicos da sua conta. A aplicação usa só o **nome** e o **e-mail**. O serviço de login pode guardar também a **foto do perfil**, se o Google a enviar, mas a aplicação não a usa nem a exibe.
+**Login com Google:** a instalação tem servidor de autenticação próprio, sem serviço de login de terceiros. Quando você escolhe entrar com o Google, o Google confirma a sua identidade e informa dados básicos da sua conta. A aplicação usa só o **nome** e o **e-mail**. O serviço de login pode guardar também a **foto do perfil**, se o Google a enviar, mas a aplicação não usa essa foto: a foto do perfil que aparece na aplicação é só a que a própria pessoa envia (tabela acima).
 
 **Aceite:** a aplicação vai pedir o aceite desta política e dos Termos de Uso no primeiro acesso e a cada nova versão, e guardar o registro desse aceite.
 
@@ -138,6 +142,10 @@ Os provedores possíveis são **Google Gemini**, **OpenAI** e **Anthropic Claude
 
 O cliente recebe o relatório por um **link público** ou em **PDF**. Quem abre o link vê o relatório **sem login**, e não pedimos nenhum dado a essa pessoa.
 
+**Envio por e-mail.** O cliente pode pedir que o link seja enviado por e-mail a algumas pessoas. Para isso, a equipe cadastra o **nome** e o **e-mail** de cada uma no cadastro do cliente. A cada envio, a aplicação registra **quem enviou, quando, para quem e se o e-mail foi aceito**, para comprovar a entrega e permitir o reenvio. Esses dados servem **só** para enviar o relatório: não recebem outro tipo de mensagem, não são compartilhados e não são usados no relatório de outro cliente. Quem não quiser mais receber pode pedir ao cliente ou à organização responsável, e é retirado da lista.
+
+**Base legal:** execução do serviço de relatório contratado pelo cliente, que indica as pessoas que devem receber o relatório (Art. 7º, V).
+
 Ao abrir o link, o seu endereço de rede é usado **momentaneamente**, na memória do servidor, para proteger o serviço contra excesso de requisições, e entra nos registros de acesso da instalação (seção 8).
 
 Abrir a aplicação ou o link do relatório **não gera conexão com serviços de terceiros**: as fontes de letra e os demais recursos da tela são servidos pela própria instalação.
@@ -147,6 +155,12 @@ Abrir a aplicação ou o link do relatório **não gera conexão com serviços d
 A aplicação **não pede** dados sensíveis (origem racial, convicção religiosa, saúde, biometria) nem dados de menores de 18 anos, e não coleta geolocalização de pessoas. As estatísticas do site mostram cidades e estados de origem das visitas **apenas em números somados**.
 
 Há um limite que precisamos deixar claro: as **imagens dos posts** são o conteúdo que o próprio cliente publicou nas redes e podem retratar pessoas, inclusive crianças e adolescentes. A aplicação não inspeciona o conteúdo dessas imagens. **A responsabilidade por ter as autorizações de uso de imagem é do cliente que publicou.**
+
+### 4.8 Plataforma de cursos do cliente
+
+Quando o cliente oferece cursos numa plataforma própria (Moodle), o relatório pode trazer o capítulo "Cursos". O servidor da instalação lê dessa plataforma **apenas números somados**: quantas inscrições e quantas conclusões houve em cada curso no mês. **Nenhum dado de aluno chega à aplicação** — nem nome, nem e-mail, nem nota — e nada é guardado por pessoa. Se a plataforma devolver qualquer coluna além das esperadas, a leitura é recusada antes de olhar os dados.
+
+**Base legal:** execução do serviço de relatório contratado pelo cliente (Art. 7º, V).
 
 ---
 
@@ -159,6 +173,8 @@ Os dados são usados exclusivamente para:
 - autenticar a equipe e controlar o que cada papel pode fazer;
 - registrar o aceite desta política e dos Termos de Uso;
 - enviar os e-mails do sistema (convite e recuperação de senha);
+- enviar o link do relatório, por e-mail, às pessoas que o cliente indicou (seção 4.6);
+- responder às sugestões e aos relatos de problema enviados pela equipe;
 - garantir a segurança e a integridade das informações.
 
 **Não vendemos dados, não fazemos publicidade e não traçamos perfil de pessoas.** Os dados de um cliente não são usados no relatório de outro.
@@ -173,7 +189,7 @@ Para funcionar, a instalação usa os serviços abaixo. Quem presta cada um dele
 |---|---|---|
 | **Hospedagem** (desenvolvedora, distribuidora ou a própria organização responsável) | Servidor da aplicação, banco de dados, servidor de autenticação e cópias de segurança | Informada dentro da instalação |
 | **Serviço de estatísticas (Matomo)** (desenvolvedora, distribuidora ou a própria organização responsável) | Estatísticas agregadas do site do cliente | Informada dentro da instalação |
-| **Envio de e-mail** (desenvolvedora, distribuidora ou a própria organização responsável) | E-mails de convite e recuperação de senha | Informada dentro da instalação |
+| **Envio de e-mail** (desenvolvedora, distribuidora ou a própria organização responsável) | E-mails de convite, recuperação de senha, cópias de segurança e envio do link do relatório | Informada dentro da instalação |
 | **Google** (login com Google) | Autenticação, quando a pessoa escolhe entrar com o Google | Fora do Brasil (Estados Unidos) |
 | **Google Gemini** | Textos de análise e imagens de capa, quando configurado | Fora do Brasil |
 | **OpenAI** | Textos de análise e imagens de capa, quando configurado | Fora do Brasil |
@@ -198,11 +214,17 @@ O serviço de estatísticas do site do cliente também **mede sem cookies** (se�
 | Conta de quem sai da equipe | Excluída **90 dias** depois da saída |
 | Registros de acesso | **6 meses**, conforme o Marco Civil da Internet |
 | Cadastro, publicações, métricas, clipping e estatísticas do site de cada cliente | Até **30 dias** depois do fim do contrato com o cliente, que é avisado para pedir uma cópia antes da exclusão |
+| Foto do perfil | Excluída com a conta (**90 dias** depois da saída) |
+| Registro do aceite desta política e dos Termos | **5 anos** depois do encerramento da conta, para comprovar o aceite |
+| Sugestões e relatos de problema | O texto fica enquanto for útil à melhoria da aplicação; o **e-mail de quem enviou é apagado com a conta** (90 dias depois da saída) |
+| Destinatários do relatório | Enquanto estiverem na lista do cliente; quem sai da lista é apagado dela **na hora**. Saem todos com o cadastro do cliente (até 30 dias depois do fim do contrato) |
+| Registro dos envios do relatório | Junto com o relatório a que se refere: enquanto durar o contrato e até **30 dias** depois do fim |
+| Números da plataforma de cursos | Junto com o relatório a que se referem |
 | Relatórios (inclusive os textos e as imagens gerados com IA) | Enquanto durar o contrato com o cliente; depois, seguem o prazo da linha anterior |
 | Dados detalhados de visitas ao site do cliente, no serviço de estatísticas | **13 meses**; os resumos mensais permanecem (seção 4.4) |
 | Cópias de segurança do banco de dados | Conforme a política de backup da organização responsável (abaixo) |
 
-**Cópias de segurança:** cada organização responsável define a **sua política de backup** na própria aplicação: por quanto tempo as cópias ficam guardadas e onde. As cópias contêm os mesmos dados da instalação e são guardadas com acesso restrito. A política de cada instalação é informada dentro da própria instalação (na tela de aceite e na área de informações da instalação).
+**Cópias de segurança:** cada organização responsável define a **sua política de backup** na própria aplicação: com que frequência, quantas cópias ficam guardadas e onde (no servidor e/ou por e-mail ao administrador). Toda cópia é **cifrada** com uma senha que só a organização conhece e **não leva** chaves de acesso, senhas de serviços nem sessões de login; as senhas de acesso da equipe vão nela apenas na forma protegida em que o servidor de autenticação as guarda. Cópias enviadas por e-mail passam a ser guardadas pela organização na caixa de quem as recebe, e o prazo delas é o da organização. A política de cada instalação é informada dentro da própria instalação.
 
 Após os prazos acima, os dados são eliminados de forma segura ou anonimizados de modo irreversível.
 

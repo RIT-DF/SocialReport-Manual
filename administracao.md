@@ -43,7 +43,7 @@ A lista mostra o usuário, o e-mail, o **papel**, o **status** (ativo ou revogad
 
 > **Dicas.**
 > - Dê o papel de **Analista** por padrão. Super-Admin só para quem de fato configura o sistema.
-> - Quando alguém sai da equipe, **revogue o acesso** no mesmo dia. Revogar bloqueia a entrada sem apagar o histórico da pessoa.
+> - Quando alguém sai da equipe, **revogue o acesso** no mesmo dia. Revogar bloqueia a entrada sem apagar o histórico da pessoa. **A conta é excluída 90 dias depois** (veja [Retenção de dados](#retenção-de-dados-o-que-é-excluído-e-quando)); restaurar o acesso antes disso cancela a exclusão.
 > - Você não consegue revogar nem remover a si mesmo (os botões da sua própria linha ficam desabilitados). Peça a outro super-administrador.
 {: .tip }
 
@@ -69,6 +69,7 @@ Ao editar, o cadastro tem estas partes:
 - **Categorias editoriais** do cliente (separadas por vírgula).
 - **Canais contratados** (Instagram, Facebook, LinkedIn, TikTok, YouTube).
 - **Marcos históricos anteriores** (opcional): totais de meses passados (por exemplo, seguidores) que ligam os gráficos de tendência e o comparativo desde o primeiro relatório.
+- **Fim do contrato:** o campo **Contrato encerrado em** (veja abaixo).
 - **Site:** a ligação com o Matomo (veja a [parte 5]({{ '/site-e-plugin/' | relative_url }})).
 - **Monitoramento de imprensa e clipping:** os termos da varredura.
 
@@ -84,6 +85,12 @@ Ao editar, o cadastro tem estas partes:
 - **Por que cadastrar:** o envio do link pelo sistema só vai a quem está nesta lista. Isso evita mandar o relatório de um cliente para o endereço errado ou digitado na pressa, e deixa o histórico de quem recebeu.
 - **Dado pessoal:** nome e e-mail de quem recebe são dados pessoais. Cadastre só quem de fato precisa do relatório e tire quem saiu da organização do cliente.
 - **Sem destinatários**, o botão de enviar em **Compartilhar** fica indisponível e avisa onde cadastrar.
+
+**Fim do contrato (só o super-admin).** O campo **Contrato encerrado em** aparece ao **editar** um cliente. Para o analista ele é só de leitura. Deixe em branco enquanto o contrato estiver em vigor: **sem a data, nada é excluído, nunca**. O sistema não deduz o fim de um contrato.
+
+- **Ao preencher a data e salvar**, o sistema pede **confirmação** e diz a partir de quando os dados poderão ser excluídos (a data do encerramento mais 30 dias). Passado esse prazo, e depois do aviso de 7 dias (veja [Retenção de dados](#retenção-de-dados-o-que-é-excluído-e-quando)), saem **sem volta**: o cadastro, os relatórios, as planilhas, as capas, os destinatários e o registro de envios do cliente. Antes disso, **peça ao cliente uma cópia** do que ele quiser guardar.
+- **Para cancelar**, abra o cadastro e clique em **Contrato em vigor (apagar a data)**. Apagar a data não pede confirmação, porque é o lado seguro.
+- A data não pode ser futura.
 
 > **Dica: capas de escolas.** Para escolas e organizações que atendem crianças, escolha **Sem foto**. O rosto de uma criança nunca deve aparecer num relatório sem autorização de uso de imagem.
 {: .tip }
@@ -180,6 +187,28 @@ Em **Configurações do Sistema**, abra **Organização**.
 
 As cópias do banco de dados do sistema têm página própria: [Cópias de segurança]({{ '/copias-de-seguranca/' | relative_url }}). Leia antes de a primeira cópia ser feita: a **senha** das cópias é o ponto que não tem volta, e a cópia **não leva** as chaves, senhas e tokens (nem a licença do V3RAnalytics): guarde-os num cofre para recadastrar depois de restaurar.
 
+## Retenção de dados: o que é excluído e quando
+
+A Política de Privacidade promete prazos de guarda. Uma **rotina diária** do sistema os cumpre, na aba **Retenção de dados** das configurações do sistema (só super-admin):
+
+| O que | Quando sai |
+|---|---|
+| Conta de quem saiu da equipe (acesso, foto do perfil, e-mail das sugestões enviadas) | **90 dias** depois da saída. Saída é revogar o acesso ou remover a pessoa da lista |
+| Dados do cliente | **30 dias** depois da data de **Contrato encerrado em** |
+| Registros de acesso (tentativas de conexão de site e entradas no login) | **6 meses** |
+| Registro do aceite da política e dos Termos | **5 anos** depois da exclusão da conta da pessoa |
+
+**O aviso de 7 dias.** Nada é excluído de surpresa. Quando faltam 7 dias para o prazo de um cliente ou de uma conta, o super-admin vê uma **faixa amarela** no topo do sistema e recebe um **e-mail** com a lista do que vai sair e a partir de quando. **Nada sai antes de 7 dias do aviso**, mesmo que o prazo já tenha vencido (por exemplo, um cliente com a data de encerramento antiga).
+
+**Como adiar ou cancelar:** desmarque na origem. Para um cliente, apague a data de **Contrato encerrado em**. Para uma conta, **restaure o acesso** da pessoa em Pessoas e Papéis. A rotina confere de novo no momento de excluir, então o que você desmarcar até lá fica.
+
+**O modo simulação (ligado de fábrica).** Na primeira versão a rotina **só simula**: faz as contas, manda o aviso e registra o que apagaria, mas **não apaga nada**. É um período para você conferir, no histórico da aba, se as contagens são as esperadas. Quando estiver seguro, desmarque **Modo simulação** e salve (o sistema pede confirmação). O botão **Simular agora** roda uma simulação na hora e nunca apaga, mesmo com a simulação desligada. Se quem opera o servidor travar a simulação, a tela avisa e não deixa desligar.
+
+**O histórico** mostra cada execução (quando, se foi simulação ou exclusão real, se terminou bem ou com falha) e **só contagens**: nunca nome nem e-mail. Uma execução "Com falha" quer dizer que algo não pôde ser feito (por exemplo, o e-mail de aviso não saiu); nesse caso nada é excluído até o aviso chegar.
+
+> **O que a rotina não faz.** Ela não reescreve as **cópias de segurança** já feitas: o que foi excluído continua nelas até a cópia ser apagada pela política de backup. E um cliente excluído à mão (botão **Excluir Cliente**) não passa por esta rotina.
+{: .note }
+
 ## E-mail e login com Google
 
 Duas outras abas das configurações merecem uma lembrança:
@@ -197,4 +226,5 @@ Duas outras abas das configurações merecem uma lembrança:
 - [ ] Segredos (chaves de IA, senha do e-mail, tokens, licença) guardados num cofre, porque a cópia de segurança não os leva.
 - [ ] Organização: nome e site conferidos no rodapé de um relatório.
 - [ ] Cópias de segurança configuradas, com a senha guardada num cofre e **provada** (botão **Provar a senha**), e um teste de restauração feito (veja [Cópias de segurança]({{ '/copias-de-seguranca/' | relative_url }})).
+- [ ] Retenção de dados: simulação conferida no histórico antes de ser desligada; cliente que encerrou o contrato com a data preenchida; ex-membros revogados (a conta sai em 90 dias).
 - [ ] Cada cliente com logotipo, cores, categorias e termos de imprensa preenchidos; escolas com **Sem foto**.

@@ -1,6 +1,7 @@
 ---
 title: "5. O site do cliente e o plugin V3RAnalytics"
 nav_order: 6
+has_children: true
 permalink: /site-e-plugin/
 ---
 
@@ -187,3 +188,5 @@ A **revisão** do relatório mostra, para o analista, a **cobertura de links mar
 | conexão por código não funciona | código vencido, usado ou de outro site | gere um novo código |
 
 Dúvidas comuns sobre o plugin estão em [Perguntas frequentes]({{ '/perguntas-frequentes/' | relative_url }}).
+
+O que mudou em cada versão do plugin está em [Novidades do V3RAnalytics]({{ '/site-e-plugin/novidades/' | relative_url }}).
