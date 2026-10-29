@@ -39,7 +39,7 @@ Em **Configurações do Sistema**, abra **Pessoas e Papéis**.
 
 **Gerir quem já está**
 
-A lista mostra o usuário, o e-mail, o **papel**, o **status** (ativo ou revogado) e as ações de cada linha: **Tornar Analista** ou **Tornar Super-Admin**, **revogar/restaurar o acesso** e **remover**. Há também seleção de várias pessoas de uma vez.
+A lista mostra o usuário, o e-mail, o **papel**, o **status** (ativo ou revogado) e as ações de cada linha: **Tornar Analista** ou **Tornar Super-Admin**, **revogar/restaurar o acesso** e **remover**. Há também seleção de várias pessoas de uma vez. **Revogar** e **remover** cortam o acesso na hora: a pessoa sai da sessão e vê "Seu acesso foi removido pelo administrador do sistema". Revogar guarda a pessoa na lista, para restaurar depois; remover tira da lista.
 
 > **Dicas.**
 > - Dê o papel de **Analista** por padrão. Super-Admin só para quem de fato configura o sistema.
@@ -97,7 +97,7 @@ Ao editar, o cadastro tem estas partes:
 
 **Clipping: como evitar homônimos.** Na seção de imprensa, o **nome completo** (três palavras ou mais) basta para a busca. **Siglas e nomes curtos só entram junto de um termo de contexto.** Cadastre também **termos para ignorar**, para afastar homônimos (a sigla de uma companhia de energia, por exemplo), e **veículos prioritários**, que são consultados primeiro sem impedir a busca em outras fontes.
 
-> **Atenção: excluir um cliente.** O botão **Excluir Cliente** remove o cadastro do servidor. O sistema **recusa** a exclusão de um cliente que **já tem relatórios** (exclua os períodos antes, um a um) e do **último cliente** do sistema. Excluir os períodos apaga as planilhas e os números, e os links públicos deles deixam de abrir: avise quem os recebia.
+> **Atenção: excluir um cliente.** O botão **Excluir Cliente** apaga, **sem volta**, o cadastro e tudo o que é do cliente: relatórios, planilhas, capas, destinatários, registro de envios e códigos de conexão. A confirmação diz **quantos relatórios saem**. Os links públicos desses relatórios deixam de abrir: avise quem os recebia e, antes, peça ao cliente uma cópia do que ele quiser guardar. O sistema só recusa excluir o **último cliente**.
 {: .warning }
 
 ## Inteligência artificial: provedores e chaves
@@ -206,7 +206,7 @@ A Política de Privacidade promete prazos de guarda. Uma **rotina diária** do s
 
 **O histórico** mostra cada execução (quando, se foi simulação ou exclusão real, se terminou bem ou com falha) e **só contagens**: nunca nome nem e-mail. Uma execução "Com falha" quer dizer que algo não pôde ser feito (por exemplo, o e-mail de aviso não saiu); nesse caso nada é excluído até o aviso chegar.
 
-> **O que a rotina não faz.** Ela não reescreve as **cópias de segurança** já feitas: o que foi excluído continua nelas até a cópia ser apagada pela política de backup. E um cliente excluído à mão (botão **Excluir Cliente**) não passa por esta rotina.
+> **O que a rotina não faz.** Ela não reescreve as **cópias de segurança** já feitas: o que foi excluído continua nelas até a cópia ser apagada pela política de backup. Um cliente excluído à mão (botão **Excluir Cliente**) sai na hora, pelo mesmo caminho da rotina, sem o aviso de 7 dias.
 {: .note }
 
 ## E-mail e login com Google
