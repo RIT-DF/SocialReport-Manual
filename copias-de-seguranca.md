@@ -19,21 +19,24 @@ A regra simples das cópias:
 - **Cópia que nunca foi testada é esperança, não cópia.** Por isso existe o teste de restauração (mais abaixo).
 - **A cópia é cifrada com uma senha.** Quem pegar o arquivo sem a senha não consegue ler nada. Isso protege os dados dos seus clientes se o arquivo for parar onde não devia.
 
-> **O que a cópia inclui.** A cópia é do **banco de dados do SocialReport**. Isso é o conteúdo do sistema (clientes, períodos, textos, relatórios). Não é uma cópia do servidor inteiro nem de outros sistemas que usem o mesmo servidor.
+> **O que a cópia inclui.** A cópia é do **banco de dados do SocialReport**: o conteúdo do sistema (clientes, períodos, textos, relatórios). Não é uma cópia do servidor inteiro nem de outros sistemas que usem o mesmo servidor. O quadro a seguir diz o que fica de fora de propósito.
 {: .note }
+
+> **O que entra e o que NÃO entra na cópia.** Por segurança, a cópia **não leva os segredos do sistema**: as **chaves de IA** (Gemini, ChatGPT e Claude), a **senha do servidor de e-mail** (SMTP), o **segredo do login com Google**, os **tokens do Matomo** (leitura e administração), o **token do Moodle**, a **licença do V3RAnalytics** e a **senha das próprias cópias**. Também ficam de fora as **sessões abertas do login**: depois de restaurar, **todos precisam entrar de novo** (a senha continua a mesma). Os segredos são apagados antes de a cópia ser gravada, então nem o arquivo guardado, nem o anexo do e-mail os contêm. **Entram** os clientes, períodos, relatórios, configurações e os **usuários, com as senhas de acesso embaralhadas** (hash): elas não são legíveis, mas são o que permite que as pessoas entrem depois de restaurar. Depois de restaurar, é preciso **cadastrar os segredos de novo** (veja "E depois de abrir?" mais abaixo).
+>
+> **Por que é assim:** a cópia sai do servidor por e-mail e vai parar em caixas de entrada e discos. Se levasse as chaves de IA e os tokens, quem achasse o arquivo e adivinhasse a senha ganharia também o acesso a esses serviços. Sem os segredos, o pior caso é ler os dados do sistema, não usar a sua conta de IA nem o seu Matomo. O preço é o recadastro depois de restaurar, que o resumo no fim da página lembra.
+{: .warning }
 
 ## Como configurar
 
 Só o **super-administrador** vê esta tela. Em **Configurações do Sistema**, abra **Cópias de segurança**.
-
-![Aba Cópias de segurança, com frequência, horário, quantidade de cópias, senha, destino e botões]({{ '/assets/img/app/app-25-copias-config.png' | relative_url }})
 
 | Campo | O que fazer |
 |---|---|
 | **Frequência** | **Diária**, **Semanal** ou **Desligada**. Para uma organização que emite relatórios uma vez por mês, **semanal** costuma bastar; **diária** é mais segura na semana de fechar o relatório. **Desligada** pausa as cópias automáticas |
 | **Horário** (e **Dia da semana**, na frequência semanal) | Escolha uma hora de pouco uso, como de madrugada. O horário é o de **São Paulo** |
 | **Quantas cópias manter no servidor** | O número de cópias antigas que ficam guardadas no servidor. As mais antigas são apagadas depois de cada cópia nova. Sete cópias semanais cobrem quase dois meses |
-| **Senha das cópias** | A senha que cifra as cópias. **Mínimo de 12 caracteres.** Veja o aviso abaixo |
+| **Senha das cópias** | A senha que cifra as cópias. **Mínimo de 16 caracteres.** Digite duas vezes (campo de confirmação): o sistema só salva se forem iguais. Veja "Prove a senha" e o aviso abaixo |
 | **Destino: No próprio servidor** | Guarda as cópias numa pasta do servidor, com permissão só do aplicativo |
 | **Destino: Por e-mail ao administrador** | Envia cada cópia cifrada, em anexo, ao e-mail do administrador |
 | **E-mail do administrador** | Quem recebe a cópia (se marcado acima) e o **aviso quando uma cópia falhar** |
@@ -46,6 +49,15 @@ Depois de preencher, clique em **Salvar cópias**.
 
 > **Trocar a senha** vale para as cópias **novas**. As antigas continuam abrindo com a senha antiga: guarde as senhas antigas enquanto houver cópias antigas.
 {: .note }
+
+![Aba Cópias de segurança com o aviso do que entra e do que não entra, os campos de senha e confirmação, e o quadro Provar a senha]({{ '/assets/img/app/app-25-copias-config.png' | relative_url }})
+
+**Prove a senha (recomendado).** Abaixo dos campos da senha há o quadro **Provar a senha**. Digite a senha que está no seu **cofre** (não a que você acha que lembra) e clique em **Provar a senha**. O sistema confere se ela abre as cópias e responde só **"A senha confere com a das cópias."** ou **"não confere"**, sem mostrar nada. Depois da prova, o quadro mostra a data da **última prova**.
+
+- **Por que fazer:** cópia cifrada com uma senha que ninguém consegue repetir é arquivo perdido. A prova confirma que o que está no cofre é a senha certa (sem espaço a mais, sem letra trocada) **enquanto ainda dá tempo de corrigir**.
+- **O aviso no painel.** Enquanto a senha atual nunca foi provada, o super-administrador vê um **aviso no topo do painel**. Ele some depois da prova. **Trocar a senha zera a prova**: prove a nova.
+- **Limite.** São **5 tentativas a cada 15 minutos** por pessoa. Se errar várias vezes, espere, procure a senha certa no cofre e tente de novo.
+- **Senha antiga.** Senhas definidas antes com 12 a 15 caracteres continuam valendo; só as **novas** exigem 16.
 
 > **Pasta no servidor.** O destino "no próprio servidor" só funciona se a pasta de cópias foi preparada por quem hospeda a instalação. Se não foi, o destino aparece desligado, com o aviso "pasta de cópias não montada", e o resto (e-mail) funciona. Peça a quem hospeda para preparar a pasta.
 {: .tip }
@@ -72,11 +84,32 @@ Abaixo da configuração, **Últimas cópias e testes** lista cada cópia e cada
 
 Com o destino **Por e-mail ao administrador**, cada cópia chega por e-mail, com o arquivo **cifrado em anexo**. O arquivo tem o nome parecido com `socialreport-20261028-020000.dump.enc` (a data e a hora da cópia).
 
+**O que o e-mail diz.** Desde a versão 1.23.1 todos os e-mails do sistema saem com o mesmo visual (logotipo e cores do SocialReport, o nome da organização no rodapé e links para o manual, a privacidade e os termos). O e-mail da cópia explica, em linguagem simples:
+
+- **o que é**: uma cópia de segurança dos dados do sistema, para o dia em que o servidor quebrar ou um dado for apagado por engano;
+- **de quando** é, o **tamanho** e o **nome do arquivo**;
+- **o que não entra** nela (as chaves, senhas e tokens), para ninguém achar que a cópia basta para recolocar tudo no ar;
+- **por que o arquivo não abre sozinho**: ele está cifrado; a senha foi definida em Configurações do sistema, nunca vai por e-mail e o sistema não consegue mostrá-la;
+- **como abrir**, com o botão **Como abrir uma cópia**, que leva a esta página;
+- **quando é a próxima** cópia automática e como mudar a frequência.
+
 **O que fazer com ele**
 
 1. **Guarde o anexo** em um lugar seguro, **diferente do servidor**: um armazenamento da organização (nuvem, disco da diretoria) ou um disco externo.
 2. **Não apague** o e-mail até ter o arquivo guardado em outro lugar.
 3. **Mantenha pelo menos algumas cópias**, de datas diferentes (por exemplo, as últimas quatro semanas e uma por mês). Uma cópia só pode estar com defeito justamente a que você precisa.
+
+### Quando o e-mail é de falha
+
+Se uma cópia ou um teste de restauração falha, o administrador recebe um e-mail de assunto **"[SocialReport] Cópia de segurança: FALHA na cópia"** (ou **"no teste de restauração"**). Ele diz **o que aconteceu**, em texto curto (sem endereço do banco nem caminho do servidor), **o que isso significa** e **o que fazer**:
+
+- a cópia **daquele horário** não existe, mas as anteriores continuam válidas onde estavam;
+- abra **Configurações do sistema > Cópias de segurança** e leia a mensagem completa no histórico;
+- confira o **servidor de e-mail (SMTP)**, o destino escolhido e o espaço livre no servidor;
+- clique em **Fazer cópia agora** (ou **Testar restauração**) para tentar de novo;
+- se repetir, chame o suporte técnico levando a mensagem do e-mail.
+
+Um terceiro e-mail, de **aviso de anexo grande**, chega quando a cópia passa do limite do anexo: ele diz onde o arquivo ficou e como baixá-lo, ou avisa, em destaque, que a cópia **não foi guardada em lugar nenhum** se o destino no servidor estiver indisponível.
 
 > **Cuidado: o e-mail do administrador não deve ser uma lista ou um grupo.** Se o endereço for uma **lista de e-mail ou um grupo**, **todos os membros recebem a cópia**, com os dados de todos os clientes. A cópia é cifrada, mas, na mão de muita gente, a segurança é só a senha. Use um **endereço pessoal do administrador** ou uma **caixa restrita**, com acesso de poucas pessoas.
 {: .warning }
@@ -86,7 +119,7 @@ Com o destino **Por e-mail ao administrador**, cada cópia chega por e-mail, com
 
 ## Testar restauração
 
-Uma cópia só serve se **abre e está inteira**. O botão **Testar restauração** confere isso sem arriscar nada: o sistema restaura a cópia num **banco temporário**, **confere o número de linhas de cada tabela** e **apaga** o banco temporário em seguida. O banco em uso **não é tocado**.
+Uma cópia só serve se **abre e está inteira**. O botão **Testar restauração** confere isso sem arriscar nada: o sistema restaura a cópia num **banco temporário**, **confere o número de linhas de cada tabela**, **confere que não há segredos nem sessões de login dentro dela** e **apaga** o banco temporário em seguida. O banco em uso **não é tocado**.
 
 **Como fazer**
 
@@ -99,6 +132,8 @@ Uma cópia só serve se **abre e está inteira**. O botão **Testar restauraçã
 | Resultado | O que quer dizer | O que fazer |
 |---|---|---|
 | **Concluída**, com a frase "tabelas com o mesmo número de linhas" | A cópia **abriu e tem o mesmo conteúdo** do banco: todas as tabelas conferem | Nada. É o que você quer |
+| **Falhou**, dizendo que a cópia **leva segredos** | A cópia testada é anterior à versão 1.24.2 e ainda contém chaves ou tokens | Faça uma **cópia nova** e teste de novo. Apague as cópias antigas, que ainda levam os segredos |
+| **Falhou** por conter **sessões do login** | A cópia é anterior à 1.25.0 e guarda as sessões abertas das pessoas | Faça uma **cópia nova**. As cópias novas já saem sem as sessões |
 | **Falhou**, dizendo que o número de linhas **não confere** (com a tabela e os números) | A cópia abriu, mas **falta ou sobra algo** | Faça uma nova cópia e teste de novo. Se repetir, chame o suporte técnico |
 | **Falhou**, dizendo que falta permissão para criar bancos | O sistema ainda **não foi preparado** para o teste. É uma configuração do servidor, que se faz uma vez | Peça a quem hospeda a instalação para liberar (o texto do erro traz a instrução exata) |
 | **Falhou** por outro motivo | Veja a mensagem no histórico | Se não for clara, chame o suporte técnico |
@@ -149,7 +184,7 @@ O Node é instalado **uma vez**. Depois de instalado, você pode usar sempre.
 
 1. Crie uma pasta, por exemplo `copia-restaurada`, e coloque nela **os dois arquivos**: o `decifrar-copia.mjs` e a cópia `socialreport-....dump.enc`.
 2. Abra o terminal **dentro dessa pasta**. No Windows, abra a pasta no Explorador de Arquivos, clique na barra de endereço, digite `cmd` e tecle Enter. No macOS, clique com o botão direito na pasta e escolha "Nova janela do Terminal na pasta". No Linux, "Abrir terminal aqui" ou use o comando `cd`.
-3. Digite o comando, trocando o nome do arquivo pelo da sua cópia:
+3. Digite o comando, trocando o nome do arquivo pelo da sua cópia (a senha **não vai no comando**: o programa a pergunta em seguida):
 
    ```text
    node decifrar-copia.mjs socialreport-20261028-020000.dump.enc saida.dump
@@ -166,17 +201,36 @@ O Node é instalado **uma vez**. Depois de instalado, você pode usar sempre.
 | **Este arquivo não é uma cópia cifrada do SocialReport** | O arquivo não é uma cópia do SocialReport, ou veio incompleto | Baixe de novo, sem renomear nem abrir em outro programa |
 | **O arquivo de saída já existe e não será sobrescrito** | Já há um `saida.dump` na pasta | Apague-o ou escolha outro nome no comando |
 | **`node` não é reconhecido como comando** (ou "command not found") | O Node não está instalado, ou o terminal foi aberto antes da instalação | Instale o Node e **abra um terminal novo** |
+| **Parâmetros do arquivo fora do limite aceito** | O arquivo foi alterado ou não é uma cópia do SocialReport | Baixe de novo o arquivo original. Não o abra nem o salve em outro programa |
 | Aparece um erro dizendo que o arquivo da ferramenta não foi encontrado | O terminal está em outra pasta | Abra o terminal **dentro** da pasta onde estão os arquivos |
 
-> **A senha digitada no comando.** Existe também um jeito de informar a senha na própria linha de comando. **Não use**: a senha fica gravada no histórico do terminal. Digite-a quando o programa pedir.
+> **Nunca escreva a senha no comando.** A ferramenta aceita também a senha numa variável de ambiente, mas isso grava a senha no histórico do terminal. O caminho certo é o deste passo a passo: o programa **pergunta** a senha e não a mostra na tela.
 {: .warning }
 
-> **O arquivo aberto (`saida.dump`) não está mais cifrado.** Ele tem **todos os dados** do sistema, legíveis por quem o tiver. Guarde-o só o tempo necessário, num lugar restrito, e **apague-o** quando o suporte técnico terminar.
+> **Cópias novas e antigas abrem do mesmo jeito.** A ferramenta lê o formato do próprio arquivo. As cópias feitas a partir da 1.23.2 usam uma cifra mais difícil de quebrar, e as anteriores seguem abrindo com a mesma ferramenta.
+{: .note }
+
+> **O arquivo aberto (`saida.dump`) não está mais cifrado.** Ele tem os **dados** do sistema (clientes, relatórios, usuários), legíveis por quem o tiver. Só os segredos (chaves, senhas e tokens listados acima) ficam de fora, nas cópias da versão 1.24.2 em diante. Guarde-o só o tempo necessário, num lugar restrito, e **apague-o** quando o suporte técnico terminar.
 {: .warning }
 
 ### E depois de abrir?
 
 O `saida.dump` é um arquivo de banco de dados do PostgreSQL. **Restaurar** o sistema com ele é um trabalho para o **suporte técnico de quem hospeda a instalação**: eles criam um banco, restauram o arquivo e conferem o resultado. Envie a eles o `saida.dump` (ou a cópia cifrada e a senha, por canais separados) e diga **de que data** é a cópia e **o que se perdeu**.
+
+**Depois de restaurar, cadastre de novo os segredos.** Entre como super-admin, abra **Configurações do sistema** e preencha:
+
+- **Chaves de IA**: a chave de cada provedor (Gemini, ChatGPT e Claude);
+- **E-mail (SMTP)**: a senha do servidor de e-mail;
+- **Login com Google**: o segredo do cliente Google (depois de salvar, o serviço de login precisa ser recriado, passo do suporte técnico);
+- **Matomo**: o token de leitura e, se usar a conexão automática por código, o token de administração;
+- **Licença do V3RAnalytics** (aba **Matomo**): a licença da instância (veja [Site e plugin]({{ '/site-e-plugin/' | relative_url }}));
+- **Cursos (Moodle)**: o token;
+- **Cópias de segurança**: uma **senha nova** para as cópias, que depois deve ser provada com **Provar a senha**.
+
+Enquanto isso não for feito, a IA, o envio de e-mail (inclusive o envio do link do relatório ao cliente), o login com Google, a leitura do Matomo e do Moodle e as cópias ficam desligados, e os plugins V3RAnalytics conectados depois não recebem licença. Os **usuários continuam entrando com as mesmas senhas**.
+
+> **Como o suporte restaura.** A cópia feita a partir da 1.24.2 é um arquivo de texto SQL comprimido: o suporte descomprime e carrega no banco novo (`gunzip -c saida.dump | psql -d banco_novo`). As cópias anteriores são do formato antigo e se restauram com `pg_restore`.
+{: .note }
 
 > **O que se perde numa restauração.** O que foi feito **depois** da data da cópia. Se a cópia é de domingo e o problema foi na quinta, o que a equipe fez de segunda a quinta não está nela. Por isso, em semanas de fechamento, vale a frequência **diária** ou uma **Cópia agora** antes de mudanças grandes.
 {: .note }
@@ -184,12 +238,14 @@ O `saida.dump` é um arquivo de banco de dados do PostgreSQL. **Restaurar** o si
 ## Resumo: o que fazer agora
 
 - [ ] Configure a frequência, o horário e o número de cópias.
-- [ ] Defina a **senha** (12 caracteres ou mais) e guarde-a em um **cofre**, com uma segunda pessoa sabendo onde.
+- [ ] Defina a **senha** (16 caracteres ou mais) e guarde-a em um **cofre**, com uma segunda pessoa sabendo onde.
+- [ ] Use **Provar a senha**: digite a senha guardada no cofre e confira que o sistema aceita. Enquanto isso não for feito, o painel mostra um aviso.
 - [ ] Marque os **dois destinos** (servidor e e-mail).
 - [ ] Use como e-mail do administrador um endereço **pessoal ou de caixa restrita**, nunca uma lista ou um grupo.
 - [ ] Faça **uma cópia agora** e confira no histórico que ela **concluiu**.
 - [ ] Faça um **Testar restauração** e veja o resultado **concluído**.
 - [ ] Guarde os anexos recebidos fora do servidor.
+- [ ] Guarde, em um cofre, as **chaves de IA, a senha do e-mail, os tokens** (Matomo, Moodle, Google) **e a licença do V3RAnalytics**: a cópia não os leva, e você precisará deles para recadastrar depois de restaurar.
 - [ ] Teste a abertura de uma cópia com a ferramenta **uma vez**, antes de precisar. Anote o telefone do suporte técnico de quem hospeda a instalação.
 
 Voltar para [Administração]({{ '/administracao/' | relative_url }}).

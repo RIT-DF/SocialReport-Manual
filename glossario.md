@@ -31,7 +31,13 @@ Definições curtas, em ordem alfabética, do jeito que cada termo é usado nest
 
 **Clipping.** Levantamento das matérias de imprensa que citaram a organização, com o tom de cada uma. Veja [Clipping]({{ '/conceitos/' | relative_url }}).
 
+**Cópia de segurança.** Cópia cifrada do banco de dados do sistema, com senha. Não leva chaves, senhas nem tokens. Veja [Cópias de segurança]({{ '/copias-de-seguranca/' | relative_url }}).
+
 **Conversão.** Ação importante concluída no site: formulário, clique no WhatsApp, e-mail ou telefone. Veja [Conversão]({{ '/conceitos/' | relative_url }}).
+
+## D
+
+**Destinatários do relatório.** Pessoas do cliente (nome e e-mail, até 20) que recebem o link do relatório por e-mail, pelo botão Compartilhar. Veja [Administração]({{ '/administracao/' | relative_url }}).
 
 ## E
 
@@ -49,11 +55,15 @@ Definições curtas, em ordem alfabética, do jeito que cada termo é usado nest
 
 ## L
 
+**Licença do V3RAnalytics.** Chave cadastrada pelo super-administrador (aba Matomo) que o plugin recebe ao conectar o site e que permite a ele se atualizar sozinho. Sem ela, o plugin funciona, mas não se atualiza. Veja [Site e plugin]({{ '/site-e-plugin/' | relative_url }}).
+
 **Link marcado.** Endereço do site com uma etiqueta que diz de onde o clique saiu. Veja [Link marcado]({{ '/conceitos/' | relative_url }}).
 
 **Link público.** Endereço que abre o relatório sem senha. Veja [Como abrir e navegar]({{ '/como-ler-o-relatorio/' | relative_url }}).
 
 ## M
+
+**Mês em andamento.** Aviso no rodapé dos slides ("Mês em andamento — dados até DD/MM") de que o período ainda não terminou: as comparações com o mês anterior são parciais, sem seta de alta ou queda. Veja [Comparativo geral]({{ '/como-ler-o-relatorio/redes/' | relative_url }}).
 
 **Matomo.** Sistema que mede as visitas do site, de onde o SocialReport lê os números do capítulo do site. Veja [O site]({{ '/como-ler-o-relatorio/site/' | relative_url }}).
 
@@ -64,6 +74,8 @@ Definições curtas, em ordem alfabética, do jeito que cada termo é usado nest
 ## P
 
 **Pedido realizado.** Pedido feito na loja ou na doação online; não é pagamento confirmado. Veja [Pedidos e pagamentos]({{ '/conceitos/' | relative_url }}).
+
+**Provar a senha.** Botão das cópias de segurança que confere, sem mostrar nada, se a senha digitada (a do cofre) é a que cifra as cópias. Sem a prova, o painel avisa. Veja [Cópias de segurança]({{ '/copias-de-seguranca/' | relative_url }}).
 
 **Ponto percentual (p.p.).** Diferença entre duas porcentagens: de 3,55% para 4,29% são 0,74 p.p. Veja [Ponto percentual]({{ '/conceitos/' | relative_url }}).
 
@@ -82,6 +94,8 @@ Definições curtas, em ordem alfabética, do jeito que cada termo é usado nest
 ## V
 
 **V3RAnalytics.** Plugin que roda no site da organização: mede sem cookies, cria as metas e gera os links marcados. Veja [Link marcado]({{ '/conceitos/' | relative_url }}).
+
+**Visualizadores.** Medida que o Meta passou a informar no Facebook no lugar de Alcance (que encerra em 31/10/2026). O SocialReport a usa como alcance quando a planilha não tem Alcance, e avisa quando a comparação mistura as duas definições. Veja [Comparativo geral]({{ '/como-ler-o-relatorio/redes/' | relative_url }}).
 
 **Visita.** Cada vez que alguém abre o site e navega. Veja [Visita]({{ '/conceitos/' | relative_url }}).
 

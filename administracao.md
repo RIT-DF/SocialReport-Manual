@@ -62,9 +62,10 @@ Em **Clientes & Marcas**, cada cliente aparece como um cartão, com a paleta de 
 
 Ao editar, o cadastro tem estas partes:
 
-- **Marca:** nome, endereço curto (o "slug", usado em endereços e em nomes de arquivo), logotipo e **cores** do cliente. Com elas, o relatório se veste com a identidade do cliente.
+- **Marca:** nome, endereço curto (o "slug", usado em endereços e em nomes de arquivo), logotipo e **cores** do cliente. Com elas, o relatório se veste com a identidade do cliente. **As cores são validadas**: só valem códigos como `#0F4855` (ou `#0F4`), com ou sem o `#`. Um valor inválido é recusado com mensagem na tela, em vez de quebrar o relatório. Um cliente antigo que já tinha cor inválida continua abrindo (o relatório usa a cor padrão no lugar), mas a tela obriga a corrigir quando você for editar as cores.
 - **Modelo da capa do relatório:** **Clássico** (fundo escuro), **Faixa de marca** (metade da capa na cor do cliente, com logotipo grande) ou **Com foto** (imagem de fundo clara e leve).
 - **Imagem da capa:** **foto automática do post** de maior destaque, **sem foto** (a capa usa a faixa de marca) ou **imagem gerada por IA** (ilustração abstrata, sem pessoas e sem texto; exige OpenAI ou Gemini configurados). Em qualquer escolha, o analista pode enviar uma imagem própria na revisão de cada relatório.
+- **Destinatários do relatório:** quem recebe o link do relatório por e-mail, pelo botão **Compartilhar** (veja abaixo).
 - **Categorias editoriais** do cliente (separadas por vírgula).
 - **Canais contratados** (Instagram, Facebook, LinkedIn, TikTok, YouTube).
 - **Marcos históricos anteriores** (opcional): totais de meses passados (por exemplo, seguidores) que ligam os gráficos de tendência e o comparativo desde o primeiro relatório.
@@ -72,6 +73,17 @@ Ao editar, o cadastro tem estas partes:
 - **Monitoramento de imprensa e clipping:** os termos da varredura.
 
 ![Cadastro do cliente: modelo de capa, imagem da capa, categorias editoriais e canais contratados]({{ '/assets/img/app/app-16-cliente-capa.png' | relative_url }})
+
+> **A janela de edição.** No computador, a janela **Editar Cliente** é larga, com as seções em duas colunas (marca e capa à esquerda; destinatários, site e cursos à direita). No tablet e no celular, as seções ficam em uma coluna.
+{: .note }
+
+**Destinatários do relatório.** Na seção **Destinatários do relatório**, clique em **Adicionar** e preencha **Nome** e **E-mail** de cada pessoa do cliente que deve receber o link (até **20**). Use o ícone da lixeira para tirar alguém. O cadastro só salva se todos os e-mails forem válidos (a linha com problema mostra **"E-mail inválido."**) e sem repetição.
+
+![Seção Destinatários do relatório, com duas pessoas cadastradas, cada uma com nome e e-mail]({{ '/assets/img/app/app-28-destinatarios.png' | relative_url }})
+
+- **Por que cadastrar:** o envio do link pelo sistema só vai a quem está nesta lista. Isso evita mandar o relatório de um cliente para o endereço errado ou digitado na pressa, e deixa o histórico de quem recebeu.
+- **Dado pessoal:** nome e e-mail de quem recebe são dados pessoais. Cadastre só quem de fato precisa do relatório e tire quem saiu da organização do cliente.
+- **Sem destinatários**, o botão de enviar em **Compartilhar** fica indisponível e avisa onde cadastrar.
 
 > **Dica: capas de escolas.** Para escolas e organizações que atendem crianças, escolha **Sem foto**. O rosto de uma criança nunca deve aparecer num relatório sem autorização de uso de imagem.
 {: .tip }
@@ -130,6 +142,10 @@ Em **Configurações do Sistema**, abra **Matomo**.
 | **Modelo do e-mail dos usuários criados** | o e-mail do usuário que o sistema cria no Matomo para cada site. `{slug}` vira o nome do cliente (padrão `suporte+{slug}@...`) |
 | **Limite de tráfego de fora do Brasil (%)** | acima dele, a revisão avisa o analista sobre possíveis robôs. Padrão: 30 |
 
+**Licença do V3RAnalytics.** Logo abaixo, o quadro **Licença do V3RAnalytics** guarda a licença **desta instalação**, a mesma para todos os sites de clientes. Cole a licença no campo e clique em **Salvar licença**: como os tokens, ela fica só no servidor e a tela mostra apenas o final. O plugin a recebe sozinho quando um site é conectado pelo código de conexão. **Sem licença cadastrada, o plugin funciona, mas não se atualiza sozinho** (veja [Site e plugin]({{ '/site-e-plugin/' | relative_url }})). A licença **não entra na cópia de segurança**: recadastre-a depois de restaurar.
+
+![Quadro Licença do V3RAnalytics, com o campo da licença e o botão Salvar licença]({{ '/assets/img/app/app-27-licenca-v3ranalytics.png' | relative_url }})
+
 **Testar conexão.** Cada token tem o seu botão. Ele mostra **quais sites aquele token enxerga**, se tem **acesso de escrita** e se é de **superusuário**, **sem alterar nada** no Matomo. A tela avisa quando o token de leitura **pode mais do que ler** e quando o de administração **não é de superusuário**.
 
 Depois de mexer, clique em **Salvar Matomo**. **Salvar sem digitar um token mantém o que já está guardado.** **Remover** exige uma ação explícita.
@@ -140,6 +156,7 @@ Depois de mexer, clique em **Salvar Matomo**. **Salvar sem digitar um token mant
 **Quando dá errado**
 
 - **Testar conexão não lista nenhum site.** O token não tem acesso aos sites, ou o endereço está errado.
+- **O plugin não se atualiza.** Falta a **licença do V3RAnalytics** neste quadro.
 - **O capítulo do site some de todos os relatórios.** Confira se o Matomo está no ar e se o token de leitura continua válido.
 - **A conexão automática dá erro ao gerar o código.** Falta o token de administração, ou ele não é de superusuário.
 
@@ -161,13 +178,13 @@ Em **Configurações do Sistema**, abra **Organização**.
 
 ## Cópias de segurança
 
-As cópias do banco de dados do sistema têm página própria: [Cópias de segurança]({{ '/copias-de-seguranca/' | relative_url }}). Leia antes de a primeira cópia ser feita: a **senha** das cópias é o ponto que não tem volta.
+As cópias do banco de dados do sistema têm página própria: [Cópias de segurança]({{ '/copias-de-seguranca/' | relative_url }}). Leia antes de a primeira cópia ser feita: a **senha** das cópias é o ponto que não tem volta, e a cópia **não leva** as chaves, senhas e tokens (nem a licença do V3RAnalytics): guarde-os num cofre para recadastrar depois de restaurar.
 
 ## E-mail e login com Google
 
 Duas outras abas das configurações merecem uma lembrança:
 
-- **Servidor SMTP:** o servidor que envia os e-mails do sistema (convites, recuperação de acesso, avisos de feedback). Informe **servidor, porta, usuário, senha, e-mail remetente** e a **segurança da conexão** (STARTTLS na porta 587, SSL/TLS na 465, ou nenhuma na 25), e use **Testar Envio de E-mail** antes de salvar. Sem SMTP funcionando, convites não chegam.
+- **Servidor SMTP:** o servidor que envia os e-mails do sistema (convites, recuperação de acesso, avisos de feedback, cópias de segurança e o envio do link do relatório ao cliente). Todos saem com o mesmo visual: logotipo e cores do SocialReport, o nome da organização (da aba **Organização**) e links para o manual, a privacidade e os termos no rodapé. Informe **servidor, porta, usuário, senha, e-mail remetente** e a **segurança da conexão** (STARTTLS na porta 587, SSL/TLS na 465, ou nenhuma na 25), e use **Testar Envio de E-mail** antes de salvar. Sem SMTP funcionando, convites não chegam.
 - **Autenticação Google:** permite o login pela conta Google. A tela mostra o endereço de redirecionamento que precisa ser cadastrado, **exatamente igual**, nas credenciais do Google Cloud (senão aparece o erro `redirect_uri_mismatch`). Depois de salvar as credenciais, pode ser necessário **recriar o serviço de autenticação** no servidor para que ele leia a configuração nova; peça a quem opera o servidor.
 
 ## Checklist do super-administrador
@@ -176,6 +193,8 @@ Duas outras abas das configurações merecem uma lembrança:
 - [ ] Pelo menos dois provedores de IA ativos, com chaves testadas.
 - [ ] Matomo: endereço, token de leitura (só de visualização) e, se for usar o código de conexão, token de administração.
 - [ ] SMTP testado: um convite de teste chega.
+- [ ] Licença do V3RAnalytics cadastrada na aba **Matomo** (sem ela, os plugins não se atualizam sozinhos).
+- [ ] Segredos (chaves de IA, senha do e-mail, tokens, licença) guardados num cofre, porque a cópia de segurança não os leva.
 - [ ] Organização: nome e site conferidos no rodapé de um relatório.
-- [ ] Cópias de segurança configuradas, com a senha guardada num cofre, e um teste de restauração feito (veja [Cópias de segurança]({{ '/copias-de-seguranca/' | relative_url }})).
+- [ ] Cópias de segurança configuradas, com a senha guardada num cofre e **provada** (botão **Provar a senha**), e um teste de restauração feito (veja [Cópias de segurança]({{ '/copias-de-seguranca/' | relative_url }})).
 - [ ] Cada cliente com logotipo, cores, categorias e termos de imprensa preenchidos; escolas com **Sem foto**.

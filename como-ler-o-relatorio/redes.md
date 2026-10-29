@@ -37,12 +37,15 @@ Este é o coração do relatório. Aqui os números do mês são abertos: public
 
 Três gráficos mostram a trajetória de até doze meses: **impressões**, **seguidores** e **interações**. A frase embaixo resume a distância entre o primeiro e o último mês. No exemplo: "Entre jan/26 e out/26, as impressões foram de 55.329 para 20.321 (-63,3%); as interações foram de 1.709 para 872 (-49%)".
 
+O gráfico **termina no mês do relatório**: um relatório de agosto não mostra setembro nem outubro, mesmo que esses meses já tenham sido importados. Assim, o relatório antigo continua dizendo o que dizia quando foi emitido.
+
 **Por que importa:** um mês ruim não é uma tendência. Só a linha mostra se a queda é um tropeço de um mês ou um declínio de meses seguidos, e se uma ação da organização (uma campanha, uma mudança de rotina) teve efeito duradouro.
 
 **Decisão que ajuda a tomar:** ligar a curva ao que foi feito. Quando a linha mudou de direção, o que mudou na rotina naquele mês?
 
 > **Leituras erradas comuns**
 >
+> - **"A linha para no meio do gráfico de seguidores."** Num mês em que o número de seguidores não foi informado, o gráfico diz **"Sem dado de seguidores"** e a linha se **interrompe**, em vez de cair a zero. É falta de dado, não perda de público.
 > - **"Seguidores 0 significa que a conta perdeu todos os seguidores."** Não. O número de seguidores vem de um registro que a equipe faz por conta própria, e não é importado junto com as publicações. Gráfico de seguidores zerado quer dizer que o número **não foi informado**. Peça à equipe para preencher.
 > - **"Subiu muito em um mês, logo é a nova normalidade."** Olhe pelo menos três meses seguidos antes de chamar de tendência.
 {: .warning }
@@ -64,6 +67,10 @@ Acima da tabela há uma escolha de **base**: **todas as publicações** ou **sem
 **Decisão que ajuda a tomar:** separar o que se explica pelo **volume** (publicou-se menos) do que se explica pela **qualidade ou pela distribuição** (cada publicação rendeu menos).
 
 Se a tabela traz a frase "Sem dados de Out/25: comparativo com o mesmo mês do ano anterior indisponível", é porque a organização ainda não tem um ano de histórico no sistema. O comparativo com o mesmo mês do ano anterior é o mais justo (ele já inclui as sazonalidades, como as férias e as festas), e aparece assim que os dados existirem.
+
+**Mês em andamento.** Quando o rodapé mostra **"Mês em andamento — dados até DD/MM"**, a tabela traz uma nota (**"as comparações são parciais"**), a variação aparece em cinza, sem seta, com o selo **parcial**, e o texto não fala em alta ou queda. Os números do mês ainda estão sendo contados: espere o fechamento antes de tirar conclusão.
+
+**Alcance com definição diferente.** Se aparecer a nota de que **o alcance deste mês e o do anterior usam definições diferentes**, é porque o Meta trocou **Alcance** por **Visualizadores** no Facebook entre os dois meses. A variação do alcance, nesse caso, não é uma comparação exata: olhe também as impressões e as interações.
 
 > **Leitura errada comum:** olhar só a porcentagem. "-56%" assusta, mas se o mês anterior teve uma campanha grande, a comparação é com um mês excepcional. Sempre pergunte **com o que** estamos comparando.
 {: .warning }

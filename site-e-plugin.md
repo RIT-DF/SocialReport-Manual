@@ -78,6 +78,16 @@ O plugin avisa quando conecta. Em seguida, o SocialReport faz o resto: cria o si
 | código **vencido** | passaram as 24 horas | peça um novo |
 | **muitas tentativas** | houve vários erros seguidos | espere um pouco e tente de novo com o código certo |
 
+**A licença do plugin vem junto.** Se o super-administrador cadastrou a **licença do V3RAnalytics** em **Configurações do Sistema > Matomo** (veja a [parte 6]({{ '/administracao/' | relative_url }})), o SocialReport a entrega ao plugin na mesma conexão, e o plugin avisa **"Licença do V3RAnalytics ativada automaticamente"**. Quem cuida do site não precisa colar nada.
+
+![Quadro Licença do V3RAnalytics nas configurações do Matomo, com o campo da licença e o botão Salvar licença]({{ '/assets/img/app/app-27-licenca-v3ranalytics.png' | relative_url }})
+
+- **Por que importa:** a licença é o que permite ao plugin **se atualizar sozinho** no WordPress. Sem licença, o plugin **conecta e mede normalmente**, mas as atualizações ficam por conta de quem cuida do site (baixar e instalar o arquivo novo à mão). Num site esquecido, isso significa um plugin parado numa versão antiga.
+- **Como saber:** no cadastro do cliente, seção **Site**, o estado diz **"Sem licença do V3RAnalytics: o plugin não se atualiza sozinho."** quando a instância não tem licença cadastrada.
+- **Se a licença foi cadastrada depois da conexão:** o site já conectado não a recebe sozinho. Conecte de novo pelo código (gere outro) ou, como alternativa, cole a chave no WordPress, em **Configurações > Licença do V3RAnalytics**.
+- **Se a ativação falhar** na conexão, o plugin diz que a conexão foi feita mas a licença não pôde ser ativada e mostra o motivo. A medição não é afetada; cole a chave à mão na tela de licença do plugin.
+- **A licença não entra na cópia de segurança.** Depois de restaurar o sistema, cadastre-a de novo (veja [Cópias de segurança]({{ '/copias-de-seguranca/' | relative_url }})).
+
 > **Segurança do código.** O código não fica guardado no SocialReport, só um resumo dele, e há limite de tentativas. Trate-o como uma senha de uso único: não o poste em grupo de mensagens aberto.
 {: .warning }
 
@@ -173,6 +183,7 @@ A **revisão** do relatório mostra, para o analista, a **cobertura de links mar
 | a lista "Site no Matomo" vem vazia ou dá erro | o token de leitura não enxerga nenhum site, ou o Matomo está fora do ar | use **Testar conexão** nas configurações do Matomo |
 | a revisão diz que o site "não registrou visitas" | o plugin não está medindo (ou o site não teve visitas) | confira o plugin ativo e o aviso de código duplicado |
 | números muito acima do esperado | duas medições no mesmo site, ou tráfego de robôs | veja o aviso de código duplicado e o aviso de tráfego de fora do Brasil |
+| o plugin diz que a licença não pôde ser ativada | a licença cadastrada é inválida ou já está em uso fora do limite | confira a licença com a V3RTECH e cole a chave à mão em **Configurações > Licença do V3RAnalytics** no WordPress |
 | conexão por código não funciona | código vencido, usado ou de outro site | gere um novo código |
 
 Dúvidas comuns sobre o plugin estão em [Perguntas frequentes]({{ '/perguntas-frequentes/' | relative_url }}).

@@ -18,6 +18,8 @@ Uma página para consultar antes de levar o relatório a uma reunião ou de toma
 | 5 | **Zero quase sempre é "não medido".** | Alcance 0 com impressões é impossível; seguidores 0 é número não informado. | [Métricas gerais e histórico]({{ '/como-ler-o-relatorio/redes/' | relative_url }}) |
 | 6 | **Taxa de engajamento se lê junto com o volume.** | Taxa alta com poucas impressões pode ser só um público pequeno. | [Taxa de engajamento]({{ '/como-ler-o-relatorio/redes/' | relative_url }}) |
 | 7 | **Compare categorias pela eficiência, não pelo total.** | Quem publica mais tem mais chances de aparecer. | [Tipo de conteúdo]({{ '/como-ler-o-relatorio/redes/' | relative_url }}) |
+| 7a | **"Mês em andamento" quer dizer comparação parcial.** | O mês ainda não fechou: o percentual em cinza, sem seta, não é alta nem queda. | [Comparativo geral]({{ '/como-ler-o-relatorio/redes/' | relative_url }}) |
+| 7b | **Alcance e "Visualizadores" não são a mesma medida.** | Quando a nota avisa que as definições mudaram, a variação do alcance não é exata. | [Comparativo geral]({{ '/como-ler-o-relatorio/redes/' | relative_url }}) |
 | 8 | **"Medição desde" quer dizer mês parcial, sem comparação.** | Os números cobrem só parte do ciclo, e os dias antes da data aparecem como "sem medição", não como zero. | [O site]({{ '/como-ler-o-relatorio/site/' | relative_url }}) |
 | 9 | **Visitas das redes são subestimadas sem link marcado.** | Parte delas aparece como "acesso direto". | [De onde vêm as visitas]({{ '/como-ler-o-relatorio/site/' | relative_url }}) |
 | 10 | **Pedidos realizados não são pagamentos confirmados.** | Um pedido pode ficar sem pagar. Para o valor recebido, confira com o financeiro. | [Receitas pelo site]({{ '/como-ler-o-relatorio/site/' | relative_url }}) |

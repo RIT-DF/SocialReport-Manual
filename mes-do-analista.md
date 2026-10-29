@@ -80,6 +80,10 @@ Nessa janela também há **Detectar das Postagens** (sugere as datas a partir da
 
 **O modelo de planilha.** O botão **Modelo de Planilha**, no alto da página, baixa uma planilha padrão com as colunas que o sistema reconhece: data, canal, formato, pauta (título do conteúdo), link da publicação, categoria editorial, alcance, impressões, interações, curtidas, respostas/comentários, compartilhamentos, salvamentos, visitas ao perfil, visualizações de vídeo, reações e a marcação de anômalo (sim ou não). Há também uma aba **Resumo do Mês**, onde se informam o alcance da conta e o **número de seguidores** do mês (é de lá que vêm os gráficos de seguidores do relatório). Planilhas com outros nomes de coluna também funcionam, e o sistema ajuda a ligar cada coluna ao campo certo (veja a próxima tarefa).
 
+**A exportação do Meta entra como veio.** Você pode importar direto o arquivo que o Facebook ou o Instagram exporta, sem refazer no modelo. Em algumas exportações a coluna **Data** vem com a palavra **"Total"** em vez de uma data: nesse caso o sistema usa a **data do "Horário de publicação"** de cada postagem. A linha de total de verdade (sem horário de publicação) continua sendo ignorada. O Meta exporta o horário no fuso do Pacífico, e o sistema o converte para o horário de Brasília; uma postagem feita à noite não cai mais no dia seguinte por causa do fuso.
+
+**Alcance e "Visualizadores" (Facebook).** O Meta encerra o **Alcance** do Facebook em 31/10/2026 e passa a informar **Visualizadores**. Se a planilha tem **Visualizadores** e não tem **Alcance**, o sistema usa **Visualizadores** como o alcance daquelas postagens (a coluna **Visualizações** continua sendo as impressões; **"Visualizadores de 3 segundos"** é outra coisa e não conta). Se a planilha tem as duas colunas, vale **Alcance**. As duas medidas **não são idênticas**, e o sistema avisa quando a comparação mistura as duas (veja a próxima tarefa).
+
 **Passo a passo, com arquivos do computador**
 
 1. Em **Novo Período**, escolha **Upload de Arquivo Local**.
@@ -110,7 +114,7 @@ Se o período veio de uma **planilha online**, ele fica ligado a ela, e é poss�
 > **Dicas.**
 > - Importe **uma planilha por rede** e confira o nome do arquivo e a rede no cartão.
 > - Mantenha o **mesmo modelo de planilha todo mês**. Quando o formato muda, o sistema pede para ligar as colunas de novo.
-> - Preencha a aba **Resumo do Mês** com os seguidores: sem isso, o gráfico de seguidores do relatório fica zerado e o cliente acha que a conta perdeu todo mundo.
+> - Preencha a aba **Resumo do Mês** com os seguidores de cada rede. O número vale por arquivo e por rede e vai para o gráfico de evolução, a capa e o link público. **Sem ele, o gráfico diz "Sem dado de seguidores" e a linha se interrompe naquele mês**, em vez de cair para zero. Não digite 0 para "não sei": zero é um número, e o gráfico vai mostrar que a conta perdeu todo mundo.
 {: .tip }
 
 ## 4. Conferir as inconsistências da importação
@@ -126,6 +130,7 @@ O que o sistema faz sozinho:
 - **Ignora linhas de total e de subtotal**, que não são publicações. Elas aparecem na prévia como ignoradas.
 - **Entende números "sujos":** números escritos como texto, com ponto e vírgula, traços e vazios.
 - **Sugere a ligação das colunas** quando os nomes não são os do modelo (por exemplo, "Tema" ou "Editoria" para a categoria).
+- **Avisa quando o alcance muda de definição.** Se o mês atual usa **Visualizadores** e o anterior usou **Alcance** (ou o contrário), a revisão mostra um aviso a você e o slide do comparativo traz uma nota curta (também no link público): **"o alcance deste mês e o do anterior usam definições diferentes: a variação do alcance não é uma comparação exata"**. Não é erro da planilha, e não há o que corrigir: é o Meta que mudou a conta. Leia a variação do alcance com esse cuidado, e não conclua que a página "perdeu público" só por ela.
 
 O que você faz:
 
@@ -156,7 +161,7 @@ Quando o título da publicação parece de **vaga ou oportunidade**, o sistema m
 > **O que marcar como anômalo.** Publicações cujo resultado **não representa a rotina**: vaga de emprego muito compartilhada, vídeo viral, uma crise. Se marcar demais, o relatório perde a visão total do mês. Se não marcar nada, um único pico distorce a média. Veja [Post fora da curva]({{ '/conceitos/' | relative_url }}) e [Picos atípicos]({{ '/como-ler-o-relatorio/panorama/' | relative_url }}).
 {: .tip }
 
-**Alcance 0 numa rede, com impressões e interações.** No exemplo, todas as linhas do Facebook têm alcance 0. Isso é impossível na realidade e quer dizer que o **alcance não veio na planilha**. Verifique a fonte antes de emitir; o relatório mostrará "alcance 0", e o cliente vai ler "ninguém viu".
+**Alcance 0 numa rede, com impressões e interações.** No exemplo, todas as linhas do Facebook têm alcance 0. Isso é impossível na realidade e quer dizer que o **alcance não veio na planilha** (confira se a planilha do Facebook tem **Alcance** ou **Visualizadores**). Verifique a fonte antes de emitir; o relatório mostrará "alcance 0", e o cliente vai ler "ninguém viu".
 
 ## 6. Classificar as categorias
 
@@ -261,6 +266,14 @@ No alto da revisão há três botões, e cada um faz uma coisa só:
 - **Visualizar Book 16:9:** abre o relatório com as edições que estão na tela, para você conferir. **Não grava nada.** O que você não salvou continua só na tela: o link do cliente mostra sempre a última versão salva.
 - **Emitir Relatório:** grava e marca o período como **emitido**, a versão que vai para o cliente. Períodos emitidos ficam protegidos contra exclusão em lote.
 
+**Mês em andamento.** Se você abre o relatório antes de o período terminar (o fim do ciclo é depois de hoje), ou os dados foram coletados antes do fim, o **rodapé de todo slide** e a revisão mostram o selo **"Mês em andamento — dados até DD/MM"**. Nesse caso as **comparações com o mês anterior** (e com o mesmo mês do ano anterior, no site e nos cursos) saem como **parciais**: o percentual aparece em cinza, sem seta, com o selo **"parcial"**, e o texto da análise não fala em "subiu" ou "caiu".
+
+![Nota "Mês em andamento (dados até 29/10): as comparações são parciais" no comparativo, e o selo do rodapé dos slides]({{ '/assets/img/app/app-30-mes-em-andamento.png' | relative_url }})
+
+- **Por que importa:** comparar 29 dias de um mês com 31 dias do outro (ou, pior, 10 dias com 31) faz qualquer rede parecer em queda. O selo impede que o cliente leia "-30%" onde o certo é "o mês ainda não acabou".
+- **O que fazer:** se o relatório é para o cliente, **espere o mês fechar**, importe a planilha completa e use **Atualizar dados do site**. O selo some sozinho. Se precisar de um relatório parcial (uma reunião no meio do mês), emita sabendo que ele sairá com o selo, e diga ao cliente.
+- **A evolução histórica termina no mês do relatório.** Meses importados depois, para períodos mais novos, não aparecem nos gráficos de um relatório antigo: ele não muda com o tempo.
+
 > **Dica.** Antes de emitir, abra o relatório pelo **Visualizar Book 16:9** (sem gravar) e percorra todos os slides, como o cliente fará: setas ou teclado, página por página. Se algum texto cortou ou ficou estranho, é aqui que se corrige.
 {: .tip }
 
@@ -279,6 +292,27 @@ Com o relatório aberto, a barra de cima tem as setas dos slides, **Compartilhar
 - o botão **Gerar novo link**.
 
 ![Janela Compartilhar e Incorporar, com o link direto, o botão Gerar novo link e o código para WordPress]({{ '/assets/img/app/app-23-compartilhar.png' | relative_url }})
+
+**Enviar o link por e-mail ao cliente.** Entre o link e o código do WordPress, a janela tem o bloco **Enviar o link por e-mail ao cliente**. Ele manda o link a quem o cliente indicou como destinatário (cadastro do cliente, seção **Destinatários do relatório**, veja a [parte 6]({{ '/administracao/' | relative_url }})). Qualquer analista pode enviar.
+
+![Janela Compartilhar e Incorporar, com o bloco Enviar o link por e-mail ao cliente]({{ '/assets/img/app/app-29-compartilhar-enviar.png' | relative_url }})
+
+*Captura pendente: o bloco com destinatários cadastrados (lista com caixas marcadas, mensagem e botão **Revisar e enviar**). A captura acima mostra o estado de um cliente sem destinatários, e foi mantida assim porque montar a lista gravaria dados reais do cliente.*
+
+1. **Confira a lista.** Cada destinatário aparece com a caixa **marcada**. **Desmarque** quem não deve receber **neste** envio (o cadastro não muda).
+2. **Escreva uma mensagem, se quiser.** O campo **Mensagem (opcional)** é um recado curto que aparece no e-mail, antes do botão **Abrir o relatório**.
+3. Clique em **Revisar e enviar**. A janela de confirmação diz **quantos destinatários** e **quais** vão receber, e repete a mensagem.
+4. Confirme em **Enviar para N**.
+5. O **resultado vem por pessoa**: **Enviado**, **Recusado** (o servidor de e-mail não aceitou aquele endereço) ou **Falhou** (erro no envio, com o motivo ao lado). Cada pessoa recebe **um e-mail só dela**, que a chama pelo nome e traz o botão com o link. O assunto é **"Nome do cliente: relatório de Mês/Ano"**.
+6. Tudo fica no **registro "Envios deste período"**: quando, quem enviou e o resultado de cada destinatário. Para tentar de novo com quem falhou ou foi recusado, use **Reenviar** na linha do registro: ele remarca os mesmos destinatários e a mesma mensagem, e você confirma de novo.
+
+- **Por que usar:** o envio por aqui sai com o visual do SocialReport, vai só a quem está na lista do cliente e deixa o registro de quem recebeu e quando. Link colado em mensagem avulsa não deixa rastro.
+- **Só com o link ativo.** O bloco avisa "Este relatório ainda não tem link público ativo" quando falta o link: salve o relatório ou gere o link antes. Sem destinatários cadastrados, o bloco diz onde cadastrá-los.
+- **Limite.** Há um limite de envios por minuto por pessoa (5 por padrão). Passou dele, o sistema recusa por um instante: espere e tente de novo.
+- **E-mail que não sai.** Depende do **Servidor SMTP** configurado pelo super-administrador (veja a [parte 6]({{ '/administracao/' | relative_url }})). Se tudo **Falhou**, avise-o.
+
+> **O link revogado deixa de abrir, mesmo no e-mail já enviado.** O e-mail leva o link que valia na hora do envio. Se depois você usar **Gerar novo link** (ou o período for excluído), esse link para de abrir **para quem já o recebeu**, e o e-mail antigo vira um botão que não leva a lugar nenhum. Depois de gerar um link novo, **envie de novo** pelo bloco acima.
+{: .warning }
 
 **Gerar novo link.** Use quando o link foi parar onde não devia (encaminhado a quem não devia, publicado por engano). O sistema pede confirmação: **o link atual deixa de abrir na hora para quem já o recebeu, e o código para WordPress também muda.** Depois, a tela mostra o link novo para copiar.
 
@@ -318,6 +352,7 @@ A confirmação sempre **diz quantos períodos** serão afetados. Ao terminar, o
 - [ ] Análise da IA lida, corrigida e salva.
 - [ ] Capa e imagens conferidas.
 - [ ] Relatório percorrido slide a slide antes de emitir.
-- [ ] Link enviado só a quem deve; PDF conferido.
+- [ ] Relatório sem o selo "Mês em andamento" (ou o cliente avisado de que é parcial).
+- [ ] Link enviado só a quem deve (de preferência pelo bloco de e-mail do Compartilhar, que deixa registro); PDF conferido.
 
 Continue em [Boas práticas]({{ '/boas-praticas/' | relative_url }}) para os hábitos que evitam retrabalho, ou em [Perguntas frequentes]({{ '/perguntas-frequentes/' | relative_url }}) para as dúvidas mais comuns.

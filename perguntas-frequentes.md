@@ -12,13 +12,21 @@ permalink: /perguntas-frequentes/
 
 Porque o alcance daquela rede **não chegou ao relatório**, e não porque ninguém viu. Quando uma rede mostra impressões e interações mas alcance 0, há exibição, o que é impossível sem que alguém tenha visto. O motivo é que a rede não informou o número (ou ele não foi importado). Peça à equipe que verifique a fonte. Veja [Métricas gerais]({{ '/como-ler-o-relatorio/redes/' | relative_url }}).
 
-### Por que o gráfico de seguidores está zerado?
+### Por que o gráfico de seguidores está zerado, ou diz "Sem dado de seguidores"?
 
-O número de seguidores é informado pela equipe e não vem junto com as publicações. Zero quer dizer **"não informado"**. Peça que seja preenchido. Veja [Evolução histórica]({{ '/como-ler-o-relatorio/redes/' | relative_url }}).
+O número de seguidores é informado pela equipe e não vem junto com as publicações. Quando falta, o gráfico diz **"Sem dado de seguidores"** e a linha se interrompe naquele mês; **zero**, onde ainda aparecer, quer dizer **"não informado"**. Em nenhum caso significa que a conta perdeu os seguidores. Peça que a aba "Resumo do Mês" seja preenchida. Veja [Evolução histórica]({{ '/como-ler-o-relatorio/redes/' | relative_url }}).
 
 ### Por que o mês não compara com o anterior?
 
 Há dois motivos comuns. No site, a etiqueta **"Medição desde"** indica que a medição começou no meio do ciclo, e um mês parcial não pode ser comparado com um inteiro. Nas redes, o comparativo com o mesmo mês do ano anterior só aparece quando o sistema já tem um ano de histórico. Veja [Medição desde]({{ '/conceitos/' | relative_url }}).
+
+### O que é "Mês em andamento — dados até DD/MM"? Por que a variação está em cinza?
+
+É o aviso de que o relatório foi aberto **antes de o período terminar** (ou os dados foram coletados antes do fim). As comparações com o mês anterior ficam **parciais**: em cinza, sem seta, com o selo "parcial", e o texto não fala em alta nem em queda. Quando o mês fechar e a equipe atualizar os dados, o selo some. Veja [Comparativo geral]({{ '/como-ler-o-relatorio/redes/' | relative_url }}).
+
+### O alcance do Facebook mudou de nome? Por que a nota diz "definições diferentes"?
+
+O Meta deixou de informar **Alcance** no Facebook (a partir de 31/10/2026) e passou a informar **Visualizadores**. O SocialReport aceita os dois, mas, quando o mês atual usa um e o anterior usa o outro, avisa que a variação do alcance **não é uma comparação exata**. Veja [Comparativo geral]({{ '/como-ler-o-relatorio/redes/' | relative_url }}).
 
 ### Por que os números do relatório são diferentes dos que vejo no aplicativo da rede?
 
@@ -60,6 +68,14 @@ Sim. Na barra acima do relatório, use **Imprimir / Salvar PDF (16:9)** e, na ja
 
 Algumas páginas só aparecem quando há o que mostrar. O **Sumário** lista exatamente o que existe naquele mês. O capítulo do site, por exemplo, depende de o site estar ligado ao sistema e de haver visitas medidas.
 
+### Posso enviar o link do relatório por e-mail pelo sistema?
+
+Sim. Em **Compartilhar & Incorporar**, o bloco **Enviar o link por e-mail ao cliente** manda o link a quem está na lista de **destinatários** do cliente, com prévia, confirmação e registro de quem recebeu. Se o bloco diz que o cliente não tem destinatários, peça a quem administra o sistema que os cadastre. Veja [Compartilhar o link]({{ '/mes-do-analista/#12-compartilhar-o-link-e-gerar-o-pdf' | relative_url }}).
+
+### Gerei um link novo. O e-mail que já enviei ainda funciona?
+
+Não. O e-mail leva o link que valia na hora do envio, e esse link **deixa de abrir** quando você gera um novo. Envie de novo pelo mesmo bloco.
+
 ### Posso colocar o relatório no site da organização?
 
 Sim. A opção **Compartilhar & Incorporar**, na barra acima do relatório, mostra o link para copiar e um código para incorporar o relatório numa página do site.
@@ -69,6 +85,10 @@ Sim. A opção **Compartilhar & Incorporar**, na barra acima do relatório, most
 ### Como conecto o site da organização ao relatório?
 
 A equipe liga o site no cadastro do cliente, na seção "Site", escolhendo o site numa lista, ou usando o código de conexão gerado pelo sistema, que o plugin **V3RAnalytics** reconhece e conecta sozinho. Quem cuida do site da organização precisa instalar o plugin. Os detalhes passo a passo ficam em "O site do cliente e o plugin V3RAnalytics" (em preparação).
+
+### O plugin do site não se atualiza sozinho. Por quê?
+
+Provavelmente a instalação do SocialReport não tem a **licença do V3RAnalytics** cadastrada (Configurações do sistema, aba Matomo). Sem ela o plugin mede normalmente, mas não se atualiza sozinho. Veja [Site e plugin]({{ '/site-e-plugin/' | relative_url }}).
 
 ### O que é o V3RAnalytics? É gratuito?
 
