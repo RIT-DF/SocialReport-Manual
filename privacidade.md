@@ -2,16 +2,16 @@
 title: "Privacidade"
 nav_order: 90
 permalink: /privacidade/
-version: "1.2"
+version: "1.3"
 status: "aprovada"
-change_summary: "Explica que a medição de visitas sem cookies também pode ocorrer nas páginas da plataforma de cursos (Moodle) do cliente, por um complemento, e que a leitura do Moodle traz só números somados."
+change_summary: "Inclui o portfólio público do cliente, a ligação com as contas do Instagram e do Facebook pela Meta (o que é lido, onde fica, por quanto tempo, como desligar e como pedir a exclusão) e explica que o complemento do Moodle repassa as visitas ao serviço de estatísticas pelo servidor do Moodle."
 requires_reconsent: true
 ---
 
 # Política de Privacidade — SocialReport
 
 **Vigência:** 29 de outubro de 2026
-**Versão:** 1.2
+**Versão:** 1.3
 
 {: .warning }
 
@@ -54,6 +54,8 @@ Cada organização responde pelo que **ela** decide:
 | Relatórios, inclusive textos e imagens gerados com IA | Organização responsável | Controladora |
 | Destinatários do relatório: nome e e-mail, e o registro dos envios | Organização responsável | Controladora |
 | Números da plataforma de cursos do cliente (inscrições e conclusões somadas) | Organização responsável | Controladora |
+| Publicações e números lidos direto das contas do Instagram e do Facebook do cliente, e a ligação com a Meta | Organização responsável | Controladora |
+| Portfólio público do cliente (página com os relatórios emitidos) | Organização responsável | Controladora |
 | Visitas ao site do cliente | O cliente | Operadora |
 
 Com quem falar em cada caso está na **seção 10**.
@@ -65,7 +67,7 @@ Com quem falar em cada caso está na **seção 10**.
 Esta política se aplica às pessoas físicas cujos dados passam pela instalação. São quatro situações:
 
 - **Equipe** — quem tem conta na instalação.
-- **Quem recebe o relatório** — diretoria, coordenação e parceiros do cliente, que abrem o relatório por link ou em PDF, **sem conta**. Quando o cliente pede, o **nome** e o **e-mail** dessas pessoas são cadastrados para que o link seja enviado por e-mail (seção 4.6).
+- **Quem recebe o relatório** — diretoria, coordenação e parceiros do cliente, que abrem o relatório (ou o portfólio, seção 4.9) por link ou em PDF, **sem conta**. Quando o cliente pede, o **nome** e o **e-mail** dessas pessoas são cadastrados para que o link seja enviado por e-mail (seção 4.6).
 - **Pessoas que aparecem no conteúdo do cliente** — por exemplo, alguém citado na legenda de uma publicação, retratado numa imagem de post ou mencionado numa matéria de imprensa do clipping.
 - **Visitantes do site do cliente** — cujas visitas entram no relatório **apenas como números somados**, sem identificação (seção 4.4).
 
@@ -95,13 +97,13 @@ O cadastro na instalação **só acontece por convite** de um super-admin. Não 
 
 ### 4.2 Dados das redes sociais do cliente
 
-O relatório é montado a partir de **planilhas exportadas pelas próprias redes sociais** do cliente (Instagram, Facebook, LinkedIn, TikTok e YouTube) e enviadas à aplicação pela equipe. De cada publicação, a aplicação guarda:
+O relatório é montado a partir de **planilhas exportadas pelas próprias redes sociais** do cliente (Instagram, Facebook, LinkedIn, TikTok e YouTube) e enviadas à aplicação pela equipe. Para o Instagram e o Facebook, a instalação também pode **ler os números direto da Meta**, por uma ligação autorizada (seção 4.10). De cada publicação, a aplicação guarda:
 
 - texto ou legenda, data e formato da publicação;
 - alcance, impressões, curtidas, comentários, compartilhamentos e salvamentos;
 - a imagem ou miniatura do post.
 
-Esses dados são o **conteúdo público do próprio cliente**, publicado por ele nas redes. A aplicação **não** lê perfis de seguidores e guarda curtidas e comentários apenas como **contagem**. As planilhas importadas trazem só os números de cada publicação; nenhum dado de seguidor, nem o nome de quem curtiu ou comentou, é guardado.
+Esses dados são o **conteúdo público do próprio cliente**, publicado por ele nas redes. A aplicação **não** lê perfis de seguidores e guarda curtidas e comentários apenas como **contagem**. As planilhas importadas e a leitura direta da Meta trazem só os números de cada publicação e da conta; nenhum dado de seguidor, nem o nome de quem curtiu ou comentou, é guardado.
 
 Uma legenda ou uma imagem de post pode conter **nome ou rosto de uma pessoa**. Esse conteúdo foi publicado pelo cliente, que responde por tê-lo publicado; a aplicação apenas o reproduz no relatório.
 
@@ -124,7 +126,7 @@ Nesse serviço de estatísticas, que funciona fora da aplicação:
 
 O cliente é o **controlador** desses dados de visita e é quem informa seus visitantes, na política de privacidade do próprio site. A desenvolvedora oferece um **parágrafo pronto** para o cliente incluir nessa política.
 
-A mesma medição pode ocorrer **nas páginas da plataforma de cursos (Moodle) do cliente**, por um complemento do SocialReport instalado ali pelo administrador da plataforma. As garantias são as mesmas: **sem cookies**, o pedido de **Não Rastrear** e o **Global Privacy Control** do navegador são respeitados, e **administradores da plataforma não são medidos**, nem as páginas de administração.
+A mesma medição pode ocorrer **nas páginas da plataforma de cursos (Moodle) do cliente**, por um complemento do SocialReport instalado ali pelo administrador da plataforma. Aqui o caminho é diferente: a visita **não vai do navegador do visitante ao serviço de estatísticas**; quem a repassa é o **próprio servidor do Moodle**, ao Matomo da V3RTECH. Nesse repasse seguem o **endereço da página**, a **origem** (de onde o visitante veio), o **endereço IP**, o **navegador** e o **idioma** do visitante. O administrador da plataforma pode, opcionalmente, cadastrar uma chave de escrita no complemento; ela serve só para o serviço de estatísticas reconhecer o IP real do visitante, e não dá acesso a nenhum dado. As garantias são as mesmas do site: **sem cookies**, o pedido de **Não Rastrear** e o **Global Privacy Control** do navegador são respeitados (a visita nem é repassada), e **administradores da plataforma não são medidos**, nem as páginas de administração. O IP é guardado no serviço de estatísticas já sem os últimos números, como descrito acima.
 
 A aplicação lê do serviço de estatísticas **apenas números somados** do mês: visitas, de onde elas vieram, páginas mais vistas, conversões e, para sites com loja ou doação, pedidos e receita **totais por categoria**.
 
@@ -164,6 +166,34 @@ Quando o cliente oferece cursos numa plataforma própria (Moodle), o relatório 
 
 **Base legal:** execução do serviço de relatório contratado pelo cliente (Art. 7º, V).
 
+### 4.9 Portfólio público do cliente
+
+O cliente pode ter uma **página de portfólio**, aberta por um **link próprio**, que reúne os relatórios dele. Quem abre a página vê **sem login**, e não pedimos nenhum dado a essa pessoa.
+
+- **O que aparece:** só os relatórios **já emitidos** (rascunhos nunca entram), com o **nome, o logotipo e as cores do cliente** e a **capa** de cada relatório. Clicar num cartão abre o relatório, pelo link dele.
+- **Quem vê:** **qualquer pessoa que tenha o link.** Ele funciona como uma chave: não há outra identificação. Por isso o cliente deve repassá-lo só a quem quiser que veja.
+- **Buscadores:** a página **não aparece em buscadores** e pede ao navegador que não repasse de qual página o visitante veio.
+- **Controle:** a equipe pode **desligar** o link a qualquer momento (a página deixa de abrir na hora) e **trocar** o endereço (o anterior deixa de funcionar). O mesmo vale para o link de cada relatório.
+- **Dados pessoais:** a página não traz dado de visitantes nem de seguidores; traz o que já está nos relatórios. O endereço de rede de quem a abre é tratado como no link do relatório (seção 4.6).
+
+**Base legal:** execução do serviço de relatório contratado pelo cliente (Art. 7º, V).
+
+### 4.10 Ligação com as contas do Instagram e do Facebook (Meta)
+
+Em vez de depender só de planilhas, a instalação pode **ler os números direto das contas do Instagram e do Facebook do cliente**, pela plataforma da **Meta**. A Meta é quem opera essas contas e os dados que ela guarda; esta política trata apenas do que chega à instalação. A política de privacidade da Meta está em <https://www.facebook.com/privacy/policy/>.
+
+**Quem liga.** Só o **super-admin** da instalação, no cadastro do cliente, e apenas com o **login de uma pessoa que administra a Página** do Facebook do cliente (e, por ela, a conta profissional do Instagram). A tela de autorização é da própria Meta e mostra o que está sendo pedido; a aplicação nunca vê a senha dessa pessoa. A permissão pedida é **somente de leitura**: a aplicação não publica, não responde e não altera nada nas contas.
+
+**O que é lido.** As **publicações da conta** no mês do relatório (legenda ou texto, data, formato e link) com seus números: **alcance, visualizações, curtidas, comentários, compartilhamentos e salvamentos**, mais o **alcance da conta** e o **número de seguidores**. São números da conta e das publicações. **Não são lidos dados de seguidores individuais**, nem o nome de quem curtiu ou comentou, nem mensagens privadas.
+
+**Onde ficam.** Os dados lidos entram no relatório como se viessem de uma planilha. As **chaves de acesso** que a Meta entrega à instalação ficam **somente no servidor, cifradas**; nunca vão ao navegador de ninguém e **não entram nas cópias de segurança** (depois de restaurar uma cópia, é preciso ligar de novo). A instalação confere uma vez por dia se a ligação segue válida e avisa o super-admin quando é preciso renová-la, porque a Meta limita a validade das autorizações. Para o número de seguidores no **fim do mês**, a instalação guarda **uma fotografia diária** só com a contagem de seguidores de cada conta (um número por dia, sem pessoas).
+
+**Por quanto tempo.** As chaves ficam **enquanto a ligação existir**: **desligar apaga a ligação e as chaves**. As publicações e os números já lidos fazem parte do relatório e seguem os prazos dele (seção 8), assim como a fotografia diária de seguidores.
+
+**Como desligar.** O super-admin clica em **Desligar** no cadastro do cliente; a ligação e as chaves são apagadas na hora, e a leitura direta para de funcionar (as planilhas continuam valendo). Isso só encerra a ligação **dentro da SocialReport**. Para também retirar a permissão **do lado da Meta**, quem ligou pode remover o aplicativo nas configurações da própria conta do Facebook, em "Integrações de negócios". O passo a passo de exclusão está na **seção 13**.
+
+**Base legal:** execução do serviço de relatório contratado pelo cliente, que autoriza a leitura das contas dele (Art. 7º, V).
+
 ---
 
 ## 5. Como os dados são usados
@@ -176,6 +206,8 @@ Os dados são usados exclusivamente para:
 - registrar o aceite desta política e dos Termos de Uso;
 - enviar os e-mails do sistema (convite e recuperação de senha);
 - enviar o link do relatório, por e-mail, às pessoas que o cliente indicou (seção 4.6);
+- oferecer ao cliente a página de portfólio dos relatórios emitidos (seção 4.9);
+- ler, quando o cliente autoriza, os números das contas do Instagram e do Facebook (seção 4.10);
 - responder às sugestões e aos relatos de problema enviados pela equipe;
 - garantir a segurança e a integridade das informações.
 
@@ -192,6 +224,7 @@ Para funcionar, a instalação usa os serviços abaixo. Quem presta cada um dele
 | **Hospedagem** (desenvolvedora, distribuidora ou a própria organização responsável) | Servidor da aplicação, banco de dados, servidor de autenticação e cópias de segurança | Informada dentro da instalação |
 | **Serviço de estatísticas (Matomo)** (desenvolvedora, distribuidora ou a própria organização responsável) | Estatísticas agregadas do site do cliente | Informada dentro da instalação |
 | **Envio de e-mail** (desenvolvedora, distribuidora ou a própria organização responsável) | E-mails de convite, recuperação de senha, cópias de segurança e envio do link do relatório | Informada dentro da instalação |
+| **Meta** (Instagram e Facebook) | Leitura dos números das contas do cliente, quando a ligação é autorizada (seção 4.10) | Fora do Brasil |
 | **Google** (login com Google) | Autenticação, quando a pessoa escolhe entrar com o Google | Fora do Brasil (Estados Unidos) |
 | **Google Gemini** | Textos de análise e imagens de capa, quando configurado | Fora do Brasil |
 | **OpenAI** | Textos de análise e imagens de capa, quando configurado | Fora do Brasil |
@@ -205,7 +238,9 @@ Os serviços que processam dados fora do Brasil caracterizam **transferência in
 
 A aplicação **não usa cookies de rastreamento, analytics de terceiros nem publicidade**. Para manter você conectado, ela guarda a sua sessão no **armazenamento local do navegador**, um recurso técnico essencial ao login. O link público do relatório não exige login.
 
-O serviço de estatísticas do site do cliente também **mede sem cookies** (seção 4.4).
+O serviço de estatísticas do site do cliente também **mede sem cookies** (seção 4.4), e o portfólio público (seção 4.9) não usa cookies.
+
+Há um único cookie técnico, **temporário**: ao ligar uma conta da Meta (seção 4.10), a aplicação grava um cookie de segurança que dura **10 minutos** e serve só para confirmar que quem volta da Meta é o mesmo navegador que iniciou a ligação. Ele não rastreia ninguém e some sozinho.
 
 ---
 
@@ -223,6 +258,9 @@ O serviço de estatísticas do site do cliente também **mede sem cookies** (se�
 | Registro dos envios do relatório | Junto com o relatório a que se refere: enquanto durar o contrato e até **30 dias** depois do fim |
 | Números da plataforma de cursos | Junto com o relatório a que se referem |
 | Relatórios (inclusive os textos e as imagens gerados com IA) | Enquanto durar o contrato com o cliente; depois, seguem o prazo da linha anterior |
+| Chaves de acesso à Meta (ligação com o Instagram e o Facebook) | Enquanto a ligação existir; **desligar apaga** na hora. Saem também com o cadastro do cliente (até 30 dias depois do fim do contrato) |
+| Fotografia diária do número de seguidores (Meta) | Junto com os relatórios do cliente: enquanto durar o contrato e até **30 dias** depois do fim |
+| Link do portfólio público | Enquanto estiver ligado; **desligar** o fecha na hora. Sai com o cadastro do cliente |
 | Dados detalhados de visitas ao site do cliente, no serviço de estatísticas | **13 meses**; os resumos mensais permanecem (seção 4.4) |
 | Cópias de segurança do banco de dados | Conforme a política de backup da organização responsável (abaixo) |
 
@@ -270,3 +308,17 @@ Esta política pode ser atualizada periodicamente. A versão vigente estará sem
 ## 12. Legislação aplicável
 
 Esta política é regida pela **Lei Geral de Proteção de Dados Pessoais (LGPD — Lei nº 13.709/2018)**, pelo **Marco Civil da Internet (Lei nº 12.965/2014)** e pelas demais normas aplicáveis da **Autoridade Nacional de Proteção de Dados (ANPD)**.
+
+---
+
+## 13. Como pedir a exclusão dos dados da ligação com a Meta {#exclusao-de-dados}
+
+Esta seção é o endereço de **instruções de exclusão de dados** da SocialReport para a Meta. Ela vale para quem ligou ou administra uma conta do Instagram ou do Facebook ligada a uma instalação (seção 4.10) e para quem tem dados nossos vindos dessas contas.
+
+**1. Desligar a ligação (o que a instalação guarda de acesso).** O super-admin abre o cadastro do cliente e clica em **Desligar** na seção de redes sociais da Meta. A ligação e as chaves de acesso são apagadas na hora, e a instalação deixa de ler a conta.
+
+**2. Retirar a permissão do lado da Meta.** Quem ligou a conta pode, a qualquer momento, remover o aplicativo da SocialReport nas configurações da própria conta do Facebook, em **Integrações de negócios**. Isso corta o acesso mesmo que a instalação não seja desligada.
+
+**3. Apagar também o que já foi lido.** Os números de publicações e de seguidores já lidos fazem parte dos relatórios do cliente. Para apagá-los, peça ao **encarregado de dados da organização responsável** pela instalação (seção 10), dizendo qual é a conta ou o cliente. O pedido é respondido em até **15 dias úteis**, e a exclusão do cadastro do cliente leva junto os relatórios, os números lidos da Meta e a fotografia diária de seguidores.
+
+**Quem não tem conta na instalação**, mas aparece numa publicação lida da Meta (um nome numa legenda, por exemplo), pode pedir a exclusão ou a correção pelo mesmo caminho, e também ao cliente que publicou.
