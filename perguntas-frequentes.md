@@ -14,7 +14,7 @@ Porque o alcance daquela rede **não chegou ao relatório**, e não porque ningu
 
 ### Por que o gráfico de seguidores está zerado, ou diz "Sem dado de seguidores"?
 
-O número de seguidores é informado pela equipe e não vem junto com as publicações. Quando falta, o gráfico diz **"Sem dado de seguidores"** e a linha se interrompe naquele mês; **zero**, onde ainda aparecer, quer dizer **"não informado"**. Em nenhum caso significa que a conta perdeu os seguidores. Peça que a aba "Resumo do Mês" seja preenchida. Veja [Evolução histórica]({{ '/como-ler-o-relatorio/redes/' | relative_url }}).
+O número de seguidores é informado pela equipe e não vem junto com as publicações. Quando falta, o gráfico diz **"Sem dado de seguidores"** e a linha se interrompe naquele mês; **zero**, onde ainda aparecer, quer dizer **"não informado"**. Em nenhum caso significa que a conta perdeu os seguidores. Peça que o número seja informado: na tela do mês (bloco **Seguidores no fim do mês**) ou na aba "Resumo do Mês" da planilha. As exportações das redes não trazem o total de seguidores, por isso ele é digitado no fim de cada mês. Veja [Evolução histórica]({{ '/como-ler-o-relatorio/redes/' | relative_url }}).
 
 ### Por que o mês não compara com o anterior?
 

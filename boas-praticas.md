@@ -52,7 +52,7 @@ A análise do relatório é redigida com apoio de IA, e você pode editar tudo n
 
 ### 6. Atualize o número de seguidores e confira os zeros
 
-Informe o número de seguidores todo mês e, antes de fechar, olhe cada zero do relatório: ele quer dizer "não foi medido" ou "não aconteceu"?
+Informe o número de seguidores de cada rede no **último dia** de todo mês (na tela do mês, bloco **Seguidores no fim do mês**; veja a [tarefa 3b]({{ '/mes-do-analista/' | relative_url }})) e, antes de fechar, olhe cada zero do relatório: ele quer dizer "não foi medido" ou "não aconteceu"?
 
 **Por quê:** o gráfico de seguidores zerado e o alcance 0 de uma rede (com impressões e interações) são dados que faltaram, e não fatos.
 

@@ -17,10 +17,12 @@ Os exemplos e as telas vêm do relatório de outubro de 2026 do **Instituto Hori
 | 1 | [Escolher o cliente ativo](#1-escolher-o-cliente-ativo) | cabeçalho do sistema |
 | 2 | [Criar o período do mês](#2-criar-o-período-do-mês) | Períodos & Emissão |
 | 3 | [Importar as planilhas das redes](#3-importar-as-planilhas-das-redes) | Períodos & Emissão |
+| 3b | [Informar os seguidores de cada rede](#3b-informar-os-seguidores-de-cada-rede) | Períodos & Emissão |
 | 4 | [Conferir as inconsistências da importação](#4-conferir-as-inconsistências-da-importação) | durante a importação |
 | 5 | [Conferir os números e marcar os posts fora da curva](#5-conferir-os-números-e-marcar-os-posts-fora-da-curva) | Períodos & Emissão |
 | 6 | [Classificar as categorias](#6-classificar-as-categorias) | planilha e cadastro do cliente |
 | 7 | [Revisar o capítulo do site](#7-revisar-o-capítulo-do-site) | Revisão |
+| 7b | [Revisar o capítulo dos cursos](#7b-revisar-o-capítulo-dos-cursos) | Revisão |
 | 8 | [Cuidar do clipping](#8-cuidar-do-clipping-imprensa) | Períodos & Emissão |
 | 9 | [Gerar e revisar a análise da IA](#9-gerar-e-revisar-a-análise-da-ia) | Revisão |
 | 10 | [Conferir a capa e as imagens dos melhores posts](#10-conferir-a-capa-e-as-imagens-dos-melhores-posts) | Revisão |
@@ -78,7 +80,7 @@ Nessa janela também há **Detectar das Postagens** (sugere as datas a partir da
 
 **Por que importa.** As planilhas são a fonte dos números das redes. O sistema não "puxa" dados das redes sozinho: ele lê o que você importa. Importar direito significa que os números do relatório batem com o que a rede mostra.
 
-**O modelo de planilha.** O botão **Modelo de Planilha**, no alto da página, baixa uma planilha padrão com as colunas que o sistema reconhece: data, canal, formato, pauta (título do conteúdo), link da publicação, categoria editorial, alcance, impressões, interações, curtidas, respostas/comentários, compartilhamentos, salvamentos, visitas ao perfil, visualizações de vídeo, reações e a marcação de anômalo (sim ou não). Há também uma aba **Resumo do Mês**, onde se informam o alcance da conta e o **número de seguidores** do mês (é de lá que vêm os gráficos de seguidores do relatório). Planilhas com outros nomes de coluna também funcionam, e o sistema ajuda a ligar cada coluna ao campo certo (veja a próxima tarefa).
+**O modelo de planilha.** O botão **Modelo de Planilha**, no alto da página, baixa uma planilha padrão com as colunas que o sistema reconhece: data, canal, formato, pauta (título do conteúdo), link da publicação, categoria editorial, alcance, impressões, interações, curtidas, respostas/comentários, compartilhamentos, salvamentos, visitas ao perfil, visualizações de vídeo, reações e a marcação de anômalo (sim ou não). Há também uma aba **Resumo do Mês**, onde se informam o alcance da conta e o **número de seguidores** do mês, na linha **Seguidores da rede no fim do mês** (uma rede por arquivo). Você também pode digitar os seguidores direto na tela do mês, sem mexer na planilha: veja a [tarefa 3b](#3b-informar-os-seguidores-de-cada-rede). Planilhas com outros nomes de coluna também funcionam, e o sistema ajuda a ligar cada coluna ao campo certo (veja a próxima tarefa).
 
 **A exportação do Meta entra como veio.** Você pode importar direto o arquivo que o Facebook ou o Instagram exporta, sem refazer no modelo. Em algumas exportações a coluna **Data** vem com a palavra **"Total"** em vez de uma data: nesse caso o sistema usa a **data do "Horário de publicação"** de cada postagem. A linha de total de verdade (sem horário de publicação) continua sendo ignorada. O Meta exporta o horário no fuso do Pacífico, e o sistema o converte para o horário de Brasília; uma postagem feita à noite não cai mais no dia seguinte por causa do fuso.
 
@@ -114,8 +116,38 @@ Se o período veio de uma **planilha online**, ele fica ligado a ela, e é poss�
 > **Dicas.**
 > - Importe **uma planilha por rede** e confira o nome do arquivo e a rede no cartão.
 > - Mantenha o **mesmo modelo de planilha todo mês**. Quando o formato muda, o sistema pede para ligar as colunas de novo.
-> - Preencha a aba **Resumo do Mês** com os seguidores de cada rede. O número vale por arquivo e por rede e vai para o gráfico de evolução, a capa e o link público. **Sem ele, o gráfico diz "Sem dado de seguidores" e a linha se interrompe naquele mês**, em vez de cair para zero. Não digite 0 para "não sei": zero é um número, e o gráfico vai mostrar que a conta perdeu todo mundo.
+> - Informe os seguidores de cada rede (na linha **Seguidores da rede no fim do mês** da aba **Resumo do Mês**, ou na tela do mês, como na [tarefa 3b](#3b-informar-os-seguidores-de-cada-rede)). O número vale por rede e vai para o gráfico de evolução, a capa, o comparativo e o link público. **Sem ele, o gráfico diz "Sem dado de seguidores" e a linha se interrompe naquele mês**, em vez de cair para zero. Não digite 0 para "não sei": zero é um número, e o gráfico vai mostrar que a conta perdeu todo mundo.
 {: .tip }
+
+## 3b. Informar os seguidores de cada rede
+
+**Por que importa.** As exportações das redes trazem o desempenho de cada publicação, mas **não trazem o total de seguidores da conta**. Esse número só existe no painel da própria rede, e muda a cada dia. Por isso é você quem o informa, e o melhor momento é o **último dia do mês**: é o número que fecha o mês e o que o mês seguinte vai comparar. Sem ele, o relatório não mostra a base de seguidores, nem o gráfico de evolução, nem a variação mês a mês daquela rede.
+
+**Passo a passo**
+
+1. Em **Períodos & Emissão**, abra o mês (o botão do mês na lista).
+2. Role até o bloco **Seguidores no fim de [mês] de [ano]**. Há um campo por rede (**Seguidores do Instagram no fim do mês**, **Seguidores do Facebook no fim do mês**, e assim por diante), com as redes que o mês tem, as do cadastro do cliente e as que já têm número.
+3. Digite o total de seguidores de cada rede **no último dia do mês**, como aparece no painel da rede.
+4. Clique em **Salvar seguidores**. Só então o número é gravado: o botão fica desabilitado enquanto você não mudar nada, e a mensagem **"Seguidores gravados."** confirma.
+
+*Captura pendente: o bloco "Seguidores no fim de [mês]" na tela do mês (campo, "Sugestão" e botão "Salvar seguidores"). Precisa de um período de teste no app, com login.*
+
+**A sugestão do mês anterior.** Quando o mês anterior do mesmo cliente tem número, abaixo do campo aparece **"Sugestão (mês anterior): N, não gravada."** com o link **Usar sugestão**. A sugestão **não é gravada** sozinha: ela só entra no mês quando você clica em **Usar sugestão** (ou digita) e salva. Serve de atalho para quando o número mal mudou, e de conferência para quando você digitou um valor muito diferente.
+
+**Qual número vale.** O número digitado aqui **vale mais** que o da planilha. Se a planilha importada trouxer outro número, a tela diz qual vale: **"A planilha importada traz N; vale o número digitado."** (ou **"vale esse número enquanto nada for digitado"**, quando você ainda não digitou nada). Assim você corrige um erro da planilha sem reimportar.
+
+**Meses passados.** O bloco existe em todo mês, então dá para **corrigir ou completar meses antigos**. Isso conserta o gráfico de evolução e o comparativo dos relatórios daqueles meses.
+
+**Exemplo.** No fechamento de outubro, o Instagram do Instituto Horizonte tinha 1.650 seguidores e o Facebook, 980. O campo do Instagram mostra "Sugestão (setembro de 2026): 1.620, não gravada." Você digita **1650** (não usa a sugestão, porque o número mudou), digita **980** no Facebook e clica em **Salvar seguidores**.
+
+> **Dicas e armadilhas.**
+> - **Anote no último dia do mês**, não "mais ou menos". Seguidores de hoje num relatório de mês passado fazem a base parecer maior do que foi.
+> - **Não digite 0 para "não sei"**: o campo vazio é "não informado" e o gráfico interrompe a linha; zero é um número e o gráfico mostra que a conta perdeu todo mundo.
+> - **Não grave a sugestão sem conferir.** Ela é o número do mês passado; se você só clicar e salvar, o comparativo mostrará "nenhuma variação" onde houve crescimento.
+> - **Uma rede sem número nos dois meses fica de fora do total** do comparativo (veja [Comparativo geral]({{ '/como-ler-o-relatorio/redes/' | relative_url }})).
+{: .tip }
+
+**Quando dá errado.** Na revisão, aparece um aviso só para você: **"Falta o número de seguidores de [rede] neste mês. Sem ele, o relatório não mostra a base de seguidores nem o comparativo dessa rede. Preencha na tela do mês (Períodos) ou na linha "Seguidores" da planilha."** O aviso não aparece no relatório nem no link público. Volte à tela do mês, preencha e salve.
 
 ## 4. Conferir as inconsistências da importação
 
@@ -198,6 +230,32 @@ Abra a revisão pelo botão **Revisar / Gerar com IA** do período. O primeiro b
 
 > **Atenção.** O aviso de tráfego estrangeiro é para você investigar, não para ignorar. Robôs inflam as visitas, e o relatório vai dizer que o site "tem muito movimento" quando é lixo.
 {: .warning }
+
+## 7b. Revisar o capítulo dos cursos
+
+**Por que importa.** Para o cliente que tem uma plataforma de cursos (Moodle), o relatório ganha o capítulo **Cursos**: inscrições, conclusões e, o mais útil, o **caminho** que leva do post à inscrição. Quem decide se esse caminho aparece e se ele diz algo verdadeiro é você, na revisão. O capítulo só existe quando o Moodle do cliente está ligado (veja [Administração]({{ '/administracao/' | relative_url }})) e houve inscrição ou conclusão no ciclo. Para entender cada slide, leia [Os cursos]({{ '/como-ler-o-relatorio/cursos/' | relative_url }}).
+
+Na revisão, o bloco **Cursos** vem logo depois do bloco do site.
+
+**O que você vê e faz**
+
+- **Atualizar dados dos cursos** busca os números do ciclo (inscrições e conclusões do Moodle; visitas e origens do Matomo). A frase **"Última busca"** diz quando foi, e avisa se o ciclo ainda está em andamento. Se os números guardados são de outro intervalo que o do ciclo, a tela avisa e pede para atualizar.
+- **Relatórios salvos antes desta versão (1.30.0) não têm o caminho.** Para ganhar o slide **Do post ao curso**, abra a revisão do mês e clique em **Atualizar dados dos cursos**.
+- **Gerar análise do caminho com IA.** O botão aparece quando há visitas vindas das redes, de campanhas ou de outros sites à plataforma. A IA cruza o alcance das redes, as visitas à plataforma e as inscrições, e escreve o texto do slide **Do post ao curso**. Ela só afirma o que os números sustentam, e o texto com número que não está nos dados é descartado. Depois de gerado, o botão passa a dizer **Gerar a análise de novo**. O texto que você editar vale no lugar do da IA.
+- **Posts e campanhas que levam aos cursos.** Para o cartão do Top Posts dizer **"Levou N pessoas aos cursos"**, o post precisa estar ligado a uma **campanha** dos cursos (a campanha do link marcado). Cada post tem uma lista: se o título do post for **igual** ao nome da campanha, a ligação é automática e a lista mostra **"Automática: [campanha]"**; se não, escolha a campanha na lista. **Nunca por data.** Clique em **Salvar Alterações** para valer no relatório.
+- **A caixa editável "Cursos: do post ao curso"** fica entre os textos analíticos da narrativa (bloco **Narrativa Executiva Assistida por IA**), ao lado da **Cursos: visão geral**. É o texto do slide: leia, corrija e salve. Apagar o texto o oculta.
+- **Diagnóstico e Próximos Passos** passam a **cruzar redes, site e cursos** quando há dado dos três: ao regerar a narrativa, a IA considera o que as redes, o site e os cursos mostram juntos.
+
+*Captura pendente: bloco "Cursos" da revisão com o botão "Gerar análise do caminho com IA" e a lista "Posts e campanhas que levam aos cursos". Precisa de relatório com cursos e login.*
+
+> **Dicas e armadilhas.**
+> - **Marque os links das publicações** que levam à plataforma de cursos. Sem campanha, o Matomo vê "acesso direto" ou "redes sociais" em geral, e o post não recebe crédito.
+> - **"Levou N pessoas" é um piso**: o Matomo conta visitas, e quem usa bloqueador de anúncios não entra na conta. O número real é igual ou maior.
+> - **Campanha dividida:** se vários posts usam o mesmo link, o número é **da campanha**, e o cartão avisa "dividida entre N posts".
+> - **Regerar a narrativa apaga as edições** dos textos principais (veja a [tarefa 9](#9-gerar-e-revisar-a-análise-da-ia)). Gere a análise do caminho **antes** de editar.
+{: .tip }
+
+**Quando dá errado.** O Moodle ou o Matomo fora do ar aparecem como aviso, nunca como "mês sem inscrição"; o relatório continua com os números já guardados. **"Acesso ao Moodle deste cliente não configurado"** quer dizer que falta o acesso no cadastro do cliente (parte 6). Sem Moodle ligado, ou sem inscrição nem conclusão no ciclo, o capítulo não aparece.
 
 ## 8. Cuidar do clipping (imprensa)
 
@@ -344,10 +402,11 @@ A confirmação sempre **diz quantos períodos** serão afetados. Ao terminar, o
 - [ ] Cliente ativo conferido.
 - [ ] Período criado, com o ciclo certo.
 - [ ] Planilhas importadas; lista de recusadas lida.
-- [ ] Seguidores preenchidos; zeros de alcance verificados.
+- [ ] Seguidores de cada rede informados no fim do mês (sem o aviso da revisão); zeros de alcance verificados.
 - [ ] Posts fora da curva marcados.
 - [ ] Categorias consistentes.
 - [ ] Dados do site atualizados; avisos do analista lidos; links marcados.
+- [ ] Cursos (quando o cliente tem): dados atualizados, campanhas dos posts ligadas, análise do caminho lida.
 - [ ] Clipping revisado (ou sem clipping, de propósito).
 - [ ] Análise da IA lida, corrigida e salva.
 - [ ] Capa e imagens conferidas.

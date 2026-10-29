@@ -66,6 +66,8 @@ Acima da tabela há uma escolha de **base**: **todas as publicações** ou **sem
 
 **Decisão que ajuda a tomar:** separar o que se explica pelo **volume** (publicou-se menos) do que se explica pela **qualidade ou pela distribuição** (cada publicação rendeu menos).
 
+**Seguidores.** A tabela traz a **Base de Seguidores** e, quando o cliente tem mais de uma rede com número, uma linha por rede (**Seguidores no Instagram**, **Seguidores no Facebook**). O **total soma só as redes que têm número nos dois meses**: somar uma rede que só existe em um mês inflaria ou derrubaria a variação sem que nada tivesse mudado. As redes que ficaram de fora são citadas numa nota logo abaixo (**"Seguidores: [rede] não tem número nos dois meses e ficou fora do total."**). O número vem do que a equipe informa no fim de cada mês, porque as exportações das redes não trazem o total de seguidores.
+
 Se a tabela traz a frase "Sem dados de Out/25: comparativo com o mesmo mês do ano anterior indisponível", é porque a organização ainda não tem um ano de histórico no sistema. O comparativo com o mesmo mês do ano anterior é o mais justo (ele já inclui as sazonalidades, como as férias e as festas), e aparece assim que os dados existirem.
 
 **Mês em andamento.** Quando o rodapé mostra **"Mês em andamento — dados até DD/MM"**, a tabela traz uma nota (**"as comparações são parciais"**), a variação aparece em cinza, sem seta, com o selo **parcial**, e o texto não fala em alta ou queda. Os números do mês ainda estão sendo contados: espere o fechamento antes de tirar conclusão.
@@ -144,7 +146,7 @@ O relatório mostra as publicações de maior destaque, com a imagem, a rede, o 
 
 **Exemplo:** a primeira colocada teve 114 de engajamento e a segunda teve 142. Mesmo assim, a primeira ficou na frente, porque suas reações pesam mais na conta (comentários, compartilhamentos e salvamentos valem mais que curtidas): 142 pontos contra 137.
 
-Quando o site está ligado, o cartão traz uma linha como **"levou N visitas ao site"**. Ela diz quantas visitas o link daquela publicação trouxe, quando a equipe usou o link marcado.
+Quando o site está ligado, o cartão traz uma linha como **"levou N visitas ao site"**. Quando a organização tem cursos, e o post foi ligado a uma campanha que leva à plataforma, aparece também **"Levou N pessoas aos cursos (campanha ...)"**. É um **piso**: o Matomo conta visitas, e quem usa bloqueador de anúncios não entra na conta. Ela diz quantas visitas o link daquela publicação trouxe, quando a equipe usou o link marcado.
 
 **Por que importa:** é o material de estudo mais barato que existe. As campeãs mostram o que o seu público **pediu**, sem pesquisa e sem custo.
 
