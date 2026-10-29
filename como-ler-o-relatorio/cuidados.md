@@ -1,7 +1,7 @@
 ---
 title: Os dez cuidados antes de concluir
 parent: 4. Como ler o seu relatório
-nav_order: 5
+nav_order: 6
 permalink: /como-ler-o-relatorio/cuidados/
 ---
 

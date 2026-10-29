@@ -1,7 +1,7 @@
 ---
 title: As conclusões
 parent: 4. Como ler o seu relatório
-nav_order: 4
+nav_order: 5
 permalink: /como-ler-o-relatorio/conclusoes/
 ---
 

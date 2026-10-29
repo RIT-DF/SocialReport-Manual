@@ -40,13 +40,14 @@ Você recebe um **link**. Ele abre o relatório direto no navegador, sem senha e
 
 ## O mapa do relatório
 
-Para ninguém se perder, o manual agrupa as páginas do relatório em quatro blocos:
+Para ninguém se perder, o manual agrupa as páginas do relatório em cinco blocos:
 
 | Bloco | O que contém | Pergunta que responde |
 |---|---|---|
 | **[O panorama]({{ '/como-ler-o-relatorio/panorama/' | relative_url }})** | capa, sumário, apresentação, calendário, picos atípicos (quando houver) e visão executiva | "Como foi o mês, em uma olhada?" |
 | **[As redes]({{ '/como-ler-o-relatorio/redes/' | relative_url }})** | métricas gerais, histórico, comparativo, taxa de engajamento, canais, tipos de conteúdo e melhores publicações | "O que funcionou, onde e por quê?" |
 | **[O site]({{ '/como-ler-o-relatorio/site/' | relative_url }})** | visão do site, origem das visitas, das redes ao site, conversões, receitas, conteúdo e público, linha do tempo | "As redes trouxeram resultado fora delas?" |
+| **[Os cursos]({{ '/como-ler-o-relatorio/cursos/' | relative_url }})** | visão dos cursos, cursos do mês, de onde vêm as inscrições, do post ao curso e linha do tempo (só quando há plataforma de cursos) | "As redes trouxeram gente para aprender?" |
 | **[As conclusões]({{ '/como-ler-o-relatorio/conclusoes/' | relative_url }})** | clipping (imprensa), análise crítica, próximos passos e contracapa | "O que aprendemos e o que fazemos agora?" |
 
 Quer um resumo de uma página só, com os cuidados antes de tirar qualquer conclusão? Leia **[Os dez cuidados antes de concluir]({{ '/como-ler-o-relatorio/cuidados/' | relative_url }})**.
