@@ -69,6 +69,7 @@ Ao editar, o cadastro tem estas partes:
 - **Categorias editoriais** do cliente (separadas por vírgula).
 - **Canais contratados** (Instagram, Facebook, LinkedIn, TikTok, YouTube).
 - **Marcos históricos anteriores** (opcional): totais de meses passados (por exemplo, seguidores) que ligam os gráficos de tendência e o comparativo desde o primeiro relatório.
+- **Plataforma de cursos (Moodle):** o acesso ao Moodle do cliente e o site da plataforma no Matomo (veja abaixo).
 - **Fim do contrato:** o campo **Contrato encerrado em** (veja abaixo).
 - **Site:** a ligação com o Matomo (veja a [parte 5]({{ '/site-e-plugin/' | relative_url }})).
 - **Monitoramento de imprensa e clipping:** os termos da varredura.
@@ -85,6 +86,20 @@ Ao editar, o cadastro tem estas partes:
 - **Por que cadastrar:** o envio do link pelo sistema só vai a quem está nesta lista. Isso evita mandar o relatório de um cliente para o endereço errado ou digitado na pressa, e deixa o histórico de quem recebeu.
 - **Dado pessoal:** nome e e-mail de quem recebe são dados pessoais. Cadastre só quem de fato precisa do relatório e tire quem saiu da organização do cliente.
 - **Sem destinatários**, o botão de enviar em **Compartilhar** fica indisponível e avisa onde cadastrar.
+
+**Acesso ao Moodle do cliente (só o super-admin).** Cada cliente tem o **seu** acesso ao Moodle, porque cada um usa um Moodle diferente. Ele fica no cadastro do cliente, na seção **Plataforma de cursos**, no bloco **Acesso ao Moodle**. Para o capítulo **Cursos** funcionar, preencha:
+
+- **Endereço do Moodle do cliente**, por exemplo `https://cursos.exemplo.org.br` (em produção precisa começar com `https://`);
+- **Id do relatório**: o número do relatório personalizado que o administrador do Moodle criou para o SocialReport (sem coluna de pessoa);
+- **Token do Moodle**: a chave que o Moodle gera para essa leitura. Cole-o direto no campo; nunca o envie por e-mail ou conversa.
+
+Depois, clique em **Testar conexão** (mostra se o Moodle respondeu, quantas linhas o relatório tem e as colunas conferidas, nunca uma linha de aluno) e em **Salvar acesso**. **Remover acesso** apaga o endereço e o token daquele cliente do servidor.
+
+- **O token nunca volta para a tela.** Depois de salvo, o campo mostra só o final dele ("Token guardado ••••1234"). Para trocar, digite um novo; deixar o campo vazio mantém o que está guardado.
+- **Quem não é super-admin** vê apenas se o Moodle do cliente está **conectado** ou **não conectado**. Ninguém, nem o super-admin, vê o token inteiro depois de salvo.
+- **Primeira vez que a versão 1.27 sobe:** o acesso ao Moodle que antes era um só para o sistema todo foi **copiado sozinho** para os clientes que usavam aquele mesmo Moodle (hoje, a RIT), então nada parou. A aba **Cursos (Moodle)** das configurações do sistema agora só avisa que a configuração mudou de lugar.
+- **Cliente com endereço de Moodle e sem acesso configurado:** ao buscar os dados dos cursos, a revisão avisa "Acesso ao Moodle deste cliente não configurado", e o relatório continua sendo montado, sem o capítulo Cursos.
+- **Depois de restaurar uma cópia de segurança**, o token de cada cliente precisa ser colado de novo (a cópia não leva segredos).
 
 **Fim do contrato (só o super-admin).** O campo **Contrato encerrado em** aparece ao **editar** um cliente. Para o analista ele é só de leitura. Deixe em branco enquanto o contrato estiver em vigor: **sem a data, nada é excluído, nunca**. O sistema não deduz o fim de um contrato.
 
