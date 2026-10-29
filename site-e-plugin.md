@@ -99,7 +99,7 @@ O plugin avisa quando conecta. Em seguida, o SocialReport faz o resto: cria o si
 
 O **V3RAnalytics é gratuito** e distribuído pela V3RTECH, desenvolvedora do SocialReport. Ele é um plugin comum do WordPress.
 
-> **Onde baixar.** O link de download estará disponível **no cadastro do cliente**, junto da conexão do site. Essa função está **em preparação**. Até lá, peça o arquivo à equipe que administra o seu SocialReport.
+> **Onde baixar.** O botão de download fica **no cadastro do cliente**, junto da conexão do site. Se preferir, baixe direto pelo link da versão mais recente: [v3ranalytics.zip](https://github.com/V3RTECH-DF/V3RAnalytics-Releases/releases/latest/download/v3ranalytics.zip).
 {: .note }
 
 **Passo a passo, no WordPress**
