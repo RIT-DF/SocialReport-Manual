@@ -1,6 +1,7 @@
 ---
 title: "6. Administração"
 nav_order: 7
+has_children: true
 permalink: /administracao/
 ---
 
@@ -158,6 +159,10 @@ Em **Configurações do Sistema**, abra **Organização**.
 > **Atenção.** O nome e o site daqui aparecem no rodapé dos slides de **todos os clientes**. Depois de salvar, abra um relatório e confira o rodapé antes de avisar a equipe, principalmente se o nome ou o site mudaram.
 {: .warning }
 
+## Cópias de segurança
+
+As cópias do banco de dados do sistema têm página própria: [Cópias de segurança]({{ '/copias-de-seguranca/' | relative_url }}). Leia antes de a primeira cópia ser feita: a **senha** das cópias é o ponto que não tem volta.
+
 ## E-mail e login com Google
 
 Duas outras abas das configurações merecem uma lembrança:
@@ -172,4 +177,5 @@ Duas outras abas das configurações merecem uma lembrança:
 - [ ] Matomo: endereço, token de leitura (só de visualização) e, se for usar o código de conexão, token de administração.
 - [ ] SMTP testado: um convite de teste chega.
 - [ ] Organização: nome e site conferidos no rodapé de um relatório.
+- [ ] Cópias de segurança configuradas, com a senha guardada num cofre, e um teste de restauração feito (veja [Cópias de segurança]({{ '/copias-de-seguranca/' | relative_url }})).
 - [ ] Cada cliente com logotipo, cores, categorias e termos de imprensa preenchidos; escolas com **Sem foto**.
