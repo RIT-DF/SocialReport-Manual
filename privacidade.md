@@ -2,16 +2,16 @@
 title: "Privacidade"
 nav_order: 90
 permalink: /privacidade/
-version: "1.1"
+version: "1.2"
 status: "aprovada"
-change_summary: "Inclui os destinatários do relatório por e-mail, a leitura das plataformas de cursos, a foto do perfil, as sugestões enviadas pela equipe, como são as cópias de segurança e os prazos que faltavam."
+change_summary: "Explica que a medição de visitas sem cookies também pode ocorrer nas páginas da plataforma de cursos (Moodle) do cliente, por um complemento, e que a leitura do Moodle traz só números somados."
 requires_reconsent: true
 ---
 
 # Política de Privacidade — SocialReport
 
 **Vigência:** 29 de outubro de 2026
-**Versão:** 1.1
+**Versão:** 1.2
 
 {: .warning }
 
@@ -124,6 +124,8 @@ Nesse serviço de estatísticas, que funciona fora da aplicação:
 
 O cliente é o **controlador** desses dados de visita e é quem informa seus visitantes, na política de privacidade do próprio site. A desenvolvedora oferece um **parágrafo pronto** para o cliente incluir nessa política.
 
+A mesma medição pode ocorrer **nas páginas da plataforma de cursos (Moodle) do cliente**, por um complemento do SocialReport instalado ali pelo administrador da plataforma. As garantias são as mesmas: **sem cookies**, o pedido de **Não Rastrear** e o **Global Privacy Control** do navegador são respeitados, e **administradores da plataforma não são medidos**, nem as páginas de administração.
+
 A aplicação lê do serviço de estatísticas **apenas números somados** do mês: visitas, de onde elas vieram, páginas mais vistas, conversões e, para sites com loja ou doação, pedidos e receita **totais por categoria**.
 
 **Nunca chegam à aplicação:** nenhum visitante individual, nenhum endereço de IP, nenhum dado digitado em formulário, nenhum dado de comprador ou doador. Nos endereços das páginas, a parte que vem depois de "?" ou "#" é **removida** antes de ser guardada, porque pode carregar dado pessoal (um e-mail numa página de confirmação, por exemplo).
@@ -158,7 +160,7 @@ Há um limite que precisamos deixar claro: as **imagens dos posts** são o conte
 
 ### 4.8 Plataforma de cursos do cliente
 
-Quando o cliente oferece cursos numa plataforma própria (Moodle), o relatório pode trazer o capítulo "Cursos". O servidor da instalação lê dessa plataforma **apenas números somados**: quantas inscrições e quantas conclusões houve em cada curso no mês. **Nenhum dado de aluno chega à aplicação** — nem nome, nem e-mail, nem nota — e nada é guardado por pessoa. Se a plataforma devolver qualquer coluna além das esperadas, a leitura é recusada antes de olhar os dados.
+Quando o cliente oferece cursos numa plataforma própria (Moodle), o relatório pode trazer o capítulo "Cursos". O servidor da instalação lê dessa plataforma **apenas números somados**: quantas inscrições e quantas conclusões houve em cada curso no mês. Isso vale tanto quando a leitura é feita pelo **complemento do SocialReport** instalado no Moodle quanto pelo **relatório personalizado** do próprio Moodle. **Nenhum dado de aluno chega à aplicação** — nem nome, nem e-mail, nem nota — e nada é guardado por pessoa. Se a plataforma devolver qualquer coluna além das esperadas, a leitura é recusada antes de olhar os dados. A medição de visitas nas páginas do Moodle é a descrita na seção 4.4.
 
 **Base legal:** execução do serviço de relatório contratado pelo cliente (Art. 7º, V).
 
