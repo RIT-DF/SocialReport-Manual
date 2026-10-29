@@ -1,6 +1,7 @@
 ---
 title: "3. O mês do analista"
 nav_order: 4
+has_children: true
 permalink: /mes-do-analista/
 ---
 
@@ -397,6 +398,15 @@ A confirmação sempre **diz quantos períodos** serão afetados. Ao terminar, o
 > **Atenção com a exclusão.** Excluir um período apaga as planilhas, os números e os textos dele, e **os links públicos desses relatórios deixam de abrir**. Períodos **já emitidos** são **recusados** na exclusão em lote e precisam ser excluídos **um a um**, de propósito, para não se apagar por engano um relatório que o cliente já recebeu.
 {: .warning }
 
+## Depois do mês: acompanhar a evolução e organizar a entrega
+
+Duas telas do menu cuidam do que acontece **depois** que o relatório do mês está pronto. Cada uma tem a sua página:
+
+- **[Indicadores (BI)]({{ '/mes-do-analista/indicadores/' | relative_url }})**: para olhar o trimestre, o semestre ou o ano, e comparar com o período anterior e com o ano passado, com os avisos que dizem quando uma comparação não é confiável. Use quando a diretoria perguntar "e no conjunto?".
+- **[Portfólio]({{ '/mes-do-analista/portfolio/' | relative_url }})**: reúne os relatórios **emitidos** do cliente, com os links, e oferece **um link só** para o cliente ver todos. É também onde você troca vários links de uma vez.
+
+Os dois dependem do que você faz neste mês: o **Indicadores** lê o que você **salvou**, e o **Portfólio** só mostra o que você **emitiu**.
+
 ## Checklist do mês
 
 - [ ] Cliente ativo conferido.
@@ -412,6 +422,7 @@ A confirmação sempre **diz quantos períodos** serão afetados. Ao terminar, o
 - [ ] Capa e imagens conferidas.
 - [ ] Relatório percorrido slide a slide antes de emitir.
 - [ ] Relatório sem o selo "Mês em andamento" (ou o cliente avisado de que é parcial).
+- [ ] Relatório emitido aparece no [Portfólio]({{ '/mes-do-analista/portfolio/' | relative_url }}) do cliente; o link do portfólio está só com quem deve vê-lo.
 - [ ] Link enviado só a quem deve (de preferência pelo bloco de e-mail do Compartilhar, que deixa registro); PDF conferido.
 
 Continue em [Boas práticas]({{ '/boas-praticas/' | relative_url }}) para os hábitos que evitam retrabalho, ou em [Perguntas frequentes]({{ '/perguntas-frequentes/' | relative_url }}) para as dúvidas mais comuns.

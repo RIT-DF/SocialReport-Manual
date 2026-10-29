@@ -38,6 +38,21 @@ Você recebe um **link**. Ele abre o relatório direto no navegador, sem senha e
 > **Nem todo relatório tem todas as páginas.** Algumas só aparecem quando há o que mostrar: a página de picos atípicos, a de imprensa, a de receitas do site e o capítulo inteiro do site (quando o site da organização ainda não está ligado ao sistema ou não houve visitas medidas no mês). Se você não achou uma página que esperava, olhe o **Sumário**: ele lista exatamente o que existe naquele mês.
 {: .note }
 
+## Se você recebeu o link do portfólio
+
+Algumas organizações recebem, em vez de um link por mês, **um link só**, que abre a página do **portfólio**: uma vitrine com **todos os relatórios já emitidos**, do mais recente para o mais antigo. Cada cartão mostra a capa (ou as cores da organização), o mês e se o relatório é **mensal** ou **consolidado** (o que cobre vários meses, como um trimestre).
+
+![Página do portfólio, com o nome da organização no alto e um cartão por relatório emitido]({{ '/assets/img/app/app-41-portfolio-publico.png' | relative_url }})
+
+- **Para ler um relatório, clique no cartão.** Ele abre como qualquer relatório deste manual, e vale tudo o que está escrito nesta parte.
+- **A página é só de leitura.** Não há senha, e também não há o que apagar ou alterar nela.
+- **Novos relatórios aparecem sozinhos.** Quando a equipe emitir o do mês seguinte, ele entra na lista, sem você precisar de outro link.
+- **A página não aparece em buscadores.** Só quem recebeu o endereço chega a ela.
+- **"Portfólio não encontrado"** quer dizer que o link foi trocado ou desligado pela equipe. Peça o link atual.
+
+> **O cuidado de sempre.** Quem tem o link do portfólio vê **todos** os relatórios emitidos, e não só o do último mês. Envie só a quem deve ver, e avise a equipe se ele chegou a quem não devia.
+{: .warning }
+
 ## O mapa do relatório
 
 Para ninguém se perder, o manual agrupa as páginas do relatório em cinco blocos:

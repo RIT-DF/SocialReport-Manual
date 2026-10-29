@@ -44,6 +44,34 @@ São pedidos feitos no site, e não pagamentos confirmados. Para o dinheiro rece
 
 Provavelmente a medição está **subestimada**: sem link marcado, parte das visitas das redes aparece como "acesso direto". Peça à equipe que marque os links. Veja [Link marcado]({{ '/conceitos/' | relative_url }}).
 
+### Nos Indicadores (BI), por que um mês aparece como "parcial"?
+
+Porque ele **ainda não fechou**: o ciclo termina depois de hoje, ou a medição do site ou dos cursos começou no meio do mês. O mês em andamento é calculado na hora, com o que o sistema tem até aquele dia, e por isso o selo **parcial** acompanha o cartão e o gráfico. A variação sai em cinza, sem seta de alta ou queda. Para tirar o mês do cálculo, desligue **Incluir mês em andamento (parcial)**. Veja [Indicadores (BI)]({{ '/mes-do-analista/indicadores/' | relative_url }}).
+
+### O que significa "sem dados suficientes (2 de 3 meses)"?
+
+Que só dois dos três meses do período têm aquele dado, então comparar com outro período inteiro seria comparar coisas de tamanhos diferentes. A tela prefere dizer isso a mostrar um percentual enganoso. Complete os relatórios que faltam, ou leia só o valor do período. Veja [Indicadores (BI)]({{ '/mes-do-analista/indicadores/' | relative_url }}).
+
+### Nos Indicadores (BI), por que o alcance diz "definições de alcance diferentes" e some o total?
+
+Porque o período mistura meses medidos como **Alcance** com meses medidos como **Visualizadores** (a nova medida do Facebook). Somar ou comparar as duas dá um número que não é nenhuma das duas, então a tela não mostra o total nem a variação. Veja a [pergunta sobre a mudança de nome do alcance](#o-alcance-do-facebook-mudou-de-nome-por-que-a-nota-diz-definições-diferentes).
+
+### O que é um "marco histórico" nos Indicadores (BI)? Por que o quadradinho no gráfico?
+
+É um mês antigo que **não tem relatório** no sistema: só os totais, cadastrados pelo super-administrador no cliente. Eles permitem comparar com o ano passado antes de o cliente ter relatórios, mas são **menos detalhados** (sem rede por rede, sem site, cursos nem imprensa). No gráfico aparecem como quadrados; no cartão, como o selo **inclui marco histórico (menos detalhado)**. Veja [Indicadores (BI)]({{ '/mes-do-analista/indicadores/' | relative_url }}).
+
+### O número dos Indicadores (BI) é diferente do relatório. Qual vale?
+
+Vale o do **relatório salvo**: a tela lê o que foi salvo, e não o que está só na tela de revisão. Se você mudou algo e não salvou, salve de novo. Se o mês tem mais de um relatório (rascunho e emitido, por exemplo), a tela usa o **emitido**. A **taxa de engajamento** do período também difere da média das taxas dos meses, de propósito: ela é o engajamento total dividido pelas impressões totais.
+
+### Mandei o link dos Indicadores para um colega e ele viu outros números. Por quê?
+
+O endereço leva o período, os indicadores e o interruptor do mês em andamento, mas **não o cliente**. Cada pessoa vê o cliente que tem ativo. Confira o cliente no alto da tela dos dois lados. E o link só abre para quem tem login: não serve para enviar ao cliente.
+
+### Como levo os números dos Indicadores (BI) para uma planilha?
+
+Marque os meses na tabela do fim da tela e use **Exportar CSV dos marcados** (arquivo que o Excel em português abre com acentos e decimais certos) ou **Copiar como tabela** (cola direto na planilha). A coluna **Observação** leva o selo "parcial" quando for o caso. Veja [Indicadores (BI)]({{ '/mes-do-analista/indicadores/' | relative_url }}).
+
 ## Sobre a análise escrita
 
 ### A inteligência artificial inventa números?
@@ -75,6 +103,22 @@ Sim. Em **Compartilhar & Incorporar**, o bloco **Enviar o link por e-mail ao cli
 ### Gerei um link novo. O e-mail que já enviei ainda funciona?
 
 Não. O e-mail leva o link que valia na hora do envio, e esse link **deixa de abrir** quando você gera um novo. Envie de novo pelo mesmo bloco.
+
+### O que é o portfólio? Quais relatórios aparecem nele?
+
+É uma página com **todos os relatórios emitidos** de um cliente, atrás de um link só. Entram os **emitidos**, mensais e consolidados; rascunho e validado não aparecem. Se o do mês passado não está lá, o status dele ainda não é **emitido**. Veja [Portfólio]({{ '/mes-do-analista/portfolio/' | relative_url }}).
+
+### Desliguei o link do portfólio e o cliente ainda consegue abrir os relatórios. Por quê?
+
+Porque o portfólio e cada relatório têm **links independentes**. Desligar o portfólio fecha só a lista; quem já abriu um relatório guardou o endereço dele. Para fechar tudo, marque a opção **Também gerar novos links para os N relatórios** ao desligar, ou use **Gerar novo link** em cada relatório. Veja [Portfólio]({{ '/mes-do-analista/portfolio/' | relative_url }}).
+
+### Quando devo gerar novos links? O que acontece com os antigos?
+
+Gere quando o link foi parar onde não devia, quando alguém deixou de ser parceiro do cliente, ou quando um relatório com erro já circulou. Os **links antigos param de abrir na hora**, inclusive em e-mails já enviados e no código de incorporação de páginas do site. Depois, reenvie o novo link e troque o código. Não gere por rotina. Veja [Portfólio]({{ '/mes-do-analista/portfolio/' | relative_url }}).
+
+### O portfólio aparece em buscadores como o Google?
+
+Não. A página do portfólio e a dos relatórios pedem aos buscadores que não as listem. Só chega quem recebe o endereço. Mas **quem tem o link vê tudo**: envie só a quem deve ver.
 
 ### Posso colocar o relatório no site da organização?
 

@@ -68,7 +68,7 @@ Ao editar, o cadastro tem estas partes:
 - **Destinatários do relatório:** quem recebe o link do relatório por e-mail, pelo botão **Compartilhar** (veja abaixo).
 - **Categorias editoriais** do cliente (separadas por vírgula).
 - **Canais contratados** (Instagram, Facebook, LinkedIn, TikTok, YouTube).
-- **Marcos históricos anteriores** (opcional): totais de meses passados (por exemplo, seguidores) que ligam os gráficos de tendência e o comparativo desde o primeiro relatório.
+- **Marcos históricos anteriores** (opcional): totais de meses passados (por exemplo, seguidores) que ligam os gráficos de tendência e o comparativo desde o primeiro relatório. Também alimentam a tela [Indicadores (BI)]({{ '/mes-do-analista/indicadores/' | relative_url }}), onde esses meses aparecem como **marco histórico (menos detalhado)**. Cadastre os totais com o cuidado que daria a um relatório: um marco errado entra nas somas e nas comparações.
 - **Plataforma de cursos (Moodle):** o acesso ao Moodle do cliente e o site da plataforma no Matomo (veja abaixo).
 - **Fim do contrato:** o campo **Contrato encerrado em** (veja abaixo).
 - **Site:** a ligação com o Matomo (veja a [parte 5]({{ '/site-e-plugin/' | relative_url }})).

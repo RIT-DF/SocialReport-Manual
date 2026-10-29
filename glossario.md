@@ -51,6 +51,8 @@ Definições curtas, em ordem alfabética, do jeito que cada termo é usado nest
 
 ## I
 
+**Indicadores (BI).** Tela do sistema para olhar vários meses lado a lado: período à escolha, onze indicadores, comparação com o período anterior e com o ano passado, gráficos e tabela exportável. Veja [Indicadores (BI)]({{ '/mes-do-analista/indicadores/' | relative_url }}).
+
 **Impressões.** Quantas vezes a publicação apareceu na tela, contando repetições. Veja [Impressões]({{ '/conceitos/' | relative_url }}).
 
 ## L
@@ -63,6 +65,8 @@ Definições curtas, em ordem alfabética, do jeito que cada termo é usado nest
 
 ## M
 
+**Marco histórico.** Total de um mês antigo (publicações, alcance, impressões, engajamento e seguidores) cadastrado no cliente, para os gráficos e os Indicadores (BI) começarem antes do primeiro relatório. É menos detalhado que um relatório: sem rede por rede, sem site, cursos nem imprensa. Veja [Indicadores (BI)]({{ '/mes-do-analista/indicadores/' | relative_url }}).
+
 **Mês em andamento.** Aviso no rodapé dos slides ("Mês em andamento — dados até DD/MM") de que o período ainda não terminou: as comparações com o mês anterior são parciais, sem seta de alta ou queda. Veja [Comparativo geral]({{ '/como-ler-o-relatorio/redes/' | relative_url }}).
 
 **Matomo.** Sistema que mede as visitas do site, de onde o SocialReport lê os números do capítulo do site. Veja [O site]({{ '/como-ler-o-relatorio/site/' | relative_url }}).
@@ -73,11 +77,17 @@ Definições curtas, em ordem alfabética, do jeito que cada termo é usado nest
 
 ## P
 
+**Parcial.** Selo dos Indicadores (BI) para um número que inclui o mês em andamento (ou medição do site ou dos cursos que começou no meio do mês). A variação sai em cinza, sem seta de alta ou queda. Veja [Indicadores (BI)]({{ '/mes-do-analista/indicadores/' | relative_url }}).
+
 **Pedido realizado.** Pedido feito na loja ou na doação online; não é pagamento confirmado. Veja [Pedidos e pagamentos]({{ '/conceitos/' | relative_url }}).
 
 **Provar a senha.** Botão das cópias de segurança que confere, sem mostrar nada, se a senha digitada (a do cofre) é a que cifra as cópias. Sem a prova, o painel avisa. Veja [Cópias de segurança]({{ '/copias-de-seguranca/' | relative_url }}).
 
 **Ponto percentual (p.p.).** Diferença entre duas porcentagens: de 3,55% para 4,29% são 0,74 p.p. Veja [Ponto percentual]({{ '/conceitos/' | relative_url }}).
+
+**Período anterior.** Nos Indicadores (BI), a janela imediatamente antes do período escolhido, **do mesmo tamanho**: para o 3º trimestre, o 2º trimestre. Veja [Indicadores (BI)]({{ '/mes-do-analista/indicadores/' | relative_url }}).
+
+**Portfólio.** Página com todos os relatórios emitidos de um cliente, com um link só, e a tela do sistema que controla esse link e os dos relatórios. Veja [Portfólio]({{ '/mes-do-analista/portfolio/' | relative_url }}).
 
 **Por mil.** Visitas ao site a cada mil pessoas alcançadas por uma rede. Veja [Das redes ao site]({{ '/como-ler-o-relatorio/site/' | relative_url }}).
 

@@ -70,6 +70,18 @@ O link do relatório abre sem senha. Compartilhe com quem precisa e guarde onde 
 
 **Se não fizer:** quem receber o link por encaminhamento vê tudo. Se o link vazar, veja [o que fazer]({{ '/perguntas-frequentes/' | relative_url }}).
 
+### 9. Gere novos links só por motivo, e avise depois
+
+**Gerar novo link** (de um relatório, do portfólio ou de vários de uma vez) é a forma de fechar um acesso: o link antigo para de abrir na hora. Use quando o link foi parar onde não devia, quando alguém deixou de ser parceiro do cliente ou quando um relatório com erro já circulou. Depois de gerar, reenvie o novo link e troque o código de incorporação, se o relatório está numa página do site. Veja [Portfólio]({{ '/mes-do-analista/portfolio/' | relative_url }}).
+
+**Se fizer sem necessidade:** os e-mails já enviados viram botões que não levam a lugar nenhum, e o cliente acha que o relatório sumiu. **Se não fizer quando precisa:** desligar só o portfólio não fecha os relatórios que quem recebeu já tem.
+
+### 10. Antes de comparar períodos, leia os selos
+
+Nos [Indicadores (BI)]({{ '/mes-do-analista/indicadores/' | relative_url }}), o selo **parcial**, o **marco histórico**, as **definições de alcance diferentes** e o **sem dados suficientes** dizem quando uma comparação não é confiável. Leia o selo antes do percentual, e feche o mês antes de levar um trimestre ao cliente.
+
+**Se não fizer:** você leva à diretoria uma "queda de 30%" que é só um mês incompleto, ou uma "alta" que é só uma rede nova entrando na soma de seguidores.
+
 ## Para quem lê o relatório
 
 ### 1. Compare com o mês anterior, e não com a vitrine
