@@ -22,7 +22,7 @@ Entender a origem evita a maior parte das dúvidas:
 - **Dos relatórios do próprio sistema.** Cada mês fechado fica guardado quando você **salva** o relatório. Se você mudou um número no relatório e não salvou, a tela não sabe.
 - **O mês em andamento é calculado na hora.** Ele não fica guardado: a cada abertura, a tela refaz a conta com o que está no sistema até hoje, e marca o resultado como **parcial**.
 - **Dos marcos históricos, para os meses antigos.** São os totais de meses de antes do primeiro relatório, cadastrados pelo super-administrador no cadastro do cliente (veja a [parte 6]({{ '/administracao/' | relative_url }})). Como só têm os totais (publicações, alcance, impressões, engajamento e seguidores), a tela os marca como **menos detalhados**. Não têm site, cursos nem imprensa.
-- **Mais de um relatório no mesmo mês?** Vale o **emitido**; sem ele, o **validado**; sem ele, o **rascunho**. Relatório **consolidado** (vários meses em um) não entra: o mês dele já está nos relatórios mensais.
+- **Mais de um relatório no mesmo mês?** Vale o **emitido**; sem ele, o **validado**; sem ele, o **rascunho**. Relatório **consolidado** (vários meses em um) não entra: o mês dele já está nos relatórios mensais. O consolidado, por sua vez, **lê esta mesma base**.
 - **Relatório vence marco.** Quando o mês tem os dois, vale o relatório, que é mais detalhado.
 - **Mês sem dado aparece como "—", nunca como zero.** Zero quer dizer "aconteceu zero vezes"; o traço quer dizer "não foi medido". A diferença muda a conclusão.
 
@@ -122,6 +122,10 @@ O endereço da tela guarda **o período, os indicadores marcados e o interruptor
 > **O endereço não leva o cliente.** Quem abre vê os indicadores do **cliente que tiver ativo** na própria tela. Antes de discutir um número com o colega, confira nos dois lados o cliente no alto. E, como a tela exige login, o link serve para a equipe, e não para o cliente: quem não tem conta não abre.
 {: .warning }
 
+### 8. Leve o período para um relatório consolidado
+
+Com o período e os indicadores que você quer na tela, o botão **Gerar consolidado deste período**, no alto, leva à tela **Consolidados** já com as datas preenchidas, para criar **um book só** do período, com análise e conclusão. Se o período não puder virar consolidado (um mês só, mais de 24 meses ou um mês que ainda não começou), o botão fica apagado e uma linha diz o motivo. Veja [Relatório consolidado]({{ '/mes-do-analista/consolidado/' | relative_url }}).
+
 ## Exemplo: o 3º trimestre da Associação Modelo Aurora
 
 A diretoria pergunta: "o trimestre foi melhor ou pior que o do ano passado?". Você clica em **3º tri**, deixa os quatro indicadores padrão e lê:
@@ -159,4 +163,4 @@ A decisão: a queda em publicações é real, e o ritmo de crescimento de seguid
 
 O **analista** e o **super-administrador** veem a tela e exportam. Cadastrar os **marcos históricos** é do super-administrador, pelo cadastro do cliente. Corrigir um número é feito **no relatório do mês**, não aqui: a tela só lê.
 
-Veja também: [O mês do analista]({{ '/mes-do-analista/' | relative_url }}), [Portfólio]({{ '/mes-do-analista/portfolio/' | relative_url }}) e o [Glossário]({{ '/glossario/' | relative_url }}).
+Veja também: [O mês do analista]({{ '/mes-do-analista/' | relative_url }}), [Relatório consolidado]({{ '/mes-do-analista/consolidado/' | relative_url }}), [Portfólio]({{ '/mes-do-analista/portfolio/' | relative_url }}) e o [Glossário]({{ '/glossario/' | relative_url }}).

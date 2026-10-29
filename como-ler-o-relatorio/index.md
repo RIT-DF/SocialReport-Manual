@@ -53,6 +53,16 @@ Algumas organizações recebem, em vez de um link por mês, **um link só**, que
 > **O cuidado de sempre.** Quem tem o link do portfólio vê **todos** os relatórios emitidos, e não só o do último mês. Envie só a quem deve ver, e avise a equipe se ele chegou a quem não devia.
 {: .warning }
 
+## Se o relatório for um consolidado
+
+Alguns relatórios cobrem **vários meses** (um trimestre, um semestre, um ano) e dizem **Relatório consolidado** na capa. Valem as mesmas páginas e os mesmos cuidados, com três diferenças:
+
+- **Os números são do período inteiro.** Publicações, impressões e interações são somas; **seguidores** são os do último mês, com o ganho no período; o **alcance** é somado mês a mês (a mesma pessoa pode estar em vários meses).
+- **Cada número tem duas comparações:** com o **período anterior** do mesmo tamanho e com o **mesmo período do ano passado**. Quando a comparação não é confiável (mês faltando, mês em andamento, alcance medido de dois jeitos), o relatório **diz** em vez de mostrar um percentual: "sem dados suficientes (k de n meses)", "(parcial, sem tendência)", "sem comparação".
+- **A página "Meses do período"** mostra de onde vem cada mês e quais são incompletos. Comece por ela.
+
+Para quem produz o consolidado, veja [Relatório consolidado]({{ '/mes-do-analista/consolidado/' | relative_url }}).
+
 ## O mapa do relatório
 
 Para ninguém se perder, o manual agrupa as páginas do relatório em cinco blocos:

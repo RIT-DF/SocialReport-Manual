@@ -82,6 +82,12 @@ Nos [Indicadores (BI)]({{ '/mes-do-analista/indicadores/' | relative_url }}), o 
 
 **Se não fizer:** você leva à diretoria uma "queda de 30%" que é só um mês incompleto, ou uma "alta" que é só uma rede nova entrando na soma de seguidores.
 
+### 11. Feche e emita os meses antes de consolidar
+
+O [consolidado]({{ '/mes-do-analista/consolidado/' | relative_url }}) lê os relatórios mensais salvos. Antes de criar, leia a prévia de cobertura: meses sem dado, em rascunho ou em andamento aparecem ali. Depois de criar, se você mudar um mês, use **Atualizar números** e gere a análise de novo.
+
+**Se não fizer:** o trimestre sai com um mês fora das somas, ou com os números de antes da sua correção, e o texto da IA fala de valores que já mudaram.
+
 ## Para quem lê o relatório
 
 ### 1. Compare com o mês anterior, e não com a vitrine

@@ -400,12 +400,13 @@ A confirmação sempre **diz quantos períodos** serão afetados. Ao terminar, o
 
 ## Depois do mês: acompanhar a evolução e organizar a entrega
 
-Duas telas do menu cuidam do que acontece **depois** que o relatório do mês está pronto. Cada uma tem a sua página:
+Três telas do menu cuidam do que acontece **depois** que o relatório do mês está pronto. Cada uma tem a sua página:
 
 - **[Indicadores (BI)]({{ '/mes-do-analista/indicadores/' | relative_url }})**: para olhar o trimestre, o semestre ou o ano, e comparar com o período anterior e com o ano passado, com os avisos que dizem quando uma comparação não é confiável. Use quando a diretoria perguntar "e no conjunto?".
 - **[Portfólio]({{ '/mes-do-analista/portfolio/' | relative_url }})**: reúne os relatórios **emitidos** do cliente, com os links, e oferece **um link só** para o cliente ver todos. É também onde você troca vários links de uma vez.
+- **[Relatório consolidado]({{ '/mes-do-analista/consolidado/' | relative_url }})**: junta vários meses (trimestre, semestre, ano ou período escolhido) em **um book só**, com comparações, análise, link, PDF e e-mail. Use quando o cliente pedir o fechamento do período, e não doze relatórios.
 
-Os dois dependem do que você faz neste mês: o **Indicadores** lê o que você **salvou**, e o **Portfólio** só mostra o que você **emitiu**.
+Os três dependem do que você faz neste mês: o **Indicadores** e o **Consolidado** leem o que você **salvou**, e o **Portfólio** só mostra o que você **emitiu**.
 
 ## Checklist do mês
 
@@ -422,6 +423,7 @@ Os dois dependem do que você faz neste mês: o **Indicadores** lê o que você 
 - [ ] Capa e imagens conferidas.
 - [ ] Relatório percorrido slide a slide antes de emitir.
 - [ ] Relatório sem o selo "Mês em andamento" (ou o cliente avisado de que é parcial).
+- [ ] No fim de trimestre, semestre ou ano: [consolidado]({{ '/mes-do-analista/consolidado/' | relative_url }}) criado, com a prévia de cobertura lida e os meses fechados antes.
 - [ ] Relatório emitido aparece no [Portfólio]({{ '/mes-do-analista/portfolio/' | relative_url }}) do cliente; o link do portfólio está só com quem deve vê-lo.
 - [ ] Link enviado só a quem deve (de preferência pelo bloco de e-mail do Compartilhar, que deixa registro); PDF conferido.
 

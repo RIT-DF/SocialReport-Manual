@@ -31,6 +31,10 @@ Definições curtas, em ordem alfabética, do jeito que cada termo é usado nest
 
 **Clipping.** Levantamento das matérias de imprensa que citaram a organização, com o tom de cada uma. Veja [Clipping]({{ '/conceitos/' | relative_url }}).
 
+**Cobertura (k de n meses).** Quantos meses do período têm um dado. "3 de 4 meses" quer dizer que um mês ficou sem dado e fora da soma. Nos Indicadores (BI) e no consolidado, a comparação só é feita quando as duas janelas estão completas. Veja [Relatório consolidado]({{ '/mes-do-analista/consolidado/' | relative_url }}).
+
+**Consolidado (relatório).** Book que junta vários meses (de 2 a 24) de um cliente, com as comparações do período, análise e conclusão. Lê os relatórios mensais salvos e guarda um retrato deles. Veja [Relatório consolidado]({{ '/mes-do-analista/consolidado/' | relative_url }}).
+
 **Cópia de segurança.** Cópia cifrada do banco de dados do sistema, com senha. Não leva chaves, senhas nem tokens. Veja [Cópias de segurança]({{ '/copias-de-seguranca/' | relative_url }}).
 
 **Conversão.** Ação importante concluída no site: formulário, clique no WhatsApp, e-mail ou telefone. Veja [Conversão]({{ '/conceitos/' | relative_url }}).
@@ -92,6 +96,8 @@ Definições curtas, em ordem alfabética, do jeito que cada termo é usado nest
 **Por mil.** Visitas ao site a cada mil pessoas alcançadas por uma rede. Veja [Das redes ao site]({{ '/como-ler-o-relatorio/site/' | relative_url }}).
 
 ## R
+
+**Retrato (do consolidado).** Os números do período guardados no consolidado quando ele foi criado ou atualizado. O link público e o PDF mostram o retrato, e não a base ao vivo. Veja [Relatório consolidado]({{ '/mes-do-analista/consolidado/' | relative_url }}).
 
 **Rejeição.** Porcentagem de visitas em que a pessoa saiu na primeira página. Quanto menor, melhor. Veja [Rejeição]({{ '/conceitos/' | relative_url }}).
 

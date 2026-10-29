@@ -18,7 +18,7 @@ O SocialReport transforma os números das redes sociais de uma organização, e 
 |---|---|---|
 | 1. [Por que medir]({{ '/por-que-medir/' | relative_url }}) | todos | pronta para revisão |
 | 2. [Conceitos explicados]({{ '/conceitos/' | relative_url }}) | todos | pronta para revisão |
-| 3. [O mês do analista]({{ '/mes-do-analista/' | relative_url }}), com [Indicadores (BI)]({{ '/mes-do-analista/indicadores/' | relative_url }}) e [Portfólio]({{ '/mes-do-analista/portfolio/' | relative_url }}) | equipe que faz o relatório | pronta para revisão |
+| 3. [O mês do analista]({{ '/mes-do-analista/' | relative_url }}), com [Indicadores (BI)]({{ '/mes-do-analista/indicadores/' | relative_url }}), [Portfólio]({{ '/mes-do-analista/portfolio/' | relative_url }}) e [Relatório consolidado]({{ '/mes-do-analista/consolidado/' | relative_url }}) | equipe que faz o relatório | pronta para revisão |
 | 4. **[Como ler o seu relatório]({{ '/como-ler-o-relatorio/' | relative_url }})** | **quem recebe o relatório** | **pronta para revisão** |
 | 5. [O site do cliente e o plugin V3RAnalytics]({{ '/site-e-plugin/' | relative_url }}) | equipe e administrador do site | pronta para revisão |
 | 6. [Administração]({{ '/administracao/' | relative_url }}) | administradores do sistema | pronta para revisão |

@@ -18,7 +18,7 @@ Sem o portfólio, o cliente recebe um link por mês, cada um no seu e-mail. Mese
 ## O que entra no portfólio
 
 - **Só relatórios emitidos.** Rascunho e validado ficam de fora, de propósito: o cliente não vê trabalho em andamento. Quando você emite um relatório, ele entra na lista; se o período for excluído, sai.
-- **Mensais e consolidados** (aquele que cobre vários meses, como o de um trimestre). O cartão diz **Mensal** ou **Consolidado**.
+- **Mensais e consolidados** (aquele que cobre vários meses, como o de um trimestre). O cartão diz **Mensal** ou **Consolidado**. O consolidado entra assim que é **emitido** (veja [Relatório consolidado]({{ '/mes-do-analista/consolidado/' | relative_url }})), e o botão **Revisão** do cartão dele abre a revisão do consolidado.
 - **O mais recente primeiro.**
 - **A capa do cartão.** Se o cliente usa o modelo de capa **Com foto** e o relatório tem imagem publicável, o cartão mostra a capa. Em qualquer outro caso, mostra uma **miniatura** desenhada com as cores do cliente e o logotipo (ou as iniciais do nome). Isso não é defeito: veja o modelo da capa no cadastro do cliente, na [parte 6]({{ '/administracao/' | relative_url }}).
 
@@ -114,4 +114,4 @@ Você escolhe o segundo, depois **gera um novo link do portfólio** e o envia à
 
 O **analista** e o **super-administrador** veem a tela e podem gerar, trocar e desligar links. Não existe papel só de leitura, e é por isso que a tela pede confirmação antes de tudo que invalida um endereço. Quem não tem conta no sistema, como o cliente, só abre os links que recebe.
 
-Veja também: [Compartilhar o link e gerar o PDF]({{ '/mes-do-analista/#12-compartilhar-o-link-e-gerar-o-pdf' | relative_url }}), [Indicadores (BI)]({{ '/mes-do-analista/indicadores/' | relative_url }}) e o [Glossário]({{ '/glossario/' | relative_url }}).
+Veja também: [Compartilhar o link e gerar o PDF]({{ '/mes-do-analista/#12-compartilhar-o-link-e-gerar-o-pdf' | relative_url }}), [Indicadores (BI)]({{ '/mes-do-analista/indicadores/' | relative_url }}), [Relatório consolidado]({{ '/mes-do-analista/consolidado/' | relative_url }}) e o [Glossário]({{ '/glossario/' | relative_url }}).

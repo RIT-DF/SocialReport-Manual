@@ -54,7 +54,7 @@ Que só dois dos três meses do período têm aquele dado, então comparar com o
 
 ### Nos Indicadores (BI), por que o alcance diz "definições de alcance diferentes" e some o total?
 
-Porque o período mistura meses medidos como **Alcance** com meses medidos como **Visualizadores** (a nova medida do Facebook). Somar ou comparar as duas dá um número que não é nenhuma das duas, então a tela não mostra o total nem a variação. Veja a [pergunta sobre a mudança de nome do alcance](#o-alcance-do-facebook-mudou-de-nome-por-que-a-nota-diz-definições-diferentes).
+Porque o período mistura meses medidos como **Alcance** com meses medidos como **Visualizadores** (a nova medida do Facebook). Somar ou comparar as duas dá um número que não é nenhuma das duas, então a tela não mostra o total nem a variação. Veja a pergunta sobre a mudança de nome do alcance, em "Sobre os números", mais acima.
 
 ### O que é um "marco histórico" nos Indicadores (BI)? Por que o quadradinho no gráfico?
 
@@ -123,6 +123,40 @@ Não. A página do portfólio e a dos relatórios pedem aos buscadores que não 
 ### Posso colocar o relatório no site da organização?
 
 Sim. A opção **Compartilhar & Incorporar**, na barra acima do relatório, mostra o link para copiar e um código para incorporar o relatório numa página do site.
+
+## Sobre o relatório consolidado
+
+### Quando faço um consolidado, e não envio os relatórios mensais?
+
+Quando a pergunta é sobre o conjunto: "como foi o trimestre?", "e o ano?". O consolidado traz as comparações com o período anterior e com o mesmo período do ano passado, uma análise do período e uma conclusão. Os mensais continuam sendo a fonte dos números. Veja [Relatório consolidado]({{ '/mes-do-analista/consolidado/' | relative_url }}).
+
+### O consolidado de um trimestre soma os três relatórios do mês?
+
+Sim, para o que se soma: publicações, impressões, interações, visitas, inscrições. **Seguidores não se somam**: vale o do último mês. A taxa de engajamento é refeita sobre o período inteiro, e não uma média das taxas dos meses. O **alcance** só é somado quando todos os meses usam a mesma definição.
+
+### Por que o alcance do consolidado aparece como "—" e diz "sem total"?
+
+Porque os meses do período usam definições diferentes de alcance (o Facebook trocou **Alcance** por **Visualizadores**, e há meses que misturam as duas). Somar os dois daria um número que não é nenhum dos dois. Veja a pergunta sobre a mudança de nome do alcance, em "Sobre os números", mais acima.
+
+### O que quer dizer "sem dados suficientes (2 de 3 meses)" no consolidado?
+
+Que só dois dos três meses do período têm esse dado, e a comparação só é feita quando **as duas janelas** estão completas. O total diz "soma de 2 de 3 meses", e o mês faltante fica fora (nunca vira zero). Complete o relatório do mês que falta e use **Atualizar números**.
+
+### Mudei um número num relatório mensal. Por que o consolidado não mudou?
+
+Porque ele guarda um **retrato** da base de quando foi criado, para que um relatório já entregue não mude sozinho. A revisão avisa que a base mudou e oferece **Atualizar números**. Num consolidado já emitido, o sistema pede confirmação, porque o link público passa a mostrar os números novos.
+
+### Gerei a análise da IA de novo. Perdi o que eu tinha escrito?
+
+Não. **Gerar de novo** troca só o texto da IA. O que você editou (o selo **Editado por você**) continua valendo, e o botão **Voltar ao texto da IA** é que descarta a sua edição, campo a campo.
+
+### Por que o capítulo dos cursos está só com a série mensal?
+
+O complemento do Moodle lê, no máximo, 400 dias por vez (cerca de 13 meses), e cada janela de comparação tem de caber. Em períodos mais longos, ou quando a leitura falha, o capítulo usa a soma mensal dos relatórios, e a revisão diz o motivo.
+
+### O consolidado aparece no portfólio?
+
+Aparece quando está **emitido**, com a etiqueta **Consolidado**. Em rascunho ou validado, não.
 
 ## Sobre o site e o plugin
 
