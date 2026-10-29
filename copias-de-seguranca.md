@@ -224,7 +224,7 @@ O `saida.dump` é um arquivo de banco de dados do PostgreSQL. **Restaurar** o si
 - **Login com Google**: o segredo do cliente Google (depois de salvar, o serviço de login precisa ser recriado, passo do suporte técnico);
 - **Matomo**: o token de leitura e, se usar a conexão automática por código, o token de administração;
 - **Licença do V3RAnalytics** (aba **Matomo**): a licença da instância (veja [Site e plugin]({{ '/site-e-plugin/' | relative_url }}));
-- **Cursos (Moodle)**: o token de **cada cliente** que tem Moodle, no cadastro do cliente (seção **Plataforma de cursos**, bloco **Acesso ao Moodle**); o endereço e o id do relatório continuam lá, só o token precisa ser colado de novo;
+- **Cursos (Moodle)**: o token (ou, no jeito do complemento, o **código de conexão**, que se gera de novo na página do complemento no Moodle) de **cada cliente** que tem Moodle, no cadastro do cliente (seção **Plataforma de cursos**, bloco **Acesso ao Moodle**); o endereço, o modo de conexão e o id do relatório continuam lá, só a chave precisa ser colada de novo;
 - **Cópias de segurança**: uma **senha nova** para as cópias, que depois deve ser provada com **Provar a senha**.
 
 Enquanto isso não for feito, a IA, o envio de e-mail (inclusive o envio do link do relatório ao cliente), o login com Google, a leitura do Matomo e do Moodle e as cópias ficam desligados, e os plugins V3RAnalytics conectados depois não recebem licença. Os **usuários continuam entrando com as mesmas senhas**.

@@ -87,19 +87,41 @@ Ao editar, o cadastro tem estas partes:
 - **Dado pessoal:** nome e e-mail de quem recebe são dados pessoais. Cadastre só quem de fato precisa do relatório e tire quem saiu da organização do cliente.
 - **Sem destinatários**, o botão de enviar em **Compartilhar** fica indisponível e avisa onde cadastrar.
 
-**Acesso ao Moodle do cliente (só o super-admin).** Cada cliente tem o **seu** acesso ao Moodle, porque cada um usa um Moodle diferente. Ele fica no cadastro do cliente, na seção **Plataforma de cursos**, no bloco **Acesso ao Moodle**. Para o capítulo **Cursos** funcionar, preencha:
+**Acesso ao Moodle do cliente (só o super-admin).** Cada cliente tem o **seu** acesso ao Moodle, porque cada um usa um Moodle diferente. Ele fica no cadastro do cliente, na seção **Plataforma de cursos**, no bloco **Acesso ao Moodle**. É dele que o capítulo **Cursos** do relatório tira o número de inscrições e de conclusões. O sistema nunca lê nome, e-mail ou nota de aluno: só números somados.
+
+O bloco mostra, no alto, como o Moodle está conectado: **Conectado pelo complemento** (com a versão do complemento), **Conectado manualmente** ou **Não conectado**. Há dois jeitos de conectar. O primeiro é o recomendado.
+
+**Jeito 1: pelo complemento do Moodle (recomendado).** O complemento "SocialReport" é uma pequena peça que se instala no Moodle do cliente. Ela soma as inscrições dentro do próprio Moodle e entrega só os totais. Quem instala é o administrador do Moodle (se o Moodle do cliente não deixa instalar complementos, use o jeito 2). O passo a passo:
+
+1. **Instale o complemento no Moodle do cliente.** O administrador do Moodle vai em **Administração do site > Plugins > Instalar plugins**, envia o arquivo do complemento "SocialReport" (a V3RTECH fornece o arquivo) e conclui a instalação.
+2. **Gere o código de conexão.** No Moodle, em **Administração do site > Plugins > Plugins locais > Conexão com o SocialReport**, clique em **Gerar o código de conexão**. A página mostra um código comprido, que começa com `srmoodle1.`. Clique em **Copiar**. **Ele aparece só desta vez**: se perder, gere outro (o anterior deixa de funcionar).
+3. **Cole o código no SocialReport.** No cadastro do cliente, no bloco **Acesso ao Moodle**, cole o código no campo **Código de conexão** e clique em **Conectar com o código**. O campo se esvazia e passa a mostrar só o final da chave guardada. O código leva o endereço do Moodle e a chave; nada disso volta a aparecer na tela.
+4. **Confira.** Clique em **Testar o complemento**. O sistema mostra a versão do complemento instalada e se o rastreador (passo seguinte) está funcionando.
+5. **Instale o rastreador de visitas (para o slide "De onde vêm as inscrições").** O Moodle não sabe de onde o visitante veio; quem sabe é o Matomo. No bloco, clique em **Copiar código do rastreador** (precisa que o site do cliente já esteja ligado ao Matomo, na seção **Site** do cadastro). Depois, na mesma página do complemento no Moodle, cole esse código no campo **Código do rastreador** e clique em **Salvar e ligar**. O rastreador não usa cookies, respeita quem pediu para não ser rastreado e não mede os administradores do site. O código do rastreador não é segredo: leva só o endereço do Matomo e o número do site.
+6. **Volte ao SocialReport e clique em Testar o complemento de novo** (depois de algumas visitas ao Moodle). O estado do rastreador pode ser:
+   - **instalado e enviando visitas**: tudo certo;
+   - **instalado, mas ainda sem visitas** nos últimos 7 dias: espere alguém acessar o Moodle e teste de novo;
+   - **não instalado** ou **desligado**: falta colar o código ou ligar na página do complemento;
+   - **aponta para outro site**: o código colado é de outro cliente; copie de novo o código deste cliente.
+
+**Jeito 2: manual (para o Moodle que não aceita instalar complemento).** Abra a parte **Configuração manual** do mesmo bloco e preencha:
 
 - **Endereço do Moodle do cliente**, por exemplo `https://cursos.exemplo.org.br` (em produção precisa começar com `https://`);
 - **Id do relatório**: o número do relatório personalizado que o administrador do Moodle criou para o SocialReport (sem coluna de pessoa);
 - **Token do Moodle**: a chave que o Moodle gera para essa leitura. Cole-o direto no campo; nunca o envie por e-mail ou conversa.
 
-Depois, clique em **Testar conexão** (mostra se o Moodle respondeu, quantas linhas o relatório tem e as colunas conferidas, nunca uma linha de aluno) e em **Salvar acesso**. **Remover acesso** apaga o endereço e o token daquele cliente do servidor.
+Depois, clique em **Testar conexão** (mostra se o Moodle respondeu, quantas linhas o relatório tem e as colunas conferidas, nunca uma linha de aluno) e em **Salvar acesso**. Nesse jeito, o slide de origem das inscrições depende de o rastreador do Matomo já estar nas páginas do Moodle por outro meio.
 
-- **O token nunca volta para a tela.** Depois de salvo, o campo mostra só o final dele ("Token guardado ••••1234"). Para trocar, digite um novo; deixar o campo vazio mantém o que está guardado.
-- **Quem não é super-admin** vê apenas se o Moodle do cliente está **conectado** ou **não conectado**. Ninguém, nem o super-admin, vê o token inteiro depois de salvo.
-- **Primeira vez que a versão 1.27 sobe:** o acesso ao Moodle que antes era um só para o sistema todo foi **copiado sozinho** para os clientes que usavam aquele mesmo Moodle (hoje, a RIT), então nada parou. A aba **Cursos (Moodle)** das configurações do sistema agora só avisa que a configuração mudou de lugar.
+**Vale para os dois jeitos:**
+
+- **Os números do relatório são os mesmos** nos dois jeitos, para os mesmos dados.
+- **A chave nunca volta para a tela.** Depois de salva, o campo mostra só o final dela. Ninguém, nem o super-admin, vê a chave inteira depois de salva.
+- **Quem não é super-admin** vê apenas se o Moodle do cliente está **conectado** ou **não conectado**.
+- **Trocar de jeito:** colar um código de conexão passa o cliente para o jeito 1 e troca a chave guardada. Para voltar ao manual, abra a configuração manual e digite o token do relatório (o guardado é o do complemento e não serve ao relatório).
+- **Remover acesso** apaga o endereço e a chave daquele cliente do servidor; o capítulo **Cursos** deixa de buscar números do Moodle.
 - **Cliente com endereço de Moodle e sem acesso configurado:** ao buscar os dados dos cursos, a revisão avisa "Acesso ao Moodle deste cliente não configurado", e o relatório continua sendo montado, sem o capítulo Cursos.
-- **Depois de restaurar uma cópia de segurança**, o token de cada cliente precisa ser colado de novo (a cópia não leva segredos).
+- **Depois de restaurar uma cópia de segurança**, a chave de cada cliente precisa ser colada de novo (a cópia não leva segredos): no jeito 1, gere outro código de conexão no Moodle e cole.
+- **Clientes que já estavam conectados manualmente** (como a RIT) continuam funcionando do mesmo jeito; mudar para o complemento é uma escolha, cliente a cliente.
 
 **Fim do contrato (só o super-admin).** O campo **Contrato encerrado em** aparece ao **editar** um cliente. Para o analista ele é só de leitura. Deixe em branco enquanto o contrato estiver em vigor: **sem a data, nada é excluído, nunca**. O sistema não deduz o fim de um contrato.
 
