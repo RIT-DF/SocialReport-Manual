@@ -26,17 +26,18 @@ Com a ligação, o analista clica em **Ler da Meta** na página do mês, e o sis
 - **Guarda, de sensível, duas coisas por cliente:** uma chave de acesso à Página, cifrada e só no servidor, e uma fotografia diária da contagem de seguidores (um número por dia, sem pessoas). O nome da Página e o @ do Instagram aparecem na tela e não são segredo.
 - **Não lê Stories**, porque a Meta só os mostra por 24 horas. O Story do mês continua vindo pela planilha.
 
-As cinco permissões que a Meta mostra na hora do login, e para que servem:
+As seis permissões que a Meta mostra na hora do login, e para que servem:
 
 | Permissão (nome que a Meta mostra) | Para que o sistema a usa |
 |---|---|
 | `pages_show_list` | listar as Páginas que a pessoa que fez o login administra, para você escolher a do cliente |
-| `pages_read_engagement` | ler as publicações da Página, as reações, os comentários (contados) e o número de seguidores |
+| `pages_read_engagement` | ler as reações, os comentários (contados) e o número de seguidores da Página |
+| `pages_read_user_content` | listar as publicações da Página (a Meta passou a exigir esta permissão à parte; sem ela, o Facebook não é lido) |
 | `read_insights` | ler as estatísticas da Página e das publicações (alcance e visualizações) |
 | `instagram_basic` | achar a conta profissional do Instagram ligada à Página e ler a lista de publicações |
 | `instagram_manage_insights` | ler as estatísticas das publicações do Instagram e da conta |
 
-Apesar do nome de uma delas ter "manage", **nenhuma permite escrever**. O sistema recusa a ligação se a Meta conceder **qualquer permissão além dessas** (a única exceção é o acesso ao portfólio empresarial, quando você o liga na aba **Meta**; veja [Quando dá errado](#quando-dá-errado)).
+Apesar do nome de uma delas ter "manage", **nenhuma permite escrever**. O que **recusa** a ligação é faltar alguma dessas seis. Se a Meta tiver concedido permissões **a mais**, a ligação é aceita: acontece quando o mesmo app da Meta também serve a outra automação, que publica, e a Meta soma o que o perfil já havia autorizado. O SocialReport **não usa** essas permissões a mais, continua só lendo, e avisa no cadastro do cliente (veja [Permissões de publicar vindas de outra automação](#permissões-de-publicar-vindas-de-outra-automação)). A única permissão que o sistema pede a mais, e só por escolha sua, é o acesso ao portfólio empresarial (aba **Meta**).
 
 ## O que você precisa ter antes
 
@@ -72,38 +73,36 @@ Os outros campos quase nunca mudam:
 
 **Sobre o segredo.** Como as chaves de IA e os tokens do Matomo, ele fica **só no servidor, cifrado**. A tela mostra apenas o final (**"Segredo guardado ••••0008. Digite só para trocar."**). **Salvar sem digitar nada mantém o segredo guardado.** Para trocá-lo, digite o novo e salve. O botão **Remover** apaga o segredo guardado, mas só vale quando você clica em **Salvar Meta**. **Desfazer** cancela a remoção.
 
-#### A chave do cofre
+#### Se a chave do servidor mudar
 
-Se a aba mostrar este aviso amarelo, **não o deixe para depois**:
-
-![Aviso amarelo: Defina a chave própria do cofre (SOCIALREPORT_COFRE_CHAVE) e guarde uma cópia no cofre da V3RTECH]({{ '/assets/img/app/app-62-meta-aviso-cofre.png' | relative_url }})
-
-**Por que importa.** O segredo do app e a chave de acesso de cada cliente ficam cifrados no servidor. Para cifrar, o servidor usa uma **chave**. Se a **chave própria do cofre** (a variável `SOCIALREPORT_COFRE_CHAVE`, de quem opera o servidor) não estiver definida, o servidor usa, no lugar, outro segredo dele, o que protege o login do sistema. Se um dia esse segredo for trocado, **tudo o que está cifrado deixa de abrir**, e você terá de religar **todos os clientes**, um a um.
-
-**O que fazer.** Peça a quem opera o servidor para definir a chave própria e **guardar uma cópia dela no cofre da V3RTECH**: a chave que existe em um só lugar já está perdida, só não se sabe quando. A cópia de segurança do sistema **não leva** essa chave nem os segredos da Meta. Sem aviso, a chave própria está definida, e a tela não mostra nada.
-
-Se a chave do servidor mudar mesmo assim, a aba avisa: **"A chave do servidor mudou e o segredo guardado não abre mais. Cole o segredo do app de novo e salve."** Faça isso primeiro; depois religue os clientes (veja [chave trocada](#os-estados-da-ligação)).
+O segredo do app e a chave de acesso de cada cliente ficam cifrados no servidor, com uma chave que o próprio servidor guarda. Não há nada para você configurar nem guardar à parte. Mas há um cuidado: **se quem opera o servidor trocar o segredo de login do sistema, tudo o que está cifrado deixa de abrir**. A aba **Meta** então avisa: **"A chave do servidor mudou e o segredo guardado não abre mais. Cole o segredo do app de novo e salve."** Faça isso primeiro; depois use **Renovar ligação** em cada cliente (veja [chave trocada](#os-estados-da-ligação)). Por isso, **peça a quem opera o servidor para avisar antes de trocar esse segredo**: é trabalho de religar todos os clientes, um a um. A cópia de segurança do sistema **não leva** os segredos da Meta, então o segredo do app também precisa estar guardado fora do sistema (veja o [checklist](#checklist-do-super-administrador)).
 
 ### 2. Ligar um cliente
 
 Em **Clientes & Marcas**, abra o cliente em **Ver / Editar** e role até a seção **Redes sociais (Meta)**.
 
-![Seção Redes sociais (Meta) de um cliente ainda sem ligação, com o aviso Instagram e Facebook não ligados e o botão Ligar Instagram e Facebook]({{ '/assets/img/app/app-63-meta-cliente-desligado.png' | relative_url }})
+![Seção Redes sociais (Meta) de um cliente ainda sem ligação, com o aviso Instagram e Facebook não ligados, o lembrete de com que perfil entrar e o botão Ligar Instagram e Facebook]({{ '/assets/img/app/app-63-meta-cliente-desligado.png' | relative_url }})
 
-1. **Combine com quem fará o login.** Ela precisa fazer o login **no mesmo navegador em que você clicará em Ligar** (a Meta devolve o login ao navegador que o iniciou) e ter a conta que administra a Página do cliente. Pode ser você mesmo, se a conta for sua.
+1. **Combine com quem fará o login.** Ela precisa fazer o login **no mesmo navegador em que você clicará em Ligar** (a Meta devolve o login ao navegador que o iniciou) e ter a conta que administra a Página do cliente. Pode ser você mesmo, se a conta for sua. Antes do botão, a própria tela lembra com que perfil entrar (veja **Com que perfil entrar**, abaixo).
 2. Clique em **Ligar Instagram e Facebook**. A aba **vai para a Meta**, na mesma janela, sem abrir outra.
 3. Na Meta, a pessoa entra com a **própria** conta (o SocialReport nunca vê a senha dela) e **autoriza todas as permissões pedidas**. Desmarcar uma delas faz a ligação ser recusada.
-4. A Meta devolve ao SocialReport, que abre o cadastro do cliente com **"Escolha a Página do cliente:"**. A lista mostra, para cada Página, o nome, o Instagram ligado a ela (**@** e quantidade de seguidores) ou **"sem Instagram ligado"**.
+4. A Meta devolve ao SocialReport, que reabre o cadastro do cliente **já rolado até uma caixa destacada em amarelo**, com o título **"Falta um passo: confirme a Página"** e **"Escolha a Página deste cliente:"**. A lista mostra, para cada Página, o nome, o Instagram ligado a ela (**@** e quantidade de seguidores) ou **"sem Instagram ligado"**.
 
-   ![Escolha da Página do cliente: três Páginas, uma com Instagram, uma sem Instagram ligado e uma desabilitada por falta de permissão]({{ '/assets/img/app/app-64-meta-escolher-pagina.png' | relative_url }})
+   ![Caixa amarela Falta um passo: confirme a Página, com a escolha da Página do cliente: três Páginas, uma com Instagram, uma sem Instagram ligado e uma desabilitada por falta de permissão]({{ '/assets/img/app/app-64-meta-escolher-pagina.png' | relative_url }})
 
-5. Marque a Página certa e clique em **Ligar esta Página**. A tela confirma **"Ligação gravada."** e mostra o estado, a Página, o @ do Instagram, quem ligou e quando, até quando vale e a **máscara** da chave (só o final).
+5. Marque a Página certa e clique em **Ligar esta Página**. **É esse clique que grava a ligação**: voltar do login da Meta ainda não liga nada, e o aviso "Falta um passo" continua ali até você confirmar. A tela confirma **"Ligação gravada."** e mostra o estado, a Página, o @ do Instagram, quem ligou e quando, até quando vale e a **máscara** da chave (só o final).
 
    ![Ligação gravada: estado em dia, Página, @ do Instagram, quem ligou, validade, última verificação e a chave mascarada, com os botões Renovar ligação, Testar e Desligar]({{ '/assets/img/app/app-65-meta-cliente-ligado.png' | relative_url }})
 
 6. Clique em **Testar** (próxima seção) para ter certeza de que a leitura funciona.
 
 **Tempo.** O login na Meta tem **10 minutos** para ser concluído, e a escolha da Página, **15** depois disso. Passou do prazo, é só clicar em **Ligar** de novo.
+
+**Com que perfil entrar.** Na imagem do passo 2, logo acima dos botões, o cadastro mostra um lembrete (só para o super-administrador).
+
+A Meta **não tem login de empresa**: quem entra é sempre uma **pessoa**, com o perfil pessoal dela. Esse perfil precisa administrar a página do Facebook do cliente (direto ou pelo portfólio empresarial), e o Instagram do cliente precisa estar ligado a essa página. Na tela da Meta, **marque só a página deste cliente**: é só dela que o sistema precisa, e as outras ficam fora do acesso do app. O link **Ver o passo a passo no manual** do lembrete leva a esta página.
+
+**Renovando a mesma Página.** Se a Página que já estava ligada continua entre as que o login trouxe (e com a permissão de ver as estatísticas), **não há o que escolher**: o sistema grava a ligação sozinho e a tela diz **"Ligação renovada."**, sem a caixa amarela. Se a Página ligada não aparece mais entre as do login (a conta perdeu o acesso a ela, por exemplo), a escolha volta a ser pedida.
 
 **O que a lista de Páginas pode mostrar:**
 
@@ -120,7 +119,7 @@ Em **Clientes & Marcas**, abra o cliente em **Ver / Editar** e role até a seç�
 
 ![Ligação testada: a tela mostra Teste ok no alto e a data da última verificação atualizada]({{ '/assets/img/app/app-66-meta-cliente-testado.png' | relative_url }})
 
-**Renovar ligação.** É o mesmo caminho de **Ligar**, mas já com a Página do cliente pré-escolhida. Use-o quando o estado pedir, quando a ligação estiver vencendo ou quando o Instagram passar a existir na Página.
+**Renovar ligação.** É o mesmo caminho de **Ligar**: a aba vai à Meta e volta. Se a Página do cliente continua entre as do login, a ligação é renovada sozinha, com a mensagem **"Ligação renovada."** (veja acima). Use-o quando o estado pedir, quando a ligação estiver vencendo ou quando o Instagram passar a existir na Página.
 
 **Desligar.** O botão pede confirmação: **"Desligar a Página deste cliente? As leituras automáticas param."**
 
@@ -141,7 +140,8 @@ O estado aparece num **selo colorido** no cadastro do cliente (verde, amarelo ou
 | **… A ligação vence em dd/mm: clique em Renovar ligação.** (amarelo) | Faltam **menos de 14 dias** para a validade que a Meta deu à ligação. Ela ainda lê | Clique em **Renovar ligação** antes da data. Além do selo, o painel mostra a faixa de aviso (abaixo) |
 | **Ligação expirada: clique em Renovar ligação.** (vermelho) | A validade chegou ao fim, ou a Meta passou a recusar a chave (a pessoa trocou a senha, tirou o app da conta ou saiu da Página). **A leitura está parada**: o analista vê **Ler da Meta** apagado | **Renovar ligação**, com a conta de quem administra a Página |
 | **A conta da Meta perdeu a permissão de leitura: clique em Renovar ligação.** (vermelho) | A conta que ligou perdeu a função na Página, ou alguma permissão pedida deixou de valer, ou a Meta concedeu uma a mais | **Renovar ligação**, marcando todas as permissões pedidas e nenhuma a mais. Se a conta perdeu o acesso à Página, use a de outra pessoa que o tenha |
-| **A chave do servidor mudou; religue a conta.** (vermelho) | A chave que cifra os acessos mudou, e a chave guardada não abre mais | Cole o segredo do app de novo na aba **Meta** (se ela também avisar) e use **Renovar ligação** em cada cliente. Para o analista, a mensagem é "A ligação precisa ser refeita; peça ao administrador." |
+| **A ligação não tem permissões que a Meta passou a exigir (…): clique em Renovar ligação.** (vermelho) | A ligação foi feita antes de a Meta exigir uma permissão nova (a de listar as publicações da Página, `pages_read_user_content`). Ela ainda não lê o Facebook | **Renovar ligação** uma vez, deixando **todas** as permissões marcadas. Não é preciso desligar antes |
+| **A chave do servidor mudou; religue a conta.** (vermelho) | A chave que cifra os acessos mudou (veja [Se a chave do servidor mudar](#se-a-chave-do-servidor-mudar)), e o que está guardado não abre mais | Cole o segredo do app de novo na aba **Meta** (se ela também avisar) e use **Renovar ligação** em cada cliente. Para o analista, a mensagem é "A ligação precisa ser refeita; peça ao administrador." |
 | **Ligada à Página "…": precisa religar (a cópia de segurança não guarda o acesso).** (vermelho) | O sistema foi **restaurado de uma cópia de segurança**, que não leva as chaves | **Renovar ligação**, cliente a cliente |
 | **Instagram e Facebook não ligados.** (vermelho) | O cliente nunca foi ligado, ou foi desligado | **Ligar Instagram e Facebook**, se quiser a leitura |
 
@@ -162,14 +162,11 @@ O estado aparece num **selo colorido** no cadastro do cliente (verde, amarelo ou
 
 A Meta devolve o navegador ao sistema com um motivo quando a ligação não se completa. A mensagem aparece no cadastro do cliente (ou na tela de clientes, se o login não chegou a identificar o cliente).
 
-![Mensagem de erro: A Meta concedeu permissões além das pedidas (pages_manage_posts, ads_management): o sistema só lê e não aceita acesso a mais]({{ '/assets/img/app/app-70-meta-permissao-a-mais.png' | relative_url }})
-
 | Mensagem | O que quer dizer | O que fazer |
 |---|---|---|
-| **A Meta concedeu permissões além das pedidas (…): o sistema só lê e não aceita acesso a mais.** | Na conta de quem fez o login, a Meta costuma lembrar permissões de uma autorização anterior (de publicar, por exemplo). O sistema recusa de propósito: quem só precisa ler não deve ter a chave que também escreve | Na conta do Facebook de quem fez o login, procure o app em **Integrações de negócios** e retire **apenas as permissões listadas** na mensagem. Clique em **Ligar** de novo. **Não remova o app inteiro**: isso derruba as ligações de todos os clientes dessa pessoa |
 | **Na Meta, faltou autorizar: …** | A pessoa desmarcou alguma permissão na tela da Meta | Clique em **Ligar** e deixe **todas** marcadas |
 | **Login da Meta cancelado: nada foi ligado.** | A pessoa fechou ou cancelou a tela da Meta | Clique em **Ligar** de novo |
-| **A conta da Meta usada não administra nenhuma Página. Entre com uma conta que administre a Página do cliente.** | A conta usada não tem Página, ou a Página é de um portfólio empresarial e a Meta não a listou | Use a conta certa. Se a Página é do portfólio do cliente e a conta certa já tem acesso, marque **Pedir também o acesso ao portfólio empresarial** na aba **Meta** e tente de novo |
+| **O perfil com que você entrou na Meta não administra nenhuma página do Facebook. Entre com o perfil que administra a página deste cliente (direto ou pelo portfólio empresarial) e, na tela da Meta, marque a página dele.** | O perfil usado não administra página nenhuma, ou a página é de um portfólio empresarial e a Meta não a listou, ou a página do cliente ficou desmarcada na tela da Meta | Entre com o perfil certo e **marque a página do cliente**. Se a página é do portfólio do cliente e o perfil certo já tem acesso, marque **Pedir também o acesso ao portfólio empresarial** na aba **Meta** e tente de novo |
 | **O login da Meta demorou mais de 10 minutos e venceu.** | Passou do prazo | **Ligar** de novo, mais rápido |
 | **O login da Meta voltou em outro navegador ou aba. Comece de novo neste navegador.** | O login precisa terminar no navegador em que começou | Faça tudo na mesma janela |
 | **Este retorno do login da Meta já foi usado.** / **O login da Meta não pôde ser concluído (o link é inválido).** | Voltar pela seta do navegador, ou abrir um link de retorno antigo | **Ligar** de novo, sem usar o histórico do navegador |
@@ -181,10 +178,21 @@ A Meta devolve o navegador ao sistema com um motivo quando a ligação não se c
 > **O login que a Meta recusa antes de ver o sistema.** Se o erro for da própria Meta (uma página da Meta, e não do SocialReport), o app provavelmente não aceita aquele usuário: confira a **função no app** (pré-requisito 3) e se o endereço de retorno colado no app é **exatamente** o da aba.
 {: .note }
 
+## Permissões de publicar vindas de outra automação
+
+**Por que importa.** A RIT pode usar o mesmo app da Meta para ler (o SocialReport) e para publicar (outra automação). Quando o perfil de quem faz o login já autorizou o app a publicar, a Meta devolve essa autorização junto, mesmo que o SocialReport não a tenha pedido. Antes da versão 1.33.3, isso fazia a ligação ser recusada; hoje a ligação **vale**, e o cadastro do cliente mostra uma nota:
+
+![Seção Redes sociais (Meta) de um cliente ligado, com a nota de que a ligação também tem permissões de publicar, concedidas para outra automação, e de que o SocialReport só lê]({{ '/assets/img/app/app-91-meta-escopos-a-mais.png' | relative_url }})
+
+**O que a nota quer dizer.** Que a autorização que a Meta guardou para aquele perfil é maior do que a que o SocialReport usa. O SocialReport **só lê**: nenhuma chamada dele publica, responde, apaga ou mexe em anúncio, e ele **nunca revoga** a autorização a mais (revogar a de publicar derrubaria a outra automação). A nota é informativa e não bloqueia nada.
+
+> **Quer tirar a permissão a mais?** Só faz sentido se a outra automação não for mais usada com aquele perfil. Na conta do Facebook da pessoa, em **Integrações de negócios**, retire **apenas as permissões listadas** pela Meta, e não o app inteiro: remover o app derruba as ligações de todos os clientes dessa pessoa.
+{: .note }
+
 ## Checklist do super-administrador
 
 - [ ] Aba **Meta**: identificador e segredo salvos, **Testar o app guardado** mostrando "App ok".
-- [ ] Sem o aviso amarelo da **chave do cofre**, e uma cópia dessa chave no cofre da V3RTECH.
+- [ ] Quem opera o servidor sabe que **trocar o segredo de login do sistema obriga a religar todos os clientes**, e avisa antes.
 - [ ] Cada cliente que usa a leitura ligado por uma conta **que vai continuar na equipe**, com **Testar** feito.
 - [ ] Clientes ligados **antes** do primeiro fim de mês que se quer medir (a fotografia de seguidores começa no dia da ligação).
 - [ ] Faixa de aviso do painel olhada ao abrir o sistema; ligações a vencer renovadas.

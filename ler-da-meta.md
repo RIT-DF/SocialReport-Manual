@@ -21,7 +21,7 @@ A planilha exportada é o ponto fraco do fechamento do mês: é preciso lembrar 
 
 - **Stories não entram.** A Meta só mostra um Story por 24 horas, então ele não existe mais quando você lê o mês. O Story do mês vem pela planilha.
 - **A categoria editorial não vem.** A Meta não sabe que publicação é "Institucional" ou "Serviço", então as publicações lidas chegam como **Geral**. Se o cliente usa categorias no relatório, o capítulo de tipos de conteúdo perde a divisão. Veja [a tarefa 6]({{ '/mes-do-analista/#6-classificar-as-categorias' | relative_url }}).
-- **LinkedIn, TikTok e YouTube** continuam só por planilha.
+- **YouTube e LinkedIn** têm o [próprio botão]({{ '/mes-do-analista/ler-do-youtube-e-linkedin/' | relative_url }}); **TikTok** continua só por planilha.
 - **Cliente que ninguém ligou** não tem o botão.
 
 ## Três regras antes de clicar
@@ -47,6 +47,7 @@ A frase embaixo do título é o estado da ligação:
 | **… A ligação vence em dd/mm: peça ao administrador para renovar.** | Ainda lê, mas a ligação está perto do fim | Leia agora e avise o super-administrador |
 | **Ligação expirada: peça ao administrador para renovar.** | A ligação parou. O botão fica **apagado** | Avise o super-administrador. Enquanto isso, use a planilha |
 | **A conta da Meta perdeu a permissão de leitura: peça ao administrador para renovar.** | A ligação deixou de valer | Idem |
+| **A ligação não tem permissões que a Meta passou a exigir (…): peça ao administrador para renovar.** | A ligação foi feita antes de a Meta exigir a permissão de listar as publicações da Página. O Facebook não será lido até a renovação | Avise o super-administrador. Enquanto isso, o Instagram ainda pode ser lido, e o Facebook vem pela planilha |
 | **A ligação precisa ser refeita; peça ao administrador.** / **… precisa religar …** | O sistema foi restaurado ou teve a chave trocada | Idem |
 
 ![Bloco Ler da Meta com o botão apagado e a mensagem Ligação expirada: peça ao administrador para renovar]({{ '/assets/img/app/app-75-meta-ler-expirada.png' | relative_url }})
@@ -91,6 +92,7 @@ Abaixo vêm as **observações da leitura**. Elas explicam o que a Meta não inf
 | **A Meta não informou os cliques dos posts: ficaram 0.** | No Facebook, o número de cliques no link não veio | Cliques ficam em 0; não conclua que ninguém clicou |
 | **Há publicação sem visualizações informadas pela Meta (publicação antiga): ela aparece como recusada.** | Publicações muito antigas, no Instagram, podem não ter a medida de visualizações | Veja a linha de recusadas e, se importar, traga essa publicação pela planilha |
 | **A Página ligada não tem Instagram profissional: só o Facebook foi lido.** | O Instagram do cliente não está ligado à Página | Avise o super-administrador |
+| **Facebook não foi lido: … Clique em Renovar ligação para conceder as permissões.** (ou **Instagram não foi lido: …**) | **Uma** das redes não pôde ser lida, em geral por falta de uma permissão, e a **outra foi lida assim mesmo** | Avise o super-administrador: só ele renova a ligação. Enquanto isso, traga a rede que faltou pela planilha |
 
 ### 5. Os seguidores do fim do mês
 
@@ -113,15 +115,15 @@ Na lista **Extratos Importados**, cada arquivo diz de onde vem: a leitura aparec
 
 ### 7. Os avisos na revisão
 
-Abra a **Revisão** do mês. Quando o mês usa a leitura, ela mostra, **só para você**, avisos sobre o que merece conferência antes de emitir:
+Abra a **Revisão** do mês. Os avisos que só você vê ficam num **quadro único**, compacto, no alto da página, com o título **"Avisos da revisão (N)"** e um item por aviso. O quadro abre aberto, para você não perder nenhum aviso, e **recolhe** com um clique no título (os itens continuam lá, só escondidos). Sem avisos, o quadro não aparece. Quando o mês usa a leitura, ele inclui os avisos sobre o que merece conferência antes de emitir:
 
-![Três avisos amarelos na revisão: seguidores do Instagram reconstruídos, seguidores do Facebook do dia da leitura e Stories fora da leitura]({{ '/assets/img/app/app-76-meta-avisos-revisao.png' | relative_url }})
+![Quadro Avisos da revisão com cinco itens: mês em andamento, falta de seguidores, seguidores reconstruídos do Instagram e do Facebook numa linha só, Stories fora da leitura e visualizações no lugar do alcance]({{ '/assets/img/app/app-98-revisao-quadro-avisos.png' | relative_url }})
 
-- **"… o número de seguidores foi reconstruído para dd/mm/aaaa a partir do número de hoje e dos novos seguidores de cada dia. Confira."** O Instagram não tinha fotografia daquele dia, e o sistema calculou o número. Compare com o painel.
+- **"Instagram e Facebook: o número de seguidores foi reconstruído para dd/mm/aaaa a partir do número de hoje e dos novos seguidores de cada dia. Confira."** O Instagram não tinha fotografia daquele dia, e o sistema calculou o número. Compare com o painel. Quando os dois têm o mesmo aviso e a mesma data, ele vem **numa linha só**, com as duas redes.
 - **"… o número de seguidores é o de dd/mm/aaaa (dia da leitura), não o do fim do mês. Confira ou digite o do fim do mês."** O número é o do dia em que você leu. O gráfico de evolução mostrará esse valor como se fosse o do fim do mês.
 - **"Instagram lido da Meta: os Stories não entram na leitura automática. Stories do mês: use a planilha."** Lembrete de que o Story do mês só entra pela planilha.
 
-Esses avisos não vão para o relatório nem para o link público. Eles somem sozinhos quando você **voltar para a planilha** ou quando a leitura passar a ter a fotografia do fim do mês.
+O mesmo quadro traz os outros avisos da revisão (mês em andamento, falta de seguidores, alcance com definições diferentes e, no YouTube, as [visualizações no lugar do alcance]({{ '/mes-do-analista/ler-do-youtube-e-linkedin/#alcance-e-visualizações-o-que-a-leitura-preenche' | relative_url }})). Esses avisos não vão para o relatório nem para o link público. Os da Meta somem sozinhos quando você **voltar para a planilha** ou quando a leitura passar a ter a fotografia do fim do mês.
 
 ## Alcance e visualizações: o que a leitura preenche
 
