@@ -2,16 +2,16 @@
 title: "Termos de Uso"
 nav_order: 91
 permalink: /termos/
-version: "1.0"
+version: "1.1"
 status: "aprovada"
-change_summary: "Publicação inicial da versão 1.0."
+change_summary: "Passa a dizer que, ao usar o recurso de YouTube, a pessoa concorda com os Termos de Serviço do YouTube. Os demais pontos não mudam."
 requires_reconsent: true
 ---
 
 # Termos de Uso — SocialReport
 
-**Vigência:** 28 de outubro de 2026
-**Versão:** 1.0
+**Vigência:** 30 de outubro de 2026
+**Versão:** 1.1
 
 {: .warning }
 
@@ -45,6 +45,8 @@ Se você não concorda com estes Termos, não utilize a instalação.
 ## 3. O que é o SocialReport
 
 O SocialReport é uma aplicação acessada pela internet que produz **relatórios mensais** da presença digital de clientes — ONGs e pequenos negócios: redes sociais (Instagram, Facebook, LinkedIn, TikTok e YouTube), site, clipping de imprensa e análise escrita com apoio de inteligência artificial.
+
+**Recurso de YouTube.** O SocialReport lê os números do canal de YouTube do cliente pelos YouTube API Services. **Ao usar o recurso de YouTube, a pessoa concorda com os [Termos de Serviço do YouTube](https://www.youtube.com/t/terms).**
 
 A aplicação está em desenvolvimento contínuo. Funcionalidades poderão ser adicionadas, modificadas ou descontinuadas ao longo do tempo.
 

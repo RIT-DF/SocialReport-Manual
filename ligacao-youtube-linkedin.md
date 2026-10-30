@@ -138,13 +138,18 @@ Em **Clientes & Marcas**, abra o cliente em **Ver / Editar**. Abaixo de **Redes 
 
 ![Seção YouTube depois de religar: a mensagem Ligação renovada e o estado em dia, sem caixa de escolha]({{ '/assets/img/app/app-84-youtube-ligacao-renovada.png' | relative_url }})
 
-**Desligar.** O botão pede confirmação: **"Desligar o LinkedIn deste cliente? As leituras automáticas param."**
+**Desligar.** O botão pede confirmação. No LinkedIn: **"Desligar o LinkedIn deste cliente? As leituras automáticas param."** No YouTube: **"Desligar o YouTube deste cliente? As leituras automáticas param e a autorização também será retirada no Google."**
 
 ![Confirmação do desligamento: Desligar o LinkedIn deste cliente? As leituras automáticas param, com os botões Desligar e Cancelar]({{ '/assets/img/app/app-88-linkedin-desligar-confirmar.png' | relative_url }})
 
-Desligar apaga **neste sistema** a ligação e a chave do cliente. Os números que já foram lidos continuam nos relatórios, e as planilhas continuam valendo. Atenção ao que o desligamento **não** faz:
+Desligar apaga **neste sistema** a ligação e a chave do cliente. Os números que já foram lidos continuam nos relatórios, e as planilhas continuam valendo. O que muda de uma rede para a outra:
 
-> **Desligar não revoga a permissão na rede.** A mensagem diz: **"Ligação desfeita neste sistema. (A autorização no YouTube continua, porque pode valer para outros clientes.)"** A pessoa que fez o login autorizou o app **uma vez**, e essa autorização pode ser a mesma de outros clientes dela. Revogá-la na rede cortaria todos de uma vez, por isso o sistema não faz isso por você. Quem quiser retirar a permissão do lado da rede (por exemplo, quando a pessoa sai da equipe) faz isso nas configurações da própria conta (Google ou LinkedIn), na lista de apps com acesso, sabendo que **todas** as ligações dela caem. O passo a passo público está na [Política de Privacidade, seção 13]({{ '/privacidade/#exclusao-de-dados' | relative_url }}).
+> **No YouTube, desligar também retira a autorização no Google.** O sistema revoga o acesso que o canal deu ao app e depois apaga a ligação. A mensagem diz: **"Ligação desfeita e autorização retirada no Google."** O mesmo vale quando você **exclui o cliente**, e quando o cliente é excluído pelo fim do contrato. Se a mesma conta do Google tiver sido usada para ligar outros clientes, o Google pode encerrar a autorização deles também; nesse caso o outro cliente passa a pedir **Religar**.
+>
+> **Se o Google não responder**, a ligação é apagada aqui do mesmo jeito, e a mensagem avisa em vermelho: **"não foi possível retirar a autorização no Google: ela pode continuar ativa lá"**, com o link <https://security.google.com/settings/security/permissions>, onde você remove o acesso do SocialReport na mão. Não ignore esse aviso: enquanto a autorização continuar lá, o Google ainda considera o app autorizado.
+{: .important }
+
+> **No LinkedIn, desligar não revoga a permissão na rede.** A mensagem diz: **"Ligação desfeita neste sistema. (A autorização no LinkedIn continua, porque pode valer para outros clientes.)"** A pessoa que fez o login autorizou o app **uma vez**, e essa autorização pode ser a mesma de outros clientes dela. Revogá-la na rede cortaria todos de uma vez, por isso o sistema não faz isso por você. Quem quiser retirar a permissão do lado do LinkedIn (por exemplo, quando a pessoa sai da equipe) faz isso em **Configurações > Dados > Aplicativos permitidos**, sabendo que **todas** as ligações dela caem. O passo a passo público está na [Política de Privacidade, seção 13]({{ '/privacidade/#exclusao-de-dados' | relative_url }}).
 {: .important }
 
 ## Os estados da ligação
@@ -180,7 +185,7 @@ O estado aparece num **selo colorido** no cadastro do cliente (verde, amarelo, v
 
 ![Seção YouTube de um cliente ligado, com a nota de que a ligação também tem permissões de publicar, concedidas para outra automação, e de que o SocialReport só lê]({{ '/assets/img/app/app-83-youtube-escopos-a-mais.png' | relative_url }})
 
-**O que a nota quer dizer.** Que a autorização que a rede guardou para aquele login é maior do que a que o SocialReport usa. O SocialReport **só lê**: nenhuma chamada dele publica, responde ou apaga. E ele **nunca revoga** a autorização a mais, porque revogar a de publicar derrubaria a outra automação (no Google, derrubaria a concessão inteira do app). A nota é informativa e não bloqueia nada. Se a permissão a mais não for mais necessária, quem a retira é a pessoa, na conta dela, na lista de apps com acesso.
+**O que a nota quer dizer.** Que a autorização que a rede guardou para aquele login é maior do que a que o SocialReport usa. O SocialReport **só lê**: nenhuma chamada dele publica, responde ou apaga. E ele **nunca revoga** a autorização a mais enquanto o cliente está ligado, porque revogar a de publicar derrubaria a outra automação (no Google, derrubaria a concessão inteira do app). A exceção é **desligar o YouTube**: aí o sistema revoga a autorização do canal no Google, e isso vale para a concessão inteira daquele login, inclusive a parte a mais. A nota é informativa e não bloqueia nada. Se a permissão a mais não for mais necessária, quem a retira é a pessoa, na conta dela, na lista de apps com acesso.
 
 ## Quando dá errado
 

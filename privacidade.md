@@ -2,16 +2,16 @@
 title: "Privacidade"
 nav_order: 90
 permalink: /privacidade/
-version: "1.4"
+version: "1.5"
 status: "aprovada"
-change_summary: "Inclui a ligação com o canal do YouTube (Google) e com a Página do LinkedIn do cliente (quem liga, o que é lido, onde fica, por quanto tempo, como desligar), a declaração de uso limitado dos dados das APIs do Google e as instruções de exclusão de dados para o YouTube e o LinkedIn."
+change_summary: "Informa que o SocialReport usa os YouTube API Services e que desligar o YouTube de um cliente passa a retirar também a autorização no Google (e excluir o cliente faz o mesmo), com o link do Google para quem quiser retirá-la direto. Os demais pontos não mudam."
 requires_reconsent: true
 ---
 
 # Política de Privacidade — SocialReport
 
 **Vigência:** 30 de outubro de 2026
-**Versão:** 1.4
+**Versão:** 1.5
 
 {: .warning }
 
@@ -198,7 +198,7 @@ Em vez de depender só de planilhas, a instalação pode **ler os números diret
 
 ### 4.11 Ligação com o canal do YouTube (Google)
 
-A instalação pode **ler os números do canal do YouTube do cliente** direto do **Google**, que opera o YouTube e guarda os dados dele; esta política trata apenas do que chega à instalação. A política de privacidade do Google está em <https://policies.google.com/privacy>.
+A instalação pode **ler os números do canal do YouTube do cliente** direto do **Google**, que opera o YouTube e guarda os dados dele; esta política trata apenas do que chega à instalação. **Para isso, o SocialReport usa os YouTube API Services** e, ao usar o recurso de YouTube, a pessoa também fica sujeita aos [Termos de Serviço do YouTube](https://www.youtube.com/t/terms). A política de privacidade do Google está em <https://policies.google.com/privacy>.
 
 **Quem liga.** Só o **super-admin** da instalação, no cadastro do cliente, e apenas com o **login da conta Google que administra o canal** do cliente. A tela de autorização é do próprio Google e mostra o que está sendo pedido; a aplicação nunca vê a senha dessa conta. As permissões pedidas são **somente de leitura** (visualização dos dados do canal e dos relatórios do YouTube Analytics): a aplicação não publica, não envia, não apaga e não altera nada no canal. Os dados de **receita** do canal não são pedidos.
 
@@ -208,9 +208,9 @@ A instalação pode **ler os números do canal do YouTube do cliente** direto do
 
 **Onde ficam.** Os dados lidos entram no relatório como se viessem de uma planilha. A **chave de acesso** que o Google entrega à instalação fica **somente no servidor, cifrada**; nunca vai ao navegador de ninguém e **não entra nas cópias de segurança** (depois de restaurar uma cópia, é preciso ligar de novo). A instalação confere se a ligação segue válida e avisa o super-admin quando é preciso renová-la. Para o número de inscritos no **fim do mês**, a instalação guarda **uma fotografia diária** só com a contagem de inscritos (um número por dia, sem pessoas).
 
-**Por quanto tempo.** A chave fica **enquanto a ligação existir**: **desligar apaga a ligação e a chave** aqui; a autorização no Google só é retirada por quem ligou (veja "Como desligar"). Os vídeos e os números já lidos fazem parte do relatório e seguem os prazos dele (seção 8), assim como a fotografia diária de inscritos.
+**Por quanto tempo.** A chave fica **enquanto a ligação existir**: **desligar apaga a ligação e a chave** aqui e **retira a autorização no Google** (veja "Como desligar"). Os vídeos e os números já lidos fazem parte do relatório e seguem os prazos dele (seção 8), assim como a fotografia diária de inscritos.
 
-**Como desligar.** O super-admin clica em **Desligar** no cadastro do cliente; a ligação e a chave são apagadas na hora, e a leitura direta para (as planilhas continuam valendo). Para também retirar a permissão **do lado do Google**, quem ligou pode revogar o acesso em <https://myaccount.google.com/permissions>. O passo a passo de exclusão está na **seção 13**.
+**Como desligar.** O super-admin clica em **Desligar** no cadastro do cliente; a ligação e a chave são apagadas na hora, e a leitura direta para (as planilhas continuam valendo). **Ao desligar, a SocialReport também revoga, no Google, a autorização que o canal deu ao aplicativo**; o mesmo acontece quando o cadastro do cliente é excluído. Se o Google não responder naquele momento, a ligação é apagada da mesma forma, a tela avisa que a autorização pode continuar no Google, e quem quiser retirá-la direto pode fazê-lo em <https://security.google.com/settings/security/permissions>. O passo a passo de exclusão está na **seção 13**.
 
 **Base legal:** execução do serviço de relatório contratado pelo cliente, que autoriza a leitura do canal dele (Art. 7º, V).
 
@@ -355,12 +355,12 @@ Esta política é regida pela **Lei Geral de Proteção de Dados Pessoais (LGPD 
 
 Esta seção é o endereço de **instruções de exclusão de dados** da SocialReport para a Meta, o Google (YouTube) e o LinkedIn. Ela vale para quem ligou ou administra uma conta do Instagram ou do Facebook (seção 4.10), um canal do YouTube (seção 4.11) ou uma Página do LinkedIn (seção 4.12) ligados a uma instalação, e para quem tem dados nossos vindos dessas contas.
 
-**1. Desligar a ligação (o que a instalação guarda de acesso).** O super-admin abre o cadastro do cliente e clica em **Desligar** na seção da rede (Meta, YouTube ou LinkedIn). A ligação e as chaves de acesso são apagadas na hora, e a instalação deixa de ler a conta.
+**1. Desligar a ligação (o que a instalação guarda de acesso).** O super-admin abre o cadastro do cliente e clica em **Desligar** na seção da rede (Meta, YouTube ou LinkedIn). A ligação e as chaves de acesso são apagadas na hora, e a instalação deixa de ler a conta. **No YouTube, desligar também revoga a autorização no Google** (os YouTube API Services deixam de ter acesso ao canal); na Meta e no LinkedIn, a permissão do lado da plataforma só é retirada pela pessoa, como descrito abaixo.
 
-**2. Retirar a permissão do lado da plataforma.** Quem ligou a conta pode, a qualquer momento, retirar o aplicativo da SocialReport por conta própria, o que corta o acesso mesmo que a instalação não seja desligada:
+**2. Retirar a permissão do lado da plataforma.** Quem ligou a conta pode, a qualquer momento, retirar o aplicativo da SocialReport por conta própria, o que corta o acesso mesmo que a instalação não seja desligada (e, no YouTube, também quando a revogação automática não chegou ao Google):
 
 - **Meta (Instagram e Facebook):** nas configurações da conta do Facebook, em **Integrações de negócios**.
-- **YouTube (Google):** em <https://myaccount.google.com/permissions>, escolhendo o aplicativo da SocialReport e removendo o acesso.
+- **YouTube (Google):** em <https://security.google.com/settings/security/permissions>, escolhendo o aplicativo da SocialReport e removendo o acesso.
 - **LinkedIn:** em **Configurações > Dados > Aplicativos permitidos** (*Settings > Data privacy > Permitted services*), na conta do LinkedIn.
 
 **3. Apagar também o que já foi lido.** Os números de publicações, vídeos, seguidores e inscritos já lidos fazem parte dos relatórios do cliente. Para apagá-los, peça ao **encarregado de dados da organização responsável** pela instalação (seção 10), dizendo qual é a conta ou o cliente. O pedido é respondido em até **15 dias úteis**, e a exclusão do cadastro do cliente leva junto os relatórios, os números lidos das redes e a fotografia diária de seguidores e inscritos.
