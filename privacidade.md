@@ -2,16 +2,16 @@
 title: "Privacidade"
 nav_order: 90
 permalink: /privacidade/
-version: "1.3"
+version: "1.4"
 status: "aprovada"
-change_summary: "Inclui o portfólio público do cliente, a ligação com as contas do Instagram e do Facebook pela Meta (o que é lido, onde fica, por quanto tempo, como desligar e como pedir a exclusão) e explica que o complemento do Moodle repassa as visitas ao serviço de estatísticas pelo servidor do Moodle."
+change_summary: "Inclui a ligação com o canal do YouTube (Google) e com a Página do LinkedIn do cliente (quem liga, o que é lido, onde fica, por quanto tempo, como desligar), a declaração de uso limitado dos dados das APIs do Google e as instruções de exclusão de dados para o YouTube e o LinkedIn."
 requires_reconsent: true
 ---
 
 # Política de Privacidade — SocialReport
 
-**Vigência:** 29 de outubro de 2026
-**Versão:** 1.3
+**Vigência:** 30 de outubro de 2026
+**Versão:** 1.4
 
 {: .warning }
 
@@ -55,6 +55,8 @@ Cada organização responde pelo que **ela** decide:
 | Destinatários do relatório: nome e e-mail, e o registro dos envios | Organização responsável | Controladora |
 | Números da plataforma de cursos do cliente (inscrições e conclusões somadas) | Organização responsável | Controladora |
 | Publicações e números lidos direto das contas do Instagram e do Facebook do cliente, e a ligação com a Meta | Organização responsável | Controladora |
+| Vídeos e números lidos direto do canal do YouTube do cliente, e a ligação com o Google | Organização responsável | Controladora |
+| Publicações e números lidos direto da Página do LinkedIn do cliente, e a ligação com o LinkedIn | Organização responsável | Controladora |
 | Portfólio público do cliente (página com os relatórios emitidos) | Organização responsável | Controladora |
 | Visitas ao site do cliente | O cliente | Operadora |
 
@@ -97,13 +99,13 @@ O cadastro na instalação **só acontece por convite** de um super-admin. Não 
 
 ### 4.2 Dados das redes sociais do cliente
 
-O relatório é montado a partir de **planilhas exportadas pelas próprias redes sociais** do cliente (Instagram, Facebook, LinkedIn, TikTok e YouTube) e enviadas à aplicação pela equipe. Para o Instagram e o Facebook, a instalação também pode **ler os números direto da Meta**, por uma ligação autorizada (seção 4.10). De cada publicação, a aplicação guarda:
+O relatório é montado a partir de **planilhas exportadas pelas próprias redes sociais** do cliente (Instagram, Facebook, LinkedIn, TikTok e YouTube) e enviadas à aplicação pela equipe. Para o Instagram e o Facebook, a instalação também pode **ler os números direto da Meta**, por uma ligação autorizada (seção 4.10); para o YouTube, direto do **Google** (seção 4.11); e para o LinkedIn, direto do **LinkedIn** (seção 4.12). De cada publicação, a aplicação guarda:
 
 - texto ou legenda, data e formato da publicação;
 - alcance, impressões, curtidas, comentários, compartilhamentos e salvamentos;
 - a imagem ou miniatura do post.
 
-Esses dados são o **conteúdo público do próprio cliente**, publicado por ele nas redes. A aplicação **não** lê perfis de seguidores e guarda curtidas e comentários apenas como **contagem**. As planilhas importadas e a leitura direta da Meta trazem só os números de cada publicação e da conta; nenhum dado de seguidor, nem o nome de quem curtiu ou comentou, é guardado.
+Esses dados são o **conteúdo público do próprio cliente**, publicado por ele nas redes. A aplicação **não** lê perfis de seguidores e guarda curtidas e comentários apenas como **contagem**. As planilhas importadas e a leitura direta das redes (Meta, YouTube e LinkedIn) trazem só os números de cada publicação e da conta; nenhum dado de seguidor, nem o nome de quem curtiu ou comentou, é guardado.
 
 Uma legenda ou uma imagem de post pode conter **nome ou rosto de uma pessoa**. Esse conteúdo foi publicado pelo cliente, que responde por tê-lo publicado; a aplicação apenas o reproduz no relatório.
 
@@ -194,6 +196,40 @@ Em vez de depender só de planilhas, a instalação pode **ler os números diret
 
 **Base legal:** execução do serviço de relatório contratado pelo cliente, que autoriza a leitura das contas dele (Art. 7º, V).
 
+### 4.11 Ligação com o canal do YouTube (Google)
+
+A instalação pode **ler os números do canal do YouTube do cliente** direto do **Google**, que opera o YouTube e guarda os dados dele; esta política trata apenas do que chega à instalação. A política de privacidade do Google está em <https://policies.google.com/privacy>.
+
+**Quem liga.** Só o **super-admin** da instalação, no cadastro do cliente, e apenas com o **login da conta Google que administra o canal** do cliente. A tela de autorização é do próprio Google e mostra o que está sendo pedido; a aplicação nunca vê a senha dessa conta. As permissões pedidas são **somente de leitura** (visualização dos dados do canal e dos relatórios do YouTube Analytics): a aplicação não publica, não envia, não apaga e não altera nada no canal. Os dados de **receita** do canal não são pedidos.
+
+**O que é lido.** Os **vídeos públicos do canal** publicados no mês do relatório (título, data, formato e link) com seus números: **visualizações, curtidas, comentários, compartilhamentos e retenção média** (quanto do vídeo, em média, as pessoas assistem), mais o **número de inscritos** do canal. Vídeos privados, não listados ou agendados **não são lidos**. São números do canal e dos vídeos: **não são lidos dados de pessoas** (quem assistiu, curtiu, comentou ou se inscreveu), nem o texto dos comentários, nem mensagens.
+
+**Declaração sobre os dados do Google.** O uso e a transferência, pela SocialReport, de informações recebidas das APIs do Google para qualquer outro aplicativo obedecem à [Política de Dados de Usuário dos Serviços de API do Google](https://developers.google.com/terms/api-services-user-data-policy) (*Google API Services User Data Policy*), **incluindo os requisitos de uso limitado** (*Limited Use*). Na prática, os dados recebidos do YouTube: são usados **somente para produzir o relatório do próprio cliente** (a funcionalidade que o super-admin autorizou); **não são transferidos** a terceiros, a não ser quando necessário para prestar esse serviço, cumprir a lei ou em caso de reorganização da empresa, e sempre sem uso para outras finalidades; **não são usados** para publicidade, nem para criar perfis de pessoas, nem para treinar modelos de inteligência artificial de uso geral; e **não são lidos por pessoas**, salvo com autorização, para segurança, por exigência legal ou depois de agregados e anonimizados para operar o serviço.
+
+**Onde ficam.** Os dados lidos entram no relatório como se viessem de uma planilha. A **chave de acesso** que o Google entrega à instalação fica **somente no servidor, cifrada**; nunca vai ao navegador de ninguém e **não entra nas cópias de segurança** (depois de restaurar uma cópia, é preciso ligar de novo). A instalação confere se a ligação segue válida e avisa o super-admin quando é preciso renová-la. Para o número de inscritos no **fim do mês**, a instalação guarda **uma fotografia diária** só com a contagem de inscritos (um número por dia, sem pessoas).
+
+**Por quanto tempo.** A chave fica **enquanto a ligação existir**: **desligar apaga a ligação e a chave** aqui; a autorização no Google só é retirada por quem ligou (veja "Como desligar"). Os vídeos e os números já lidos fazem parte do relatório e seguem os prazos dele (seção 8), assim como a fotografia diária de inscritos.
+
+**Como desligar.** O super-admin clica em **Desligar** no cadastro do cliente; a ligação e a chave são apagadas na hora, e a leitura direta para (as planilhas continuam valendo). Para também retirar a permissão **do lado do Google**, quem ligou pode revogar o acesso em <https://myaccount.google.com/permissions>. O passo a passo de exclusão está na **seção 13**.
+
+**Base legal:** execução do serviço de relatório contratado pelo cliente, que autoriza a leitura do canal dele (Art. 7º, V).
+
+### 4.12 Ligação com a Página do LinkedIn
+
+A instalação pode **ler os números da Página do LinkedIn do cliente** direto do **LinkedIn**, que opera a plataforma e guarda os dados dela; esta política trata apenas do que chega à instalação. A política de privacidade do LinkedIn está em <https://www.linkedin.com/legal/privacy-policy>.
+
+**Quem liga.** Só o **super-admin** da instalação, no cadastro do cliente, e apenas com o **login do perfil do LinkedIn que administra a Página** do cliente. A tela de autorização é do próprio LinkedIn; a aplicação nunca vê a senha desse perfil. Durante a ligação, a aplicação consulta quais Páginas esse perfil administra (só o nome e o identificador das Páginas), para o super-admin escolher a do cliente. As permissões são **somente de leitura**: a aplicação não publica, não comenta e não altera nada na Página.
+
+**O que é lido.** As **publicações da Página** feitas no mês do relatório (texto, data, formato e link) com seus números: **impressões, alcance (quando o LinkedIn o informa), curtidas, comentários, compartilhamentos e cliques**, mais o **alcance da Página no mês** e o **número de seguidores**. Publicações patrocinadas fora do feed ficam de fora. São números da Página e das publicações: **não são lidos dados de pessoas** (quem viu, curtiu, comentou, clicou ou segue a Página), nem mensagens.
+
+**Onde ficam.** Os dados lidos entram no relatório como se viessem de uma planilha. A **chave de acesso** que o LinkedIn entrega à instalação fica **somente no servidor, cifrada**; nunca vai ao navegador de ninguém e **não entra nas cópias de segurança** (depois de restaurar uma cópia, é preciso ligar de novo). A autorização do LinkedIn vale por tempo limitado (cerca de 60 dias): a instalação avisa o super-admin antes de vencer, e ele liga de novo. Para o número de seguidores no **fim do mês**, a instalação guarda **uma fotografia diária** só com a contagem de seguidores (um número por dia, sem pessoas).
+
+**Por quanto tempo.** A chave fica **enquanto a ligação existir**: **desligar apaga a ligação e a chave**. As publicações e os números já lidos fazem parte do relatório e seguem os prazos dele (seção 8), assim como a fotografia diária de seguidores.
+
+**Como desligar.** O super-admin clica em **Desligar** no cadastro do cliente; a ligação e a chave são apagadas na hora, e a leitura direta para (as planilhas continuam valendo). Para também retirar a permissão **do lado do LinkedIn**, quem ligou pode remover o aplicativo em **Configurações > Dados > Aplicativos permitidos** (em inglês, *Settings > Data privacy > Permitted services*), na conta do LinkedIn. O passo a passo de exclusão está na **seção 13**.
+
+**Base legal:** execução do serviço de relatório contratado pelo cliente, que autoriza a leitura da Página dele (Art. 7º, V).
+
 ---
 
 ## 5. Como os dados são usados
@@ -207,7 +243,7 @@ Os dados são usados exclusivamente para:
 - enviar os e-mails do sistema (convite e recuperação de senha);
 - enviar o link do relatório, por e-mail, às pessoas que o cliente indicou (seção 4.6);
 - oferecer ao cliente a página de portfólio dos relatórios emitidos (seção 4.9);
-- ler, quando o cliente autoriza, os números das contas do Instagram e do Facebook (seção 4.10);
+- ler, quando o cliente autoriza, os números das contas do Instagram e do Facebook (seção 4.10), do canal do YouTube (seção 4.11) e da Página do LinkedIn (seção 4.12);
 - responder às sugestões e aos relatos de problema enviados pela equipe;
 - garantir a segurança e a integridade das informações.
 
@@ -225,6 +261,8 @@ Para funcionar, a instalação usa os serviços abaixo. Quem presta cada um dele
 | **Serviço de estatísticas (Matomo)** (desenvolvedora, distribuidora ou a própria organização responsável) | Estatísticas agregadas do site do cliente | Informada dentro da instalação |
 | **Envio de e-mail** (desenvolvedora, distribuidora ou a própria organização responsável) | E-mails de convite, recuperação de senha, cópias de segurança e envio do link do relatório | Informada dentro da instalação |
 | **Meta** (Instagram e Facebook) | Leitura dos números das contas do cliente, quando a ligação é autorizada (seção 4.10) | Fora do Brasil |
+| **Google** (YouTube) | Leitura dos números do canal do cliente, quando a ligação é autorizada (seção 4.11), sob a Política de Dados de Usuário dos Serviços de API do Google, com uso limitado | Fora do Brasil (Estados Unidos) |
+| **LinkedIn** | Leitura dos números da Página do cliente, quando a ligação é autorizada (seção 4.12) | Fora do Brasil |
 | **Google** (login com Google) | Autenticação, quando a pessoa escolhe entrar com o Google | Fora do Brasil (Estados Unidos) |
 | **Google Gemini** | Textos de análise e imagens de capa, quando configurado | Fora do Brasil |
 | **OpenAI** | Textos de análise e imagens de capa, quando configurado | Fora do Brasil |
@@ -240,7 +278,7 @@ A aplicação **não usa cookies de rastreamento, analytics de terceiros nem pub
 
 O serviço de estatísticas do site do cliente também **mede sem cookies** (seção 4.4), e o portfólio público (seção 4.9) não usa cookies.
 
-Há um único cookie técnico, **temporário**: ao ligar uma conta da Meta (seção 4.10), a aplicação grava um cookie de segurança que dura **10 minutos** e serve só para confirmar que quem volta da Meta é o mesmo navegador que iniciou a ligação. Ele não rastreia ninguém e some sozinho.
+Há um único cookie técnico, **temporário**: ao ligar uma conta da Meta, do YouTube ou do LinkedIn (seções 4.10 a 4.12), a aplicação grava um cookie de segurança que dura **10 minutos** e serve só para confirmar que quem volta dessa plataforma é o mesmo navegador que iniciou a ligação. Ele não rastreia ninguém e some sozinho.
 
 ---
 
@@ -259,7 +297,9 @@ Há um único cookie técnico, **temporário**: ao ligar uma conta da Meta (seç
 | Números da plataforma de cursos | Junto com o relatório a que se referem |
 | Relatórios (inclusive os textos e as imagens gerados com IA) | Enquanto durar o contrato com o cliente; depois, seguem o prazo da linha anterior |
 | Chaves de acesso à Meta (ligação com o Instagram e o Facebook) | Enquanto a ligação existir; **desligar apaga** na hora. Saem também com o cadastro do cliente (até 30 dias depois do fim do contrato) |
-| Fotografia diária do número de seguidores (Meta) | Junto com os relatórios do cliente: enquanto durar o contrato e até **30 dias** depois do fim |
+| Chave de acesso ao YouTube (ligação com o canal) | Enquanto a ligação existir; **desligar apaga** na hora. Sai também com o cadastro do cliente (até 30 dias depois do fim do contrato) |
+| Chave de acesso ao LinkedIn (ligação com a Página) | Enquanto a ligação existir; **desligar apaga** na hora. Sai também com o cadastro do cliente (até 30 dias depois do fim do contrato) |
+| Fotografia diária do número de seguidores ou inscritos (Meta, YouTube e LinkedIn) | Junto com os relatórios do cliente: enquanto durar o contrato e até **30 dias** depois do fim |
 | Link do portfólio público | Enquanto estiver ligado; **desligar** o fecha na hora. Sai com o cadastro do cliente |
 | Dados detalhados de visitas ao site do cliente, no serviço de estatísticas | **13 meses**; os resumos mensais permanecem (seção 4.4) |
 | Cópias de segurança do banco de dados | Conforme a política de backup da organização responsável (abaixo) |
@@ -311,14 +351,18 @@ Esta política é regida pela **Lei Geral de Proteção de Dados Pessoais (LGPD 
 
 ---
 
-## 13. Como pedir a exclusão dos dados da ligação com a Meta {#exclusao-de-dados}
+## 13. Como pedir a exclusão dos dados das ligações com a Meta, o YouTube e o LinkedIn {#exclusao-de-dados}
 
-Esta seção é o endereço de **instruções de exclusão de dados** da SocialReport para a Meta. Ela vale para quem ligou ou administra uma conta do Instagram ou do Facebook ligada a uma instalação (seção 4.10) e para quem tem dados nossos vindos dessas contas.
+Esta seção é o endereço de **instruções de exclusão de dados** da SocialReport para a Meta, o Google (YouTube) e o LinkedIn. Ela vale para quem ligou ou administra uma conta do Instagram ou do Facebook (seção 4.10), um canal do YouTube (seção 4.11) ou uma Página do LinkedIn (seção 4.12) ligados a uma instalação, e para quem tem dados nossos vindos dessas contas.
 
-**1. Desligar a ligação (o que a instalação guarda de acesso).** O super-admin abre o cadastro do cliente e clica em **Desligar** na seção de redes sociais da Meta. A ligação e as chaves de acesso são apagadas na hora, e a instalação deixa de ler a conta.
+**1. Desligar a ligação (o que a instalação guarda de acesso).** O super-admin abre o cadastro do cliente e clica em **Desligar** na seção da rede (Meta, YouTube ou LinkedIn). A ligação e as chaves de acesso são apagadas na hora, e a instalação deixa de ler a conta.
 
-**2. Retirar a permissão do lado da Meta.** Quem ligou a conta pode, a qualquer momento, remover o aplicativo da SocialReport nas configurações da própria conta do Facebook, em **Integrações de negócios**. Isso corta o acesso mesmo que a instalação não seja desligada.
+**2. Retirar a permissão do lado da plataforma.** Quem ligou a conta pode, a qualquer momento, retirar o aplicativo da SocialReport por conta própria, o que corta o acesso mesmo que a instalação não seja desligada:
 
-**3. Apagar também o que já foi lido.** Os números de publicações e de seguidores já lidos fazem parte dos relatórios do cliente. Para apagá-los, peça ao **encarregado de dados da organização responsável** pela instalação (seção 10), dizendo qual é a conta ou o cliente. O pedido é respondido em até **15 dias úteis**, e a exclusão do cadastro do cliente leva junto os relatórios, os números lidos da Meta e a fotografia diária de seguidores.
+- **Meta (Instagram e Facebook):** nas configurações da conta do Facebook, em **Integrações de negócios**.
+- **YouTube (Google):** em <https://myaccount.google.com/permissions>, escolhendo o aplicativo da SocialReport e removendo o acesso.
+- **LinkedIn:** em **Configurações > Dados > Aplicativos permitidos** (*Settings > Data privacy > Permitted services*), na conta do LinkedIn.
 
-**Quem não tem conta na instalação**, mas aparece numa publicação lida da Meta (um nome numa legenda, por exemplo), pode pedir a exclusão ou a correção pelo mesmo caminho, e também ao cliente que publicou.
+**3. Apagar também o que já foi lido.** Os números de publicações, vídeos, seguidores e inscritos já lidos fazem parte dos relatórios do cliente. Para apagá-los, peça ao **encarregado de dados da organização responsável** pela instalação (seção 10), dizendo qual é a conta ou o cliente. O pedido é respondido em até **15 dias úteis**, e a exclusão do cadastro do cliente leva junto os relatórios, os números lidos das redes e a fotografia diária de seguidores e inscritos.
+
+**Quem não tem conta na instalação**, mas aparece numa publicação ou num vídeo lido dessas plataformas (um nome numa legenda ou num título, por exemplo), pode pedir a exclusão ou a correção pelo mesmo caminho, e também ao cliente que publicou.
