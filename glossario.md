@@ -51,6 +51,8 @@ Definições curtas, em ordem alfabética, do jeito que cada termo é usado nest
 
 ## F
 
+**Fotografia diária de seguidores.** Número de seguidores de cada conta (Instagram e Facebook) que o sistema anota toda noite, para cada cliente ligado à Meta. É o que dá o número do **último dia do mês**. Só existe a partir do dia em que o cliente foi ligado. Veja [Ler da Meta]({{ '/mes-do-analista/ler-da-meta/' | relative_url }}#2-escolha-o-dia-da-leitura).
+
 **Frequência semanal.** Média de publicações por semana. Veja [Comparativo geral]({{ '/como-ler-o-relatorio/redes/' | relative_url }}).
 
 ## I
@@ -60,6 +62,10 @@ Definições curtas, em ordem alfabética, do jeito que cada termo é usado nest
 **Impressões.** Quantas vezes a publicação apareceu na tela, contando repetições. Veja [Impressões]({{ '/conceitos/' | relative_url }}).
 
 ## L
+
+**Ler da Meta.** Botão da página do mês que traz as publicações do Instagram e do Facebook direto das contas do cliente, no lugar da planilha, para os clientes ligados à Meta. Os números são os do momento da leitura. Veja [Ler da Meta]({{ '/mes-do-analista/ler-da-meta/' | relative_url }}).
+
+**Ligação (com a Meta).** A autorização, dada por uma pessoa que administra a Página do cliente, que permite ao sistema ler o Instagram e o Facebook dele. Feita pelo super-administrador, no cadastro do cliente, e renovada quando vence. Veja [Ligar o Instagram e o Facebook]({{ '/administracao/meta/' | relative_url }}).
 
 **Licença do V3RAnalytics.** Chave cadastrada pelo super-administrador (aba Matomo) que o plugin recebe ao conectar o site e que permite a ele se atualizar sozinho. Sem ela, o plugin funciona, mas não se atualiza. Veja [Site e plugin]({{ '/site-e-plugin/' | relative_url }}).
 
@@ -77,7 +83,9 @@ Definições curtas, em ordem alfabética, do jeito que cada termo é usado nest
 
 **Medição desde.** Aviso de que a medição do site começou no meio do ciclo; o mês é parcial e não compara. Veja [Medição desde]({{ '/conceitos/' | relative_url }}).
 
-**Meta.** Ação que o site mede como conversão (por exemplo, um formulário enviado). Veja [Conversões]({{ '/como-ler-o-relatorio/site/' | relative_url }}).
+**Meta (empresa).** Dona do Instagram e do Facebook. É de lá que vêm a planilha exportada e, nos clientes ligados, a leitura direta. Veja [Ligar o Instagram e o Facebook]({{ '/administracao/meta/' | relative_url }}).
+
+**Meta** (do site). Ação que o site mede como conversão (por exemplo, um formulário enviado). Não é a empresa Meta, dona do Instagram e do Facebook. Veja [Conversões]({{ '/como-ler-o-relatorio/site/' | relative_url }}).
 
 ## P
 
@@ -111,7 +119,9 @@ Definições curtas, em ordem alfabética, do jeito que cada termo é usado nest
 
 **V3RAnalytics.** Plugin que roda no site da organização: mede sem cookies, cria as metas e gera os links marcados. Veja [Link marcado]({{ '/conceitos/' | relative_url }}).
 
-**Visualizadores.** Medida que o Meta passou a informar no Facebook no lugar de Alcance (que encerra em 31/10/2026). O SocialReport a usa como alcance quando a planilha não tem Alcance, e avisa quando a comparação mistura as duas definições. Veja [Comparativo geral]({{ '/como-ler-o-relatorio/redes/' | relative_url }}).
+**Visualizações.** Quantas vezes uma publicação foi vista, contando repetições. É o nome que a Meta passou a usar no lugar de "impressões", e no relatório aparece como **Impressões**. Não confunda com Visualizadores. Veja [Alcance e visualizações]({{ '/mes-do-analista/ler-da-meta/' | relative_url }}#alcance-e-visualizações-o-que-a-leitura-preenche).
+
+**Visualizadores.** Medida que o Meta passou a informar no Facebook no lugar de Alcance (que encerra em 31/10/2026): conta **pessoas diferentes**, como o alcance. O SocialReport a usa como alcance quando a planilha ou a leitura da Meta não traz Alcance, e avisa quando a comparação mistura as duas definições. Veja [Comparativo geral]({{ '/como-ler-o-relatorio/redes/' | relative_url }}).
 
 **Visita.** Cada vez que alguém abre o site e navega. Veja [Visita]({{ '/conceitos/' | relative_url }}).
 

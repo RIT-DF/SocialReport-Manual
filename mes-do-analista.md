@@ -19,6 +19,7 @@ Os exemplos e as telas vêm do relatório de outubro de 2026 do **Instituto Hori
 | 2 | [Criar o período do mês](#2-criar-o-período-do-mês) | Períodos & Emissão |
 | 3 | [Importar as planilhas das redes](#3-importar-as-planilhas-das-redes) | Períodos & Emissão |
 | 3b | [Informar os seguidores de cada rede](#3b-informar-os-seguidores-de-cada-rede) | Períodos & Emissão |
+| 3c | [Ler da Meta, no lugar da planilha](#3c-ler-da-meta-no-lugar-da-planilha) | Períodos & Emissão |
 | 4 | [Conferir as inconsistências da importação](#4-conferir-as-inconsistências-da-importação) | durante a importação |
 | 5 | [Conferir os números e marcar os posts fora da curva](#5-conferir-os-números-e-marcar-os-posts-fora-da-curva) | Períodos & Emissão |
 | 6 | [Classificar as categorias](#6-classificar-as-categorias) | planilha e cadastro do cliente |
@@ -31,7 +32,7 @@ Os exemplos e as telas vêm do relatório de outubro de 2026 do **Instituto Hori
 | 12 | [Compartilhar o link e gerar o PDF](#12-compartilhar-o-link-e-gerar-o-pdf) | o relatório aberto |
 | 13 | [Cuidar de vários períodos de uma vez](#13-cuidar-de-vários-períodos-de-uma-vez) | Períodos & Emissão |
 
-> **O que é só do super-administrador.** Ligar o site de um cliente, configurar a inteligência artificial e o Matomo, convidar pessoas e trocar a identidade da organização ficam em "Configurações do Sistema" e no cadastro do cliente, e são tratados na [parte 6]({{ '/administracao/' | relative_url }}) e na [parte 5]({{ '/site-e-plugin/' | relative_url }}). Aqui estão as tarefas de quem monta o relatório.
+> **O que é só do super-administrador.** Ligar o site e o Instagram e o Facebook de um cliente, configurar a inteligência artificial, o Matomo e a Meta, convidar pessoas e trocar a identidade da organização ficam em "Configurações do Sistema" e no cadastro do cliente, e são tratados na [parte 6]({{ '/administracao/' | relative_url }}) e na [parte 5]({{ '/site-e-plugin/' | relative_url }}). Aqui estão as tarefas de quem monta o relatório.
 {: .note }
 
 ## 1. Escolher o cliente ativo
@@ -79,7 +80,7 @@ Nessa janela também há **Detectar das Postagens** (sugere as datas a partir da
 
 ## 3. Importar as planilhas das redes
 
-**Por que importa.** As planilhas são a fonte dos números das redes. O sistema não "puxa" dados das redes sozinho: ele lê o que você importa. Importar direito significa que os números do relatório batem com o que a rede mostra.
+**Por que importa.** As planilhas são a fonte dos números das redes. Por padrão, o sistema não "puxa" dados das redes sozinho: ele lê o que você importa. (A exceção é o Instagram e o Facebook de um cliente que o super-administrador ligou à Meta: veja a [tarefa 3c](#3c-ler-da-meta-no-lugar-da-planilha).) Importar direito significa que os números do relatório batem com o que a rede mostra.
 
 **O modelo de planilha.** O botão **Modelo de Planilha**, no alto da página, baixa uma planilha padrão com as colunas que o sistema reconhece: data, canal, formato, pauta (título do conteúdo), link da publicação, categoria editorial, alcance, impressões, interações, curtidas, respostas/comentários, compartilhamentos, salvamentos, visitas ao perfil, visualizações de vídeo, reações e a marcação de anômalo (sim ou não). Há também uma aba **Resumo do Mês**, onde se informam o alcance da conta e o **número de seguidores** do mês, na linha **Seguidores da rede no fim do mês** (uma rede por arquivo). Você também pode digitar os seguidores direto na tela do mês, sem mexer na planilha: veja a [tarefa 3b](#3b-informar-os-seguidores-de-cada-rede). Planilhas com outros nomes de coluna também funcionam, e o sistema ajuda a ligar cada coluna ao campo certo (veja a próxima tarefa).
 
@@ -149,6 +150,16 @@ Se o período veio de uma **planilha online**, ele fica ligado a ela, e é poss�
 {: .tip }
 
 **Quando dá errado.** Na revisão, aparece um aviso só para você: **"Falta o número de seguidores de [rede] neste mês. Sem ele, o relatório não mostra a base de seguidores nem o comparativo dessa rede. Preencha na tela do mês (Períodos) ou na linha "Seguidores" da planilha."** O aviso não aparece no relatório nem no link público. Volte à tela do mês, preencha e salve.
+
+## 3c. Ler da Meta, no lugar da planilha
+
+**Por que importa.** Para o cliente que o super-administrador **ligou à Meta**, o Instagram e o Facebook do mês podem vir direto das contas: um clique em **Ler da Meta** traz as publicações, com alcance, visualizações e interações, e oferece o número de seguidores do fim do mês. Não há planilha para exportar, conferir e trocar sem querer por outra. **A planilha continua valendo**, e o Story, a categoria editorial e as outras redes seguem vindo por ela.
+
+Os números da leitura são os **do momento em que você lê** (como exportar a planilha naquele dia), e cada rede usa **uma fonte por mês**: ou a planilha ou a Meta. Substituir a planilha pede confirmação, e dá para **voltar para a planilha**.
+
+![Bloco Ler da Meta na página do mês, com a mensagem Instagram e Facebook ligados e o botão Ler da Meta]({{ '/assets/img/app/app-71-meta-ler-da-meta.png' | relative_url }})
+
+O passo a passo, os avisos e o que fazer quando dá errado estão em [Ler da Meta]({{ '/mes-do-analista/ler-da-meta/' | relative_url }}).
 
 ## 4. Conferir as inconsistências da importação
 

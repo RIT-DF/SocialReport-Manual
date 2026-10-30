@@ -30,7 +30,7 @@ O Meta deixou de informar **Alcance** no Facebook (a partir de 31/10/2026) e pas
 
 ### Por que os números do relatório são diferentes dos que vejo no aplicativo da rede?
 
-Cada rede tem o próprio jeito de contar e o relatório usa os números que a equipe importou, para o **período auditado** da capa, que pode não ser o mês do calendário. Compare sempre o mesmo período. Em caso de dúvida, peça à equipe a origem do número.
+Cada rede tem o próprio jeito de contar e o relatório usa os números que a equipe importou, para o **período auditado** da capa, que pode não ser o mês do calendário. Compare sempre o mesmo período. Em caso de dúvida, peça à equipe a origem do número. Quando a equipe usa a **leitura da Meta**, o número é o do **momento da leitura** (veja [Ler da Meta]({{ '/mes-do-analista/ler-da-meta/' | relative_url }})).
 
 ### O alcance somado é o número de pessoas diferentes?
 
@@ -157,6 +157,48 @@ O complemento do Moodle lê, no máximo, 400 dias por vez (cerca de 13 meses), e
 ### O consolidado aparece no portfólio?
 
 Aparece quando está **emitido**, com a etiqueta **Consolidado**. Em rascunho ou validado, não.
+
+## Sobre a leitura pela Meta
+
+### O que é "Ler da Meta"? Ainda preciso da planilha?
+
+É o botão que traz as publicações do Instagram e do Facebook **direto das contas do cliente**, sem exportar e importar planilha. Ele só existe para o cliente que o super-administrador **ligou à Meta**. A planilha continua valendo e continua necessária para os **Stories**, para a **categoria editorial** e para as outras redes (LinkedIn, TikTok, YouTube). Veja [Ler da Meta]({{ '/mes-do-analista/ler-da-meta/' | relative_url }}).
+
+### Qual é a diferença entre alcance e visualizações?
+
+**Alcance** conta **pessoas diferentes**: quem viu a publicação uma vez ou dez entra uma vez. **Visualizações** contam **quantas vezes** ela foi vista, com repetição, e por isso são sempre iguais ou maiores que o alcance. No relatório, as visualizações aparecem como **Impressões**. A Meta trocou o nome antigo ("impressões") por "visualizações", mas a ideia é a mesma. Veja [Alcance e impressões]({{ '/conceitos/' | relative_url }}).
+
+### Na leitura da Meta, o alcance de uma publicação do Facebook veio como "Visualizadores". Está errado?
+
+Não. Em algumas publicações, o Facebook **deixou de informar "Alcance"** e passou a informar **"Visualizadores"**, que também conta pessoas diferentes, só que com uma definição própria da Meta. O sistema usa **Visualizadores no lugar do alcance** e **marca** que foi assim. Por isso, a observação da leitura pode dizer que a versão da Meta "recusou" uma medida e usou outra. O cuidado é de leitura: quando o mês e o anterior usam medidas diferentes, a variação do alcance **não é uma comparação exata**, e a revisão e o slide do comparativo avisam. Veja [Ler da Meta]({{ '/mes-do-analista/ler-da-meta/' | relative_url }}#alcance-e-visualizações-o-que-a-leitura-preenche).
+
+### Por que o número da leitura é diferente do da planilha que exportei em outro dia?
+
+Porque os números **acumulam**. A leitura traz o que a Meta mostra **no momento em que você clica**, e a tela diz "lido em dd/mm hh:mm". Planilha exportada no dia 3 e leitura do dia 10 não batem: as publicações do fim do mês ganharam alcance e interações no meio tempo. Para comparar, use o mesmo dia, ou leia de novo (**Ler de novo**). Veja [Por que o número da leitura pode diferir da planilha]({{ '/mes-do-analista/ler-da-meta/' | relative_url }}#por-que-o-número-da-leitura-pode-diferir-da-planilha).
+
+### Por que o botão "Ler da Meta" não aparece, ou está apagado?
+
+Se **não aparece**, o cliente não foi ligado à Meta: peça ao super-administrador. Se **está apagado**, a ligação venceu ou parou (a frase embaixo do título diz qual, por exemplo "Ligação expirada: peça ao administrador para renovar"). Só o super-administrador renova. Enquanto isso, use a planilha. Veja [Ligar o Instagram e o Facebook]({{ '/administracao/meta/' | relative_url }}#os-estados-da-ligação).
+
+### A leitura traz os Stories?
+
+Não. A Meta só mostra um Story por 24 horas, então ele não existe mais quando se lê o mês. O Story do mês entra **pela planilha**, e a revisão lembra disso.
+
+### O número de seguidores da leitura não é o do fim do mês. O que eu faço?
+
+A leitura usa, em ordem, a **fotografia** que o sistema tira toda noite (se o cliente já estava ligado no último dia do ciclo), um número **reconstruído** (só no Instagram, e só até 30 dias depois do fim do ciclo) ou, por último, o **número do dia da leitura**. Nos dois últimos, a revisão avisa para conferir. Se você tem o número do fim do mês no painel da rede, **digite-o** no bloco **Seguidores no fim do mês**: o que você digita **nunca é trocado sem a sua confirmação**.
+
+### Posso usar a planilha do Instagram e a leitura da Meta no mesmo mês?
+
+Para a mesma rede, **uma fonte só**: contar as duas duplicaria cada publicação. Se o mês já tem a planilha do Instagram, o sistema pergunta se pode **substituí-la** pela leitura, guarda a planilha e deixa você **voltar para ela** quando quiser. Instagram por uma fonte e Facebook por outra é permitido.
+
+### A leitura da Meta enxerga quem me segue ou quem comentou?
+
+Não. O sistema lê **números** (publicações, alcance, visualizações, contagem de curtidas e comentários, e a contagem de seguidores). Ele não lê quem curtiu, quem comentou, a lista de seguidores nem mensagens, e a permissão que pede é só de **leitura**. Veja [Privacidade]({{ '/privacidade/' | relative_url }}).
+
+### Desliguei a ligação de um cliente, mas o app ainda aparece nas integrações do Facebook. Por quê?
+
+Porque **desligar apaga a ligação só dentro do SocialReport**. A autorização na Meta é de quem fez o login e vale para **todos** os clientes que ele ligou, então o sistema não a revoga por você. Para retirá-la do lado da Meta, a própria pessoa remove o app nas configurações da conta do Facebook, em **Integrações de negócios**, sabendo que isso derruba **todas** as ligações dela. Veja [Ligar o Instagram e o Facebook]({{ '/administracao/meta/' | relative_url }}#3-testar-renovar-e-desligar).
 
 ## Sobre o site e o plugin
 
