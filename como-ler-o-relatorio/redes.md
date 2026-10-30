@@ -66,6 +66,8 @@ Acima da tabela há uma escolha de **base**: **todas as publicações** ou **sem
 
 **Decisão que ajuda a tomar:** separar o que se explica pelo **volume** (publicou-se menos) do que se explica pela **qualidade ou pela distribuição** (cada publicação rendeu menos).
 
+![Comparativo geral com a base de seguidores e uma linha por rede, Instagram e Facebook, e a nota das redes que ficaram fora do total]({{ '/assets/img/relatorio/relatorio-24-comparativo-seguidores-por-rede.png' | relative_url }})
+
 **Seguidores.** A tabela traz a **Base de Seguidores** e, quando o cliente tem mais de uma rede com número, uma linha por rede (**Seguidores no Instagram**, **Seguidores no Facebook**). O **total soma só as redes que têm número nos dois meses**: somar uma rede que só existe em um mês inflaria ou derrubaria a variação sem que nada tivesse mudado. As redes que ficaram de fora são citadas numa nota logo abaixo (**"Seguidores: [rede] não tem número nos dois meses e ficou fora do total."**). O número vem do que a equipe informa no fim de cada mês, porque as exportações das redes não trazem o total de seguidores.
 
 Se a tabela traz a frase "Sem dados de Out/25: comparativo com o mesmo mês do ano anterior indisponível", é porque a organização ainda não tem um ano de histórico no sistema. O comparativo com o mesmo mês do ano anterior é o mais justo (ele já inclui as sazonalidades, como as férias e as festas), e aparece assim que os dados existirem.

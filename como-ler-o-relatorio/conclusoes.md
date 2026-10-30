@@ -11,8 +11,7 @@ Um relatório que só mostra números deixa o trabalho mais difícil para você:
 
 ## Imprensa e clipping (só aparece quando há)
 
-> **Captura pendente.** O relatório usado como exemplo neste manual não teve matérias de imprensa no mês, então esta página não aparece nele. A imagem será acrescentada quando houver um relatório com clipping que possa ser anonimizado.
-{: .note }
+![Página Presença na Imprensa e Clipping de Notícias, com menções, percepção de imagem, veículos e a lista de matérias]({{ '/assets/img/relatorio/relatorio-27-imprensa-e-clipping.png' | relative_url }})
 
 **A pergunta que responde:** "O que a imprensa disse sobre a organização este mês, e em que tom?"
 

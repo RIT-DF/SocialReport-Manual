@@ -124,8 +124,7 @@ A página tem duas partes:
 
 ## Receitas pelo site (só para quem tem loja ou doação online)
 
-> **Captura pendente.** O exemplo usado neste manual é de uma organização sem loja, então esta página não aparece no relatório de exemplo. A imagem será acrescentada quando houver um relatório com receitas que possa ser anonimizado.
-{: .note }
+![Página Receitas pelo Site, com pedidos, receita, valor médio, carrinhos abandonados, receita por categoria e produtos mais vendidos e vistos]({{ '/assets/img/relatorio/relatorio-26-receitas-pelo-site.png' | relative_url }})
 
 **A pergunta que responde:** "As redes e o site estão gerando dinheiro, seja de venda ou de doação?"
 

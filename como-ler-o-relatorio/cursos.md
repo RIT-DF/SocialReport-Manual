@@ -38,7 +38,7 @@ Nos **Top Posts**, o cartão do post ligado a uma campanha dos cursos traz **"Le
 
 **Exemplo.** No slide, o Instagram alcançou 31.140 pessoas e levou 410 visitas à plataforma; 52 chegaram à página de inscrição, o que dá cerca de 11 inscrições estimadas. O LinkedIn, com alcance menor, levou 140 visitas e 21 à página de inscrição. Pelo alcance, o Instagram "ganha"; pela proporção de visitas que chegam à inscrição, o LinkedIn vai melhor, e vale perguntar por quê.
 
-*Captura pendente: o slide "Do post ao curso". As capturas de relatório precisam de um relatório com dados anonimizados de cursos, e o ambiente de teste disponível usa dados reais de um cliente.*
+![Slide Do post ao curso, com alcance, visitas e inscrições por rede, o resumo por curso e os posts que mais levaram aos cursos]({{ '/assets/img/relatorio/relatorio-25-do-post-ao-curso.png' | relative_url }})
 
 > **Leituras erradas comuns**
 >

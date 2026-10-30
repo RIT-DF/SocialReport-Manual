@@ -70,8 +70,6 @@ Os exemplos e as telas vêm do relatório de outubro de 2026 do **Instituto Hori
 
 ![Janela Importar Novo Período, com mês, ano, ciclo de medição e a área para soltar as planilhas]({{ '/assets/img/app/app-03-novo-periodo.png' | relative_url }})
 
-*Captura pendente: esta imagem é anterior à versão 1.36.0 e mostra o botão antigo, desabilitado. A tela atual, sem arquivo, mostra a dica "Sem arquivo, o mês é criado vazio…" e o botão **Criar mês sem planilha**, habilitado. Precisa de nova captura da janela, com API falsa, em 1440 px; o verificador de revisão do projeto não grava imagens.*
-
 ### Criar o mês sem planilha
 
 **Por que importa.** Para o cliente que já está ligado à Meta, ao YouTube ou ao LinkedIn, a planilha deixou de ser o ponto de partida: os números vêm das próprias redes. Antes, o mês só passava a existir depois de você subir um arquivo, mesmo que fosse só para ele nascer e você poder usar o botão de ler das redes. Agora o mês nasce sozinho, e o primeiro número que entra nele pode ser o da leitura.
@@ -81,6 +79,8 @@ Os exemplos e as telas vêm do relatório de outubro de 2026 do **Instituto Hori
 1. A janela fecha e o mês aparece na lista de períodos como **"0 publicações · 0 arquivos"**. É assim que um mês vazio se apresenta, e não é erro.
 2. Ao abrir o mês, ele abre normalmente. Para cada rede ligada ao cliente você vê o bloco de leitura: **Ler da Meta**, **Ler do YouTube** e **Ler do LinkedIn** (veja as tarefas [3c](#3c-ler-da-meta-no-lugar-da-planilha) e [3d](#3d-ler-do-youtube-e-do-linkedin-no-lugar-da-planilha)). Cliente sem nenhuma rede ligada não tem esses blocos, e aí a saída é a planilha.
 3. A planilha continua valendo: **Acrescentar Planilha**, na página do mês, soma uma rede que a leitura não cobre (o TikTok, por exemplo, só entra por planilha).
+
+![Mês criado sem planilha, com 0 publicações e 0 arquivos na lista e os blocos Ler da Meta e Ler do YouTube na página do mês]({{ '/assets/img/app/app-99-mes-vazio-blocos-leitura.png' | relative_url }})
 
 **Exemplo.** O Instituto Horizonte tem o Instagram e o Facebook ligados à Meta e o LinkedIn ligado. No dia 1º de novembro você cria **outubro de 2026** sem planilha. O mês aparece com "0 publicações · 0 arquivos"; você abre, clica em **Ler da Meta** e depois em **Ler do LinkedIn**, e as publicações entram sem arquivo nenhum.
 
@@ -167,7 +167,7 @@ Se o período veio de uma **planilha online**, ele fica ligado a ela, e é poss�
 3. Digite o total de seguidores de cada rede **no último dia do mês**, como aparece no painel da rede.
 4. Clique em **Salvar seguidores**. Só então o número é gravado: o botão fica desabilitado enquanto você não mudar nada, e a mensagem **"Seguidores gravados."** confirma.
 
-*Captura pendente: o bloco "Seguidores no fim de [mês]" na tela do mês (campo, "Sugestão" e botão "Salvar seguidores"). Precisa de um período de teste no app, com login.*
+![Bloco Seguidores no fim de janeiro de 2026, com o campo de cada rede, a sugestão do mês anterior e o botão Salvar seguidores]({{ '/assets/img/app/app-100-seguidores-fim-do-mes.png' | relative_url }})
 
 **A sugestão do mês anterior.** Quando o mês anterior do mesmo cliente tem número, abaixo do campo aparece **"Sugestão (mês anterior): N, não gravada."** com o link **Usar sugestão**. A sugestão **não é gravada** sozinha: ela só entra no mês quando você clica em **Usar sugestão** (ou digita) e salva. Serve de atalho para quando o número mal mudou, e de conferência para quando você digitou um valor muito diferente.
 
@@ -214,8 +214,9 @@ Cada rede ligada tem o **seu** bloco. O passo a passo, os avisos e o que fazer q
 
 **Por que importa.** Uma planilha com erro vira um relatório com erro, e o cliente confia nele. O sistema recusa o que não faz sentido e mostra o motivo; sua tarefa é ler a lista antes de confirmar.
 
-> **Captura pendente.** Esta tela só aparece depois de escolher um arquivo, e escolher um arquivo grava dados, então ela não foi capturada. O texto abaixo descreve o que acontece.
-{: .note }
+![Cartão da planilha na janela Novo Período, com a linha recusada por alcance maior que impressões e a linha de total ignorada]({{ '/assets/img/app/app-103-importacao-erros.png' | relative_url }})
+
+O cartão de cada planilha mostra quantas linhas valem, quantas foram bloqueadas e, logo abaixo, a linha e a coluna de cada problema. A linha de total aparece como ignorada.
 
 O que o sistema faz sozinho:
 
@@ -307,7 +308,7 @@ Na revisão, o bloco **Cursos** vem logo depois do bloco do site.
 - **A caixa editável "Cursos: do post ao curso"** fica entre os textos analíticos da narrativa (bloco **Narrativa Executiva Assistida por IA**), ao lado da **Cursos: visão geral**. É o texto do slide: leia, corrija e salve. Apagar o texto o oculta.
 - **Diagnóstico e Próximos Passos** passam a **cruzar redes, site e cursos** quando há dado dos três: ao regerar a narrativa, a IA considera o que as redes, o site e os cursos mostram juntos.
 
-*Captura pendente: bloco "Cursos" da revisão com o botão "Gerar análise do caminho com IA" e a lista "Posts e campanhas que levam aos cursos". Precisa de relatório com cursos e login.*
+![Bloco Cursos da revisão, com o botão Gerar análise do caminho com IA e a lista Posts e campanhas que levam aos cursos]({{ '/assets/img/app/app-101-revisao-bloco-cursos.png' | relative_url }})
 
 > **Dicas e armadilhas.**
 > - **Marque os links das publicações** que levam à plataforma de cursos. Sem campanha, o Matomo vê "acesso direto" ou "redes sociais" em geral, e o post não recebe crédito.
@@ -423,7 +424,9 @@ Com o relatório aberto, a barra de cima tem as setas dos slides, **Compartilhar
 
 ![Janela Compartilhar e Incorporar, com o bloco Enviar o link por e-mail ao cliente]({{ '/assets/img/app/app-29-compartilhar-enviar.png' | relative_url }})
 
-*Captura pendente: o bloco com destinatários cadastrados (lista com caixas marcadas, mensagem e botão **Revisar e enviar**). A captura acima mostra o estado de um cliente sem destinatários, e foi mantida assim porque montar a lista gravaria dados reais do cliente.*
+![Bloco Enviar o link por e-mail ao cliente com dois destinatários marcados, a mensagem e o botão Revisar e enviar]({{ '/assets/img/app/app-102-compartilhar-enviar-com-destinatarios.png' | relative_url }})
+
+A primeira captura mostra o estado de um cliente sem destinatários; esta, o de um cliente com a lista cadastrada.
 
 1. **Confira a lista.** Cada destinatário aparece com a caixa **marcada**. **Desmarque** quem não deve receber **neste** envio (o cadastro não muda).
 2. **Escreva uma mensagem, se quiser.** O campo **Mensagem (opcional)** é um recado curto que aparece no e-mail, antes do botão **Abrir o relatório**.
