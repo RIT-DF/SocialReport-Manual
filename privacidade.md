@@ -208,7 +208,7 @@ A instalação pode **ler os números do canal do YouTube do cliente** direto do
 
 **Onde ficam.** Os dados lidos entram no relatório como se viessem de uma planilha. A **chave de acesso** que o Google entrega à instalação fica **somente no servidor, cifrada**; nunca vai ao navegador de ninguém e **não entra nas cópias de segurança** (depois de restaurar uma cópia, é preciso ligar de novo). A instalação confere se a ligação segue válida e avisa o super-admin quando é preciso renová-la. Para o número de inscritos no **fim do mês**, a instalação guarda **uma fotografia diária** só com a contagem de inscritos (um número por dia, sem pessoas).
 
-**Por quanto tempo.** A chave fica **enquanto a ligação existir**: **desligar apaga a ligação e a chave**, e a instalação ainda pede ao Google que cancele a autorização. Os vídeos e os números já lidos fazem parte do relatório e seguem os prazos dele (seção 8), assim como a fotografia diária de inscritos.
+**Por quanto tempo.** A chave fica **enquanto a ligação existir**: **desligar apaga a ligação e a chave** aqui; a autorização no Google só é retirada por quem ligou (veja "Como desligar"). Os vídeos e os números já lidos fazem parte do relatório e seguem os prazos dele (seção 8), assim como a fotografia diária de inscritos.
 
 **Como desligar.** O super-admin clica em **Desligar** no cadastro do cliente; a ligação e a chave são apagadas na hora, e a leitura direta para (as planilhas continuam valendo). Para também retirar a permissão **do lado do Google**, quem ligou pode revogar o acesso em <https://myaccount.google.com/permissions>. O passo a passo de exclusão está na **seção 13**.
 
