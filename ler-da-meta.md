@@ -19,7 +19,7 @@ A planilha exportada é o ponto fraco do fechamento do mês: é preciso lembrar 
 
 **Quando continuar na planilha.** A leitura **não substitui** a planilha em tudo:
 
-- **Stories não entram.** A Meta só mostra um Story por 24 horas, então ele não existe mais quando você lê o mês. O Story do mês vem pela planilha.
+- **Stories de antes da captura continuam pela planilha.** O sistema **guarda os Stories enquanto estão no ar** (veja [Stories: o que a leitura traz](#stories-o-que-a-leitura-traz)), mas só os que ele chegou a capturar. Story de antes de a captura começar para aquela conta, ou de um período em que o servidor ficou fora do ar por mais de 24 horas, vem pela planilha.
 - **A categoria editorial não vem.** A Meta não sabe que publicação é "Institucional" ou "Serviço", então as publicações lidas chegam como **Geral**. Se o cliente usa categorias no relatório, o capítulo de tipos de conteúdo perde a divisão. Veja [a tarefa 6]({{ '/mes-do-analista/#6-classificar-as-categorias' | relative_url }}).
 - **YouTube e LinkedIn** têm o [próprio botão]({{ '/mes-do-analista/ler-do-youtube-e-linkedin/' | relative_url }}); **TikTok** continua só por planilha.
 - **Cliente que ninguém ligou** não tem o botão.
@@ -84,7 +84,10 @@ Abaixo vêm as **observações da leitura**. Elas explicam o que a Meta não inf
 
 | A frase diz | O que significa | O que fazer |
 |---|---|---|
-| **Stories do mês não entram na leitura automática… use a planilha para eles.** | Aviso de sempre, no Instagram | Se o mês teve Story que importa, traga-o pela planilha |
+| **Instagram: N Stories capturados enquanto estavam no ar; números da última captura antes de expirar.** | Os Stories que o sistema guardou no ciclo entraram na leitura. Se a captura começou depois do dia 1 do ciclo, a frase acrescenta **"A captura começou em dd/mm: Stories anteriores, use a planilha."** | Confira a contagem com os Stories do mês que você conhece. Os anteriores à captura, traga pela planilha |
+| **Nenhum Story capturado neste mês (a captura começou em dd/mm; Stories anteriores: use a planilha).** | Nenhum Story foi guardado dentro do ciclo: o cliente foi ligado depois do mês, ou o mês não teve Story. Sem data, a frase diz que a captura **ainda não rodou** para a conta | Se o mês teve Story que importa, traga-o pela planilha |
+| **Há N Stories sem visualizações informadas (a Meta não dá os números de Story com menos de 5 espectadores)…** | Story com menos de 5 espectadores: a Meta não informa os números | O Story entra com alcance e visualizações **zerados**. Se importar, traga o número pela planilha |
+| **Stories do mês não entram na leitura automática… use a planilha para eles.** | Só aparece em leitura feita **antes** de a captura existir | Leia de novo: a nova leitura traz os Stories capturados |
 | **Alcance da conta do Instagram não lido: a Meta só informa até 30 dias de uma vez e o ciclo tem 31.** | O alcance **da conta** (pessoas diferentes que a conta atingiu no ciclo) só é lido em ciclos de até 30 dias. Em mês de 31 dias, ele fica vazio | Se tiver o número no painel da rede, digite-o no campo **Alcance da conta no mês**, na janela **Ajustar Ciclo** (tarefa 2). O alcance somado das publicações continua calculado |
 | **A Meta não informou "visitas perfil" para reels: o campo ficou vazio.** | Para aquele tipo de publicação, a Meta não devolveu esse número | Nada, ou confira na rede se o número for importante |
 | **A versão da API recusou "post_impressions_unique"; foi usado "post_total_media_view_unique".** | A Meta não informa mais **Alcance** no Facebook e informa **Visualizadores**. O sistema usou a segunda medida no lugar da primeira | Leia [a diferença abaixo](#alcance-e-visualizações-o-que-a-leitura-preenche). Nada a corrigir |
@@ -117,13 +120,34 @@ Na lista **Extratos Importados**, cada arquivo diz de onde vem: a leitura aparec
 
 Abra a **Revisão** do mês. Os avisos que só você vê ficam num **quadro único**, compacto, no alto da página, com o título **"Avisos da revisão (N)"** e um item por aviso. O quadro abre aberto, para você não perder nenhum aviso, e **recolhe** com um clique no título (os itens continuam lá, só escondidos). Sem avisos, o quadro não aparece. Quando o mês usa a leitura, ele inclui os avisos sobre o que merece conferência antes de emitir:
 
-![Quadro Avisos da revisão com cinco itens: mês em andamento, falta de seguidores, seguidores reconstruídos do Instagram e do Facebook numa linha só, Stories fora da leitura e visualizações no lugar do alcance]({{ '/assets/img/app/app-98-revisao-quadro-avisos.png' | relative_url }})
+![Quadro Avisos da revisão com três itens: falta de seguidores, seguidores reconstruídos do Instagram e do Facebook numa linha só e a contagem de Stories capturados do Instagram]({{ '/assets/img/app/app-98-revisao-quadro-avisos.png' | relative_url }})
 
 - **"Instagram e Facebook: o número de seguidores foi reconstruído para dd/mm/aaaa a partir do número de hoje e dos novos seguidores de cada dia. Confira."** O Instagram não tinha fotografia daquele dia, e o sistema calculou o número. Compare com o painel. Quando os dois têm o mesmo aviso e a mesma data, ele vem **numa linha só**, com as duas redes.
 - **"… o número de seguidores é o de dd/mm/aaaa (dia da leitura), não o do fim do mês. Confira ou digite o do fim do mês."** O número é o do dia em que você leu. O gráfico de evolução mostrará esse valor como se fosse o do fim do mês.
-- **"Instagram lido da Meta: os Stories não entram na leitura automática. Stories do mês: use a planilha."** Lembrete de que o Story do mês só entra pela planilha.
+- **"Instagram: 4 Stories capturados enquanto estavam no ar; números da última captura antes de expirar."** Diz quantos Stories entraram na leitura. Quando a captura começou no meio do ciclo, acrescenta desde quando, e lembra que os Stories anteriores vêm pela planilha. Sem nenhum Story capturado, o aviso é **"Instagram: Nenhum Story capturado neste mês (a captura começou em dd/mm; Stories anteriores: use a planilha)."**
+- **"Instagram lido da Meta: os Stories não entram na leitura automática. Stories do mês: use a planilha."** É o aviso de antes, que ainda aparece numa leitura feita **antes** de a captura existir. **Leia de novo** e ele dá lugar à contagem dos Stories capturados.
 
 O mesmo quadro traz os outros avisos da revisão (mês em andamento, falta de seguidores, alcance com definições diferentes e, no YouTube, as [visualizações no lugar do alcance]({{ '/mes-do-analista/ler-do-youtube-e-linkedin/#alcance-e-visualizações-o-que-a-leitura-preenche' | relative_url }})). Esses avisos não vão para o relatório nem para o link público. Os da Meta somem sozinhos quando você **voltar para a planilha** ou quando a leitura passar a ter a fotografia do fim do mês.
+
+## Stories: o que a leitura traz
+
+**Por que importa.** A Meta só mostra um Story, e só dá os números dele, durante as **24 horas** em que ele está no ar. Quando você lê o mês, o Story de duas semanas atrás já não existe para a Meta. Para o Story não ficar de fora do relatório, o sistema **o guarda enquanto ele está no ar**.
+
+**Como funciona.** A cada **4 horas** (à 0h, 4h, 8h, 12h, 16h e 20h, no horário de Brasília), o sistema olha os Stories que estão no ar na conta ligada do Instagram e anota os números de cada um. Como um Story fica 24 horas no ar, ele é anotado umas seis vezes; vale a **última captura antes de ele expirar**. Você não faz nada: a captura roda sozinha para todo cliente ligado.
+
+Quando você clica em **Ler da Meta**, a leitura do mês **inclui os Stories capturados dentro do ciclo**, no mesmo formato da planilha, com o tipo **Story**: alcance, visualizações, respostas (que entram na coluna de comentários) e compartilhamentos. O resumo da leitura diz quantos entraram, por exemplo **"Instagram: 4 Stories capturados enquanto estavam no ar; números da última captura antes de expirar."**
+
+**Exemplo.** O Instituto Horizonte foi ligado em setembro. No fechamento de outubro, a analista lê o mês e o resumo do Instagram diz **4 Stories capturados**: os quatro Stories da campanha de outubro entram, com os números que tinham quando expiraram. Ela não precisou exportar nada para eles.
+
+**O que continua pela planilha:**
+
+- **Story de antes do início da captura.** Se o cliente foi ligado no dia 12, os Stories do dia 1 ao 11 não foram capturados. A revisão avisa desde quando a captura roda.
+- **Período em que o servidor ficou fora do ar por mais de 24 horas.** Um Story que nasceu e expirou nesse intervalo não foi visto por nenhuma captura.
+
+**Story com poucos espectadores.** Quando um Story teve **menos de 5 espectadores**, a Meta **não informa** os números dele. O sistema o inclui mesmo assim, com **alcance e visualizações zerados**, e a observação da leitura diz **"Há N Stories sem visualizações informadas (a Meta não dá os números de Story com menos de 5 espectadores): eles entram com alcance e visualizações zerados."** Zero aí quer dizer "não informado", **não** "ninguém viu". Se esse Story importa e você tem o número no aplicativo da rede, traga-o pela planilha.
+
+> **Armadilha.** Os números de um Story são os da **última captura antes de expirar**, que pode ter sido até 4 horas antes do fim. Pode faltar um pouco do final da vida do Story, e o número da planilha exportada no aplicativo pode ser um pouco maior. Não é defeito: é o intervalo entre as capturas.
+{: .warning }
 
 ## Alcance e visualizações: o que a leitura preenche
 
@@ -155,6 +179,7 @@ Em caso de dúvida, não corrija na mão: **leia de novo no dia certo**, ou volt
 > **Dicas.**
 > - **Anote o dia da leitura.** Se alguém perguntar por que um número mudou, a resposta é "lido em 5/11, às 12h". A tela mostra essa data no pé do bloco.
 > - **Compare a quantidade de publicações** do resumo com a do aplicativo da rede, nas duas redes, antes de seguir. É a conferência mais barata e a que mais pega erro.
+> - **Confira os Stories pelo aviso da revisão.** Ele diz quantos foram capturados e desde quando a captura roda. Se o número parece baixo para a campanha do mês, veja se a captura começou depois do início do ciclo.
 > - **Cliente com poucos dados no mês?** Leia mesmo assim: as linhas "0 novas" e as observações dizem o que a Meta devolveu.
 {: .tip }
 

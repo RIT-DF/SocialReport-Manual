@@ -25,6 +25,8 @@ Definições curtas, em ordem alfabética, do jeito que cada termo é usado nest
 
 ## C
 
+**Captura de Stories.** Rotina que, a cada 4 horas, guarda os números dos Stories do Instagram que estão no ar, porque a Meta só os informa durante as 24 horas de vida do Story. A leitura do mês inclui os Stories capturados. Veja [Stories: o que a leitura traz]({{ '/mes-do-analista/ler-da-meta/' | relative_url }}#stories-o-que-a-leitura-traz).
+
 **Categoria editorial.** Tipo de assunto de uma publicação, escolhido pela equipe. Veja [Categoria editorial]({{ '/conceitos/' | relative_url }}).
 
 **Ciclo (período auditado).** O intervalo de datas que o relatório cobre. Nem sempre é o mês do calendário. Veja [Capa e sumário]({{ '/como-ler-o-relatorio/panorama/' | relative_url }}).

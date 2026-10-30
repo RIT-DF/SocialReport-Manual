@@ -170,7 +170,7 @@ Aparece quando está **emitido**, com a etiqueta **Consolidado**. Em rascunho ou
 
 ### O que é "Ler da Meta"? Ainda preciso da planilha?
 
-É o botão que traz as publicações do Instagram e do Facebook **direto das contas do cliente**, sem exportar e importar planilha. Ele só existe para o cliente que o super-administrador **ligou à Meta**. A planilha continua valendo e continua necessária para os **Stories**, para a **categoria editorial** e para o TikTok (o YouTube e o LinkedIn têm [o próprio botão]({{ '/mes-do-analista/ler-do-youtube-e-linkedin/' | relative_url }})). Veja [Ler da Meta]({{ '/mes-do-analista/ler-da-meta/' | relative_url }}).
+É o botão que traz as publicações do Instagram e do Facebook **direto das contas do cliente**, sem exportar e importar planilha. Ele só existe para o cliente que o super-administrador **ligou à Meta**. A planilha continua valendo e continua necessária para os **Stories de antes da captura**, para a **categoria editorial** e para o TikTok (o YouTube e o LinkedIn têm [o próprio botão]({{ '/mes-do-analista/ler-do-youtube-e-linkedin/' | relative_url }})). Veja [Ler da Meta]({{ '/mes-do-analista/ler-da-meta/' | relative_url }}).
 
 ### Voltei do login da Meta e a tela diz "Falta um passo: confirme a Página". O que faço?
 
@@ -194,7 +194,9 @@ Se **não aparece**, o cliente não foi ligado à Meta: peça ao super-administr
 
 ### A leitura traz os Stories?
 
-Não. A Meta só mostra um Story por 24 horas, então ele não existe mais quando se lê o mês. O Story do mês entra **pela planilha**, e a revisão lembra disso.
+Traz os que o sistema **capturou enquanto estavam no ar**. A Meta só mostra um Story, e só dá os números dele, durante 24 horas; por isso o sistema olha os Stories da conta a cada 4 horas e guarda os números, e a leitura do mês inclui os capturados dentro do ciclo (alcance, visualizações, respostas e compartilhamentos), com os números da **última captura antes de expirar**.
+
+Ficam de fora, e vêm pela **planilha**: os Stories de **antes de a captura começar** para aquela conta e os de períodos em que o servidor ficou fora do ar por mais de 24 horas. Story com **menos de 5 espectadores** entra com alcance e visualizações **zerados**, porque a Meta não informa esses números. A revisão diz quantos Stories foram capturados e desde quando a captura roda. Veja [Stories: o que a leitura traz]({{ '/mes-do-analista/ler-da-meta/' | relative_url }}#stories-o-que-a-leitura-traz).
 
 ### O número de seguidores da leitura não é o do fim do mês. O que eu faço?
 

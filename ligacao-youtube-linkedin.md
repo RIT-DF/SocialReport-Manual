@@ -98,7 +98,7 @@ Em **Clientes & Marcas**, abra o cliente em **Ver / Editar**. Abaixo de **Redes 
 
    ![Caixa amarela Falta um passo: confirme o canal, com o canal Instituto Horizonte marcado e o botão Ligar este canal]({{ '/assets/img/app/app-81-youtube-escolher-canal.png' | relative_url }})
 
-5. Marque o canal ou a Página certa e clique em **Ligar este canal** (no LinkedIn, o botão se chama **Ligar este Página**). **É esse clique que grava a ligação**: voltar do login ainda não liga nada, e o aviso "Falta um passo" continua ali até você confirmar. A tela diz **"Ligação gravada."** e mostra o estado, o nome do canal ou da Página, quem ligou e quando, até quando vale e a **máscara** da chave (só o final).
+5. Marque o canal ou a Página certa e clique em **Ligar este canal** (no LinkedIn, o botão se chama **Ligar esta Página**). **É esse clique que grava a ligação**: voltar do login ainda não liga nada, e o aviso "Falta um passo" continua ali até você confirmar. A tela diz **"Ligação gravada."** e mostra o estado, o nome do canal ou da Página, quem ligou e quando, até quando vale e a **máscara** da chave (só o final).
 
    ![Ligação gravada no YouTube: estado em dia, canal, quem ligou, validade, última verificação e a chave mascarada, com os botões Religar, Testar e Desligar]({{ '/assets/img/app/app-82-youtube-cliente-ligado.png' | relative_url }})
 
@@ -110,7 +110,7 @@ Em **Clientes & Marcas**, abra o cliente em **Ver / Editar**. Abaixo de **Redes 
 
 ![Seção LinkedIn de um cliente ainda sem ligação, com o aviso LinkedIn não ligado e o botão Ligar LinkedIn]({{ '/assets/img/app/app-85-linkedin-cliente-desligado.png' | relative_url }})
 
-![Caixa amarela Falta um passo: confirme a Página, com a Página Instituto Horizonte marcada e o botão Ligar este Página]({{ '/assets/img/app/app-86-linkedin-escolher-pagina.png' | relative_url }})
+![Caixa amarela Falta um passo: confirme a Página, com a Página Instituto Horizonte marcada e o botão Ligar esta Página]({{ '/assets/img/app/app-86-linkedin-escolher-pagina.png' | relative_url }})
 
 ![Ligação gravada no LinkedIn: estado em dia, Página, quem ligou, validade de 60 dias, última verificação e a chave mascarada]({{ '/assets/img/app/app-87-linkedin-cliente-ligado.png' | relative_url }})
 
@@ -190,7 +190,7 @@ A rede devolve o navegador ao sistema com um motivo quando a ligação não se c
 |---|---|---|
 | **Faltou autorizar: …. Clique em "Ligar" e marque todas as permissões pedidas.** | A pessoa desmarcou alguma permissão na tela da rede | Clique em **Ligar** e deixe **todas** marcadas |
 | **Login do YouTube cancelado: nada foi ligado.** | A pessoa fechou ou cancelou a tela da rede | Clique em **Ligar** de novo |
-| **A conta usada não administra nenhum canal. Entre com uma conta que administre o do cliente.** | A conta Google não tem canal, ou o canal é de uma Conta de Marca em que ela não está. No LinkedIn, o perfil não é administrador de nenhuma Página | Entre com a conta certa. No YouTube, confira se a pessoa está na lista da Conta de Marca; no LinkedIn, se o papel é de administrador e está aprovado |
+| **A conta usada não administra nenhum canal. Entre com uma conta que administre o canal do cliente.** (no LinkedIn: **A conta usada não administra nenhuma Página. Entre com uma conta que administre a Página do cliente.**) | A conta Google não tem canal, ou o canal é de uma Conta de Marca em que ela não está. No LinkedIn, o perfil não é administrador de nenhuma Página | Entre com a conta certa. No YouTube, confira se a pessoa está na lista da Conta de Marca; no LinkedIn, se o papel é de administrador e está aprovado |
 | **O login demorou mais de 10 minutos e venceu.** | Passou do prazo | **Ligar** de novo, mais rápido |
 | **O login voltou em outro navegador ou aba. Comece de novo neste navegador.** | O login precisa terminar no navegador em que começou | Faça tudo na mesma janela |
 | **Este retorno do login já foi usado.** / **O login não pôde ser concluído (o link é inválido).** | Voltar pela seta do navegador, ou abrir um link de retorno antigo | **Ligar** de novo, sem usar o histórico do navegador |
@@ -199,7 +199,7 @@ A rede devolve o navegador ao sistema com um motivo quando a ligação não se c
 | **O app do YouTube não está configurado (configurações do sistema, aba YouTube).** | Falta o identificador ou o segredo | Faça o passo 1 |
 | **A leitura automática do YouTube não está disponível agora. Tente mais tarde.** | A rede não respondeu como o esperado: pode estar fora do ar, ou o identificador ou o segredo do app estar errado | Use **Testar o app guardado** na aba da rede para separar os dois casos. Se o app está certo, tente mais tarde |
 | **O YouTube recusou o login.** / **A ligação do YouTube não foi concluída. Tente de novo; se continuar, avise o suporte.** | A rede recusou por um motivo que o sistema não classifica | Tente de novo mais tarde. Se repetir, leve o dia, o cliente e a rede ao suporte |
-| **Esta conta não estava entre as do login.** / **Esta escolha já foi confirmada.** / **Escolha de conta não encontrada ou vencida. Ligue de novo.** (ao clicar em **Ligar este canal**) | A escolha venceu, foi feita duas vezes ou veio de outra janela | **Ligar** de novo e confirmar uma vez só |
+| **Esta conta não estava entre as do login.** / **Esta escolha já foi confirmada.** / **Escolha de conta não encontrada ou vencida. Ligue de novo.** (ao clicar em **Ligar este canal** ou **Ligar esta Página**) | A escolha venceu, foi feita duas vezes ou veio de outra janela | **Ligar** de novo e confirmar uma vez só |
 
 > **O login que a rede recusa antes de ver o sistema.** Se o erro for da própria rede (uma página do Google ou do LinkedIn, e não do SocialReport), o app provavelmente não aceita aquela pessoa (ela não tem função no app, ou o app ainda não foi aprovado) ou o endereço de retorno colado no app **não é exatamente** o da aba.
 {: .note }

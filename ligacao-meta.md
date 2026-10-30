@@ -15,16 +15,16 @@ As telas desta página vêm de uma organização fictícia, o **Instituto Horizo
 
 Sem a ligação, todo mês alguém exporta a planilha de cada rede, confere se é a do cliente certo, se é o período certo, e importa. É trabalho repetido, e é nele que se erra: planilha de outro cliente, de outro mês, seguidores esquecidos.
 
-Com a ligação, o analista clica em **Ler da Meta** na página do mês, e o sistema traz as publicações do mês, com alcance, visualizações e interações, no mesmo formato da planilha, mais o número de seguidores do fim do mês. **A planilha continua valendo**: ela segue sendo o caminho para os Stories, para o LinkedIn, o TikTok e o YouTube, e para qualquer cliente que você ainda não ligou. A ligação é uma segunda fonte, que o analista escolhe mês a mês.
+Com a ligação, o analista clica em **Ler da Meta** na página do mês, e o sistema traz as publicações do mês, com alcance, visualizações e interações, no mesmo formato da planilha, mais o número de seguidores do fim do mês. **A planilha continua valendo**: ela segue sendo o caminho para os Stories de antes da captura, para o LinkedIn, o TikTok e o YouTube, e para qualquer cliente que você ainda não ligou. A ligação é uma segunda fonte, que o analista escolhe mês a mês.
 
-**Exemplo.** No fechamento de outubro, a analista do **Instituto Horizonte** abre o mês e clica em **Ler da Meta**. Em segundos entram 6 publicações do Instagram e 4 do Facebook, com os números de cada uma, e o número de seguidores de 31 de outubro, porque o cliente foi ligado em setembro e o sistema já vinha anotando a contagem todo dia. Ela não precisou exportar as planilhas das duas redes. O Story da campanha de outubro ela traz pela planilha, porque a leitura não o alcança.
+**Exemplo.** No fechamento de outubro, a analista do **Instituto Horizonte** abre o mês e clica em **Ler da Meta**. Em segundos entram 6 publicações do Instagram e 4 do Facebook, com os números de cada uma, e o número de seguidores de 31 de outubro, porque o cliente foi ligado em setembro e o sistema já vinha anotando a contagem todo dia. Ela não precisou exportar as planilhas das duas redes. Os Stories da campanha de outubro entram também, porque o sistema os foi guardando enquanto estavam no ar.
 
 ## O que a ligação faz, e o que não faz
 
 - **Só lê.** O sistema não publica, não responde, não apaga e não mexe em anúncios. As permissões que ele pede são todas de leitura, e a tela da Meta mostra a lista a quem autoriza.
 - **Lê números, não pessoas.** Entram as publicações da conta (legenda, data, formato e link) com os números de cada uma, o alcance da conta e a contagem de seguidores. Curtidas e comentários entram só como **contagem**: o sistema não lê quem curtiu, quem comentou, nem a lista de seguidores, nem mensagens. A [Política de Privacidade]({{ '/privacidade/' | relative_url }}) detalha isso.
 - **Guarda, de sensível, duas coisas por cliente:** uma chave de acesso à Página, cifrada e só no servidor, e uma fotografia diária da contagem de seguidores (um número por dia, sem pessoas). O nome da Página e o @ do Instagram aparecem na tela e não são segredo.
-- **Não lê Stories**, porque a Meta só os mostra por 24 horas. O Story do mês continua vindo pela planilha.
+- **Guarda os Stories enquanto estão no ar.** A Meta só os mostra por 24 horas, então o sistema os captura sozinho a cada 4 horas (alcance, visualizações, respostas e compartilhamentos de cada Story, sem quem os viu) e a leitura do mês os inclui. Você não configura nada. Story de antes de o cliente ser ligado vem pela planilha.
 
 As seis permissões que a Meta mostra na hora do login, e para que servem:
 

@@ -154,7 +154,7 @@ Se o período veio de uma **planilha online**, ele fica ligado a ela, e é poss�
 
 ## 3c. Ler da Meta, no lugar da planilha
 
-**Por que importa.** Para o cliente que o super-administrador **ligou à Meta**, o Instagram e o Facebook do mês podem vir direto das contas: um clique em **Ler da Meta** traz as publicações, com alcance, visualizações e interações, e oferece o número de seguidores do fim do mês. Não há planilha para exportar, conferir e trocar sem querer por outra. **A planilha continua valendo**, e o Story, a categoria editorial e as outras redes seguem vindo por ela.
+**Por que importa.** Para o cliente que o super-administrador **ligou à Meta**, o Instagram e o Facebook do mês podem vir direto das contas: um clique em **Ler da Meta** traz as publicações, com alcance, visualizações e interações, e oferece o número de seguidores do fim do mês. Não há planilha para exportar, conferir e trocar sem querer por outra. **A planilha continua valendo**, e a categoria editorial, as outras redes e os Stories de antes da captura seguem vindo por ela. Os Stories que o sistema capturou enquanto estavam no ar entram na leitura.
 
 Os números da leitura são os **do momento em que você lê** (como exportar a planilha naquele dia), e cada rede usa **uma fonte por mês**: ou a planilha ou a Meta. Substituir a planilha pede confirmação, e dá para **voltar para a planilha**.
 
