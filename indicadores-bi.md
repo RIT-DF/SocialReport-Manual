@@ -31,11 +31,11 @@ Entender a origem evita a maior parte das dúvidas:
 ### 1. Escolha o cliente e o período
 
 1. Confira o **cliente ativo** no alto da tela. Os indicadores são sempre do cliente ativo.
-2. Em **Período**, clique num atalho: **1º tri**, **2º tri**, **3º tri**, **4º tri**, **1º sem**, **2º sem**, **Ano** ou **Tudo** (do primeiro ao último mês com dado). Os atalhos de trimestre, semestre e ano valem para o ano em que o período da tela começa (com **Tudo** ativo, o ano do último mês).
+2. Em **Período**, clique num atalho: **1º tri**, **2º tri**, **3º tri**, **4º tri**, **1º sem**, **2º sem**, **Ano** ou **Tudo** (do primeiro ao último mês com dado). Os atalhos de trimestre, semestre e ano valem para o ano em que o período da tela começa (com **Tudo** ativo, o ano do último mês). **Nenhum atalho passa do mês atual**: em outubro, o atalho **Ano** de 2026 vai de janeiro a outubro, e um atalho que cairia todo no futuro (o **3º tri** de 2026, em fevereiro, por exemplo) fica **apagado**, sem poder ser clicado. É a mesma regra do [consolidado]({{ '/mes-do-analista/consolidado/' | relative_url }}), que também não aceita período que passa do mês atual.
 3. Para um intervalo qualquer, use **De** e **Até** (mês e ano). A etiqueta **Personalizado** se acende quando o período não é nenhum dos atalhos. Se você escolher um início depois do fim, o outro lado acompanha.
 4. Decida o interruptor **Incluir mês em andamento (parcial)**. Ele já vem ligado. Desligado, o mês que ainda não fechou **sai dos cartões, dos gráficos e da tabela**.
 
-Ao abrir a tela pela primeira vez, o período é o **trimestre do mês mais recente com dado**.
+Ao abrir a tela pela primeira vez, o período é o **último trimestre fechado que tenha algum mês com dado**: em outubro de 2026, o 3º trimestre. O trimestre em que você está (o 4º, ainda em andamento) não é o padrão, porque um trimestre pela metade confunde a comparação. Se o cliente ainda não tem nenhum trimestre fechado com dado, a tela abre no trimestre atual, só até o mês atual.
 
 ![Tela Indicadores (BI) com o período 3º tri de 2026, os atalhos de período, o interruptor do mês em andamento e a lista de indicadores marcados]({{ '/assets/img/app/app-31-bi-periodo-indicadores.png' | relative_url }})
 
