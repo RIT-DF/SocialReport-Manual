@@ -16,7 +16,7 @@ Os exemplos e as telas vêm do relatório de outubro de 2026 do **Instituto Hori
 | # | Tarefa | Onde |
 |---|---|---|
 | 1 | [Escolher o cliente ativo](#1-escolher-o-cliente-ativo) | cabeçalho do sistema |
-| 2 | [Criar o período do mês](#2-criar-o-período-do-mês) | Períodos & Emissão |
+| 2 | [Criar o período do mês](#2-criar-o-período-do-mês), com ou [sem planilha](#criar-o-mês-sem-planilha) | Períodos & Emissão |
 | 3 | [Importar as planilhas das redes](#3-importar-as-planilhas-das-redes) | Períodos & Emissão |
 | 3b | [Informar os seguidores de cada rede](#3b-informar-os-seguidores-de-cada-rede) | Períodos & Emissão |
 | 3c | [Ler da Meta, no lugar da planilha](#3c-ler-da-meta-no-lugar-da-planilha) | Períodos & Emissão |
@@ -63,9 +63,43 @@ Os exemplos e as telas vêm do relatório de outubro de 2026 do **Instituto Hori
 2. Clique em **Novo Período**.
 3. Escolha o **Mês de Referência** e o **Ano**.
 4. Confira o **Ciclo de Medição das Mídias**. O padrão é o mês cheio. Se o cliente fecha o relatório em outras datas (por exemplo, de 25/09 a 25/10), ajuste a **Data Inicial** e a **Data Final**. O botão **Restaurar Mês Inteiro** volta ao padrão.
-5. Siga para a importação (próxima tarefa) na mesma janela, ou feche com **Cancelar**.
+5. Escolha como o mês começa, na mesma janela:
+   - **Com planilha:** siga para a importação (próxima tarefa).
+   - **Sem planilha:** não escolha arquivo nenhum. O botão do canto da janela passa a dizer **Criar mês sem planilha**, e uma dica embaixo explica: sem arquivo, o mês é criado vazio, e você lê direto das redes ligadas ou acrescenta uma planilha depois. Clique nele (veja [Criar o mês sem planilha](#criar-o-mês-sem-planilha)).
+   - Para desistir, feche com **Cancelar**.
 
 ![Janela Importar Novo Período, com mês, ano, ciclo de medição e a área para soltar as planilhas]({{ '/assets/img/app/app-03-novo-periodo.png' | relative_url }})
+
+*Captura pendente: esta imagem é anterior à versão 1.36.0 e mostra o botão antigo, desabilitado. A tela atual, sem arquivo, mostra a dica "Sem arquivo, o mês é criado vazio…" e o botão **Criar mês sem planilha**, habilitado. Precisa de nova captura da janela, com API falsa, em 1440 px; o verificador de revisão do projeto não grava imagens.*
+
+### Criar o mês sem planilha
+
+**Por que importa.** Para o cliente que já está ligado à Meta, ao YouTube ou ao LinkedIn, a planilha deixou de ser o ponto de partida: os números vêm das próprias redes. Antes, o mês só passava a existir depois de você subir um arquivo, mesmo que fosse só para ele nascer e você poder usar o botão de ler das redes. Agora o mês nasce sozinho, e o primeiro número que entra nele pode ser o da leitura.
+
+**O que acontece quando você clica em Criar mês sem planilha**
+
+1. A janela fecha e o mês aparece na lista de períodos como **"0 publicações · 0 arquivos"**. É assim que um mês vazio se apresenta, e não é erro.
+2. Ao abrir o mês, ele abre normalmente. Para cada rede ligada ao cliente você vê o bloco de leitura: **Ler da Meta**, **Ler do YouTube** e **Ler do LinkedIn** (veja as tarefas [3c](#3c-ler-da-meta-no-lugar-da-planilha) e [3d](#3d-ler-do-youtube-e-do-linkedin-no-lugar-da-planilha)). Cliente sem nenhuma rede ligada não tem esses blocos, e aí a saída é a planilha.
+3. A planilha continua valendo: **Acrescentar Planilha**, na página do mês, soma uma rede que a leitura não cobre (o TikTok, por exemplo, só entra por planilha).
+
+**Exemplo.** O Instituto Horizonte tem o Instagram e o Facebook ligados à Meta e o LinkedIn ligado. No dia 1º de novembro você cria **outubro de 2026** sem planilha. O mês aparece com "0 publicações · 0 arquivos"; você abre, clica em **Ler da Meta** e depois em **Ler do LinkedIn**, e as publicações entram sem arquivo nenhum.
+
+**Se o mês já existe.** Criar sem planilha um mês que já está no sistema **não grava nada e não substitui nada**. A janela fecha, a tela abre o mês que estava salvo e mostra, por alguns segundos, o aviso **"Este mês já existe: abrimos o que estava salvo."** É de propósito: você não perde as publicações, os textos nem os seguidores já lançados por apertar o botão sem pensar.
+
+> **Dicas e armadilhas.**
+> - **Mês vazio não é relatório pronto.** Enquanto ele não tiver nenhuma publicação no ciclo, o relatório **não pode ser emitido** (veja a [tarefa 11](#11-salvar-e-emitir-o-relatório)) e o mês **não aparece** nos [Indicadores]({{ '/mes-do-analista/indicadores/' | relative_url }}) nem no [consolidado]({{ '/mes-do-analista/consolidado/' | relative_url }}). Não é defeito: ele só conta depois de ter dado.
+> - **Confira o ciclo antes de criar.** O ciclo vale para a leitura das redes também: ela traz só as publicações das datas do ciclo. Ajuste **Data Inicial** e **Data Final** antes de clicar, ou depois, pelo selo do ciclo na lista.
+> - **Escolheu um arquivo sem querer?** O botão volta a dizer **Consolidar Período**, e a dica some. Para voltar ao mês sem planilha, feche com **Cancelar** e abra o **Novo Período** de novo, sem escolher arquivo.
+> - **Não precisa subir uma planilha qualquer só para o mês nascer.** Se o cliente tem a rede ligada, crie sem planilha e leia dela. Subir uma planilha de outra rede só para criar o mês deixava a leitura com a pergunta de substituição e uma planilha guardada que não era a fonte do mês.
+{: .tip }
+
+**Quando dá errado**
+
+| A tela diz | Quer dizer | O que fazer |
+|---|---|---|
+| **"Este mês já existe: abrimos o que estava salvo."** | O mês já estava criado; nada foi gravado | Trabalhe no mês aberto. Para trocar o conteúdo dele, use **Acrescentar Planilha** ou a leitura das redes |
+| O mês aparece com **"0 publicações · 0 arquivos"** | O mês nasceu vazio, como esperado | Leia das redes ou acrescente uma planilha |
+| Não há bloco de leitura na página do mês | O cliente não tem aquela rede ligada | Avise o super-administrador para ligar a rede, ou use a planilha |
 
 > **O mês de referência segue o fim do ciclo.** Um ciclo de 25/09 a 25/10 é o relatório de **outubro**. Se o sistema deduzir as datas das publicações da planilha, o mês e o ano vêm da **data final**.
 {: .note }
@@ -162,6 +196,9 @@ Os números da leitura são os **do momento em que você lê** (como exportar a 
 
 O passo a passo, os avisos e o que fazer quando dá errado estão em [Ler da Meta]({{ '/mes-do-analista/ler-da-meta/' | relative_url }}).
 
+> **Mês novo?** Não precisa subir planilha para ele existir: crie o mês [sem planilha](#criar-o-mês-sem-planilha) e o bloco **Ler da Meta** já está na página dele.
+{: .tip }
+
 ## 3d. Ler do YouTube e do LinkedIn, no lugar da planilha
 
 **Por que importa.** Para o cliente que o super-administrador **ligou ao YouTube** ou **ao LinkedIn**, os vídeos e as publicações do mês podem vir direto do canal e da Página: um clique em **Ler do YouTube** (ou **Ler do LinkedIn**) traz os números de cada um e oferece o número de inscritos ou seguidores do fim do mês. Valem as mesmas regras do [Ler da Meta](#3c-ler-da-meta-no-lugar-da-planilha): **uma fonte por rede em cada mês**, números **do momento da leitura**, e a planilha continua valendo e dá para voltar a ela. A diferença que muda a sua leitura do relatório: **o YouTube não informa alcance por vídeo**, e as **visualizações vão no lugar do alcance**, o que o relatório avisa.
@@ -169,6 +206,9 @@ O passo a passo, os avisos e o que fazer quando dá errado estão em [Ler da Met
 ![Bloco Ler do YouTube na página do mês, com a mensagem YouTube ligado, a explicação de que as visualizações vão no lugar do alcance e o botão Ler do YouTube]({{ '/assets/img/app/app-92-youtube-ler-do-youtube.png' | relative_url }})
 
 Cada rede ligada tem o **seu** bloco. O passo a passo, os avisos e o que fazer quando dá errado estão em [Ler do YouTube e do LinkedIn]({{ '/mes-do-analista/ler-do-youtube-e-linkedin/' | relative_url }}).
+
+> **Mês novo?** Crie o mês [sem planilha](#criar-o-mês-sem-planilha): os blocos **Ler do YouTube** e **Ler do LinkedIn** das redes ligadas já aparecem na página dele.
+{: .tip }
 
 ## 4. Conferir as inconsistências da importação
 
@@ -345,6 +385,13 @@ No alto da revisão há três botões, e cada um faz uma coisa só:
 - **Visualizar Book 16:9:** abre o relatório com as edições que estão na tela, para você conferir. **Não grava nada.** O que você não salvou continua só na tela: o link do cliente mostra sempre a última versão salva.
 - **Emitir Relatório:** grava e marca o período como **emitido**, a versão que vai para o cliente. Períodos emitidos ficam protegidos contra exclusão em lote.
 
+**Relatório sem publicação não se emite.** Se o período não tem **nenhuma publicação dentro do ciclo**, o **Emitir Relatório** não grava a emissão: a tela mostra, por alguns segundos, o aviso **"Este mês não tem publicações no ciclo: leia das redes ligadas ou acrescente uma planilha antes de emitir o relatório."** O servidor recusa do mesmo jeito, então não adianta tentar por outro caminho.
+
+- **Por que existe:** emitir é entregar. Um relatório sem publicação seria um book vazio indo ao cliente, quando o que falta é só ler as redes ou acrescentar a planilha.
+- **Quando acontece:** quase sempre num mês criado [sem planilha](#criar-o-mês-sem-planilha) em que a leitura das redes ainda não foi feita, ou num mês cujo **ciclo** foi ajustado para um intervalo onde não há publicação. Confira também se uma planilha excluída não deixou o mês vazio.
+- **O que fazer:** leia das redes ([3c](#3c-ler-da-meta-no-lugar-da-planilha) e [3d](#3d-ler-do-youtube-e-do-linkedin-no-lugar-da-planilha)) ou acrescente uma planilha (tarefa 3), confira o ciclo (tarefa 2) e emita de novo.
+- **O que continua funcionando:** **Salvar Alterações** e **Visualizar Book 16:9** funcionam normalmente num mês sem publicação, para você adiantar textos e conferir o deck. Um relatório que **já estava emitido** continua podendo ser gravado.
+
 **Mês em andamento.** Se você abre o relatório antes de o período terminar (o fim do ciclo é depois de hoje), ou os dados foram coletados antes do fim, o **rodapé de todo slide** e a revisão mostram o selo **"Mês em andamento — dados até DD/MM"**. Nesse caso as **comparações com o mês anterior** (e com o mesmo mês do ano anterior, no site e nos cursos) saem como **parciais**: o percentual aparece em cinza, sem seta, com o selo **"parcial"**, e o texto da análise não fala em "subiu" ou "caiu".
 
 ![Nota "Mês em andamento (dados até 29/10): as comparações são parciais" no comparativo, e o selo do rodapé dos slides]({{ '/assets/img/app/app-30-mes-em-andamento.png' | relative_url }})
@@ -431,8 +478,8 @@ Os três dependem do que você faz neste mês: o **Indicadores** e o **Consolida
 ## Checklist do mês
 
 - [ ] Cliente ativo conferido.
-- [ ] Período criado, com o ciclo certo.
-- [ ] Planilhas importadas; lista de recusadas lida.
+- [ ] Período criado, com o ciclo certo (sem planilha, se o cliente tem as redes ligadas).
+- [ ] Publicações no mês: planilhas importadas ou leitura das redes feita; lista de recusadas lida; mês com ao menos uma publicação no ciclo, senão não emite.
 - [ ] Seguidores de cada rede informados no fim do mês (sem o aviso da revisão); zeros de alcance verificados.
 - [ ] Posts fora da curva marcados.
 - [ ] Categorias consistentes.

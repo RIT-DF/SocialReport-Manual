@@ -43,6 +43,8 @@ Definições curtas, em ordem alfabética, do jeito que cada termo é usado nest
 
 **Conversão.** Ação importante concluída no site: formulário, clique no WhatsApp, e-mail ou telefone. Veja [Conversão]({{ '/conceitos/' | relative_url }}).
 
+**Criar mês sem planilha.** Botão da janela **Novo Período** quando nenhum arquivo foi escolhido. O mês nasce vazio ("0 publicações"), abre normalmente e mostra os blocos de leitura das redes ligadas ao cliente; a planilha pode ser acrescentada depois. Se o mês já existe, nada é substituído: a tela abre o que estava salvo. Veja [Criar o mês sem planilha]({{ '/mes-do-analista/#criar-o-mês-sem-planilha' | relative_url }}).
+
 ## D
 
 **Destinatários do relatório.** Pessoas do cliente (nome e e-mail, até 20) que recebem o link do relatório por e-mail, pelo botão Compartilhar. Veja [Administração]({{ '/administracao/' | relative_url }}).

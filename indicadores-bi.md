@@ -24,6 +24,7 @@ Entender a origem evita a maior parte das dúvidas:
 - **Dos marcos históricos, para os meses antigos.** São os totais de meses de antes do primeiro relatório, cadastrados pelo super-administrador no cadastro do cliente (veja a [parte 6]({{ '/administracao/' | relative_url }})). Como só têm os totais (publicações, alcance, impressões, engajamento e seguidores), a tela os marca como **menos detalhados**. Não têm site, cursos nem imprensa.
 - **Mais de um relatório no mesmo mês?** Vale o **emitido**; sem ele, o **validado**; sem ele, o **rascunho**. Relatório **consolidado** (vários meses em um) não entra: o mês dele já está nos relatórios mensais. O consolidado, por sua vez, **lê esta mesma base**.
 - **Relatório vence marco.** Quando o mês tem os dois, vale o relatório, que é mais detalhado.
+- **Mês criado e ainda vazio não conta.** Um mês que foi [criado sem planilha]({{ '/mes-do-analista/#criar-o-mês-sem-planilha' | relative_url }}) e ainda não recebeu nenhuma publicação **não aparece** nos Indicadores. Ele passa a aparecer assim que a leitura das redes ou uma planilha trouxer publicações.
 - **Mês sem dado aparece como "—", nunca como zero.** Zero quer dizer "aconteceu zero vezes"; o traço quer dizer "não foi medido". A diferença muda a conclusão.
 
 ## Passo a passo

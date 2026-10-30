@@ -45,7 +45,7 @@ Cada rede tem o **seu** botão, no seu bloco, e as duas leituras são independen
 
 1. **Uma fonte por rede, em cada mês.** O YouTube do mês vem **ou** da planilha **ou** da leitura, nunca dos dois: somar os dois contaria cada vídeo duas vezes. Se o mês já tem vídeos de planilha, o sistema pergunta se pode substituí-los (veja o passo 3). A planilha **fica guardada**, e dá para voltar a ela. O mesmo vale para o LinkedIn.
 2. **Os números são os do momento da leitura.** Uma publicação continua acumulando visualizações e interações nos dias seguintes. A leitura traz o que a rede mostra **naquela hora**, e a tela diz: **"lido em dd/mm hh:mm (números acumulados até esse momento)"**. É o mesmo que exportar a planilha naquele dia.
-3. **O mês precisa existir.** Os blocos ficam na página de um mês que já existe. Hoje, um mês novo só nasce ao importar uma planilha (a janela **Novo Período** exige ao menos um arquivo). Para um mês novo, importe antes a planilha de qualquer rede.
+3. **O mês precisa existir.** Os blocos ficam na página de um mês que já existe. Se o mês ainda não existe, crie-o **sem planilha**: em **Novo Período**, não escolha arquivo e clique em **Criar mês sem planilha** (veja a [tarefa 2]({{ '/mes-do-analista/#criar-o-mês-sem-planilha' | relative_url }})). O mês nasce com **"0 publicações"** e já abre com os blocos **Ler do YouTube** e **Ler do LinkedIn** das redes ligadas. Não é preciso subir uma planilha só para o mês nascer.
 
 ## Passo a passo
 

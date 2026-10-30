@@ -166,6 +166,24 @@ O complemento do Moodle lê, no máximo, 400 dias por vez (cerca de 13 meses), e
 
 Aparece quando está **emitido**, com a etiqueta **Consolidado**. Em rascunho ou validado, não.
 
+## Sobre criar o mês e emitir o relatório
+
+### Posso criar o mês sem subir planilha?
+
+Pode. Em **Novo Período**, escolha o mês e o ano e **não escolha arquivo**: o botão passa a dizer **Criar mês sem planilha**. O mês nasce com **"0 publicações"**, abre normalmente e mostra **Ler da Meta**, **Ler do YouTube** e **Ler do LinkedIn** para as redes ligadas ao cliente. A planilha pode ser acrescentada depois. Veja [Criar o mês sem planilha]({{ '/mes-do-analista/#criar-o-mês-sem-planilha' | relative_url }}).
+
+### Cliquei em "Criar mês sem planilha" e a tela diz "Este mês já existe: abrimos o que estava salvo." Perdi alguma coisa?
+
+Não. O mês já existia, então **nada foi gravado nem substituído**: a tela só abriu o mês que estava salvo. As publicações, os textos e os seguidores continuam como estavam.
+
+### Por que não consigo emitir o relatório? Aparece "Este mês não tem publicações no ciclo".
+
+Porque o período não tem **nenhuma publicação dentro do ciclo**, e relatório vazio não se emite. Leia das redes ligadas ou acrescente uma planilha, confira as datas do ciclo e emita de novo. Salvar e visualizar o book continuam funcionando. Veja [Salvar e emitir o relatório]({{ '/mes-do-analista/#11-salvar-e-emitir-o-relatório' | relative_url }}).
+
+### Criei um mês e ele não aparece nos Indicadores nem no consolidado. É defeito?
+
+Não. Mês sem nenhuma publicação não conta: ele só aparece nos [Indicadores]({{ '/mes-do-analista/indicadores/' | relative_url }}) e entra nas contas do [consolidado]({{ '/mes-do-analista/consolidado/' | relative_url }}) depois de receber a leitura das redes ou uma planilha.
+
 ## Sobre a leitura pela Meta
 
 ### O que é "Ler da Meta"? Ainda preciso da planilha?
