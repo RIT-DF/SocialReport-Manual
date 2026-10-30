@@ -12,7 +12,7 @@ sitemap: false
 
 # Política de Privacidade — SocialReport
 
-**Vigência:** 29 de outubro de 2026
+**Vigência:** 30 de outubro de 2026
 **Versão:** 1.4
 
 {: .warning }
