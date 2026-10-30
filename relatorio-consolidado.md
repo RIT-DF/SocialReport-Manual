@@ -81,7 +81,7 @@ A mesma tela, logo abaixo do painel, lista os consolidados do cliente ativo. Cad
 
 - **Abrir revisão**: a tela de trabalho, descrita abaixo.
 - **Ver book**: abre direto o book, para conferir como o cliente verá. Não grava nada.
-- **Copiar link**: copia o link público. Se o consolidado ainda não foi emitido, o aviso lembra: "Atenção: este consolidado ainda não foi emitido."
+- **Copiar link**: copia o link público. Só vale para o consolidado **emitido**: no rascunho e no validado o botão fica desativado, com o aviso de que o link fica disponível depois de emitir.
 - **Gerar novo link**: troca o endereço. O antigo **deixa de abrir na hora**, mesmo para quem já o recebeu; a confirmação avisa isso.
 - **Excluir**: apaga o consolidado. Os relatórios mensais **não mudam**. Não dá para desfazer, e, se ele estava emitido, o link público dele para de abrir.
 
@@ -256,7 +256,7 @@ As diferenças são pequenas:
 - **O nome do PDF** inclui "consolidado" e o período: `associacao-modelo-aurora-consolidado-3-trimestre-de-2026-report.pdf`, por exemplo.
 - **O link público lê o retrato guardado.** Ele não consulta a base ao vivo, não chama a IA e só leva os **posts escolhidos** (até três), nunca a lista de candidatos. Quem recebe vê só agregados.
 
-> **Emita antes de enviar.** Um consolidado em rascunho já tem link, e **quem o recebe lê o que estiver salvo**. Copiar o link de um rascunho funciona, mas o sistema avisa. Para o cliente, emita primeiro.
+> **Emita antes de enviar.** O link do consolidado só abre depois de emitido: em rascunho ou validado, quem o abre vê "Relatório não encontrado", e o botão de copiar o link e o envio por e-mail ficam desativados. Se um consolidado emitido voltar a rascunho, o link deixa de abrir até ele ser emitido de novo (o mesmo link volta a abrir).
 {: .warning }
 
 ## O portfólio
@@ -308,7 +308,7 @@ A conversa da reunião deixa de ser "o alcance caiu" e passa a ser "publicamos m
 | "Tente de novo em N s." ao gerar a análise | o limite de chamadas de IA por minuto foi atingido | espere o tempo indicado |
 | "Não foi possível gerar a análise: [motivo]" | a IA não respondeu | os textos dos números continuam; tente de novo ou escreva você mesmo |
 | "Relatório consolidado não encontrado." | o consolidado foi excluído, ou o endereço está errado | volte para **Consolidados** e abra pela lista |
-| Cliente diz "relatório não encontrado" | o link foi trocado ou o consolidado excluído | gere um novo link e envie |
+| Cliente diz "relatório não encontrado" | o consolidado ainda não foi emitido (ou voltou a rascunho), o link foi trocado ou o consolidado foi excluído | confira o status e emita; se o link foi trocado, envie o novo |
 
 ## Limites do papel
 

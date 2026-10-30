@@ -102,7 +102,11 @@ Algumas páginas só aparecem quando há o que mostrar. O **Sumário** lista exa
 
 ### Posso enviar o link do relatório por e-mail pelo sistema?
 
-Sim. Em **Compartilhar & Incorporar**, o bloco **Enviar o link por e-mail ao cliente** manda o link a quem está na lista de **destinatários** do cliente, com prévia, confirmação e registro de quem recebeu. Se o bloco diz que o cliente não tem destinatários, peça a quem administra o sistema que os cadastre. Veja [Compartilhar o link]({{ '/mes-do-analista/#12-compartilhar-o-link-e-gerar-o-pdf' | relative_url }}).
+Sim. Em **Compartilhar & Incorporar**, o bloco **Enviar o link por e-mail ao cliente** manda o link a quem está na lista de **destinatários** do cliente, com prévia, confirmação e registro de quem recebeu. Só relatórios **emitidos** podem ser enviados: antes de emitir, o envio fica desativado. Se o bloco diz que o cliente não tem destinatários, peça a quem administra o sistema que os cadastre. Veja [Compartilhar o link]({{ '/mes-do-analista/#12-compartilhar-o-link-e-gerar-o-pdf' | relative_url }}).
+
+### O cliente abriu o link e viu "Relatório não encontrado". E agora?
+
+Confira o status do relatório: o link só abre **depois de emitido**. Se o período está em rascunho ou validado (ou voltou a rascunho depois de emitido), emita de novo e o mesmo link volta a abrir. Se o relatório está emitido, o link pode ter sido trocado com **Gerar novo link**: envie o novo.
 
 ### Gerei um link novo. O e-mail que já enviei ainda funciona?
 

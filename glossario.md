@@ -81,7 +81,7 @@ Definições curtas, em ordem alfabética, do jeito que cada termo é usado nest
 
 **Link marcado.** Endereço do site com uma etiqueta que diz de onde o clique saiu. Veja [Link marcado]({{ '/conceitos/' | relative_url }}).
 
-**Link público.** Endereço que abre o relatório sem senha. Veja [Como abrir e navegar]({{ '/como-ler-o-relatorio/' | relative_url }}).
+**Link público.** Endereço que abre o relatório sem senha, depois que ele é emitido. Veja [Como abrir e navegar]({{ '/como-ler-o-relatorio/' | relative_url }}).
 
 ## M
 

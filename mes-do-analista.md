@@ -384,7 +384,7 @@ No alto da revisão há três botões, e cada um faz uma coisa só:
 
 - **Salvar Alterações:** guarda o que você fez (textos, prints, campanhas dos posts) e marca o período como **validado**. Pode ser feito quantas vezes quiser, e nunca desfaz uma emissão.
 - **Visualizar Book 16:9:** abre o relatório com as edições que estão na tela, para você conferir. **Não grava nada.** O que você não salvou continua só na tela: o link do cliente mostra sempre a última versão salva.
-- **Emitir Relatório:** grava e marca o período como **emitido**, a versão que vai para o cliente. Períodos emitidos ficam protegidos contra exclusão em lote.
+- **Emitir Relatório:** grava e marca o período como **emitido**, a versão que vai para o cliente. Períodos emitidos ficam protegidos contra exclusão em lote. **O link do cliente só abre depois de emitido:** enquanto o período é rascunho ou validado, quem abre o link vê "Relatório não encontrado".
 
 **Relatório sem publicação não se emite.** Se o período não tem **nenhuma publicação dentro do ciclo**, o **Emitir Relatório** não grava a emissão: a tela mostra, por alguns segundos, o aviso **"Este mês não tem publicações no ciclo: leia das redes ligadas ou acrescente uma planilha antes de emitir o relatório."** O servidor recusa do mesmo jeito, então não adianta tentar por outro caminho.
 
@@ -412,6 +412,8 @@ Com o relatório aberto, a barra de cima tem as setas dos slides, **Compartilhar
 
 ![Relatório aberto no sistema, com a barra de navegação, o botão Compartilhar e Incorporar e o botão de PDF]({{ '/assets/img/app/app-22-book-barra.png' | relative_url }})
 
+**Só depois de emitir.** O link, o código para WordPress e o envio por e-mail só valem para relatório **emitido**. Enquanto o período é rascunho ou validado, **Copiar Link**, **Copiar Código** e o envio por e-mail ficam desativados, com o aviso de que o link fica disponível depois de emitir, e quem abrir um link já enviado vê "Relatório não encontrado". Se um relatório emitido voltar a rascunho, o link também deixa de abrir; ao emitir de novo, **o mesmo link volta a abrir**, sem gerar outro. A visualização do book pela equipe (com login) funciona em qualquer situação.
+
 **Compartilhar.** Clique em **Compartilhar & Incorporar**. A janela mostra:
 
 - o **link direto para leitura**, com **Copiar Link**;
@@ -436,7 +438,7 @@ A primeira captura mostra o estado de um cliente sem destinatários; esta, o de 
 6. Tudo fica no **registro "Envios deste período"**: quando, quem enviou e o resultado de cada destinatário. Para tentar de novo com quem falhou ou foi recusado, use **Reenviar** na linha do registro: ele remarca os mesmos destinatários e a mesma mensagem, e você confirma de novo.
 
 - **Por que usar:** o envio por aqui sai com o visual do SocialReport, vai só a quem está na lista do cliente e deixa o registro de quem recebeu e quando. Link colado em mensagem avulsa não deixa rastro.
-- **Só com o link ativo.** O bloco avisa "Este relatório ainda não tem link público ativo" quando falta o link: salve o relatório ou gere o link antes. Sem destinatários cadastrados, o bloco diz onde cadastrá-los.
+- **Só com o relatório emitido e o link ativo.** Num relatório que não foi emitido, o bloco diz que o envio fica disponível depois de emitir, e o sistema recusa o envio mesmo que se tente por outro caminho. O bloco avisa "Este relatório ainda não tem link público ativo" quando falta o link: salve o relatório ou gere o link antes. Sem destinatários cadastrados, o bloco diz onde cadastrá-los.
 - **Limite.** Há um limite de envios por minuto por pessoa (5 por padrão). Passou dele, o sistema recusa por um instante: espere e tente de novo.
 - **E-mail que não sai.** Depende do **Servidor SMTP** configurado pelo super-administrador (veja a [parte 6]({{ '/administracao/' | relative_url }})). Se tudo **Falhou**, avise-o.
 
