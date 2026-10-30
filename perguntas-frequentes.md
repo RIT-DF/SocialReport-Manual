@@ -44,6 +44,10 @@ São pedidos feitos no site, e não pagamentos confirmados. Para o dinheiro rece
 
 Provavelmente a medição está **subestimada**: sem link marcado, parte das visitas das redes aparece como "acesso direto". Peça à equipe que marque os links. Veja [Link marcado]({{ '/conceitos/' | relative_url }}).
 
+### Os Indicadores (BI) abriram no trimestre passado, e não no atual. É normal?
+
+Sim. A tela abre no **último trimestre fechado que tenha algum mês com dado**, porque um trimestre pela metade confunde a comparação. Para ver o atual, clique no atalho dele ou use **De** e **Até**. Os atalhos **não passam do mês atual**: o **Ano** de 2026, em outubro, vai de janeiro a outubro, e o atalho que cairia todo no futuro fica apagado. Veja [Indicadores (BI)]({{ '/mes-do-analista/indicadores/' | relative_url }}).
+
 ### Nos Indicadores (BI), por que um mês aparece como "parcial"?
 
 Porque ele **ainda não fechou**: o ciclo termina depois de hoje, ou a medição do site ou dos cursos começou no meio do mês. O mês em andamento é calculado na hora, com o que o sistema tem até aquele dia, e por isso o selo **parcial** acompanha o cartão e o gráfico. A variação sai em cinza, sem seta de alta ou queda. Para tirar o mês do cálculo, desligue **Incluir mês em andamento (parcial)**. Veja [Indicadores (BI)]({{ '/mes-do-analista/indicadores/' | relative_url }}).
@@ -134,6 +138,10 @@ Quando a pergunta é sobre o conjunto: "como foi o trimestre?", "e o ano?". O co
 
 Sim, para o que se soma: publicações, impressões, interações, visitas, inscrições. **Seguidores não se somam**: vale o do último mês. A taxa de engajamento é refeita sobre o período inteiro, e não uma média das taxas dos meses. O **alcance** só é somado quando todos os meses usam a mesma definição.
 
+### O consolidado diz "alcance não informado pela rede" em vez de zero. Por quê?
+
+Porque aquela rede teve, num mês, **alcance 0 com impressões acima de 0**: o alcance não veio na planilha (ou a rede não o informa), e o 0 que aparece não é um número real. O consolidado não soma esse 0 nem o mostra como se fosse alcance, e a análise da IA não pode escrever "0 de alcance". Confira a planilha daquele mês: se o alcance existe, importe-o.
+
 ### Por que o alcance do consolidado aparece como "—" e diz "sem total"?
 
 Porque os meses do período usam definições diferentes de alcance (o Facebook trocou **Alcance** por **Visualizadores**, e há meses que misturam as duas). Somar os dois daria um número que não é nenhum dos dois. Veja a pergunta sobre a mudança de nome do alcance, em "Sobre os números", mais acima.
@@ -162,7 +170,11 @@ Aparece quando está **emitido**, com a etiqueta **Consolidado**. Em rascunho ou
 
 ### O que é "Ler da Meta"? Ainda preciso da planilha?
 
-É o botão que traz as publicações do Instagram e do Facebook **direto das contas do cliente**, sem exportar e importar planilha. Ele só existe para o cliente que o super-administrador **ligou à Meta**. A planilha continua valendo e continua necessária para os **Stories**, para a **categoria editorial** e para as outras redes (LinkedIn, TikTok, YouTube). Veja [Ler da Meta]({{ '/mes-do-analista/ler-da-meta/' | relative_url }}).
+É o botão que traz as publicações do Instagram e do Facebook **direto das contas do cliente**, sem exportar e importar planilha. Ele só existe para o cliente que o super-administrador **ligou à Meta**. A planilha continua valendo e continua necessária para os **Stories**, para a **categoria editorial** e para o TikTok (o YouTube e o LinkedIn têm [o próprio botão]({{ '/mes-do-analista/ler-do-youtube-e-linkedin/' | relative_url }})). Veja [Ler da Meta]({{ '/mes-do-analista/ler-da-meta/' | relative_url }}).
+
+### Voltei do login da Meta e a tela diz "Falta um passo: confirme a Página". O que faço?
+
+Marque a Página do cliente, na caixa amarela que a tela abriu para você, e clique em **Ligar esta Página**. **É esse clique que grava a ligação**: voltar do login ainda não liga nada. Se você está **renovando** uma Página que já estava ligada, não há essa caixa: o sistema grava sozinho e diz **"Ligação renovada."** O mesmo vale para o YouTube (**Ligar este canal**) e o LinkedIn. Veja [Ligar o Instagram e o Facebook]({{ '/administracao/meta/' | relative_url }}).
 
 ### Qual é a diferença entre alcance e visualizações?
 
@@ -199,6 +211,36 @@ Não. O sistema lê **números** (publicações, alcance, visualizações, conta
 ### Desliguei a ligação de um cliente, mas o app ainda aparece nas integrações do Facebook. Por quê?
 
 Porque **desligar apaga a ligação só dentro do SocialReport**. A autorização na Meta é de quem fez o login e vale para **todos** os clientes que ele ligou, então o sistema não a revoga por você. Para retirá-la do lado da Meta, a própria pessoa remove o app nas configurações da conta do Facebook, em **Integrações de negócios**, sabendo que isso derruba **todas** as ligações dela. Veja [Ligar o Instagram e o Facebook]({{ '/administracao/meta/' | relative_url }}#3-testar-renovar-e-desligar).
+
+## Sobre a leitura do YouTube e do LinkedIn
+
+### O que são "Ler do YouTube" e "Ler do LinkedIn"? Ainda preciso da planilha?
+
+São os botões que trazem os vídeos do canal e as publicações da Página do LinkedIn **direto das contas do cliente**, como o **Ler da Meta** faz com o Instagram e o Facebook. Só existem para o cliente que o super-administrador **ligou** àquela rede, e **cada rede só funciona depois que o app da RIT for aprovado por ela** (o do LinkedIn estava em análise em 30/10/2026). Até lá, e para o TikTok e os clientes não ligados, a planilha continua sendo o caminho. Veja [Ler do YouTube e do LinkedIn]({{ '/mes-do-analista/ler-do-youtube-e-linkedin/' | relative_url }}).
+
+### Por que o YouTube não tem alcance? O que é "Visualizações" com asterisco?
+
+Porque o YouTube **não informa o alcance de cada vídeo**: só diz quantas vezes ele foi visto. O sistema coloca as **visualizações no lugar do alcance** e **avisa** (na revisão, no cartão da rede e no comparativo). Visualização **conta a mesma pessoa mais de uma vez**, então o número é maior ou igual ao de pessoas diferentes e **não deve ser comparado** com o alcance do Instagram como se fosse a mesma coisa. Veja [Alcance e visualizações]({{ '/mes-do-analista/ler-do-youtube-e-linkedin/#alcance-e-visualizações-o-que-a-leitura-preenche' | relative_url }}).
+
+### Por que o botão "Ler do YouTube" (ou "Ler do LinkedIn") não aparece, ou está apagado?
+
+Se **não aparece**, o cliente não foi ligado àquela rede: peça ao super-administrador. Se **está apagado**, a ligação venceu ou parou (a frase embaixo do título diz qual, por exemplo "Ligação com o LinkedIn expirada: peça ao administrador para religar"). Só o super-administrador religa. Enquanto isso, use a planilha. Veja [Ligar o YouTube e o LinkedIn]({{ '/administracao/youtube-linkedin/' | relative_url }}#os-estados-da-ligação).
+
+### Por que a ligação do LinkedIn precisa ser refeita de tempos em tempos?
+
+Porque o acesso que o LinkedIn dá vale por **cerca de 60 dias**, e a renovação automática só existe para apps aprovados como parceiros. Perto do fim, o cadastro do cliente mostra um selo amarelo e o painel do super-administrador mostra uma faixa de aviso, com 14 dias de folga. Refazer é um clique e um login.
+
+### O número de inscritos do YouTube veio arredondado (1.230). Está errado?
+
+Não: o YouTube informa o número **arredondado** (3 algarismos). O número exato sai do YouTube Analytics, que **atrasa de 2 a 3 dias**. Leia o mês a partir do 3º dia depois do fim do ciclo, ou digite o número do fim do mês no bloco **Seguidores no fim do mês**.
+
+### Por que o anúncio do LinkedIn não entrou?
+
+Porque o relatório é do **orgânico**: a leitura deixa de fora o anúncio patrocinado, e a observação da leitura diz quantos ficaram de fora. Do mesmo modo, no YouTube, vídeos privados, não listados ou agendados não entram.
+
+### A leitura pode publicar ou apagar alguma coisa no meu canal ou na minha Página?
+
+Não. A ligação só **lê** números. Se a conta de quem fez o login já tinha, para outra automação da RIT, a permissão de publicar, o cadastro do cliente mostra a nota **"Esta ligação também tem permissões de publicar (concedidas para outra automação). O SocialReport só lê."**: ele não usa essa permissão e não a revoga. Veja [Ligar o YouTube e o LinkedIn]({{ '/administracao/youtube-linkedin/' | relative_url }}#permissões-de-publicar-vindas-de-outra-automação).
 
 ## Sobre o site e o plugin
 

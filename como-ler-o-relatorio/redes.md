@@ -74,6 +74,8 @@ Se a tabela traz a frase "Sem dados de Out/25: comparativo com o mesmo mês do a
 
 **Alcance com definição diferente.** Se aparecer a nota de que **o alcance deste mês e o do anterior usam definições diferentes**, é porque o Meta trocou **Alcance** por **Visualizadores** no Facebook entre os dois meses. A variação do alcance, nesse caso, não é uma comparação exata: olhe também as impressões e as interações.
 
+**Visualizações no lugar do alcance.** Algumas redes não informam o alcance de cada publicação. O **YouTube** é o caso: ele só diz quantas **visualizações** cada vídeo teve, contando a mesma pessoa mais de uma vez. O relatório usa as visualizações no lugar do alcance e **avisa**: o cartão da rede mostra **Visualizações** (com um asterisco) com uma nota, e o comparativo avisa quando o mês e o anterior usam medidas diferentes. Leia como "quantas vezes viram", e não como "quantas pessoas viram".
+
 > **Leitura errada comum:** olhar só a porcentagem. "-56%" assusta, mas se o mês anterior teve uma campanha grande, a comparação é com um mês excepcional. Sempre pergunte **com o que** estamos comparando.
 {: .warning }
 
@@ -103,7 +105,7 @@ A conta está escrita na página: **interações ÷ impressões × 100**. No exe
 
 **A pergunta que responde:** "Em qual rede estamos conseguindo resultado?"
 
-Cada rede tem um cartão com os mesmos números do mês: publicações, alcance somado, impressões, interações, taxa de engajamento e score ponderado.
+Cada rede tem um cartão com os mesmos números do mês: publicações, alcance somado, impressões, interações, taxa de engajamento e score ponderado. No cartão de uma rede que não informa alcance (o YouTube), o primeiro número aparece como **Visualizações** (com um asterisco), com uma nota no rodapé do slide: visualização repete pessoas e não é alcance.
 
 **Exemplo:** o Instagram teve 15 publicações, 10.590 de alcance, 853 interações e taxa de 4,28%. O Facebook teve 10 publicações, **403 impressões**, 19 interações e taxa de 4,71%.
 

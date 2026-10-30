@@ -7,15 +7,15 @@ permalink: /administracao/
 
 # 6. Administração
 
-Esta parte é só para o **super-administrador**: a pessoa que cuida de quem entra no sistema, de quais clientes existem e de como o sistema conversa com a inteligência artificial, com o Matomo e com a Meta (Instagram e Facebook). As telas daqui só aparecem para esse papel; o analista não as vê.
+Esta parte é só para o **super-administrador**: a pessoa que cuida de quem entra no sistema, de quais clientes existem e de como o sistema conversa com a inteligência artificial, com o Matomo, com a Meta (Instagram e Facebook), com o YouTube e com o LinkedIn. As telas daqui só aparecem para esse papel; o analista não as vê.
 
-Tudo o que o sistema guarda de sensível (**chaves de IA, tokens do Matomo, senha de e-mail, segredo e chaves da Meta**) fica **só no servidor**. O navegador nunca recebe esses valores de volta: a tela mostra, no máximo, o **final** do que está guardado. Por isso, **se você perder uma chave, não há como "ver" a que está guardada**: é preciso gerar outra no provedor e digitá-la de novo.
+Tudo o que o sistema guarda de sensível (**chaves de IA, tokens do Matomo, senha de e-mail, segredos e chaves da Meta, do YouTube e do LinkedIn**) fica **só no servidor**. O navegador nunca recebe esses valores de volta: a tela mostra, no máximo, o **final** do que está guardado. Por isso, **se você perder uma chave, não há como "ver" a que está guardada**: é preciso gerar outra no provedor e digitá-la de novo.
 
 ## Os papéis
 
 | Papel | O que faz |
 |---|---|
-| **Super-Admin** | tudo o que o analista faz, mais as configurações do sistema, o cadastro de clientes, a ligação do site e do Instagram e do Facebook de cada cliente e o convite de pessoas |
+| **Super-Admin** | tudo o que o analista faz, mais as configurações do sistema, o cadastro de clientes, a ligação do site, do Instagram e do Facebook, do YouTube e do LinkedIn de cada cliente e o convite de pessoas |
 | **Analista** | monta os relatórios: importa, confere, revisa, emite e compartilha (veja a [parte 3]({{ '/mes-do-analista/' | relative_url }})) |
 
 O papel de super-administrador é **decidido pelo servidor**, e não pela tela: ninguém vira super-admin só por mexer no navegador.
@@ -71,6 +71,7 @@ Ao editar, o cadastro tem estas partes:
 - **Marcos históricos anteriores** (opcional): totais de meses passados (por exemplo, seguidores) que ligam os gráficos de tendência e o comparativo desde o primeiro relatório. Também alimentam a tela [Indicadores (BI)]({{ '/mes-do-analista/indicadores/' | relative_url }}), onde esses meses aparecem como **marco histórico (menos detalhado)**. Cadastre os totais com o cuidado que daria a um relatório: um marco errado entra nas somas e nas comparações.
 - **Plataforma de cursos (Moodle):** o acesso ao Moodle do cliente e o site da plataforma no Matomo (veja abaixo).
 - **Redes sociais (Meta):** a ligação do Instagram e do Facebook do cliente, para o analista poder usar **Ler da Meta** (veja [Ligar o Instagram e o Facebook]({{ '/administracao/meta/' | relative_url }})).
+- **YouTube e LinkedIn:** a ligação do canal e da Página do cliente, para o analista poder usar **Ler do YouTube** e **Ler do LinkedIn** (veja [Ligar o YouTube e o LinkedIn]({{ '/administracao/youtube-linkedin/' | relative_url }}); cada rede só funciona depois que o app da RIT for aprovado por ela).
 - **Fim do contrato:** o campo **Contrato encerrado em** (veja abaixo).
 - **Site:** a ligação com o Matomo (veja a [parte 5]({{ '/site-e-plugin/' | relative_url }})).
 - **Monitoramento de imprensa e clipping:** os termos da varredura.
@@ -260,10 +261,11 @@ Duas outras abas das configurações merecem uma lembrança:
 - [ ] Só quem precisa tem acesso, com o papel mínimo; ex-membros estão revogados.
 - [ ] Pelo menos dois provedores de IA ativos, com chaves testadas.
 - [ ] Matomo: endereço, token de leitura (só de visualização) e, se for usar o código de conexão, token de administração.
-- [ ] Meta (se for usar a leitura do Instagram e do Facebook): app configurado e testado na aba **Meta**, sem aviso da chave do cofre, e clientes ligados (veja [Ligar o Instagram e o Facebook]({{ '/administracao/meta/' | relative_url }})).
+- [ ] Meta (se for usar a leitura do Instagram e do Facebook): app configurado e testado na aba **Meta** e clientes ligados (veja [Ligar o Instagram e o Facebook]({{ '/administracao/meta/' | relative_url }})).
+- [ ] YouTube e LinkedIn (quando o app da RIT for aprovado pela rede): app configurado e testado nas abas **YouTube** e **LinkedIn** e clientes ligados (veja [Ligar o YouTube e o LinkedIn]({{ '/administracao/youtube-linkedin/' | relative_url }})).
 - [ ] SMTP testado: um convite de teste chega.
 - [ ] Licença do V3RAnalytics cadastrada na aba **Matomo** (sem ela, os plugins não se atualizam sozinhos).
-- [ ] Segredos (chaves de IA, senha do e-mail, tokens, licença, segredo do app da Meta) guardados num cofre, porque a cópia de segurança não os leva.
+- [ ] Segredos (chaves de IA, senha do e-mail, tokens, licença, segredos dos apps da Meta, do YouTube e do LinkedIn) guardados num cofre, porque a cópia de segurança não os leva.
 - [ ] Organização: nome e site conferidos no rodapé de um relatório.
 - [ ] Cópias de segurança configuradas, com a senha guardada num cofre e **provada** (botão **Provar a senha**), e um teste de restauração feito (veja [Cópias de segurança]({{ '/copias-de-seguranca/' | relative_url }})).
 - [ ] Retenção de dados: simulação conferida no histórico antes de ser desligada; cliente que encerrou o contrato com a data preenchida; ex-membros revogados (a conta sai em 90 dias).

@@ -37,6 +37,8 @@ Definições curtas, em ordem alfabética, do jeito que cada termo é usado nest
 
 **Cópia de segurança.** Cópia cifrada do banco de dados do sistema, com senha. Não leva chaves, senhas nem tokens. Veja [Cópias de segurança]({{ '/copias-de-seguranca/' | relative_url }}).
 
+**Conta de Marca.** No YouTube, a identidade do canal de uma organização, separada do e-mail pessoal de quem o cuida, com as pessoas autorizadas a administrá-la. Para ligar o canal de um cliente ao SocialReport, o login é de uma conta Google que seja proprietária ou gerente dessa Conta de Marca. Veja [Ligar o YouTube e o LinkedIn]({{ '/administracao/youtube-linkedin/' | relative_url }}).
+
 **Conversão.** Ação importante concluída no site: formulário, clique no WhatsApp, e-mail ou telefone. Veja [Conversão]({{ '/conceitos/' | relative_url }}).
 
 ## D
@@ -65,7 +67,11 @@ Definições curtas, em ordem alfabética, do jeito que cada termo é usado nest
 
 **Ler da Meta.** Botão da página do mês que traz as publicações do Instagram e do Facebook direto das contas do cliente, no lugar da planilha, para os clientes ligados à Meta. Os números são os do momento da leitura. Veja [Ler da Meta]({{ '/mes-do-analista/ler-da-meta/' | relative_url }}).
 
+**Ler do YouTube / Ler do LinkedIn.** Botões da página do mês, um para cada rede, que trazem os vídeos do canal e as publicações da Página direto da rede, no lugar da planilha. Veja [Ler do YouTube e do LinkedIn]({{ '/mes-do-analista/ler-do-youtube-e-linkedin/' | relative_url }}).
+
 **Ligação (com a Meta).** A autorização, dada por uma pessoa que administra a Página do cliente, que permite ao sistema ler o Instagram e o Facebook dele. Feita pelo super-administrador, no cadastro do cliente, e renovada quando vence. Veja [Ligar o Instagram e o Facebook]({{ '/administracao/meta/' | relative_url }}).
+
+**Ligação (com o YouTube ou o LinkedIn).** A autorização, dada por uma pessoa que administra o canal ou a Página do cliente, que deixa o sistema ler os números daquela rede. Só lê, vence (no LinkedIn, em cerca de 60 dias) e precisa ser religada pelo super-administrador. Cada rede só funciona depois que o app da RIT for aprovado por ela. Veja [Ligar o YouTube e o LinkedIn]({{ '/administracao/youtube-linkedin/' | relative_url }}).
 
 **Licença do V3RAnalytics.** Chave cadastrada pelo super-administrador (aba Matomo) que o plugin recebe ao conectar o site e que permite a ele se atualizar sozinho. Sem ela, o plugin funciona, mas não se atualiza. Veja [Site e plugin]({{ '/site-e-plugin/' | relative_url }}).
 
@@ -120,6 +126,8 @@ Definições curtas, em ordem alfabética, do jeito que cada termo é usado nest
 **V3RAnalytics.** Plugin que roda no site da organização: mede sem cookies, cria as metas e gera os links marcados. Veja [Link marcado]({{ '/conceitos/' | relative_url }}).
 
 **Visualizações.** Quantas vezes uma publicação foi vista, contando repetições. É o nome que a Meta passou a usar no lugar de "impressões", e no relatório aparece como **Impressões**. Não confunda com Visualizadores. Veja [Alcance e visualizações]({{ '/mes-do-analista/ler-da-meta/' | relative_url }}#alcance-e-visualizações-o-que-a-leitura-preenche).
+
+**Visualizações no lugar do alcance.** O que o relatório mostra, no lugar do alcance, para a rede que não informa alcance por publicação (o YouTube). Conta a mesma pessoa mais de uma vez, então não é pessoas diferentes. Aparece com um asterisco no cartão da rede e com uma nota. Veja [Alcance e visualizações]({{ '/mes-do-analista/ler-do-youtube-e-linkedin/#alcance-e-visualizações-o-que-a-leitura-preenche' | relative_url }}).
 
 **Visualizadores.** Medida que o Meta passou a informar no Facebook no lugar de Alcance (que encerra em 31/10/2026): conta **pessoas diferentes**, como o alcance. O SocialReport a usa como alcance quando a planilha ou a leitura da Meta não traz Alcance, e avisa quando a comparação mistura as duas definições. Veja [Comparativo geral]({{ '/como-ler-o-relatorio/redes/' | relative_url }}).
 

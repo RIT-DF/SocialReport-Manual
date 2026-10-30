@@ -20,6 +20,7 @@ Os exemplos e as telas vêm do relatório de outubro de 2026 do **Instituto Hori
 | 3 | [Importar as planilhas das redes](#3-importar-as-planilhas-das-redes) | Períodos & Emissão |
 | 3b | [Informar os seguidores de cada rede](#3b-informar-os-seguidores-de-cada-rede) | Períodos & Emissão |
 | 3c | [Ler da Meta, no lugar da planilha](#3c-ler-da-meta-no-lugar-da-planilha) | Períodos & Emissão |
+| 3d | [Ler do YouTube e do LinkedIn, no lugar da planilha](#3d-ler-do-youtube-e-do-linkedin-no-lugar-da-planilha) | Períodos & Emissão |
 | 4 | [Conferir as inconsistências da importação](#4-conferir-as-inconsistências-da-importação) | durante a importação |
 | 5 | [Conferir os números e marcar os posts fora da curva](#5-conferir-os-números-e-marcar-os-posts-fora-da-curva) | Períodos & Emissão |
 | 6 | [Classificar as categorias](#6-classificar-as-categorias) | planilha e cadastro do cliente |
@@ -32,7 +33,7 @@ Os exemplos e as telas vêm do relatório de outubro de 2026 do **Instituto Hori
 | 12 | [Compartilhar o link e gerar o PDF](#12-compartilhar-o-link-e-gerar-o-pdf) | o relatório aberto |
 | 13 | [Cuidar de vários períodos de uma vez](#13-cuidar-de-vários-períodos-de-uma-vez) | Períodos & Emissão |
 
-> **O que é só do super-administrador.** Ligar o site e o Instagram e o Facebook de um cliente, configurar a inteligência artificial, o Matomo e a Meta, convidar pessoas e trocar a identidade da organização ficam em "Configurações do Sistema" e no cadastro do cliente, e são tratados na [parte 6]({{ '/administracao/' | relative_url }}) e na [parte 5]({{ '/site-e-plugin/' | relative_url }}). Aqui estão as tarefas de quem monta o relatório.
+> **O que é só do super-administrador.** Ligar o site, o Instagram e o Facebook, o YouTube e o LinkedIn de um cliente, configurar a inteligência artificial, o Matomo e as redes (Meta, YouTube e LinkedIn), convidar pessoas e trocar a identidade da organização ficam em "Configurações do Sistema" e no cadastro do cliente, e são tratados na [parte 6]({{ '/administracao/' | relative_url }}) e na [parte 5]({{ '/site-e-plugin/' | relative_url }}). Aqui estão as tarefas de quem monta o relatório.
 {: .note }
 
 ## 1. Escolher o cliente ativo
@@ -80,7 +81,7 @@ Nessa janela também há **Detectar das Postagens** (sugere as datas a partir da
 
 ## 3. Importar as planilhas das redes
 
-**Por que importa.** As planilhas são a fonte dos números das redes. Por padrão, o sistema não "puxa" dados das redes sozinho: ele lê o que você importa. (A exceção é o Instagram e o Facebook de um cliente que o super-administrador ligou à Meta: veja a [tarefa 3c](#3c-ler-da-meta-no-lugar-da-planilha).) Importar direito significa que os números do relatório batem com o que a rede mostra.
+**Por que importa.** As planilhas são a fonte dos números das redes. Por padrão, o sistema não "puxa" dados das redes sozinho: ele lê o que você importa. (A exceção é o Instagram e o Facebook de um cliente que o super-administrador ligou à Meta, e o YouTube e o LinkedIn de um cliente ligado a essas redes: veja as tarefas [3c](#3c-ler-da-meta-no-lugar-da-planilha) e [3d](#3d-ler-do-youtube-e-do-linkedin-no-lugar-da-planilha).) Importar direito significa que os números do relatório batem com o que a rede mostra.
 
 **O modelo de planilha.** O botão **Modelo de Planilha**, no alto da página, baixa uma planilha padrão com as colunas que o sistema reconhece: data, canal, formato, pauta (título do conteúdo), link da publicação, categoria editorial, alcance, impressões, interações, curtidas, respostas/comentários, compartilhamentos, salvamentos, visitas ao perfil, visualizações de vídeo, reações e a marcação de anômalo (sim ou não). Há também uma aba **Resumo do Mês**, onde se informam o alcance da conta e o **número de seguidores** do mês, na linha **Seguidores da rede no fim do mês** (uma rede por arquivo). Você também pode digitar os seguidores direto na tela do mês, sem mexer na planilha: veja a [tarefa 3b](#3b-informar-os-seguidores-de-cada-rede). Planilhas com outros nomes de coluna também funcionam, e o sistema ajuda a ligar cada coluna ao campo certo (veja a próxima tarefa).
 
@@ -149,7 +150,7 @@ Se o período veio de uma **planilha online**, ele fica ligado a ela, e é poss�
 > - **Uma rede sem número nos dois meses fica de fora do total** do comparativo (veja [Comparativo geral]({{ '/como-ler-o-relatorio/redes/' | relative_url }})).
 {: .tip }
 
-**Quando dá errado.** Na revisão, aparece um aviso só para você: **"Falta o número de seguidores de [rede] neste mês. Sem ele, o relatório não mostra a base de seguidores nem o comparativo dessa rede. Preencha na tela do mês (Períodos) ou na linha "Seguidores" da planilha."** O aviso não aparece no relatório nem no link público. Volte à tela do mês, preencha e salve.
+**Quando dá errado.** Na revisão, o quadro **Avisos da revisão** traz um aviso só para você: **"Falta o número de seguidores de [rede] neste mês. Sem ele, o relatório não mostra a base de seguidores nem o comparativo dessa rede. Preencha na tela do mês (Períodos) ou na linha "Seguidores" da planilha."** O aviso não aparece no relatório nem no link público. Volte à tela do mês, preencha e salve.
 
 ## 3c. Ler da Meta, no lugar da planilha
 
@@ -160,6 +161,14 @@ Os números da leitura são os **do momento em que você lê** (como exportar a 
 ![Bloco Ler da Meta na página do mês, com a mensagem Instagram e Facebook ligados e o botão Ler da Meta]({{ '/assets/img/app/app-71-meta-ler-da-meta.png' | relative_url }})
 
 O passo a passo, os avisos e o que fazer quando dá errado estão em [Ler da Meta]({{ '/mes-do-analista/ler-da-meta/' | relative_url }}).
+
+## 3d. Ler do YouTube e do LinkedIn, no lugar da planilha
+
+**Por que importa.** Para o cliente que o super-administrador **ligou ao YouTube** ou **ao LinkedIn**, os vídeos e as publicações do mês podem vir direto do canal e da Página: um clique em **Ler do YouTube** (ou **Ler do LinkedIn**) traz os números de cada um e oferece o número de inscritos ou seguidores do fim do mês. Valem as mesmas regras do [Ler da Meta](#3c-ler-da-meta-no-lugar-da-planilha): **uma fonte por rede em cada mês**, números **do momento da leitura**, e a planilha continua valendo e dá para voltar a ela. A diferença que muda a sua leitura do relatório: **o YouTube não informa alcance por vídeo**, e as **visualizações vão no lugar do alcance**, o que o relatório avisa.
+
+![Bloco Ler do YouTube na página do mês, com a mensagem YouTube ligado, a explicação de que as visualizações vão no lugar do alcance e o botão Ler do YouTube]({{ '/assets/img/app/app-92-youtube-ler-do-youtube.png' | relative_url }})
+
+Cada rede ligada tem o **seu** bloco. O passo a passo, os avisos e o que fazer quando dá errado estão em [Ler do YouTube e do LinkedIn]({{ '/mes-do-analista/ler-do-youtube-e-linkedin/' | relative_url }}).
 
 ## 4. Conferir as inconsistências da importação
 
