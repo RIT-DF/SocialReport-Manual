@@ -115,6 +115,8 @@ Definições curtas, em ordem alfabética, do jeito que cada termo é usado nest
 
 ## R
 
+**Retenção média (do vídeo).** Quanto de um vídeo do YouTube as pessoas assistiram, em média, em porcentagem. Aparece na lista de vídeos do relatório; não tem relação com o prazo de guarda dos dados. Veja [Vídeos do YouTube]({{ '/como-ler-o-relatorio/redes/#vídeos-do-youtube' | relative_url }}).
+
 **Retrato (do consolidado).** Os números do período guardados no consolidado quando ele foi criado ou atualizado. O link público e o PDF mostram o retrato, e não a base ao vivo. Veja [Relatório consolidado]({{ '/mes-do-analista/consolidado/' | relative_url }}).
 
 **Rejeição.** Porcentagem de visitas em que a pessoa saiu na primeira página. Quanto menor, melhor. Veja [Rejeição]({{ '/conceitos/' | relative_url }}).

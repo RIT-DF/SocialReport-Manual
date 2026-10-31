@@ -138,6 +138,27 @@ Cada publicação é classificada pela equipe em uma **categoria editorial** (no
 > **Leitura errada comum:** comparar o total de "Institucional" (score 839) com o de "Serviço" (83) e concluir que o público odeia serviço. Havia **22 publicações de um lado e 3 do outro**. Compare a **eficiência** (4,31% contra 4,15%): são parecidas. A categoria menor só teve menos chances de aparecer.
 {: .warning }
 
+## Vídeos do YouTube
+
+*Este capítulo só aparece nos meses em que há vídeos do YouTube, lidos direto do canal ou vindos de uma planilha. Ele vem logo antes das melhores publicações, e elas e os capítulos seguintes mudam de número para abrir espaço.*
+
+**A pergunta que responde:** "Como foi cada vídeo do canal neste mês?"
+
+Uma linha por vídeo, do mais visto para o menos visto. Cada linha traz o título (com o link para abrir o vídeo no YouTube, quando existe), a data, o formato (vídeo comum ou Shorts) e cinco números:
+
+- **Visualizações:** quantas vezes o vídeo foi visto. A mesma pessoa pode ver mais de uma vez, por isso não é o mesmo que alcance.
+- **Curtidas, comentários e compartilhamentos:** as reações ao vídeo.
+- **Retenção média:** quanto do vídeo as pessoas assistiram, em média. 100% seria todo mundo assistindo até o fim; 40% significa que, em média, as pessoas viram um pouco menos da metade.
+
+**Exemplo:** um vídeo com 12.000 visualizações e retenção de 30% foi muito visto, mas as pessoas abandonaram cedo. Outro, com 3.000 visualizações e retenção de 70%, alcançou menos gente, mas quem chegou ficou. Os dois dizem coisas diferentes sobre o conteúdo.
+
+**Por que importa:** a visualização mostra se o título e a imagem de abertura chamaram atenção. A retenção mostra se o vídeo cumpriu o que prometeu. Vídeos curtos costumam reter mais que vídeos longos, então compare a retenção entre vídeos do mesmo tamanho.
+
+**Decisão que ajuda a tomar:** olhar os vídeos de maior retenção e repetir o jeito de contar (o início, a duração, o assunto). Quando muitos vídeos têm muita visualização e pouca retenção, o início promete mais do que o vídeo entrega.
+
+> **Quando aparece "—".** O traço quer dizer que o YouTube não informou aquele número para o vídeo (a retenção, por exemplo, nem sempre chega). Não é zero: é "sem informação". O título "Vídeo do YouTube", sem link e com traço na data, indica um vídeo cujo título, link e data foram retirados do relatório por regra do Google (30 dias sem atualização); os números ficam.
+{: .note }
+
 ## Melhores publicações (top posts)
 
 ![Os três cartões das publicações de maior destaque do mês, com alcance, engajamento e as visitas ao site]({{ '/assets/img/relatorio/relatorio-13-top-posts.png' | relative_url }})
@@ -149,6 +170,8 @@ Cada publicação é classificada pela equipe em uma **categoria editorial** (no
 O relatório mostra as publicações de maior destaque, com a imagem, a rede, o **alcance**, o **engajamento** e o link para ver a publicação original. As campeãs são escolhidas pelo **score ponderado** (curtida 1, comentário 3, compartilhamento 4, salvamento 3), e não pela quantidade bruta de reações.
 
 **Exemplo:** a primeira colocada teve 114 de engajamento e a segunda teve 142. Mesmo assim, a primeira ficou na frente, porque suas reações pesam mais na conta (comentários, compartilhamentos e salvamentos valem mais que curtidas): 142 pontos contra 137.
+
+Quando a publicação é um vídeo do YouTube, o cartão mostra **Visualizações** no lugar de Alcance, e não traz imagem: o relatório não guarda nem exibe a miniatura dos vídeos do YouTube.
 
 Quando o site está ligado, o cartão traz uma linha como **"levou N visitas ao site"**. Quando a organização tem cursos, e o post foi ligado a uma campanha que leva à plataforma, aparece também **"Levou N pessoas aos cursos (campanha ...)"**. É um **piso**: o Matomo conta visitas, e quem usa bloqueador de anúncios não entra na conta. Ela diz quantas visitas o link daquela publicação trouxe, quando a equipe usou o link marcado.
 
