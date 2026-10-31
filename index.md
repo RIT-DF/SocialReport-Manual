@@ -8,7 +8,7 @@ permalink: /
 
 O SocialReport transforma os números das redes sociais de uma organização, e do site dela, em um relatório mensal que qualquer pessoa consegue ler e usar para decidir o que fazer no mês seguinte. Este manual serve a quem **produz** o relatório (a equipe de mídias sociais) e a quem **o recebe** (a diretoria, a coordenação e os parceiros da organização).
 
-O SocialReport usa os **YouTube API Services** para ler os números do canal do YouTube de um cliente, quando ele autoriza. Veja a [Política de Privacidade]({{ '/privacidade/' | relative_url }}) e os [Termos de Uso]({{ '/termos/' | relative_url }}).
+Quando o cliente autoriza, o SocialReport lê os números das redes dele pelas APIs oficiais: **YouTube API Services**, **Meta** (Instagram e Facebook) e **LinkedIn**. Veja a [Política de Privacidade]({{ '/privacidade/' | relative_url }}) e os [Termos de Uso]({{ '/termos/' | relative_url }}).
 
 > **Recebeu o relatório e quer entender o que está olhando?**
 > Vá direto para **[Como ler o seu relatório]({{ '/como-ler-o-relatorio/' | relative_url }})**. Foi escrita para quem não é da área: explica cada página do relatório, o que cada número quer dizer, para que serve e as leituras erradas mais comuns.
