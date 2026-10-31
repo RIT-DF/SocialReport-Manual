@@ -138,7 +138,7 @@ Em **Clientes & Marcas**, abra o cliente em **Ver / Editar**. Abaixo de **Redes 
 
 ![Seção YouTube depois de religar: a mensagem Ligação renovada e o estado em dia, sem caixa de escolha]({{ '/assets/img/app/app-84-youtube-ligacao-renovada.png' | relative_url }})
 
-**Desligar.** O botão pede confirmação. No LinkedIn: **"Desligar o LinkedIn deste cliente? As leituras automáticas param."** No YouTube: **"Desligar o YouTube deste cliente? As leituras automáticas param e a autorização também será retirada no Google."**
+**Desligar.** O botão pede confirmação. No LinkedIn: **"Desligar o LinkedIn deste cliente? As leituras automáticas param."** No YouTube: **"Desligar o YouTube deste cliente? As leituras automáticas param e a autorização também será retirada no Google. Os dados do YouTube lidos da API saem em 5 dias; religar o mesmo canal antes disso cancela. Isso atinge 3 relatórios (12 vídeos): o YouTube sai deles, inclusive dos emitidos, e os outros dados ficam."** O número de relatórios e de vídeos é o do cliente; sem dado do YouTube lido da API, a frase diz que nenhum relatório é atingido.
 
 ![Confirmação do desligamento: Desligar o LinkedIn deste cliente? As leituras automáticas param, com os botões Desligar e Cancelar]({{ '/assets/img/app/app-88-linkedin-desligar-confirmar.png' | relative_url }})
 
@@ -148,6 +148,10 @@ Desligar apaga **neste sistema** a ligação e a chave do cliente. Os números q
 >
 > **Se o Google não responder**, a ligação é apagada aqui do mesmo jeito, e a mensagem avisa em vermelho: **"não foi possível retirar a autorização no Google: ela pode continuar ativa lá"**, com o link <https://security.google.com/settings/security/permissions>, onde você remove o acesso do SocialReport na mão. Não ignore esse aviso: enquanto a autorização continuar lá, o Google ainda considera o app autorizado.
 {: .important }
+
+> **No YouTube, os dados lidos da API saem dos relatórios em 5 dias.** Depois de desligar, a tela diz até quando (**"Os dados do YouTube lidos da API saem dos relatórios em dd/mm/aaaa; religar o mesmo canal antes disso cancela."**). Passado o prazo, saem de **todos** os relatórios do cliente, **inclusive os emitidos**: vídeos, números, inscritos e a imagem de capa que veio de um vídeo. Os relatórios seguem com as outras redes, os indicadores e os consolidados são refeitos, e o mês que só tinha YouTube fica **sem publicações**, deixa de entrar nos indicadores e continua abrindo (também no link público) com o aviso **"Os dados do YouTube lidos da API foram removidos deste relatório…"**. Religar **depois** do prazo não traz nada de volta: é preciso ler de novo. Planilhas do YouTube nunca são tocadas.
+
+> **Se o Google encerrar a autorização** (a pessoa a retirou na conta Google, por exemplo), o sistema espera **30 dias** antes de remover os dados, da mesma forma, e a faixa de avisos do super-admin mostra a contagem. Religar o mesmo canal nesse prazo cancela.
 
 > **No LinkedIn, desligar não revoga a permissão na rede.** A mensagem diz: **"Ligação desfeita neste sistema. (A autorização no LinkedIn continua, porque pode valer para outros clientes.)"** A pessoa que fez o login autorizou o app **uma vez**, e essa autorização pode ser a mesma de outros clientes dela. Revogá-la na rede cortaria todos de uma vez, por isso o sistema não faz isso por você. Quem quiser retirar a permissão do lado do LinkedIn (por exemplo, quando a pessoa sai da equipe) faz isso em **Configurações > Dados > Aplicativos permitidos**, sabendo que **todas** as ligações dela caem. O passo a passo público está na [Política de Privacidade, seção 13]({{ '/privacidade/#exclusao-de-dados' | relative_url }}).
 {: .important }

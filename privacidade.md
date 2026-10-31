@@ -2,16 +2,16 @@
 title: "Privacidade"
 nav_order: 90
 permalink: /privacidade/
-version: "1.5"
+version: "1.6"
 status: "aprovada"
-change_summary: "Informa que o SocialReport usa os YouTube API Services e que desligar o YouTube de um cliente passa a retirar também a autorização no Google (e excluir o cliente faz o mesmo), com o link do Google para quem quiser retirá-la direto. Os demais pontos não mudam."
+change_summary: "Diz como o SocialReport trata os dados do YouTube lidos direto da API: os vídeos são conferidos a cada 20 dias (título, link e data atualizados; vídeo apagado ou não público sai), os dados saem dos relatórios 5 dias depois de desligar o canal e 30 dias depois de a autorização cair no Google, título, link e data saem se passarem 30 dias sem atualização, a miniatura do vídeo deixa de ser guardada, e as cópias de segurança guardam esses dados até serem descartadas. Os demais pontos não mudam."
 requires_reconsent: true
 ---
 
 # Política de Privacidade — SocialReport
 
 **Vigência:** 30 de outubro de 2026
-**Versão:** 1.5
+**Versão:** 1.6
 
 {: .warning }
 
@@ -103,11 +103,13 @@ O relatório é montado a partir de **planilhas exportadas pelas próprias redes
 
 - texto ou legenda, data e formato da publicação;
 - alcance, impressões, curtidas, comentários, compartilhamentos e salvamentos;
-- a imagem ou miniatura do post.
+- a imagem ou miniatura do post (**no YouTube, a miniatura do vídeo não é guardada**).
 
 Esses dados são o **conteúdo público do próprio cliente**, publicado por ele nas redes. A aplicação **não** lê perfis de seguidores e guarda curtidas e comentários apenas como **contagem**. As planilhas importadas e a leitura direta das redes (Meta, YouTube e LinkedIn) trazem só os números de cada publicação e da conta; nenhum dado de seguidor, nem o nome de quem curtiu ou comentou, é guardado.
 
 Uma legenda ou uma imagem de post pode conter **nome ou rosto de uma pessoa**. Esse conteúdo foi publicado pelo cliente, que responde por tê-lo publicado; a aplicação apenas o reproduz no relatório.
+
+Os dados do **YouTube lidos direto da API** têm prazos próprios de atualização e remoção, descritos na seção 4.11; os da Meta e do LinkedIn, e os de planilhas, seguem a seção 8.
 
 **Base legal:** execução do serviço de relatório contratado pelo cliente (Art. 7º, V).
 
@@ -208,9 +210,20 @@ A instalação pode **ler os números do canal do YouTube do cliente** direto do
 
 **Onde ficam.** Os dados lidos entram no relatório como se viessem de uma planilha. A **chave de acesso** que o Google entrega à instalação fica **somente no servidor, cifrada**; nunca vai ao navegador de ninguém e **não entra nas cópias de segurança** (depois de restaurar uma cópia, é preciso ligar de novo). A instalação confere se a ligação segue válida e avisa o super-admin quando é preciso renová-la. Para o número de inscritos no **fim do mês**, a instalação guarda **uma fotografia diária** só com a contagem de inscritos (um número por dia, sem pessoas).
 
-**Por quanto tempo.** A chave fica **enquanto a ligação existir**: **desligar apaga a ligação e a chave** aqui e **retira a autorização no Google** (veja "Como desligar"). Os vídeos e os números já lidos fazem parte do relatório e seguem os prazos dele (seção 8), assim como a fotografia diária de inscritos.
+**Por quanto tempo.** A chave fica **enquanto a ligação existir**: **desligar apaga a ligação e a chave** aqui e **retira a autorização no Google** (veja "Como desligar"). Os **dados do YouTube lidos da API** (título, link, data e números dos vídeos, e os inscritos) seguem estas regras, que o próprio SocialReport aplica todos os dias:
 
-**Como desligar.** O super-admin clica em **Desligar** no cadastro do cliente; a ligação e a chave são apagadas na hora, e a leitura direta para (as planilhas continuam valendo). **Ao desligar, a SocialReport também revoga, no Google, a autorização que o canal deu ao aplicativo**; o mesmo acontece quando o cadastro do cliente é excluído. Se o Google não responder naquele momento, a ligação é apagada da mesma forma, a tela avisa que a autorização pode continuar no Google, e quem quiser retirá-la direto pode fazê-lo em <https://security.google.com/settings/security/permissions>. O passo a passo de exclusão está na **seção 13**.
+- **A cada 20 dias**, o sistema relê no YouTube os vídeos de cada relatório e **atualiza título, link e data**, inclusive nos relatórios já emitidos, sem reemiti-los. Os números do mês **não mudam**. O vídeo **apagado, ou que deixou de ser público**, sai do relatório, e os totais do mês, os indicadores e os consolidados são recalculados.
+- **5 dias depois de desligar** o canal, os dados do YouTube lidos da API **saem de todos os relatórios do cliente**, inclusive os emitidos: vídeos, números, inscritos e a imagem de capa que veio de um vídeo. Os relatórios continuam com os dados das outras redes, e o mês que só tinha YouTube fica sem publicações, com um aviso, e deixa de entrar nos indicadores. **Religar o mesmo canal dentro desses 5 dias cancela a remoção.**
+- **30 dias depois de a autorização cair** do lado do Google (o acesso é recusado, por exemplo porque a pessoa o retirou na conta Google), acontece o mesmo. A equipe é avisada e pode religar antes.
+- Se os dados ficarem **30 dias sem atualização** e não houver como atualizá-los, **título, link e data saem** e o vídeo aparece como "Vídeo do YouTube".
+- Quando o título de um vídeo apagado aparece escrito na análise (do sistema ou da equipe), ele é trocado por "um vídeo do YouTube". **Números citados no texto não podem ser detectados com segurança**: o relatório fica marcado para a equipe revisar o texto.
+- O SocialReport **não busca imagem na página do YouTube** e não guarda a miniatura dos vídeos; as que já estavam guardadas foram removidas.
+- Os números que o SocialReport calcula a partir dos dados do YouTube (score ponderado, taxa de engajamento e totais, inclusive somados aos de outras redes) são **cálculo próprio** e vêm rotulados assim nos relatórios e nos indicadores, com a fonte indicada.
+- **Cópias de segurança** não são reescritas: os dados do YouTube saem delas **quando a cópia é descartada**, de acordo com a quantidade de cópias que cada organização escolheu manter (seção 8). Esse prazo pode ser maior que os 5 dias acima.
+
+A fotografia diária de inscritos sai junto com os dados do YouTube, nas situações acima.
+
+**Como desligar.** O super-admin clica em **Desligar** no cadastro do cliente; a tela diz quantos relatórios serão atingidos e confirma. A ligação e a chave são apagadas na hora, e a leitura direta para (as planilhas continuam valendo). **Ao desligar, a SocialReport também revoga, no Google, a autorização que o canal deu ao aplicativo**; o mesmo acontece quando o cadastro do cliente é excluído. Se o Google não responder naquele momento, a ligação é apagada da mesma forma, a tela avisa que a autorização pode continuar no Google, e quem quiser retirá-la direto pode fazê-lo em <https://security.google.com/settings/security/permissions>. Os dados já lidos saem em **5 dias**, como descrito acima. O passo a passo de exclusão está na **seção 13**.
 
 **Base legal:** execução do serviço de relatório contratado pelo cliente, que autoriza a leitura do canal dele (Art. 7º, V).
 
@@ -298,13 +311,14 @@ Há um único cookie técnico, **temporário**: ao ligar uma conta da Meta, do Y
 | Relatórios (inclusive os textos e as imagens gerados com IA) | Enquanto durar o contrato com o cliente; depois, seguem o prazo da linha anterior |
 | Chaves de acesso à Meta (ligação com o Instagram e o Facebook) | Enquanto a ligação existir; **desligar apaga** na hora. Saem também com o cadastro do cliente (até 30 dias depois do fim do contrato) |
 | Chave de acesso ao YouTube (ligação com o canal) | Enquanto a ligação existir; **desligar apaga** na hora. Sai também com o cadastro do cliente (até 30 dias depois do fim do contrato) |
+| Dados do YouTube lidos da API (vídeos, títulos, links, datas, números e inscritos) | Conferidos a cada **20 dias** (título, link e data atualizados; vídeo apagado ou não público sai). Saem de todos os relatórios **5 dias depois de desligar** o canal e **30 dias depois de a autorização cair** no Google. **Título, link e data saem** se passarem **30 dias sem atualização**. A miniatura do vídeo não é guardada (seção 4.11) |
 | Chave de acesso ao LinkedIn (ligação com a Página) | Enquanto a ligação existir; **desligar apaga** na hora. Sai também com o cadastro do cliente (até 30 dias depois do fim do contrato) |
-| Fotografia diária do número de seguidores ou inscritos (Meta, YouTube e LinkedIn) | Junto com os relatórios do cliente: enquanto durar o contrato e até **30 dias** depois do fim |
+| Fotografia diária do número de seguidores ou inscritos (Meta, YouTube e LinkedIn) | Junto com os relatórios do cliente: enquanto durar o contrato e até **30 dias** depois do fim. A dos inscritos do YouTube sai também com os dados do YouTube lidos da API (linha acima) |
 | Link do portfólio público | Enquanto estiver ligado; **desligar** o fecha na hora. Sai com o cadastro do cliente |
 | Dados detalhados de visitas ao site do cliente, no serviço de estatísticas | **13 meses**; os resumos mensais permanecem (seção 4.4) |
-| Cópias de segurança do banco de dados | Conforme a política de backup da organização responsável (abaixo) |
+| Cópias de segurança do banco de dados | Conforme a política de backup da organização responsável (abaixo). **Os dados removidos dos relatórios continuam nas cópias antigas até elas serem descartadas** |
 
-**Cópias de segurança:** cada organização responsável define a **sua política de backup** na própria aplicação: com que frequência, quantas cópias ficam guardadas e onde (no servidor e/ou por e-mail ao administrador). Toda cópia é **cifrada** com uma senha que só a organização conhece e **não leva** chaves de acesso, senhas de serviços nem sessões de login; as senhas de acesso da equipe vão nela apenas na forma protegida em que o servidor de autenticação as guarda. Cópias enviadas por e-mail passam a ser guardadas pela organização na caixa de quem as recebe, e o prazo delas é o da organização. A política de cada instalação é informada dentro da própria instalação.
+**Cópias de segurança:** cada organização responsável define a **sua política de backup** na própria aplicação: com que frequência, quantas cópias ficam guardadas e onde (no servidor e/ou por e-mail ao administrador). **Uma cópia não é alterada depois de feita:** o que foi removido dos relatórios (por exemplo, os dados do YouTube) deixa de existir nela só quando ela é descartada, no prazo que a organização escolheu (a instalação mantém por padrão as 7 últimas cópias, e a organização pode escolher até 90). Toda cópia é **cifrada** com uma senha que só a organização conhece e **não leva** chaves de acesso, senhas de serviços nem sessões de login; as senhas de acesso da equipe vão nela apenas na forma protegida em que o servidor de autenticação as guarda. Cópias enviadas por e-mail passam a ser guardadas pela organização na caixa de quem as recebe, e o prazo delas é o da organização. A política de cada instalação é informada dentro da própria instalação.
 
 Após os prazos acima, os dados são eliminados de forma segura ou anonimizados de modo irreversível.
 
@@ -363,6 +377,6 @@ Esta seção é o endereço de **instruções de exclusão de dados** da SocialR
 - **YouTube (Google):** em <https://security.google.com/settings/security/permissions>, escolhendo o aplicativo da SocialReport e removendo o acesso.
 - **LinkedIn:** em **Configurações > Dados > Aplicativos permitidos** (*Settings > Data privacy > Permitted services*), na conta do LinkedIn.
 
-**3. Apagar também o que já foi lido.** Os números de publicações, vídeos, seguidores e inscritos já lidos fazem parte dos relatórios do cliente. Para apagá-los, peça ao **encarregado de dados da organização responsável** pela instalação (seção 10), dizendo qual é a conta ou o cliente. O pedido é respondido em até **15 dias úteis**, e a exclusão do cadastro do cliente leva junto os relatórios, os números lidos das redes e a fotografia diária de seguidores e inscritos.
+**3. Apagar também o que já foi lido.** Os números de publicações, vídeos, seguidores e inscritos já lidos fazem parte dos relatórios do cliente. **No YouTube, os dados lidos da API saem sozinhos 5 dias depois de desligar a ligação** (seção 4.11), sem precisar pedir; religar o mesmo canal antes cancela. Para apagar os da Meta e do LinkedIn, ou para pedir a exclusão imediata, peça ao **encarregado de dados da organização responsável** pela instalação (seção 10), dizendo qual é a conta ou o cliente. O pedido é respondido em até **15 dias úteis**, e a exclusão do cadastro do cliente leva junto os relatórios, os números lidos das redes e a fotografia diária de seguidores e inscritos.
 
 **Quem não tem conta na instalação**, mas aparece numa publicação ou num vídeo lido dessas plataformas (um nome numa legenda ou num título, por exemplo), pode pedir a exclusão ou a correção pelo mesmo caminho, e também ao cliente que publicou.

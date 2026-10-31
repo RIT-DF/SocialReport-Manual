@@ -222,3 +222,17 @@ Em caso de dúvida, não corrija na mão: **leia de novo no dia certo**, ou volt
 ## Limites do papel
 
 O **analista** lê, relê, volta para a planilha e remove a leitura. **Não** liga o cliente, não religa, não vê a chave, o app da rede nem a lista de canais e Páginas. Tudo isso é do **super-administrador**, e a [parte 6]({{ '/administracao/youtube-linkedin/' | relative_url }}) explica. Uma ligação com problema aparece para você só como a frase do bloco e o botão apagado.
+
+
+## O que o sistema faz sozinho com os dados do YouTube (a partir da 1.38.0)
+
+Os dados do YouTube **lidos direto da API** passam por uma conferência diária (às 23h, horário de Brasília). Nada disso muda a planilha do YouTube nem as outras redes.
+
+- **A cada 20 dias**, o sistema relê os vídeos de cada relatório e **atualiza título, link e data**, mesmo nos emitidos, sem reemitir. **Os números do mês não mudam.**
+- **Vídeo apagado ou que deixou de ser público** sai do relatório; os totais do mês, os indicadores e os consolidados se ajustam. Se a resposta do YouTube vier sem nenhum vídeo, o sistema **não tira nada no mesmo dia**: avisa e confirma em outro dia, para não apagar por engano.
+- **Título que aparecia escrito na análise** é trocado por "um vídeo do YouTube", e o relatório vai para a lista de **revisão de texto** do quadro de avisos do super-admin (números citados no texto o sistema não consegue achar). Depois de conferir, clique em **Texto revisado**.
+- **30 dias sem atualização** e sem como atualizar (ligação perdida): título, link e data saem, e o vídeo aparece como **"Vídeo do YouTube"**, sem link nem imagem. Os números ficam.
+- **O sistema não busca mais imagem na página do YouTube.** Não há capa automática nem miniatura de vídeo do YouTube; para a capa, envie uma imagem ou escolha outra publicação.
+- **Notas nos relatórios.** Onde há dado do YouTube, os slides, o consolidado e os indicadores trazem a fonte (**"Fonte dos números do YouTube: YouTube."**) e dizem que **score ponderado, taxa de engajamento e totais são cálculo próprio**, e que as **impressões do YouTube são visualizações**. Relatório sem YouTube não leva a nota.
+
+**Quadro de avisos (só super-admin).** Uma faixa no topo lista os clientes com dados do YouTube para remover (com o prazo), os vídeos retirados por relatório, os relatórios para revisar o texto, os alertas da conferência (**o YouTube respondeu sem nenhum vídeo** e **a conta ligada não alcança mais o canal**) e a conferência atrasada há mais de 30 dias.
