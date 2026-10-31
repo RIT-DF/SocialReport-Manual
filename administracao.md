@@ -64,7 +64,7 @@ Ao editar, o cadastro tem estas partes:
 
 - **Marca:** nome, endereço curto (o "slug", usado em endereços e em nomes de arquivo), logotipo e **cores** do cliente. Com elas, o relatório se veste com a identidade do cliente. **As cores são validadas**: só valem códigos como `#0F4855` (ou `#0F4`), com ou sem o `#`. Um valor inválido é recusado com mensagem na tela, em vez de quebrar o relatório. Um cliente antigo que já tinha cor inválida continua abrindo (o relatório usa a cor padrão no lugar), mas a tela obriga a corrigir quando você for editar as cores.
 - **Modelo da capa do relatório:** **Clássico** (fundo escuro), **Faixa de marca** (metade da capa na cor do cliente, com logotipo grande) ou **Com foto** (imagem de fundo clara e leve).
-- **Imagem da capa:** **foto automática do post** de maior destaque, **sem foto** (a capa usa a faixa de marca) ou **imagem gerada por IA** (ilustração abstrata, sem pessoas e sem texto; exige OpenAI ou Gemini configurados). Em qualquer escolha, o analista pode enviar uma imagem própria na revisão de cada relatório.
+- **Imagem da capa:** **foto automática do post** de maior destaque, **sem foto** (a capa usa a faixa de marca) ou **imagem gerada por IA** (ilustração abstrata, sem pessoas e sem texto; exige OpenAI ou Gemini configurados). Em qualquer escolha, o analista pode enviar uma imagem própria na revisão de cada relatório. **Vídeo do YouTube nunca é escolhido como foto automática:** o sistema não busca imagem na página do YouTube. Se o post de maior destaque é um vídeo, a capa automática usa outra publicação ou a faixa de marca.
 - **Destinatários do relatório:** quem recebe o link do relatório por e-mail, pelo botão **Compartilhar** (veja abaixo).
 - **Categorias editoriais** do cliente (separadas por vírgula).
 - **Canais contratados** (Instagram, Facebook, LinkedIn, TikTok, YouTube).
@@ -236,6 +236,7 @@ A Política de Privacidade promete prazos de guarda. Uma **rotina diária** do s
 | Conta de quem saiu da equipe (acesso, foto do perfil, e-mail das sugestões enviadas) | **90 dias** depois da saída. Saída é revogar o acesso ou remover a pessoa da lista |
 | Dados do cliente | **30 dias** depois da data de **Contrato encerrado em** |
 | Registros de acesso (tentativas de conexão de site e entradas no login) | **6 meses** |
+| Dados do YouTube lidos da API (vídeos, números, inscritos, capa copiada de um vídeo), em todos os relatórios do cliente, inclusive os emitidos | **5 dias** depois de **desligar** o canal; **30 dias** depois de o Google encerrar a autorização. Religar o mesmo canal antes do prazo cancela. É outra rotina, com a própria faixa de avisos (veja [O quadro de avisos dos dados do YouTube]({{ '/administracao/youtube-linkedin/#o-quadro-de-avisos-dos-dados-do-youtube' | relative_url }})) |
 | Registro do aceite da política e dos Termos | **5 anos** depois da exclusão da conta da pessoa |
 
 **O aviso de 7 dias.** Nada é excluído de surpresa. Quando faltam 7 dias para o prazo de um cliente ou de uma conta, o super-admin vê uma **faixa amarela** no topo do sistema e recebe um **e-mail** com a lista do que vai sair e a partir de quando. **Nada sai antes de 7 dias do aviso**, mesmo que o prazo já tenha vencido (por exemplo, um cliente com a data de encerramento antiga).
@@ -245,6 +246,9 @@ A Política de Privacidade promete prazos de guarda. Uma **rotina diária** do s
 **O modo simulação (ligado de fábrica).** Na primeira versão a rotina **só simula**: faz as contas, manda o aviso e registra o que apagaria, mas **não apaga nada**. É um período para você conferir, no histórico da aba, se as contagens são as esperadas. Quando estiver seguro, desmarque **Modo simulação** e salve (o sistema pede confirmação). O botão **Simular agora** roda uma simulação na hora e nunca apaga, mesmo com a simulação desligada. Se quem opera o servidor travar a simulação, a tela avisa e não deixa desligar.
 
 **O histórico** mostra cada execução (quando, se foi simulação ou exclusão real, se terminou bem ou com falha) e **só contagens**: nunca nome nem e-mail. Uma execução "Com falha" quer dizer que algo não pôde ser feito (por exemplo, o e-mail de aviso não saiu); nesse caso nada é excluído até o aviso chegar.
+
+> **Excluir um cliente com o YouTube ligado retira a autorização no Google.** Vale para a exclusão à mão e para a do fim do contrato: o sistema revoga o acesso do canal **antes** de apagar. Se o Google não responder, o cliente é apagado do mesmo jeito, e a tela (ou, na rotina, o resumo da execução, só com a contagem) avisa que a autorização pode continuar lá, com o link para retirá-la na conta Google. Não ignore o aviso. O LinkedIn e a Meta seguem sem revogar. Veja [Ligar o YouTube e o LinkedIn]({{ '/administracao/youtube-linkedin/' | relative_url }}).
+{: .important }
 
 > **O que a rotina não faz.** Ela não reescreve as **cópias de segurança** já feitas: o que foi excluído continua nelas até a cópia ser apagada pela política de backup. Um cliente excluído à mão (botão **Excluir Cliente**) sai na hora, pelo mesmo caminho da rotina, sem o aviso de 7 dias.
 {: .note }

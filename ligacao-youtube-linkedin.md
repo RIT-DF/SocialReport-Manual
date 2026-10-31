@@ -138,7 +138,11 @@ Em **Clientes & Marcas**, abra o cliente em **Ver / Editar**. Abaixo de **Redes 
 
 ![Seção YouTube depois de religar: a mensagem Ligação renovada e o estado em dia, sem caixa de escolha]({{ '/assets/img/app/app-84-youtube-ligacao-renovada.png' | relative_url }})
 
-**Desligar.** O botão pede confirmação. No LinkedIn: **"Desligar o LinkedIn deste cliente? As leituras automáticas param."** No YouTube: **"Desligar o YouTube deste cliente? As leituras automáticas param e a autorização também será retirada no Google. Os dados do YouTube lidos da API saem em 5 dias; religar o mesmo canal antes disso cancela. Isso atinge 3 relatórios (12 vídeos): o YouTube sai deles, inclusive dos emitidos, e os outros dados ficam."** O número de relatórios e de vídeos é o do cliente; sem dado do YouTube lido da API, a frase diz que nenhum relatório é atingido.
+**Desligar.** O botão pede confirmação. No LinkedIn: **"Desligar o LinkedIn deste cliente? As leituras automáticas param."** No YouTube: **"Desligar o YouTube deste cliente? As leituras automáticas param e a autorização também será retirada no Google. Os dados do YouTube lidos da API saem em 5 dias; religar o mesmo canal antes disso cancela. Isso atinge 2 relatórios (7 vídeos) e 1 consolidado: o YouTube sai deles, inclusive dos emitidos, e os outros dados ficam."** Os números de relatórios, vídeos e consolidados são os do cliente (sem consolidado atingido, a frase não o cita); sem dado do YouTube lido da API, a frase diz **"Nenhum relatório tem dados do YouTube lidos da API."** **Leia a contagem antes de confirmar:** ela é o que você está prestes a apagar dos relatórios já entregues.
+
+![Confirmação do desligamento do YouTube: autorização retirada no Google, dados da API saindo em 5 dias, contagem de relatórios, vídeos e consolidados atingidos, e os botões Desligar e Cancelar]({{ '/assets/img/app/app-104-youtube-desligar-confirmar.png' | relative_url }})
+
+O LinkedIn tem uma confirmação mais curta, sem contagem nem prazo, porque nele não há dado que saia dos relatórios:
 
 ![Confirmação do desligamento: Desligar o LinkedIn deste cliente? As leituras automáticas param, com os botões Desligar e Cancelar]({{ '/assets/img/app/app-88-linkedin-desligar-confirmar.png' | relative_url }})
 
@@ -183,6 +187,27 @@ O estado aparece num **selo colorido** no cadastro do cliente (verde, amarelo, v
 > **Dica: confira a faixa e religue antes de o analista precisar.** Ligação que vence ou cai no meio do fechamento do mês é a forma mais cara de descobrir que ela vence. Religar é um clique e um login, e no LinkedIn a faixa avisa com 14 dias de folga.
 {: .tip }
 
+## O quadro de avisos dos dados do YouTube
+
+**Por que importa.** O sistema apaga e atualiza sozinho dados do YouTube nos relatórios (a rotina está descrita em [O que o sistema faz sozinho com os dados do YouTube]({{ '/mes-do-analista/ler-do-youtube-e-linkedin/#o-que-o-sistema-faz-sozinho-com-os-dados-do-youtube-a-partir-da-1380' | relative_url }})). Quando algo dessa rotina precisa de uma pessoa, ou quando um prazo está correndo, o super-administrador vê uma **segunda faixa amarela** no alto do sistema, separada da faixa de ligações. Sem nada a avisar, ela não aparece, e **o analista nunca a vê**.
+
+A faixa resume o que há (por exemplo, **"Dados do YouTube: 1 cliente com dados do YouTube para remover; 1 alerta da conferência; 1 relatório para revisar o texto; vídeos retirados em 1 relatório."**). **Ver detalhes** abre uma linha por aviso, em linguagem de operação, e **Fechar** recolhe a lista.
+
+![Faixa amarela Dados do YouTube com os detalhes abertos: canal desligado com prazo de remoção, vídeos que saíram do relatório, alerta da conferência e relatório para revisar o texto, com o botão Texto revisado]({{ '/assets/img/app/app-105-youtube-faixa-avisos-dados.png' | relative_url }})
+
+| O aviso | O que quer dizer | O que fazer |
+|---|---|---|
+| **Cliente: canal desligado (ou autorização perdida no Google). Os dados do YouTube de N relatórios saem em dd/mm (N dias). Religar o mesmo canal antes cancela.** | Há uma remoção agendada: 5 dias depois de desligar, 30 dias depois de o Google encerrar a autorização | Se foi engano, **Religar** o mesmo canal antes do prazo. Se não, nada: a remoção acontece sozinha. Se a confirmação de que a autorização caiu ainda não veio, a linha diz que **nada foi removido** |
+| **Cliente, mês/ano: N vídeos saíram do relatório por ter sido apagado ou deixado de ser público.** | A conferência não encontrou mais o vídeo no canal, e ele saiu do relatório, dos indicadores e dos consolidados | Nada. É a regra do YouTube; avise o analista se o relatório já tinha sido enviado ao cliente |
+| **Cliente: o YouTube respondeu sem nenhum vídeo na conferência. Nada foi removido.** | A resposta veio vazia, o que pode ser falha passageira. O sistema **não retira nada no mesmo dia** e confirma em outro dia | Nada, a menos que a linha volte a aparecer por dias seguidos: aí olhe a ligação do cliente |
+| **Cliente: a conta ligada não alcança mais o canal do cliente. Nada foi removido.** | O login que ligou o cliente perdeu o acesso ao canal | **Religar** com a conta de quem administra o canal |
+| **Cliente: N relatórios estão com os dados do YouTube sem conferência há mais de 30 dias.** / **… sem permissão de leitura no YouTube desde dd/mm (mais de 30 dias).** | A conferência não conseguiu rodar para esse cliente. Se continuar, título, link e data dos vídeos saem dos relatórios | **Religar** o canal |
+| **Cliente, mês/ano: título apagado foi trocado na análise; números citados no texto não dá para detectar, confira o texto.** [**Texto revisado**] | Um vídeo saiu e o título dele aparecia no texto da análise: o sistema o trocou por "um vídeo do YouTube", mas **não consegue achar um número do vídeo citado no meio da frase** | Abra o relatório, leia a análise e tire o que ainda se refira ao vídeo que saiu. Depois clique em **Texto revisado**: a linha some da faixa |
+
+> **Armadilha: clicar em Texto revisado sem ter lido.** O botão só tira o aviso da faixa; ele não confere nada. Se ficar um número de um vídeo apagado na análise de um relatório já emitido, o cliente continua lendo um dado que o YouTube mandou remover, e ninguém mais será avisado.
+{: .warning }
+
+
 ## Permissões de publicar vindas de outra automação
 
 **Por que importa.** A RIT pode usar o mesmo app da rede para ler (o SocialReport) e para outra automação que publica. Quando a pessoa que faz o login já autorizou esse app a publicar, a rede devolve essa autorização junto, mesmo que o SocialReport não a tenha pedido. A ligação **vale**, e o cadastro do cliente mostra uma nota:
@@ -222,3 +247,5 @@ A rede devolve o navegador ao sistema com um motivo quando a ligação não se c
 - [ ] Clientes ligados **antes** do primeiro fim de mês que se quer medir (a fotografia de inscritos e seguidores começa no dia da ligação).
 - [ ] LinkedIn: uma rotina de religar a cada dois meses, ou a faixa do painel olhada ao abrir o sistema.
 - [ ] Guardado em cofre, fora do sistema: o **segredo do app de cada rede**. A cópia de segurança **não os leva**, e a ligação de cada cliente também **não entra na cópia**: depois de restaurar, cada cliente precisa ser religado.
+- [ ] **Desligar o YouTube** só depois de ler a contagem da confirmação (relatórios, vídeos e consolidados que perdem o YouTube em 5 dias).
+- [ ] Faixa **Dados do YouTube** olhada ao abrir o sistema: remoções com prazo conferidas e relatórios com **Texto revisado** pendente lidos e liberados.

@@ -140,7 +140,9 @@ Cada publicação é classificada pela equipe em uma **categoria editorial** (no
 
 ## Vídeos do YouTube
 
-*Este capítulo só aparece nos meses em que há vídeos do YouTube, lidos direto do canal ou vindos de uma planilha. Ele vem logo antes das melhores publicações, e elas e os capítulos seguintes mudam de número para abrir espaço.*
+![Slide Vídeos do YouTube: tabela com seis vídeos, do mais visto ao menos visto, com data, formato, visualizações, curtidas, comentários, compartilhamentos e retenção média, e a nota Fonte dos números do YouTube]({{ '/assets/img/relatorio/relatorio-28-videos-do-youtube.png' | relative_url }})
+
+*Este capítulo só aparece nos meses em que há vídeos do YouTube, lidos direto do canal ou vindos de uma planilha. Ele vem logo antes das melhores publicações, e elas e os capítulos seguintes (site, cursos, imprensa) mudam de número para abrir espaço; o Sumário já mostra a numeração certa. Com mais de nove vídeos, a lista continua na página seguinte.*
 
 **A pergunta que responde:** "Como foi cada vídeo do canal neste mês?"
 
@@ -159,6 +161,11 @@ Uma linha por vídeo, do mais visto para o menos visto. Cada linha traz o títul
 > **Quando aparece "—".** O traço quer dizer que o YouTube não informou aquele número para o vídeo (a retenção, por exemplo, nem sempre chega). Não é zero: é "sem informação". O título "Vídeo do YouTube", sem link e com traço na data, indica um vídeo cujo título, link e data foram retirados do relatório por regra do Google (30 dias sem atualização); os números ficam.
 {: .note }
 
+**As notas no rodapé.** Todo slide que traz dado do YouTube termina com uma linha pequena: **"Fonte dos números do YouTube: YouTube."** Nos slides que mostram score, taxa de engajamento ou totais, a linha acrescenta que **"score ponderado, taxa de engajamento e totais são cálculo próprio do SocialReport, não vêm do YouTube"**, e, onde aparecem impressões, que **"no YouTube, 'impressões' são visualizações"**. Isso quer dizer que a taxa de engajamento do YouTube não é um número que o YouTube publica: não a compare com a que o Estúdio do YouTube mostra. As notas somem em relatório sem YouTube. Veja [Cálculo próprio]({{ '/glossario/' | relative_url }}).
+
+> **Quando o YouTube é desligado do cliente,** os vídeos lidos da API saem do relatório, inclusive dos emitidos. O capítulo some, e o relatório abre com o aviso **"Os dados do YouTube lidos da API foram removidos deste relatório…"**. Os números das outras redes continuam.
+{: .note }
+
 ## Melhores publicações (top posts)
 
 ![Os três cartões das publicações de maior destaque do mês, com alcance, engajamento e as visitas ao site]({{ '/assets/img/relatorio/relatorio-13-top-posts.png' | relative_url }})
@@ -171,7 +178,9 @@ O relatório mostra as publicações de maior destaque, com a imagem, a rede, o 
 
 **Exemplo:** a primeira colocada teve 114 de engajamento e a segunda teve 142. Mesmo assim, a primeira ficou na frente, porque suas reações pesam mais na conta (comentários, compartilhamentos e salvamentos valem mais que curtidas): 142 pontos contra 137.
 
-Quando a publicação é um vídeo do YouTube, o cartão mostra **Visualizações** no lugar de Alcance, e não traz imagem: o relatório não guarda nem exibe a miniatura dos vídeos do YouTube.
+Quando a publicação é um vídeo do YouTube, o cartão mostra **Visualizações** no lugar de Alcance, e, sem imagem anexada, traz o texto **"Vídeo do YouTube (a miniatura não é exibida)"** no lugar do print: o relatório não guarda nem exibe a miniatura dos vídeos do YouTube. Nos demais canais, o cartão sem imagem diz "Print do post anexado na revisão".
+
+O título do cartão vira link para a publicação original **só quando o endereço é de verdade um endereço de página (http ou https)**; um endereço de outro tipo, que poderia executar algo ao ser clicado, aparece como texto simples, sem link. O mesmo vale para os links das matérias do clipping.
 
 Quando o site está ligado, o cartão traz uma linha como **"levou N visitas ao site"**. Quando a organização tem cursos, e o post foi ligado a uma campanha que leva à plataforma, aparece também **"Levou N pessoas aos cursos (campanha ...)"**. É um **piso**: o Matomo conta visitas, e quem usa bloqueador de anúncios não entra na conta. Ela diz quantas visitas o link daquela publicação trouxe, quando a equipe usou o link marcado.
 

@@ -287,6 +287,7 @@ A conversa da reunião deixa de ser "o alcance caiu" e passa a ser "publicamos m
 - **Atenção aos marcos.** Um consolidado de um ano que começa antes do primeiro relatório terá meses de marco: totais, sim; rede por rede e posts, não. O próprio book avisa, mas diga ao cliente.
 - **Alcance somado não é pessoas diferentes.** A mesma pessoa pode estar nos três meses do trimestre. Diga "alcance somado de 54 mil", e não "alcançamos 54 mil pessoas". Veja [Alcance]({{ '/conceitos/' | relative_url }}).
 - **Consolidado emitido pode ser mudado.** Emitir de novo, atualizar números e editar textos mudam o que o link mostra. Se o cliente já leu, avise o que mudou.
+- **YouTube no consolidado traz notas e pode ser refeito sozinho.** Onde o retrato tem YouTube, o book e o PDF trazem a nota **"Fonte dos números do YouTube: YouTube."** e dizem que score, taxa de engajamento e totais são **cálculo próprio** do SocialReport (e que, no YouTube, impressões são visualizações). E, quando os dados do YouTube lidos da API saem dos relatórios do cliente (por ele ter sido desligado, por exemplo), o retrato dos consolidados, **inclusive dos emitidos**, é refeito sem eles, sem pedir confirmação. Veja [O que o sistema faz sozinho com os dados do YouTube]({{ '/mes-do-analista/ler-do-youtube-e-linkedin/#o-que-o-sistema-faz-sozinho-com-os-dados-do-youtube-a-partir-da-1380' | relative_url }}).
 - **Gere link novo por motivo, e não por rotina.** O antigo para de abrir, inclusive em e-mails já enviados.
 
 ## Quando dá errado

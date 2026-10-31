@@ -108,6 +108,10 @@ Sim. Em **Compartilhar & Incorporar**, o bloco **Enviar o link por e-mail ao cli
 
 Confira o status do relatório: o link só abre **depois de emitido**. Se o período está em rascunho ou validado (ou voltou a rascunho depois de emitido), emita de novo e o mesmo link volta a abrir. Se o relatório está emitido, o link pode ter sido trocado com **Gerar novo link**: envie o novo.
 
+### Um link antigo do relatório, de antes, parou de abrir. O que aconteceu?
+
+Até a versão 1.37.1 existia um endereço antigo, montado a partir do mês do relatório e não do código aleatório, que abria **qualquer** relatório, inclusive rascunho. Como esse endereço é previsível, ele passou a abrir **só o que estava emitido no dia da atualização e continua emitido**. Rascunho, relatório criado depois e relatório emitido que voltou a rascunho mostram "Relatório não encontrado"; reemitido, ele volta a abrir. Os consolidados nunca abrem por esse endereço. **Nenhum link novo sai nesse formato:** **Copiar Link**, o código para o site e o envio por e-mail só usam o link com código aleatório. Se o cliente guardou o endereço antigo, mande o link atual; para fechar um acesso de vez, use **Gerar novo link**.
+
 ### Gerei um link novo. O e-mail que já enviei ainda funciona?
 
 Não. O e-mail leva o link que valia na hora do envio, e esse link **deixa de abrir** quando você gera um novo. Envie de novo pelo mesmo bloco.
@@ -156,7 +160,7 @@ Que só dois dos três meses do período têm esse dado, e a comparação só é
 
 ### Mudei um número num relatório mensal. Por que o consolidado não mudou?
 
-Porque ele guarda um **retrato** da base de quando foi criado, para que um relatório já entregue não mude sozinho. A revisão avisa que a base mudou e oferece **Atualizar números**. Num consolidado já emitido, o sistema pede confirmação, porque o link público passa a mostrar os números novos.
+Porque ele guarda um **retrato** da base de quando foi criado, para que um relatório já entregue não mude sozinho. A revisão avisa que a base mudou e oferece **Atualizar números**. Num consolidado já emitido, o sistema pede confirmação, porque o link público passa a mostrar os números novos. **Há uma exceção, que não depende de você:** quando os dados do YouTube lidos da API de um cliente saem dos relatórios (cinco dias depois de desligar o canal, por exemplo), os consolidados do cliente, **inclusive os emitidos**, são refeitos sem esses dados, sem pedir confirmação. Veja [O que o sistema faz sozinho com os dados do YouTube]({{ '/mes-do-analista/ler-do-youtube-e-linkedin/#o-que-o-sistema-faz-sozinho-com-os-dados-do-youtube-a-partir-da-1380' | relative_url }}).
 
 ### Gerei a análise da IA de novo. Perdi o que eu tinha escrito?
 
@@ -245,6 +249,18 @@ São os botões que trazem os vídeos do canal e as publicações da Página do 
 ### Por que o YouTube não tem alcance? O que é "Visualizações" com asterisco?
 
 Porque o YouTube **não informa o alcance de cada vídeo**: só diz quantas vezes ele foi visto. O sistema coloca as **visualizações no lugar do alcance** e **avisa** (na revisão, no cartão da rede e no comparativo). Visualização **conta a mesma pessoa mais de uma vez**, então o número é maior ou igual ao de pessoas diferentes e **não deve ser comparado** com o alcance do Instagram como se fosse a mesma coisa. Veja [Alcance e visualizações]({{ '/mes-do-analista/ler-do-youtube-e-linkedin/#alcance-e-visualizações-o-que-a-leitura-preenche' | relative_url }}).
+
+### Um vídeo sumiu do relatório que eu já tinha emitido, ou o título virou "Vídeo do YouTube". É defeito?
+
+Não: é a rotina do YouTube. Os dados lidos direto da API são conferidos **a cada 20 dias**. O **título, o link e a data** são atualizados (os números do mês não mudam); o **vídeo apagado ou que deixou de ser público sai** do relatório, e os totais do mês, os Indicadores (BI) e os consolidados se ajustam. O título vira **"Vídeo do YouTube"**, sem link e com traço na data, quando o sistema ficou **30 dias sem conseguir atualizar** (a ligação do canal perdida, por exemplo): peça ao super-administrador para **religar** o canal. Planilha do YouTube não é tocada. Se um relatório que já circulou perdeu um vídeo, avise o cliente: o link mostra o relatório atual, mas um PDF antigo continua como foi gerado. Veja [O que o sistema faz sozinho com os dados do YouTube]({{ '/mes-do-analista/ler-do-youtube-e-linkedin/#o-que-o-sistema-faz-sozinho-com-os-dados-do-youtube-a-partir-da-1380' | relative_url }}).
+
+### Desliguei o YouTube de um cliente e os vídeos sumiram dos relatórios. Dá para recuperar?
+
+Se foi **há menos de 5 dias**, sim: **religar o mesmo canal** cancela a remoção (a faixa **Dados do YouTube**, do super-administrador, mostra o prazo). Passado o prazo, os dados lidos da API saem de **todos** os relatórios do cliente, **inclusive os emitidos**, e religar **não traz nada de volta**: é preciso ler de novo, mês a mês. O mês que só tinha YouTube fica sem publicações e deixa de contar nos Indicadores, mas continua abrindo, com um aviso. O mesmo vale, com **30 dias** de espera, quando o Google encerra a autorização do canal. Planilhas do YouTube nunca são removidas. Veja [Ligar o YouTube e o LinkedIn]({{ '/administracao/youtube-linkedin/' | relative_url }}).
+
+### Por que o slide do YouTube diz "Fonte dos números do YouTube: YouTube." e que o score é "cálculo próprio"?
+
+Porque o relatório mistura duas coisas e precisa dizer qual é qual. **Visualizações, curtidas, comentários, compartilhamentos e retenção média** vêm do YouTube. **Score ponderado, taxa de engajamento e totais** (inclusive os que somam o YouTube às outras redes) são contas do SocialReport, e não números do YouTube. E, no YouTube, **"impressões" são visualizações**. As notas só aparecem onde há dado do YouTube, nos slides, no consolidado e nos Indicadores (BI); relatório sem YouTube não leva nenhuma. Veja [Vídeos do YouTube]({{ '/como-ler-o-relatorio/redes/#vídeos-do-youtube' | relative_url }}).
 
 ### Por que o botão "Ler do YouTube" (ou "Ler do LinkedIn") não aparece, ou está apagado?
 

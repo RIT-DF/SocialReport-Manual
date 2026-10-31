@@ -223,7 +223,6 @@ Em caso de dúvida, não corrija na mão: **leia de novo no dia certo**, ou volt
 
 O **analista** lê, relê, volta para a planilha e remove a leitura. **Não** liga o cliente, não religa, não vê a chave, o app da rede nem a lista de canais e Páginas. Tudo isso é do **super-administrador**, e a [parte 6]({{ '/administracao/youtube-linkedin/' | relative_url }}) explica. Uma ligação com problema aparece para você só como a frase do bloco e o botão apagado.
 
-
 ## O que o sistema faz sozinho com os dados do YouTube (a partir da 1.38.0)
 
 Os dados do YouTube **lidos direto da API** passam por uma conferência diária (às 23h, horário de Brasília). Nada disso muda a planilha do YouTube nem as outras redes.
@@ -236,3 +235,13 @@ Os dados do YouTube **lidos direto da API** passam por uma conferência diária 
 - **Notas nos relatórios.** Onde há dado do YouTube, os slides, o consolidado e os indicadores trazem a fonte (**"Fonte dos números do YouTube: YouTube."**) e dizem que **score ponderado, taxa de engajamento e totais são cálculo próprio**, e que as **impressões do YouTube são visualizações**. Relatório sem YouTube não leva a nota.
 
 **Quadro de avisos (só super-admin).** Uma faixa no topo lista os clientes com dados do YouTube para remover (com o prazo), os vídeos retirados por relatório, os relatórios para revisar o texto, os alertas da conferência (**o YouTube respondeu sem nenhum vídeo** e **a conta ligada não alcança mais o canal**) e a conferência atrasada há mais de 30 dias.
+
+Cada aviso, o que ele quer dizer e o que fazer estão na [parte 6]({{ '/administracao/youtube-linkedin/#o-quadro-de-avisos-dos-dados-do-youtube' | relative_url }}).
+
+**Por que isso importa para você.** Um relatório emitido deixa de ser uma fotografia parada: o título de um vídeo pode mudar, e um vídeo apagado no canal sai do relatório mesmo depois de emitido. **Exemplo:** você emitiu o relatório de setembro com 5 vídeos; em outubro o canal apaga um deles, e o link do cliente passa a mostrar 4, com os totais do mês já ajustados.
+
+> **O PDF que você já baixou ou enviou não muda.** O link do cliente e um PDF gerado depois mostram o relatório como ele está hoje. Se o cliente guardou um PDF antigo, ele ainda tem o vídeo que saiu. Quando um vídeo some de um relatório que já circulou, avise o cliente e envie o link (ou um PDF novo).
+{: .warning }
+
+> **Dica.** Prefira planilha do YouTube quando precisar de um relatório que não mude: a planilha nunca é tocada por essa rotina.
+{: .tip }

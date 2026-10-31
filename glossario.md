@@ -25,6 +25,8 @@ Definições curtas, em ordem alfabética, do jeito que cada termo é usado nest
 
 ## C
 
+**Cálculo próprio.** Número que o SocialReport calcula, e que não vem da rede. Com o YouTube, o **score ponderado**, a **taxa de engajamento** e os **totais** (inclusive os que somam o YouTube a outras redes) são cálculo próprio, e o relatório diz isso numa nota no rodapé. Veja [Vídeos do YouTube]({{ '/como-ler-o-relatorio/redes/#vídeos-do-youtube' | relative_url }}).
+
 **Captura de Stories.** Rotina que, a cada 4 horas, guarda os números dos Stories do Instagram que estão no ar, porque a Meta só os informa durante as 24 horas de vida do Story. A leitura do mês inclui os Stories capturados. Veja [Stories: o que a leitura traz]({{ '/mes-do-analista/ler-da-meta/' | relative_url }}#stories-o-que-a-leitura-traz).
 
 **Categoria editorial.** Tipo de assunto de uma publicação, escolhido pela equipe. Veja [Categoria editorial]({{ '/conceitos/' | relative_url }}).
