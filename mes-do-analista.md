@@ -17,6 +17,7 @@ Os exemplos e as telas vêm do relatório de outubro de 2026 do **Instituto Hori
 |---|---|---|
 | 1 | [Escolher o cliente ativo](#1-escolher-o-cliente-ativo) | cabeçalho do sistema |
 | 2 | [Criar o período do mês](#2-criar-o-período-do-mês), com ou [sem planilha](#criar-o-mês-sem-planilha) | Períodos & Emissão |
+| 2b | [Ler as fontes ao criar o mês](#ler-as-fontes-ao-criar-o-mês) | Períodos & Emissão |
 | 3 | [Importar as planilhas das redes](#3-importar-as-planilhas-das-redes) | Períodos & Emissão |
 | 3b | [Informar os seguidores de cada rede](#3b-informar-os-seguidores-de-cada-rede) | Períodos & Emissão |
 | 3c | [Ler da Meta, no lugar da planilha](#3c-ler-da-meta-no-lugar-da-planilha) | Períodos & Emissão |
@@ -67,8 +68,13 @@ Os exemplos e as telas vêm do relatório de outubro de 2026 do **Instituto Hori
    - **Com planilha:** siga para a importação (próxima tarefa).
    - **Sem planilha:** não escolha arquivo nenhum. O botão do canto da janela passa a dizer **Criar mês sem planilha**, e uma dica embaixo explica: sem arquivo, o mês é criado vazio, e você lê direto das redes ligadas ou acrescenta uma planilha depois. Clique nele (veja [Criar o mês sem planilha](#criar-o-mês-sem-planilha)).
    - Para desistir, feche com **Cancelar**.
+6. Se o cliente tem fontes ligadas (redes, site, cursos), a janela mostra o bloco **Ler ao criar o mês**, com cada uma já marcada. Confira o que vai ser lido e desmarque o que não quiser. Veja [Ler as fontes ao criar o mês](#ler-as-fontes-ao-criar-o-mês).
 
-![Janela Importar Novo Período, com mês, ano, ciclo de medição e a área para soltar as planilhas]({{ '/assets/img/app/app-03-novo-periodo.png' | relative_url }})
+![Janela Importar Novo Período, com mês, ano, ciclo de medição, a área para soltar as planilhas e o bloco Ler ao criar o mês, com Instagram, Facebook, YouTube e Site marcados]({{ '/assets/img/app/app-03-novo-periodo.png' | relative_url }})
+
+No celular, a janela é a mesma, em uma coluna só: o bloco **Ler ao criar o mês** fica logo acima dos botões.
+
+![Janela Importar Novo Período no celular, em uma coluna, com o bloco Ler ao criar o mês acima dos botões Cancelar e Criar mês sem planilha]({{ '/assets/img/app/app-03-novo-periodo-mobile.png' | relative_url }})
 
 ### Criar o mês sem planilha
 
@@ -77,12 +83,12 @@ Os exemplos e as telas vêm do relatório de outubro de 2026 do **Instituto Hori
 **O que acontece quando você clica em Criar mês sem planilha**
 
 1. A janela fecha e o mês aparece na lista de períodos como **"0 publicações · 0 arquivos"**. É assim que um mês vazio se apresenta, e não é erro.
-2. Ao abrir o mês, ele abre normalmente. Para cada rede ligada ao cliente você vê o bloco de leitura: **Ler da Meta**, **Ler do YouTube** e **Ler do LinkedIn** (veja as tarefas [3c](#3c-ler-da-meta-no-lugar-da-planilha) e [3d](#3d-ler-do-youtube-e-do-linkedin-no-lugar-da-planilha)). Cliente sem nenhuma rede ligada não tem esses blocos, e aí a saída é a planilha.
+2. Se havia fontes marcadas em **Ler ao criar o mês**, a leitura delas começa agora, em segundo plano (veja [Ler as fontes ao criar o mês](#ler-as-fontes-ao-criar-o-mês)). Se você desmarcou todas, o mês fica vazio. Em qualquer dos casos, ao abrir o mês, ele abre normalmente. Para cada rede ligada ao cliente você vê o bloco de leitura: **Ler da Meta**, **Ler do YouTube** e **Ler do LinkedIn** (veja as tarefas [3c](#3c-ler-da-meta-no-lugar-da-planilha) e [3d](#3d-ler-do-youtube-e-do-linkedin-no-lugar-da-planilha)). Cliente sem nenhuma rede ligada não tem esses blocos, e aí a saída é a planilha.
 3. A planilha continua valendo: **Acrescentar Planilha**, na página do mês, soma uma rede que a leitura não cobre (o TikTok, por exemplo, só entra por planilha).
 
 ![Mês criado sem planilha, com 0 publicações e 0 arquivos na lista e os blocos Ler da Meta e Ler do YouTube na página do mês]({{ '/assets/img/app/app-99-mes-vazio-blocos-leitura.png' | relative_url }})
 
-**Exemplo.** O Instituto Horizonte tem o Instagram e o Facebook ligados à Meta e o LinkedIn ligado. No dia 1º de novembro você cria **outubro de 2026** sem planilha. O mês aparece com "0 publicações · 0 arquivos"; você abre, clica em **Ler da Meta** e depois em **Ler do LinkedIn**, e as publicações entram sem arquivo nenhum.
+**Exemplo.** O Instituto Horizonte tem o Instagram e o Facebook ligados à Meta e o LinkedIn ligado. No dia 1º de novembro você cria **outubro de 2026** sem planilha e **desmarca** as fontes do bloco **Ler ao criar o mês**, porque prefere ler uma rede de cada vez. O mês aparece com "0 publicações · 0 arquivos"; você abre, clica em **Ler da Meta** e depois em **Ler do LinkedIn**, e as publicações entram sem arquivo nenhum. (Com as fontes marcadas, que é o padrão, essa leitura já teria corrido sozinha: a próxima seção conta como.)
 
 **Se o mês já existe.** Criar sem planilha um mês que já está no sistema **não grava nada e não substitui nada**. A janela fecha, a tela abre o mês que estava salvo e mostra, por alguns segundos, o aviso **"Este mês já existe: abrimos o que estava salvo."** É de propósito: você não perde as publicações, os textos nem os seguidores já lançados por apertar o botão sem pensar.
 
@@ -101,6 +107,70 @@ Os exemplos e as telas vêm do relatório de outubro de 2026 do **Instituto Hori
 | O mês aparece com **"0 publicações · 0 arquivos"** | O mês nasceu vazio, como esperado | Leia das redes ou acrescente uma planilha |
 | Não há bloco de leitura na página do mês | O cliente não tem aquela rede ligada | Avise o super-administrador para ligar a rede, ou use a planilha |
 
+### Ler as fontes ao criar o mês
+
+**Por que importa.** Antes, criar o mês era só o começo: depois você abria a página dele e clicava, rede por rede, em **Ler da Meta**, **Ler do YouTube**, **Ler do LinkedIn**, e ainda buscava os números do site e dos cursos na revisão. Agora a própria janela que cria o mês já oferece as fontes do cliente. Você cria, o sistema lê todas, uma de cada vez, **em segundo plano**, e você continua usando o app. O mês nasce com os números, e o tempo que sobra vai para conferir, não para clicar.
+
+**O bloco "Ler ao criar o mês".** Aparece na janela **Novo Período**, abaixo da área dos arquivos, para o cliente que tem pelo menos uma fonte. As fontes possíveis são **Instagram**, **Facebook**, **YouTube**, **LinkedIn**, **Site (Matomo)** e **Cursos (Moodle)**. Cada uma segue uma regra:
+
+| A fonte aparece... | Quando | O que você faz |
+|---|---|---|
+| **Marcada** | Está ligada ao cliente e em condição de ler | Nada: ela será lida. Desmarque se não quiser ler agora |
+| **Desabilitada, com o motivo embaixo** | Está ligada, mas não pode ler agora. Exemplo: **"Ligação expirada: peça ao administrador para renovar."** | Resolva o motivo (muitas vezes é do super-administrador) e use o botão de ler do mês depois |
+| **Desabilitada, com "A planilha escolhida já traz esta rede"** | Você escolheu, na mesma janela, uma planilha daquela rede | Nada. Vale **uma fonte por rede por mês**: a planilha ganhou, e a rede não é lida |
+| **Não aparece** | O cliente contratou a rede, mas ninguém a ligou ainda | Peça ao super-administrador para ligar (veja a [parte 6]({{ '/administracao/' | relative_url }})) |
+
+![Bloco Ler ao criar o mês com Instagram e Facebook desabilitados e a mensagem Ligação expirada: peça ao administrador para renovar, e YouTube e Site marcados]({{ '/assets/img/app/app-109-novo-periodo-fonte-bloqueada.png' | relative_url }})
+
+Se o mês que você está criando ainda não terminou, o bloco avisa em amarelo: **"Este mês ainda não terminou: os números lidos serão parciais, até o dia da leitura."**
+
+**Escolher planilha e ler fontes na mesma janela.** Funciona, e cada rede tem uma fonte só. No exemplo abaixo, o arquivo traz as abas do Instagram e do YouTube: as duas redes ficam bloqueadas, e o Facebook e o site, que a planilha não cobre, seguem marcados e são lidos ao criar.
+
+![Janela Novo Período com duas abas preenchidas do modelo, Instagram e YouTube, como dois cartões, e as redes delas bloqueadas em Ler ao criar o mês, enquanto Facebook e Site seguem marcados]({{ '/assets/img/app/app-106-novo-periodo-planilha-bloqueia-rede.png' | relative_url }})
+
+No celular, os cartões das planilhas e o bloco de fontes se empilham, e nada sai da tela.
+
+![Janela Novo Período no celular, com os cartões das duas abas e o bloco Ler ao criar o mês, com Instagram e YouTube bloqueados]({{ '/assets/img/app/app-106-novo-periodo-planilha-bloqueia-rede-mobile.png' | relative_url }})
+
+**O que acontece quando você cria o mês**
+
+1. A janela fecha e o mês entra na lista de períodos.
+2. Aparece o painel **Leitura das fontes**, com o nome do mês. Cada fonte passa por **Aguardando**, **Lendo…** e termina em **Concluída**, **Recusada** ou **Com falha**. Enquanto isso o painel diz que a leitura corre em segundo plano e que a tela se atualiza sozinha.
+3. **Você pode continuar trabalhando.** Nada trava: abra outro mês, mude de cliente, edite. Se você (ou outra pessoa) editar o mês enquanto a leitura corre, **a edição não se perde**: a leitura é aplicada sobre a versão mais recente do mês.
+4. Quando todas terminam, o painel troca o aviso de andamento por um resumo, como **"Leitura terminada: 1 concluída, 3 com falha."**, e lista o resultado de cada fonte. Se alguma fonte falhou ou foi recusada, o painel fica amarelo. O **X** do canto fecha o painel.
+
+![Painel Leitura das fontes de outubro de 2026, com o resumo 1 concluída, 3 com falha, Instagram e Facebook com falha pelo limite de leituras da Meta, YouTube concluído com 5 novas publicações e Site com falha porque não foi possível conectar ao Matomo]({{ '/assets/img/app/app-107-leitura-ao-criar-resultado.png' | relative_url }})
+
+No celular, o painel ocupa a largura da tela e a lista continua legível:
+
+![Painel Leitura das fontes no celular, com as mesmas quatro fontes e o resumo no alto]({{ '/assets/img/app/app-107-leitura-ao-criar-resultado-mobile.png' | relative_url }})
+
+**Como ler o resultado de cada fonte**
+
+| O painel diz | Quer dizer | O que fazer |
+|---|---|---|
+| **Concluída**, com "N novas, N atualizadas, N removidas." | A fonte foi lida e entrou no mês | Confira os números na página do mês |
+| **Concluída**, com "N linhas recusadas: …" | A fonte entrou, mas o leitor barrou algumas linhas por incoerência (as mesmas regras da [tarefa 4](#4-conferir-as-inconsistências-da-importação)) | Leia o motivo. Linha recusada não entra no relatório |
+| **Concluída**, com "Nenhuma publicação encontrada neste ciclo" | A rede não devolveu nada para as datas do ciclo. Em mês antigo, pode ser a janela de leitura da rede | Confira o ciclo. Se o mês é antigo, use a planilha |
+| **Concluída**, com "Seguidores: o mês tem N digitado e a leitura trouxe M; o digitado foi mantido." | Você já tinha digitado os seguidores, e o número digitado vale mais | Nada. Se o digitado estiver errado, corrija na [tarefa 3b](#3b-informar-os-seguidores-de-cada-rede) |
+| **Recusada** | O mês já tem publicações dessa rede vindas de planilha, e vale uma fonte por rede por mês: a leitura não foi aplicada | Mantenha a planilha, ou use o botão de ler do mês para **substituí-la** (ele pede confirmação) |
+| **Com falha**, com **"Limite de 6 leituras da Meta a cada 10 minutos atingido. Tente de novo em N s."** | A Meta limita as leituras **por pessoa**, somando todos os clientes. Instagram e Facebook, lidos juntos, gastam uma só | Espere o tempo que a tela diz e clique em **Ler da Meta** na página do mês |
+| **Com falha**, com **"Não foi possível conectar ao Matomo."** | O Matomo, que fornece os números do site, não respondeu | Na revisão, **Atualizar dados do site** ([tarefa 7](#7-revisar-o-capítulo-do-site)). Se persistir, avise o super-administrador |
+| **Com falha**, com outra mensagem (ligação vencida ou revogada, acesso do Moodle não configurado) | A ligação da rede ou o acesso ao Moodle precisa de atenção | A mensagem diz o que houve. A renovação é do super-administrador (veja a [parte 6]({{ '/administracao/' | relative_url }})) |
+
+**A falha de uma fonte não para as outras.** No painel da figura, o Instagram e o Facebook falharam e o YouTube foi lido e concluído do mesmo jeito. O que deu certo fica gravado; o que falhou, você refaz com o botão de ler da fonte.
+
+**Exemplo.** Na quinta-feira, 29 de outubro, a coordenação do Instituto Horizonte pede uma prévia do relatório de outubro. Você abre **Novo Período**, deixa **Outubro** e **2026**, e vê as quatro fontes ligadas já marcadas, com o aviso amarelo de que o mês não terminou. Clica em **Criar mês sem planilha**. O painel mostra o andamento e, em seguida, o resumo: o YouTube trouxe 5 vídeos, mas o Instagram e o Facebook falharam pelo limite de leituras da Meta e o Matomo estava fora do ar. Você espera os 540 segundos que a tela indica, clica em **Ler da Meta** na página do mês e, mais tarde, em **Atualizar dados do site** na revisão. No dia 3 de novembro, com o mês fechado, você lê de novo para trocar os números parciais pelos finais.
+
+> **Dicas e armadilhas.**
+> - **Mês em andamento traz números parciais.** A leitura só enxerga até o dia em que roda, e o painel repete o aviso. **Leia de novo depois que o mês fechar**: os números de publicações recentes ainda crescem nos dias seguintes. Relatório de mês aberto, emitido sem reler, mostra menos do que o mês teve.
+> - **Não feche a página até o painel terminar.** A leitura corre nesta página: se você a fechar antes do fim, o mês **fica criado, sem a leitura**, e os botões de ler do mês (**Ler da Meta**, **Ler do YouTube**, e os outros) seguem valendo. Nada se perde nem se duplica, mas você terá de ler à mão.
+> - **A leitura não escreve textos com IA.** Ela busca os números do site e dos cursos, mas **não roda a análise por IA** desses capítulos. Gere os textos na revisão, como sempre ([tarefa 7](#7-revisar-o-capítulo-do-site) e [tarefa 7b](#7b-revisar-o-capítulo-dos-cursos)).
+> - **Abrir um mês que já existe não lê nada.** Se o mês já está no sistema, a janela só o abre (veja [Se o mês já existe](#criar-o-mês-sem-planilha)). A leitura ao criar vale para mês novo.
+> - **Desmarcou uma rede de propósito?** Ela não é lida e não aparece no painel. Para ler depois, use o botão de ler dela na página do mês.
+> - **Muitas leituras seguidas esbarram no limite da Meta.** O limite é de 6 leituras em 10 minutos por pessoa, e cada mês criado com Instagram ou Facebook marcado gasta uma. Criando vários meses em sequência, os últimos podem falhar. Espere o tempo que a mensagem diz e leia pelo botão do mês.
+{: .tip }
+
 > **O mês de referência segue o fim do ciclo.** Um ciclo de 25/09 a 25/10 é o relatório de **outubro**. Se o sistema deduzir as datas das publicações da planilha, o mês e o ano vêm da **data final**.
 {: .note }
 
@@ -117,11 +187,40 @@ Nessa janela também há **Detectar das Postagens** (sugere as datas a partir da
 
 **Por que importa.** As planilhas são a fonte dos números das redes. Por padrão, o sistema não "puxa" dados das redes sozinho: ele lê o que você importa. (A exceção é o Instagram e o Facebook de um cliente que o super-administrador ligou à Meta, e o YouTube e o LinkedIn de um cliente ligado a essas redes: veja as tarefas [3c](#3c-ler-da-meta-no-lugar-da-planilha) e [3d](#3d-ler-do-youtube-e-do-linkedin-no-lugar-da-planilha).) Importar direito significa que os números do relatório batem com o que a rede mostra.
 
-**O modelo de planilha.** O botão **Modelo de Planilha**, no alto da página, baixa uma planilha padrão com as colunas que o sistema reconhece: data, canal, formato, pauta (título do conteúdo), link da publicação, categoria editorial, alcance, impressões, interações, curtidas, respostas/comentários, compartilhamentos, salvamentos, visitas ao perfil, visualizações de vídeo, reações e a marcação de anômalo (sim ou não). Há também uma aba **Resumo do Mês**, onde se informam o alcance da conta e o **número de seguidores** do mês, na linha **Seguidores da rede no fim do mês** (uma rede por arquivo). Você também pode digitar os seguidores direto na tela do mês, sem mexer na planilha: veja a [tarefa 3b](#3b-informar-os-seguidores-de-cada-rede). Planilhas com outros nomes de coluna também funcionam, e o sistema ajuda a ligar cada coluna ao campo certo (veja a próxima tarefa).
+**O modelo de planilha.** O botão **Modelo de Planilha**, no alto da página, baixa um arquivo com **uma aba para cada rede** (**Instagram**, **Facebook**, **LinkedIn**, **TikTok** e **YouTube**) e três abas de apoio. Cada aba de rede tem **só as colunas que aquela rede informa**, com os nomes que ela usa, e **não tem a coluna "Canal"**: a rede é a da aba. Você preenche as abas das redes que o cliente usa e deixa as outras em branco.
+
+Toda aba de rede começa com **Data**, **Pauta / Título do Conteúdo**, **Link da Publicação**, **Formato** e **Categoria Editorial**, e termina com **Anômalo (Sim/Não)**. No meio, cada rede tem as suas:
+
+| Aba | Colunas do meio |
+|---|---|
+| **Instagram** | Alcance, Impressões, Interações, Curtidas, Comentários, Compartilhamentos, Salvamentos, Visitas ao Perfil |
+| **Facebook** | Alcance, Impressões, Interações, Reações, Comentários, Compartilhamentos, Cliques no Link |
+| **LinkedIn** | Alcance, Impressões, Interações, Reações, Comentários, Compartilhamentos, Cliques |
+| **TikTok** | Visualizações (no lugar do alcance), Curtidas, Comentários, Compartilhamentos |
+| **YouTube** | Visualizações (no lugar do alcance), Curtidas, Comentários, Compartilhamentos, Taxa de Retenção |
+
+As três abas de apoio:
+
+- **Resumo do Mês.** Uma linha por rede, com **Seguidores no fim do mês** e **Alcance da conta no mês** (o alcance que a própria rede informa para a conta, que **não é a soma** do alcance de cada publicação). O YouTube e o TikTok não informam alcance da conta. Você também pode digitar os seguidores direto na tela do mês, sem mexer na planilha: veja a [tarefa 3b](#3b-informar-os-seguidores-de-cada-rede). **O número digitado na tela vale mais que o da planilha.**
+- **Exemplos.** Três linhas fictícias (Instagram, Facebook e YouTube) que mostram o jeito de preencher. **Nada dela é importado**, nem se você a preencher.
+- **Instruções & Dicionário.** O passo a passo e o que é cada coluna, com as abas em que ela aparece.
+
+**Por que uma aba por rede.** Cada rede conta de um jeito: o Instagram tem salvamentos e visitas ao perfil, o Facebook tem reações e cliques no link, o YouTube e o TikTok não informam alcance, e sim visualizações. Num modelo só, com todas as colunas misturadas, metade delas ficava sempre vazia e era fácil preencher a coluna errada. Na aba da rede, só aparece o que ela entrega, e a rede não precisa ser repetida em cada linha.
+
+**O que acontece quando você envia o arquivo.** Cada aba **preenchida** vira um **cartão** na prévia, com o nome do arquivo e a aba (por exemplo, **modelo.xlsx · aba Instagram**), e é importada como uma planilha **daquela rede**. A aba em branco é ignorada, e a rede dela continua livre para ser lida pelo **Ler ao criar o mês**. As redes das abas preenchidas, ao contrário, ficam bloqueadas ali: vale uma fonte por rede por mês.
+
+**O YouTube e o TikTok entram com visualizações no lugar do alcance**, e a origem fica marcada, como já acontece na leitura automática do YouTube. O relatório avisa que visualizações não são a mesma coisa que alcance (a mesma pessoa pode ver mais de uma vez).
+
+> **Armadilhas do modelo.**
+> - **Não mude os títulos das colunas nem o nome das abas.** Uma aba só é reconhecida como de rede se o nome **começa pelo nome da rede** ("Instagram", "Facebook"...). Renomeada para outra coisa, ela deixa de ser reconhecida como aba da rede, e as linhas dela podem ficar de fora do mês. Confira os cartões da prévia: cada aba preenchida tem de aparecer com o seu nome.
+> - **O número do Resumo do Mês de uma rede cuja aba está em branco não entra.** Se você preencheu os seguidores do Facebook no Resumo mas não preencheu nenhuma linha na aba Facebook, esse número é ignorado: ele só vale junto com a aba da rede.
+> - **Modelo em branco não cria nada.** Se você enviar o modelo sem preencher aba nenhuma, a prévia diz **"O modelo está em branco: preencha as abas das redes que o cliente usa e envie de novo."**, o botão **Consolidar Período** fica desabilitado e nenhuma rede é bloqueada em **Ler ao criar o mês**.
+> - **Planilhas no modelo antigo continuam funcionando.** O arquivo de uma aba só, com a coluna **Canal**, as exportações das redes e as planilhas já guardadas nos meses antigos são lidas como sempre foram. Não precisa refazer nada que já existe.
+{: .warning }
 
 **A exportação do Meta entra como veio.** Você pode importar direto o arquivo que o Facebook ou o Instagram exporta, sem refazer no modelo. Em algumas exportações a coluna **Data** vem com a palavra **"Total"** em vez de uma data: nesse caso o sistema usa a **data do "Horário de publicação"** de cada postagem. A linha de total de verdade (sem horário de publicação) continua sendo ignorada. O Meta exporta o horário no fuso do Pacífico, e o sistema o converte para o horário de Brasília; uma postagem feita à noite não cai mais no dia seguinte por causa do fuso.
 
-**Formato e link da exportação do Business Suite.** Em um **mês novo**, as colunas **Tipo de post** (vira o formato da publicação) e **Link permanente** (vira o link) da exportação do Business Suite da Meta são reconhecidas sozinhas, sem ligar as colunas à mão. Em um **mês que já tem publicações importadas**, nada muda, nem se você importar a mesma planilha de novo: as publicações ficam como estavam (formato "Não informado" e sem link, se foi assim que entraram), sem duplicar e sem perder o que você editou. Se você ligar as colunas à mão, a sua ligação vale como sempre valeu, e a leitura automática da Meta (**Ler da Meta**) tem o mapeamento próprio. **Armadilha:** o aviso "linhas sem Formato" da prévia da importação ainda mostra a leitura de sempre, mesmo quando o mês novo vai reconhecer a coluna ao gravar. Confira o formato e o link das publicações depois de importar, não na prévia.
+**Formato e link da exportação do Business Suite.** Em um **mês novo**, as colunas **Tipo de post** (vira o formato da publicação) e **Link permanente** (vira o link) da exportação do Business Suite da Meta são reconhecidas sozinhas, sem ligar as colunas à mão. Em um **mês que já tem publicações importadas**, nada muda, nem se você importar a mesma planilha de novo: as publicações ficam como estavam (formato "Não informado" e sem link, se foi assim que entraram), sem duplicar e sem perder o que você editou. Se você ligar as colunas à mão, a sua ligação vale como sempre valeu, e a leitura automática da Meta (**Ler da Meta**) tem o mapeamento próprio. **O aviso da prévia acompanha o que vale para o mês.** Em mês novo, com a coluna **Tipo de post** na planilha, a prévia **não mostra mais** o aviso "N linhas sem Formato", porque o formato será reconhecido ao gravar. Em mês que já tem publicações, a prévia segue mostrando o aviso, e ele é verdadeiro: as publicações ficam como estavam, sem formato. Nesse caso, confira o formato e o link depois de importar.
 
 **Alcance e "Visualizadores" (Facebook).** O Meta encerra o **Alcance** do Facebook em 31/10/2026 e passa a informar **Visualizadores**. Se a planilha tem **Visualizadores** e não tem **Alcance**, o sistema usa **Visualizadores** como o alcance daquelas postagens (a coluna **Visualizações** continua sendo as impressões; **"Visualizadores de 3 segundos"** é outra coisa e não conta). Se a planilha tem as duas colunas, vale **Alcance**. As duas medidas **não são idênticas**, e o sistema avisa quando a comparação mistura as duas (veja a próxima tarefa).
 
@@ -150,12 +249,12 @@ Nessa janela também há **Detectar das Postagens** (sugere as datas a partir da
 
 Cada planilha do período aparece como um cartão em **Extratos Importados para este Mês**, com a rede e o número de linhas. Há botões para baixar a planilha e para excluí-la. **Excluir uma planilha remove só as publicações que vieram dela, naquele período.** As de outros arquivos continuam.
 
-Se o período veio de uma **planilha online**, ele fica ligado a ela, e é possível **sincronizar** de novo quando a planilha for editada na nuvem. A sincronização atualiza só as publicações daquele período e daquele arquivo e, se houver publicações que sumiram da planilha, **avisa quantas serão removidas e pede confirmação**.
+Se o período veio de uma **planilha online**, ele fica ligado a ela, e é possível **sincronizar** de novo quando a planilha for editada na nuvem. Se a planilha online usa o modelo por rede, cada aba preenchida vira o seu cartão, e a sincronização lê **só a aba da rede** de cada cartão. A sincronização atualiza só as publicações daquele período e daquele arquivo e, se houver publicações que sumiram da planilha, **avisa quantas serão removidas e pede confirmação**.
 
 > **Dicas.**
-> - Importe **uma planilha por rede** e confira o nome do arquivo e a rede no cartão.
+> - Importe **uma planilha por rede** (ou use o modelo, com uma aba por rede) e confira o nome do arquivo, a aba e a rede no cartão.
 > - Mantenha o **mesmo modelo de planilha todo mês**. Quando o formato muda, o sistema pede para ligar as colunas de novo.
-> - Informe os seguidores de cada rede (na linha **Seguidores da rede no fim do mês** da aba **Resumo do Mês**, ou na tela do mês, como na [tarefa 3b](#3b-informar-os-seguidores-de-cada-rede)). O número vale por rede e vai para o gráfico de evolução, a capa, o comparativo e o link público. **Sem ele, o gráfico diz "Sem dado de seguidores" e a linha se interrompe naquele mês**, em vez de cair para zero. Não digite 0 para "não sei": zero é um número, e o gráfico vai mostrar que a conta perdeu todo mundo.
+> - Informe os seguidores de cada rede (na linha da rede, coluna **Seguidores no fim do mês**, da aba **Resumo do Mês**, ou na tela do mês, como na [tarefa 3b](#3b-informar-os-seguidores-de-cada-rede)). O número vale por rede e vai para o gráfico de evolução, a capa, o comparativo e o link público. **Sem ele, o gráfico diz "Sem dado de seguidores" e a linha se interrompe naquele mês**, em vez de cair para zero. Não digite 0 para "não sei": zero é um número, e o gráfico vai mostrar que a conta perdeu todo mundo.
 {: .tip }
 
 ## 3b. Informar os seguidores de cada rede
@@ -198,7 +297,7 @@ Os números da leitura são os **do momento em que você lê** (como exportar a 
 
 O passo a passo, os avisos e o que fazer quando dá errado estão em [Ler da Meta]({{ '/mes-do-analista/ler-da-meta/' | relative_url }}).
 
-> **Mês novo?** Não precisa subir planilha para ele existir: crie o mês [sem planilha](#criar-o-mês-sem-planilha) e o bloco **Ler da Meta** já está na página dele.
+> **Mês novo?** Não precisa subir planilha para ele existir: crie o mês [sem planilha](#criar-o-mês-sem-planilha) e o bloco **Ler da Meta** já está na página dele. Com o Instagram e o Facebook marcados em **Ler ao criar o mês**, a leitura corre sozinha logo depois de criar ([veja como](#ler-as-fontes-ao-criar-o-mês)), e este botão fica para refazer a leitura.
 {: .tip }
 
 ## 3d. Ler do YouTube e do LinkedIn, no lugar da planilha
@@ -209,16 +308,16 @@ O passo a passo, os avisos e o que fazer quando dá errado estão em [Ler da Met
 
 Cada rede ligada tem o **seu** bloco. O passo a passo, os avisos e o que fazer quando dá errado estão em [Ler do YouTube e do LinkedIn]({{ '/mes-do-analista/ler-do-youtube-e-linkedin/' | relative_url }}).
 
-> **Mês novo?** Crie o mês [sem planilha](#criar-o-mês-sem-planilha): os blocos **Ler do YouTube** e **Ler do LinkedIn** das redes ligadas já aparecem na página dele.
+> **Mês novo?** Crie o mês [sem planilha](#criar-o-mês-sem-planilha): os blocos **Ler do YouTube** e **Ler do LinkedIn** das redes ligadas já aparecem na página dele. Com as redes marcadas em **Ler ao criar o mês**, a leitura corre sozinha ao criar ([veja como](#ler-as-fontes-ao-criar-o-mês)), e estes botões servem para refazê-la.
 {: .tip }
 
 ## 4. Conferir as inconsistências da importação
 
 **Por que importa.** Uma planilha com erro vira um relatório com erro, e o cliente confia nele. O sistema recusa o que não faz sentido e mostra o motivo; sua tarefa é ler a lista antes de confirmar.
 
-![Cartão da planilha na janela Novo Período, com a linha recusada por alcance maior que impressões e a linha de total ignorada]({{ '/assets/img/app/app-103-importacao-erros.png' | relative_url }})
+![Cartão da planilha instagram-outubro.xlsx, aba Instagram, na janela Novo Período, com a linha recusada por alcance maior que impressões e a linha de total ignorada]({{ '/assets/img/app/app-103-importacao-erros.png' | relative_url }})
 
-O cartão de cada planilha mostra quantas linhas valem, quantas foram bloqueadas e, logo abaixo, a linha e a coluna de cada problema. A linha de total aparece como ignorada.
+O cartão de cada planilha mostra o nome do arquivo (e, no modelo por rede, a aba: **· aba Instagram**), quantas linhas valem, quantas foram bloqueadas e, logo abaixo, a linha e a coluna de cada problema. A linha de total aparece como ignorada.
 
 O que o sistema faz sozinho:
 
@@ -231,7 +330,7 @@ O que o sistema faz sozinho:
 O que você faz:
 
 1. **Leia a lista de erros** de cada planilha. Uma linha recusada **não entra no relatório**.
-2. Se as colunas estiverem trocadas, use **Mapear Colunas** (ligação manual, com a primeira amostra de cada coluna ao lado) ou **Mapear com IA** / **Corrigir com IA** (a IA lê uma amostra e propõe a ligação). Depois, **Aplicar e Reprocessar Planilha**.
+2. Se as colunas estiverem trocadas, use **Mapear Colunas** (ligação manual, com a primeira amostra de cada coluna ao lado) ou **Mapear com IA** (no cartão com erros, o botão se chama **Resolver com IA**): a IA lê uma amostra e propõe a ligação. Depois, **Aplicar e Reprocessar Planilha**.
 3. Se o erro é de digitação na planilha, **corrija na origem** e importe de novo.
 
 > **Atenção.** Linha recusada some do relatório **em silêncio** para quem só olha o total. Compare o número de publicações do período com o número de linhas da planilha. Se faltam publicações, a causa está na lista de recusadas.

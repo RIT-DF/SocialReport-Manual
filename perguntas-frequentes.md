@@ -178,7 +178,7 @@ Aparece quando está **emitido**, com a etiqueta **Consolidado**. Em rascunho ou
 
 ### Posso criar o mês sem subir planilha?
 
-Pode. Em **Novo Período**, escolha o mês e o ano e **não escolha arquivo**: o botão passa a dizer **Criar mês sem planilha**. O mês nasce com **"0 publicações"**, abre normalmente e mostra **Ler da Meta**, **Ler do YouTube** e **Ler do LinkedIn** para as redes ligadas ao cliente. A planilha pode ser acrescentada depois. Veja [Criar o mês sem planilha]({{ '/mes-do-analista/#criar-o-mês-sem-planilha' | relative_url }}).
+Pode. Em **Novo Período**, escolha o mês e o ano e **não escolha arquivo**: o botão passa a dizer **Criar mês sem planilha**. As fontes ligadas do cliente aparecem **já marcadas** em **Ler ao criar o mês** e são lidas sozinhas, em segundo plano, logo depois de o mês ser criado. Se você desmarcar todas, o mês nasce com **"0 publicações"**, abre normalmente e mostra **Ler da Meta**, **Ler do YouTube** e **Ler do LinkedIn** para as redes ligadas. A planilha pode ser acrescentada depois. Veja [Criar o mês sem planilha]({{ '/mes-do-analista/#criar-o-mês-sem-planilha' | relative_url }}).
 
 ### Cliquei em "Criar mês sem planilha" e a tela diz "Este mês já existe: abrimos o que estava salvo." Perdi alguma coisa?
 
@@ -190,7 +190,43 @@ Porque o período não tem **nenhuma publicação dentro do ciclo**, e relatóri
 
 ### Criei um mês e ele não aparece nos Indicadores nem no consolidado. É defeito?
 
-Não. Mês sem nenhuma publicação não conta: ele só aparece nos [Indicadores]({{ '/mes-do-analista/indicadores/' | relative_url }}) e entra nas contas do [consolidado]({{ '/mes-do-analista/consolidado/' | relative_url }}) depois de receber a leitura das redes ou uma planilha.
+Não. Mês sem nenhum dado não conta (nenhuma publicação, nenhum seguidor, e site e cursos sem visita, inscrição nem conclusão; um site que respondeu com zero visitas não é dado): ele só aparece nos [Indicadores]({{ '/mes-do-analista/indicadores/' | relative_url }}) e entra nas contas do [consolidado]({{ '/mes-do-analista/consolidado/' | relative_url }}) depois de receber a leitura das redes ou uma planilha.
+
+### Criei o mês e apareceu um painel "Leitura das fontes". O que é? Preciso esperar?
+
+É a leitura das fontes que estavam marcadas em **Ler ao criar o mês**: Instagram, Facebook, YouTube, LinkedIn, site e cursos, as que o cliente tem ligadas. Ela corre **em segundo plano**, uma fonte de cada vez, e você **não precisa esperar**: pode abrir outro mês ou outro cliente. Só **não feche a página** até o painel mostrar o resumo. Veja [Ler as fontes ao criar o mês]({{ '/mes-do-analista/#ler-as-fontes-ao-criar-o-mês' | relative_url }}).
+
+### Fechei a página antes de a leitura terminar. Perdi o mês?
+
+Não. O mês **fica criado, mas sem a leitura**. Abra o mês e use os botões de sempre: **Ler da Meta**, **Ler do YouTube**, **Ler do LinkedIn**, e na revisão **Atualizar dados do site** e **Atualizar dados dos cursos**.
+
+### O painel diz que uma fonte falhou e as outras deram certo. O mês está bom?
+
+Está bom no que deu certo: **a falha de uma fonte não para as outras**, e o que foi lido fica gravado. A fonte com falha mostra o motivo (por exemplo, o limite de 6 leituras da Meta em 10 minutos, ou o Matomo fora do ar). Resolva o motivo e refaça só aquela fonte pelo botão dela.
+
+### Uma fonte aparece apagada na janela Novo Período, ou nem aparece. Por quê?
+
+Há três casos. **Não aparece**: o cliente contratou a rede, mas ninguém a ligou ainda (é do super-administrador). **Aparece apagada, com o motivo embaixo** ("Ligação expirada: peça ao administrador para renovar.", por exemplo): a rede está ligada, mas não pode ler agora. **Aparece apagada com "A planilha escolhida já traz esta rede"**: você escolheu uma planilha daquela rede na mesma janela, e vale uma fonte por rede por mês.
+
+### A leitura ao criar o mês trouxe poucos números. Por quê?
+
+Quase sempre porque o mês **ainda não terminou**: a leitura traz o que a rede mostra até o dia em que roda (a janela avisa isso). Leia de novo depois que o mês fechar. Em mês antigo, a própria rede pode ter deixado as publicações fora da janela de leitura dela, e a saída é a planilha.
+
+### Para que servem as abas do modelo de planilha? Preciso preencher todas?
+
+Não. O modelo tem uma aba para cada rede (Instagram, Facebook, LinkedIn, TikTok e YouTube): **preencha só as das redes que o cliente usa**. A aba em branco é ignorada. Cada aba preenchida vira uma importação da sua rede. A aba **Resumo do Mês** guarda os seguidores e o alcance da conta de cada rede, a aba **Exemplos** só mostra como preencher e **nunca é importada**, e a aba **Instruções & Dicionário** explica cada coluna. Veja [O modelo de planilha]({{ '/mes-do-analista/#3-importar-as-planilhas-das-redes' | relative_url }}).
+
+### Digitei os seguidores na tela do mês e a planilha traz outro número. Qual vale?
+
+O **digitado na tela** vale mais. A tela do mês diz qual está valendo.
+
+### O YouTube e o TikTok do modelo não têm a coluna Alcance. Está faltando?
+
+Não. Essas redes não informam alcance. A coluna é **Visualizações (no lugar do alcance)**, e o relatório marca a origem e avisa que visualizações não são a mesma coisa que alcance.
+
+### Minha planilha é do modelo antigo, com uma aba só e a coluna Canal. Ainda funciona?
+
+Funciona, como sempre funcionou. As planilhas do modelo antigo, as exportações das redes e as planilhas já guardadas em meses antigos continuam sendo lidas do mesmo jeito.
 
 ## Sobre a leitura pela Meta
 

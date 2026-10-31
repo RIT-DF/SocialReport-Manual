@@ -45,7 +45,7 @@ Definições curtas, em ordem alfabética, do jeito que cada termo é usado nest
 
 **Conversão.** Ação importante concluída no site: formulário, clique no WhatsApp, e-mail ou telefone. Veja [Conversão]({{ '/conceitos/' | relative_url }}).
 
-**Criar mês sem planilha.** Botão da janela **Novo Período** quando nenhum arquivo foi escolhido. O mês nasce vazio ("0 publicações"), abre normalmente e mostra os blocos de leitura das redes ligadas ao cliente; a planilha pode ser acrescentada depois. Se o mês já existe, nada é substituído: a tela abre o que estava salvo. Veja [Criar o mês sem planilha]({{ '/mes-do-analista/#criar-o-mês-sem-planilha' | relative_url }}).
+**Criar mês sem planilha.** Botão da janela **Novo Período** quando nenhum arquivo foi escolhido. As fontes ligadas do cliente são lidas ao criar, se estiverem marcadas; sem leitura, o mês nasce vazio ("0 publicações"), abre normalmente e mostra os blocos de leitura das redes ligadas ao cliente; a planilha pode ser acrescentada depois. Se o mês já existe, nada é substituído: a tela abre o que estava salvo. Veja [Criar o mês sem planilha]({{ '/mes-do-analista/#criar-o-mês-sem-planilha' | relative_url }}).
 
 ## D
 
@@ -70,6 +70,8 @@ Definições curtas, em ordem alfabética, do jeito que cada termo é usado nest
 **Impressões.** Quantas vezes a publicação apareceu na tela, contando repetições. Veja [Impressões]({{ '/conceitos/' | relative_url }}).
 
 ## L
+
+**Ler ao criar o mês.** Bloco da janela **Novo Período** que lista as fontes ligadas do cliente (Instagram, Facebook, YouTube, LinkedIn, site e cursos), já marcadas. Ao criar o mês, as marcadas são lidas em segundo plano, e o painel **Leitura das fontes** mostra o resultado de cada uma: concluída, recusada ou com falha. Veja [Ler as fontes ao criar o mês]({{ '/mes-do-analista/#ler-as-fontes-ao-criar-o-mês' | relative_url }}).
 
 **Ler da Meta.** Botão da página do mês que traz as publicações do Instagram e do Facebook direto das contas do cliente, no lugar da planilha, para os clientes ligados à Meta. Os números são os do momento da leitura. Veja [Ler da Meta]({{ '/mes-do-analista/ler-da-meta/' | relative_url }}).
 
@@ -98,6 +100,8 @@ Definições curtas, em ordem alfabética, do jeito que cada termo é usado nest
 **Meta (empresa).** Dona do Instagram e do Facebook. É de lá que vêm a planilha exportada e, nos clientes ligados, a leitura direta. Veja [Ligar o Instagram e o Facebook]({{ '/administracao/meta/' | relative_url }}).
 
 **Meta** (do site). Ação que o site mede como conversão (por exemplo, um formulário enviado). Não é a empresa Meta, dona do Instagram e do Facebook. Veja [Conversões]({{ '/como-ler-o-relatorio/site/' | relative_url }}).
+
+**Modelo de planilha.** Arquivo baixado pelo botão **Modelo de Planilha**, com uma aba para cada rede (Instagram, Facebook, LinkedIn, TikTok e YouTube), cada uma só com as colunas que a rede informa, mais as abas **Resumo do Mês**, **Exemplos** e **Instruções & Dicionário**. Cada aba preenchida vira a importação da sua rede. Veja [O modelo de planilha]({{ '/mes-do-analista/#3-importar-as-planilhas-das-redes' | relative_url }}).
 
 ## P
 

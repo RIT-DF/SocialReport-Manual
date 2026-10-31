@@ -26,7 +26,7 @@ O consolidado faz as contas **pela mesma regra dos [Indicadores (BI)]({{ '/mes-d
 - **O mês em andamento entra.** Diferente dos Indicadores, aqui **não há interruptor**: o consolidado é feito por você, que sabe o que está entregando. O mês incompleto entra com o selo **parcial**, e as variações dele saem **neutras**, sem seta de alta ou queda.
 - **Os números ficam guardados no consolidado.** Ao criar, o sistema tira um "retrato" da base e o guarda. A partir daí, o link público e o PDF mostram **esse retrato**, e não a base ao vivo. Isso evita que um relatório já entregue mude sozinho. Se a base mudou depois, a revisão avisa e você decide se atualiza (veja [a seção 1 da revisão](#1-situação-dos-meses)).
 - **Mês sem dado aparece fora das somas, nunca como zero.** E o total diz quantos meses entraram: "soma de 2 de 3 meses".
-- **Mês vazio também não conta.** Um mês [criado sem planilha]({{ '/mes-do-analista/#criar-o-mês-sem-planilha' | relative_url }}) que ainda não recebeu nenhuma publicação **não aparece** no consolidado: para as contas, é como se o mês não tivesse relatório. Leia das redes ou acrescente a planilha **antes** de criar o consolidado, e confira a prévia de cobertura.
+- **Mês vazio também não conta.** Um mês [criado sem planilha]({{ '/mes-do-analista/#criar-o-mês-sem-planilha' | relative_url }}) que ainda não recebeu nenhum dado (nenhuma publicação, nenhum seguidor, e site e cursos sem visita, inscrição nem conclusão) **não aparece** no consolidado: para as contas, é como se o mês não tivesse relatório. Leia das redes ou acrescente a planilha **antes** de criar o consolidado, e confira a prévia de cobertura.
 
 ## Criar um consolidado
 
