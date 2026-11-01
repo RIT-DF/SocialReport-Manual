@@ -178,7 +178,7 @@ O estado aparece num **selo colorido** no cadastro do cliente (verde, amarelo, v
 
 ![Selo vermelho Ligação com o YouTube expirada: clique em Religar, com as datas da ligação e os botões Religar, Testar e Desligar]({{ '/assets/img/app/app-89-youtube-cliente-expirada.png' | relative_url }})
 
-**Quando o sistema confere.** Uma vez por dia, a partir das 23h de Brasília, o servidor confere cada ligação, renova o acesso (o que também evita que ele caia por falta de uso) e tira a **fotografia da contagem de inscritos ou seguidores**. É essa fotografia que dá, mais tarde, o número do **último dia do mês**. Ela só passa a existir **a partir do dia em que o cliente é ligado**: se você quer o número exato do fim de outubro, ligue o cliente **antes** do fim de outubro.
+**Quando o sistema confere.** Uma vez por dia, a partir das 23h de Brasília, o servidor confere cada ligação e renova o acesso (o que também evita que ele caia por falta de uso). A **fotografia da contagem de inscritos ou seguidores** é tirada a cada 4 horas e na hora em que a ligação é confirmada. É essa fotografia que dá, mais tarde, o número do **último dia do mês**. Ela só passa a existir **a partir do dia em que o cliente é ligado**: se você quer o número exato do fim de outubro, ligue o cliente **antes** do fim de outubro.
 
 **A faixa de aviso no painel.** Quando alguma ligação do YouTube ou do LinkedIn precisa de atenção, o super-administrador vê uma **faixa amarela** no alto do sistema, com o nome dos clientes e da rede, e o botão **Ver clientes**. Sem nada a avisar, a faixa não aparece, e **o analista nunca a vê**. (A faixa da Meta é separada e aparece ao mesmo tempo, se for o caso.)
 

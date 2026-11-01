@@ -149,13 +149,28 @@ O estado aparece num **selo colorido** no cadastro do cliente (verde, amarelo ou
 
 ![Selo vermelho Ligação expirada: clique em Renovar ligação, com a Página, o @ do Instagram e as datas da ligação]({{ '/assets/img/app/app-69-meta-cliente-expirada.png' | relative_url }})
 
-**Quando o sistema confere.** Uma vez por dia, a partir das 23h de Brasília, o servidor confere cada ligação e tira a **fotografia da contagem de seguidores** de cada conta. É essa fotografia que dá, mais tarde, o **número de seguidores do último dia do mês**. Ela só passa a existir **a partir do dia em que o cliente é ligado**: se você quer o número exato do fim de outubro, ligue o cliente **antes** do fim de outubro. Uma conferência que dá "limite de uso da Meta" não muda o estado; o sistema tenta de novo no dia seguinte.
+**Quando o sistema confere.** Uma vez por dia, a partir das 23h de Brasília, o servidor confere cada ligação. A **fotografia da contagem de seguidores** de cada conta é tirada **a cada 4 horas** e na hora em que a ligação é confirmada (assim nenhum dia fica sem número). É essa fotografia que dá, mais tarde, o **número de seguidores do último dia do mês**; se a do último dia faltar, vale a mais próxima (até 3 dias), e sem nenhuma o campo fica em branco. A Meta só guarda cerca de 30 dias de histórico, então um dia sem foto não volta. O sistema guarda também, todo dia, os ganhos de seguidores que a Meta informa (Instagram) e o total por dia da Página (Facebook), do jeito que a Meta entrega; eles ainda não entram no relatório. Ela só passa a existir **a partir do dia em que o cliente é ligado**: se você quer o número exato do fim de outubro, ligue o cliente **antes** do fim de outubro. Uma conferência que dá "limite de uso da Meta" não muda o estado; o sistema tenta de novo no dia seguinte.
 
 **A faixa de aviso no painel.** Quando alguma ligação precisa de atenção, o super-administrador vê uma **faixa amarela** no alto do sistema, com o nome dos clientes, e o botão **Ver clientes**. Sem nada a avisar, a faixa não aparece, e **o analista nunca a vê**.
 
 ![Faixa amarela no alto do sistema: Leitura do Instagram e do Facebook parada para Instituto Horizonte: renove a ligação no cadastro do cliente. A ligação com a Meta vence em breve para Escola Girassol]({{ '/assets/img/app/app-77-meta-faixa-painel.png' | relative_url }})
 
 > **Dica: confira a faixa e renove antes de o analista precisar.** Ligação que vence no meio do fechamento do mês é a forma mais cara de descobrir que ela vence. Renovar é um clique e um login, e a faixa avisa com 14 dias de folga.
+{: .tip }
+
+## Conferência dos seguidores (aba Meta, só super-admin)
+
+**Por que existe.** Os números de seguidores dos meses fechados dependem das fotos diárias. A conferência mostra, sem tocar na Meta, se elas estão sendo guardadas, e serve para decidir se os ganhos por dia que a Meta informa podem um dia ajudar a reconstruir um número.
+
+Na aba **Meta** das configurações, o bloco **Conferência dos seguidores** carrega só quando você clica em **Carregar conferência** (e **Atualizar** depois). Por cliente e por rede, mostra: **dias com foto** e a primeira e a última data; **dias com ganhos** guardados (e, se a Meta recusou a métrica, o motivo, em vermelho); e a comparação **fotos seguidas x ganho do dia**: quantos dias a diferença entre duas fotos bate com o ganho do mesmo dia.
+
+![Bloco Conferência dos seguidores da aba Meta, com o Instituto Horizonte: Instagram com 12 dias de foto e 29 dias de ganhos, e Facebook com 12 dias de foto e a métrica de total por dia recusada pela Meta]({{ '/assets/img/app/app-121-meta-conferencia-seguidores.png' | relative_url }})
+
+**Como ler.** No exemplo, as fotos do Instagram começam em 20/10 (o cliente foi ligado nessa data) e os 11 dias comparados bateram no mesmo dia: indício de que o ganho informado é líquido. No Facebook, a Meta recusou o total por dia, e só as fotos valem. **Só números e datas**: nenhuma chave ou token aparece.
+
+> **Dicas e armadilhas.**
+> - **Poucos dias com foto, num cliente ligado há tempos, é problema**: o mês fechado vai sair com o campo de seguidores em branco. Confira a ligação do cliente.
+> - **Não conclua nada com poucos dias comparados.** Dois ou três dias iguais podem ser coincidência.
 {: .tip }
 
 ## Quando dá errado

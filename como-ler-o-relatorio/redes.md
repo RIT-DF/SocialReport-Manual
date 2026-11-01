@@ -152,6 +152,8 @@ Uma linha por vídeo, do mais visto para o menos visto. Cada linha traz o títul
 - **Curtidas, comentários e compartilhamentos:** as reações ao vídeo.
 - **Retenção média:** quanto do vídeo as pessoas assistiram, em média. 100% seria todo mundo assistindo até o fim; 40% significa que, em média, as pessoas viram um pouco menos da metade.
 
+**Compartilhamentos e retenção média têm asterisco** na tabela: são **acumulados do início do período até o dia da leitura** (a nota do slide diz qual), e continuam crescendo depois que o período termina. Uma leitura mais tardia mostra números maiores, e isso não é erro.
+
 **Exemplo:** um vídeo com 12.000 visualizações e retenção de 30% foi muito visto, mas as pessoas abandonaram cedo. Outro, com 3.000 visualizações e retenção de 70%, alcançou menos gente, mas quem chegou ficou. Os dois dizem coisas diferentes sobre o conteúdo.
 
 **Por que importa:** a visualização mostra se o título e a imagem de abertura chamaram atenção. A retenção mostra se o vídeo cumpriu o que prometeu. Vídeos curtos costumam reter mais que vídeos longos, então compare a retenção entre vídeos do mesmo tamanho.

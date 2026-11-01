@@ -18,7 +18,7 @@ O caminho que o relatório acompanha é: **publicação → visita à plataforma
 
 **Visão dos Cursos.** Os números do ciclo: inscrições, conclusões, taxa de conclusão, quantos cursos tiveram inscrição, quantos são novos e quantos ficaram sem inscrição. Cada número vem com a variação frente ao mesmo mês do ano anterior, quando há base.
 
-**Cursos do Mês.** Uma linha por curso: inscrições, conclusões, taxa de conclusão e inscritos ativos. A taxa é **acumulada** (conclusões de toda a vida do curso sobre as inscrições com conclusão já registrada); quando o curso tem menos de 5 inscrições, o relatório mostra "N de M" em vez de um percentual, porque percentual de base pequena engana.
+**Cursos do Mês.** Uma linha por curso: inscrições, conclusões, taxa de conclusão e inscritos ativos. A taxa é **acumulada** (conclusões de toda a vida do curso sobre as inscrições com conclusão já registrada) e, com os inscritos ativos e o total de cursos da plataforma, é **do dia da busca no Moodle**: o slide diz **"até dd/mm"**, porque esses números não são do ciclo do relatório; quando o curso tem menos de 5 inscrições, o relatório mostra "N de M" em vez de um percentual, porque percentual de base pequena engana.
 
 **De onde vêm as inscrições.** As visitas à página de inscrição, por origem (redes sociais, acesso direto, busca, outros sites, campanhas), e as redes sociais separadas. Quando o Moodle está ligado, cada origem recebe uma **estimativa** de inscrições, repartindo as inscrições pela proporção das visitas. É estimativa porque o Matomo não conhece o aluno e o Moodle não conhece a origem.
 

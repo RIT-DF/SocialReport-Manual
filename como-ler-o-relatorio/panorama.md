@@ -29,6 +29,18 @@ Em cada página, a explicação segue a mesma ordem: a pergunta que a página re
 > **Leitura errada comum:** achar que o relatório de "Outubro" cobre de 1º a 31 de outubro. Confira sempre o **período auditado** na capa.
 {: .warning }
 
+## O rodapé: de quando são os números
+
+![Slide com o rodapé Publicações lidas em 03/02 (Instagram e Facebook), lidas em 04/02 (YouTube) e planilha importada em 02/02 (LinkedIn)]({{ '/assets/img/relatorio/relatorio-29-rodape-publicacoes-lidas.png' | relative_url }})
+
+**A pergunta que responde:** "Esses números são de quando?"
+
+O rodapé de cada página traz, no centro, uma frase como **"Publicações lidas em 03/02 (Instagram e Facebook)"**. Ela diz o dia em que as publicações de cada rede foram lidas direto da rede, ou, quando vieram de planilha, o dia em que a planilha foi importada (**"planilha importada em 02/02"**).
+
+**Por que importa:** alcance, visualizações e interações **continuam crescendo** depois que a publicação sai. Um relatório lido logo após o fechamento mostra números menores que o mesmo relatório lido duas semanas depois, e nenhum dos dois está errado. Antes de comparar dois relatórios, ou de estranhar uma diferença, olhe a data. Relatórios emitidos há mais tempo podem não ter a frase.
+
+**Exemplo:** um carrossel publicado em 28/10 tinha 3.900 de alcance numa leitura de 02/11 e 4.700 numa de 12/11.
+
 ## Apresentação institucional
 
 ![Página de apresentação institucional, com o texto de contexto e a assinatura da equipe]({{ '/assets/img/relatorio/relatorio-03-apresentacao.png' | relative_url }})

@@ -60,8 +60,8 @@ Você **não** renova a ligação: isso é do super-administrador, que faz um lo
 
 Pense como pensaria no dia de exportar a planilha: depois que o ciclo termina, e com algum tempo para as últimas publicações acumularem resultado. Duas razões para não deixar para muito depois:
 
-- **Seguidores.** O número do **último dia do ciclo** só é exato se o sistema o fotografou naquele dia (ele faz isso toda noite, a partir do dia em que o cliente foi ligado). Sem fotografia, o Instagram ainda consegue **reconstruir** o número se você ler até **30 dias** depois do fim do ciclo; passado disso, o sistema só tem o número **de hoje**, e avisa.
-- **Mês já emitido.** Se o relatório já foi emitido e enviado, reler muda os números do mês, e o que o cliente viu deixa de bater com o sistema. Releia **antes** de emitir.
+- **Seguidores.** O número do **último dia do ciclo** só é exato se o sistema o fotografou naquele dia (ele fotografa a cada 4 horas e na hora em que a ligação é confirmada, a partir do dia em que o cliente foi ligado). Para mês **fechado** a ordem é: a **foto do último dia**; a **foto mais próxima**, até 3 dias de distância (a revisão diz a data); e o que a rede ainda informa. Sem nada disso, o **campo fica em branco**, com aviso, para você digitar o número do fim do mês ou usar o marco histórico do cliente: **o número de hoje não entra mais como se fosse o do mês**. Em mês em andamento vale o número de hoje. No Instagram, sem foto, ainda há a **reconstrução** do número, se você ler até **30 dias** depois do fim do ciclo.
+- **Mês já emitido.** Se o relatório já foi emitido, reler muda os dados do mês, mas **não muda o que o cliente vê**: o link continua mostrando o relatório como foi emitido até você **reemitir**. A tela pede confirmação (**"Este mês já foi emitido."**). Releia **antes** de emitir e evite a reemissão.
 
 ### 3. Leia
 
@@ -91,7 +91,9 @@ Abaixo vêm as **observações da leitura**. Elas explicam o que a Meta não inf
 | **Alcance da conta do Instagram não lido: a Meta só informa até 30 dias de uma vez e o ciclo tem 31.** | O alcance **da conta** (pessoas diferentes que a conta atingiu no ciclo) só é lido em ciclos de até 30 dias. Em mês de 31 dias, ele fica vazio | Se tiver o número no painel da rede, digite-o no campo **Alcance da conta no mês**, na janela **Ajustar Ciclo** (tarefa 2). O alcance somado das publicações continua calculado |
 | **A Meta não informou "visitas perfil" para reels: o campo ficou vazio.** | Para aquele tipo de publicação, a Meta não devolveu esse número | Nada, ou confira na rede se o número for importante |
 | **A versão da API recusou "post_impressions_unique"; foi usado "post_total_media_view_unique".** | A Meta não informa mais **Alcance** no Facebook e informa **Visualizadores**. O sistema usou a segunda medida no lugar da primeira | Leia [a diferença abaixo](#alcance-e-visualizações-o-que-a-leitura-preenche). Nada a corrigir |
-| **Seguidores: a Meta só informa o número de hoje (dd/mm), não o do fim do ciclo. Confira ou digite o do fim do mês.** | Não havia fotografia do último dia do ciclo, e o sistema usou o número do dia da leitura | Digite o número do fim do mês no bloco **Seguidores no fim do mês** (tarefa 3b), se o tiver |
+| **Seguidores: a Meta só informa o número de hoje e não há foto guardada de dd/mm/aaaa. O campo ficou vazio: digite o número do fim do mês ou use o marco histórico do cliente.** | Mês fechado, sem foto do último dia, sem foto próxima e sem reconstrução. O sistema **não** usa o número de hoje | Digite o número do fim do mês no bloco **Seguidores no fim do mês** (tarefa 3b), ou consulte o marco histórico do cliente |
+| **Seguidores: a Meta não tinha o número de dd/mm; foi usado o de dd/mm, a foto mais próxima. Confira.** | Foi usada a foto de um dia até 3 dias de distância | Compare com o painel da rede; se tiver o do fim do mês, digite-o |
+| **Seguidores: o número de dd/mm é o total por dia que a Meta informou, guardado pelo sistema. Confira.** | Facebook: valeu o total diário guardado | Confira com o painel |
 | **A Meta não informou os cliques dos posts: ficaram 0.** | No Facebook, o número de cliques no link não veio | Cliques ficam em 0; não conclua que ninguém clicou |
 | **Há publicação sem visualizações informadas pela Meta (publicação antiga): ela aparece como recusada.** | Publicações muito antigas, no Instagram, podem não ter a medida de visualizações | Veja a linha de recusadas e, se importar, traga essa publicação pela planilha |
 | **A Página ligada não tem Instagram profissional: só o Facebook foi lido.** | O Instagram do cliente não está ligado à Página | Avise o super-administrador |
@@ -104,7 +106,7 @@ A leitura traz o número de seguidores de cada rede e o oferece ao campo **Segui
 - **Campo vazio** (ou com o número que a leitura anterior pôs, e que você não mexeu): o sistema **preenche**.
 - **Campo com outro número** (um que você digitou): o sistema **mantém o seu** e pergunta: **"Seguidores do Instagram: o mês tem 1.480 digitado; a Meta leu 1.515. Trocar?"**, com os botões **Usar 1.515** e **Manter 1.480**.
 
-Escolha olhando de onde veio o número lido (a observação da leitura diz) e o painel da rede: o **número de fim do mês**, a fotografia da noite do último dia, é o melhor; o **reconstruído** (Instagram) é uma boa aproximação; o **do dia da leitura** só vale se o fim do mês e o dia da leitura estão próximos.
+Escolha olhando de onde veio o número lido (a observação da leitura diz) e o painel da rede: o **número de fim do mês**, a fotografia do último dia, é o melhor; a **foto mais próxima** (a revisão diz a data) é boa se a data é perto do fim; o **reconstruído** (Instagram) é uma boa aproximação; o **do dia da leitura** só aparece em mês em andamento.
 
 ### 6. Ler de novo, voltar para a planilha, remover a leitura
 
@@ -123,7 +125,9 @@ Abra a **Revisão** do mês. Os avisos que só você vê ficam num **quadro úni
 ![Quadro Avisos da revisão com três itens: falta de seguidores, seguidores reconstruídos do Instagram e do Facebook numa linha só e a contagem de Stories capturados do Instagram]({{ '/assets/img/app/app-98-revisao-quadro-avisos.png' | relative_url }})
 
 - **"Instagram e Facebook: o número de seguidores foi reconstruído para dd/mm/aaaa a partir do número de hoje e dos novos seguidores de cada dia. Confira."** O Instagram não tinha fotografia daquele dia, e o sistema calculou o número. Compare com o painel. Quando os dois têm o mesmo aviso e a mesma data, ele vem **numa linha só**, com as duas redes.
-- **"… o número de seguidores é o de dd/mm/aaaa (dia da leitura), não o do fim do mês. Confira ou digite o do fim do mês."** O número é o do dia em que você leu. O gráfico de evolução mostrará esse valor como se fosse o do fim do mês.
+- **"Instagram e Facebook: o número de seguidores é o da foto mais próxima, de dd/mm/aaaa; a do último dia do mês não estava guardada. Confira."** A foto do último dia faltou, e valeu a de um dia até 3 dias de distância, com a data à vista.
+- **"… o número de seguidores é o de dd/mm/aaaa (dia da leitura), não o do fim do mês. Confira ou digite o do fim do mês."** Mês em andamento: o número é o do dia em que você leu, e o gráfico mostrará esse valor como se fosse o do fim do mês.
+- **Falta o número de seguidores de [rede]:** em mês fechado sem nenhuma foto, o campo ficou em branco (veja a [tarefa 3b]({{ '/mes-do-analista/#3b-informar-os-seguidores-de-cada-rede' | relative_url }})).
 - **"Instagram: 4 Stories capturados enquanto estavam no ar; números da última captura antes de expirar."** Diz quantos Stories entraram na leitura. Quando a captura começou no meio do ciclo, acrescenta desde quando, e lembra que os Stories anteriores vêm pela planilha. Sem nenhum Story capturado, o aviso é **"Instagram: Nenhum Story capturado neste mês (a captura começou em dd/mm; Stories anteriores: use a planilha)."**
 - **"Instagram lido da Meta: os Stories não entram na leitura automática. Stories do mês: use a planilha."** É o aviso de antes, que ainda aparece numa leitura feita **antes** de a captura existir. **Leia de novo** e ele dá lugar à contagem dos Stories capturados.
 
@@ -184,7 +188,8 @@ Em caso de dúvida, não corrija na mão: **leia de novo no dia certo**, ou volt
 {: .tip }
 
 > **Armadilhas.**
-> - **Reler um mês já emitido muda os números que o cliente recebeu.** Releia **antes** de emitir, nunca depois.
+> - **Reler um mês já emitido muda os dados do mês, mas não o link do cliente**: ele só muda quando você reemitir o relatório (veja a [tarefa 11]({{ '/mes-do-analista/#relatório-emitido-fica-como-foi-emitido' | relative_url }})). Releia **antes** de emitir, não depois.
+> - **Leitura tardia traz números maiores.** As publicações continuam acumulando nos dias seguintes; o relatório diz, no rodapé, **"Publicações lidas em dd/mm"**. Para comparar um mês com o outro, leia sempre na mesma distância do fechamento.
 > - **Não leia no meio do ciclo e emita assim.** O número é o de **agora**: uma leitura anterior ao fim do ciclo traz um mês incompleto, sem aviso na tela (a regra do mês em andamento do relatório vale como sempre).
 > - **Substituir a planilha perde a categoria editorial que vinha nela.** As publicações lidas chegam como **Geral**. Se a categoria importa para este cliente, mantenha a planilha ou volte a ela.
 > - **Uma fonte por rede também depois da leitura.** A pergunta da substituição só existe ao **ler da Meta**. Se você importar uma planilha da mesma rede **depois** de ler, o sistema não pergunta nada. Decida qual fonte vale e deixe uma só: **Voltar para a planilha** ou **Remover a leitura**.

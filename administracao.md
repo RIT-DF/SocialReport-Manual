@@ -72,6 +72,7 @@ Ao editar, o cadastro tem estas partes:
 - **Plataforma de cursos (Moodle):** o acesso ao Moodle do cliente e o site da plataforma no Matomo (veja abaixo).
 - **Redes sociais (Meta):** a ligação do Instagram e do Facebook do cliente, para o analista poder usar **Ler da Meta** (veja [Ligar o Instagram e o Facebook]({{ '/administracao/meta/' | relative_url }})).
 - **YouTube e LinkedIn:** a ligação do canal e da Página do cliente, para o analista poder usar **Ler do YouTube** e **Ler do LinkedIn** (veja [Ligar o YouTube e o LinkedIn]({{ '/administracao/youtube-linkedin/' | relative_url }}); cada rede só funciona depois que o app da RIT for aprovado por ela).
+- **Período e fechamento:** o dia de fechamento do relatório do cliente e a chave de criação automática do período (veja [Período e fechamento do cliente](#período-e-fechamento-do-cliente)).
 - **Fim do contrato:** o campo **Contrato encerrado em** (veja abaixo).
 - **Site:** a ligação com o Matomo (veja a [parte 5]({{ '/site-e-plugin/' | relative_url }})).
 - **Monitoramento de imprensa e clipping:** os termos da varredura.
@@ -125,6 +126,29 @@ Depois, clique em **Testar conexão** (mostra se o Moodle respondeu, quantas lin
 - **Cliente com endereço de Moodle e sem acesso configurado:** ao buscar os dados dos cursos, a revisão avisa "Acesso ao Moodle deste cliente não configurado", e o relatório continua sendo montado, sem o capítulo Cursos.
 - **Depois de restaurar uma cópia de segurança**, a chave de cada cliente precisa ser colada de novo (a cópia não leva segredos): no jeito 1, gere outro código de conexão no Moodle e cole.
 - **Clientes que já estavam conectados manualmente** (como a RIT) continuam funcionando do mesmo jeito; mudar para o complemento é uma escolha, cliente a cliente.
+
+### Período e fechamento do cliente
+
+**Por que importa.** Cada organização fecha o relatório numa data própria. Se o sistema só conhece o mês civil, toda vez alguém digita as datas do ciclo, e uma data errada muda quais publicações entram no relatório. Cadastrando o dia de fechamento uma vez, todo **Novo Período** do cliente já abre com o ciclo certo. E, com a criação automática ligada, o sistema também cria e lê o mês sozinho.
+
+**Só o super-admin altera.** Na edição do cliente, a seção **Período e fechamento** tem dois controles. O analista vê os dois só para leitura ("Dia de fechamento: dia 25. Só o super-admin altera.").
+
+![Seção Período e fechamento do cadastro do cliente, com o dia de fechamento 25, a caixa Criar e ler o período sozinho marcada e a prévia O próximo período vai de 26/10 a 25/11 e será criado e lido sozinho em 26/11]({{ '/assets/img/app/app-110-cliente-periodo-e-fechamento.png' | relative_url }})
+
+1. **Dia de fechamento do período.** Escolha **Mês civil (padrão)**, **Último dia do mês** ou um dia de **1 a 31**. O período vai do dia seguinte ao fechamento do mês anterior até o dia de fechamento; o **mês do relatório é o da data final**. Exemplo: fechamento no dia 25 dá períodos de 26 do mês anterior a 25 (de 26/09 a 25/10 é **outubro**). Em mês mais curto vale o último dia (fechamento 31 em fevereiro fecha no 28, ou 29 em ano bissexto).
+2. **Criar e ler o período sozinho no dia seguinte ao fechamento.** A chave **nasce desligada**, e só o super-admin a liga. Ligada, no dia seguinte ao fechamento (a partir das 5h, horário de Brasília) o sistema cria o período e lê as fontes ligadas do cliente; três dias depois lê de novo, se o período ainda não estiver emitido, mantendo o que o analista editou. **Ele nunca emite**: revisar e emitir continua com o analista, que recebe um resumo por e-mail. O cliente nunca recebe nada. **Ligar a chave já processa o ciclo fechado mais recente**, sem esperar o mês seguinte.
+3. A **prévia** embaixo diz as datas do próximo período e quando ele será criado ("O próximo período vai de 26/10 a 25/11 e será criado e lido sozinho em 26/11"). Confira antes de salvar.
+
+![Seção Período e fechamento vista por quem não é super-administrador: o dia 25 e a criação automática ligada aparecem só como texto, com o aviso de que só o super-admin altera]({{ '/assets/img/app/app-111-cliente-fechamento-so-leitura.png' | relative_url }})
+
+**Exemplo.** O Instituto Horizonte entrega o relatório sempre no dia 25. O super-admin escolhe **Dia 25**, confere a prévia e, como a equipe quer começar a revisão no dia seguinte, marca a chave. No dia 26, às 5h, o período de outubro (26/09 a 25/10) está criado e lido, e a equipe recebe o e-mail.
+
+> **Dicas e armadilhas.**
+> - **Mudar o dia vale só para os próximos períodos.** Os que já existem não mudam; as datas que o analista escolher à mão continuam valendo.
+> - **Ligue a chave só com as fontes do cliente prontas** (ligações em dia, Matomo configurado). Fonte com ligação expirada aparece como falha no painel, e o analista precisa ler à mão.
+> - **Cliente inativo, com contrato encerrado, sem fonte ligada ou com o mês já emitido fica de fora** da criação automática. Mês que o analista apagou de propósito **não é recriado**.
+> - **Sem a chave, nada acontece sozinho**; o dia de fechamento ainda serve para o **Novo Período** abrir no ciclo certo.
+{: .tip }
 
 **Fim do contrato (só o super-admin).** O campo **Contrato encerrado em** aparece ao **editar** um cliente. Para o analista ele é só de leitura. Deixe em branco enquanto o contrato estiver em vigor: **sem a data, nada é excluído, nunca**. O sistema não deduz o fim de um contrato.
 
@@ -273,4 +297,5 @@ Duas outras abas das configurações merecem uma lembrança:
 - [ ] Organização: nome e site conferidos no rodapé de um relatório.
 - [ ] Cópias de segurança configuradas, com a senha guardada num cofre e **provada** (botão **Provar a senha**), e um teste de restauração feito (veja [Cópias de segurança]({{ '/copias-de-seguranca/' | relative_url }})).
 - [ ] Retenção de dados: simulação conferida no histórico antes de ser desligada; cliente que encerrou o contrato com a data preenchida; ex-membros revogados (a conta sai em 90 dias).
+- [ ] Cada cliente com o dia de fechamento cadastrado (se não fecha no mês civil); criação automática ligada só nos clientes com as fontes em dia.
 - [ ] Cada cliente com logotipo, cores, categorias e termos de imprensa preenchidos; escolas com **Sem foto**.

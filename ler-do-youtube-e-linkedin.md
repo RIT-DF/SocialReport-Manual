@@ -77,8 +77,8 @@ Você **não** religa: isso é do super-administrador, que faz um login na rede.
 
 Pense como pensaria no dia de exportar a planilha: depois que o ciclo termina, e com algum tempo para as últimas publicações acumularem resultado. Duas razões para não deixar para muito depois:
 
-- **Seguidores e inscritos.** O número do **último dia do ciclo** só é exato se o sistema o fotografou naquele dia (ele faz isso toda noite, a partir do dia em que o cliente foi ligado). No **YouTube**, o número exato também sai do YouTube Analytics, que atrasa de 2 a 3 dias: **leia a partir do 3º dia depois do fim do ciclo** para tê-lo. No **LinkedIn**, sem fotografia, o sistema **reconstrói** o número se você ler até cerca de um ano depois do fim do ciclo. Passado isso, só existe o número **de hoje**, e a leitura avisa.
-- **Mês já emitido.** Se o relatório já foi emitido e enviado, reler muda os números do mês, e o que o cliente viu deixa de bater com o sistema. Releia **antes** de emitir.
+- **Seguidores e inscritos.** O número do **último dia do ciclo** só é exato se o sistema o fotografou naquele dia (ele fotografa a cada 4 horas e na hora em que a ligação é confirmada, a partir do dia em que o cliente foi ligado). Para mês **fechado** a ordem é: a **foto do último dia**; a **foto mais próxima**, até 3 dias de distância (a revisão diz a data); e o que a rede ainda informa. Sem nada disso, o **campo fica em branco**, com aviso, para você digitar o número do fim do mês ou usar o marco histórico do cliente: **o número de hoje não entra mais como se fosse o do mês**. Em mês em andamento vale o número de hoje. No **YouTube**, o número exato também sai do YouTube Analytics, que atrasa de 2 a 3 dias: **leia a partir do 3º dia depois do fim do ciclo** para tê-lo. No **LinkedIn**, sem fotografia, o sistema **reconstrói** o número se você ler até cerca de um ano depois do fim do ciclo.
+- **Mês já emitido.** Se o relatório já foi emitido, reler muda os dados do mês, mas **não muda o que o cliente vê**: o link continua mostrando o relatório como foi emitido até você **reemitir**. A tela pede confirmação (**"Este mês já foi emitido."**). Releia **antes** de emitir e evite a reemissão.
 
 ### 3. Leia
 
@@ -102,6 +102,7 @@ Abaixo vêm as **observações da leitura**, cada uma começando pelo nome da re
 |---|---|---|
 | **N vídeo(s) do ciclo não público(s) (privado, não listado ou agendado) ficaram de fora.** | Só vídeo público entra | Se um deles foi publicado de fato depois do dia da leitura, leia de novo |
 | **N vídeo(s) marcado(s) como Shorts pela duração (até 3 minutos): o YouTube não informa o formato. Confira.** | O YouTube não diz se é Short. O sistema chama de **Shorts** o vídeo de até 3 minutos | Confira os formatos. Vídeo curto que não é Short pode ter sido marcado assim |
+| **Compartilhamentos e retenção média são acumulados do início do ciclo (dd/mm) até a leitura (dd/mm): contam também o que aconteceu depois do fim do ciclo.** | Esses dois números continuam crescendo depois que o ciclo termina; o slide marca as colunas com asterisco | Leia sempre na mesma distância do fechamento para comparar um mês com outro |
 | **O YouTube Analytics atrasa de 2 a 3 dias: N vídeo(s) ainda sem compartilhamentos e retenção. Leia de novo depois.** | Os compartilhamentos e a retenção vêm de outra parte do YouTube, que demora | Leia de novo uns dias depois. Os campos vazios entram como vazio, e não como zero |
 | **O YouTube Analytics recusou parte das métricas; foram lidos só compartilhamentos e retenção.** / **… recusou a leitura por vídeo: compartilhamentos e retenção ficaram vazios.** | O YouTube não devolveu parte dos números extras | Nada a corrigir. Se a retenção for importante, confira no YouTube Studio |
 | **Inscritos: o YouTube informa o número arredondado (3 algarismos). O exato, pela soma do YouTube Analytics, só fica disponível 3 dias depois do fim do ciclo; confira com o YouTube Studio.** | O número de inscritos que a leitura achou está arredondado (por exemplo, 1.230) | Leia de novo a partir do 3º dia depois do fim do ciclo, ou digite o do fim do mês |
@@ -116,6 +117,7 @@ Abaixo vêm as **observações da leitura**, cada uma começando pelo nome da re
 | **O LinkedIn não informou o alcance por publicação: as impressões vão no lugar do alcance, e impressão conta a mesma pessoa mais de uma vez.** | Para essas publicações, o LinkedIn só deu impressões | Leia a [diferença abaixo](#alcance-e-visualizações-o-que-a-leitura-preenche). Nada a corrigir |
 | **N publicação(ões) sem nenhuma interação no LinkedIn: entram com zero (o LinkedIn não devolve estatística delas).** | Publicação sem curtida nem comentário vem sem estatística | Zero é o número certo aqui |
 | **N publicação(ões) com curtidas negativas no LinkedIn (descurtidas de patrocínio): contadas como 0.** | O LinkedIn desconta curtidas de anúncios | Nada |
+| **O LinkedIn só informa o alcance da Página por mês do calendário, e o ciclo deste relatório é de dd/mm a dd/mm: o alcance da conta ficou vazio. Informe o valor à mão, se precisar dele.** | O ciclo não é um mês civil (fechamento no dia 25, por exemplo), e o LinkedIn só dá o alcance da conta por mês do calendário | Digite o alcance no campo **Alcance da conta no mês** (tarefa 2), se tiver |
 | **O LinkedIn não informou o alcance da Página no mês.** | O alcance **da conta** não veio | Se tiver o número no painel do LinkedIn, digite-o no campo **Alcance da conta no mês**, na janela **Ajustar Ciclo** (tarefa 2) |
 | **A versão … da API do LinkedIn tem N meses e sai do ar por volta de 12 …** | Aviso para o super-administrador, sobre a configuração | Avise o super-administrador. A leitura segue valendo |
 
@@ -124,7 +126,8 @@ Abaixo vêm as **observações da leitura**, cada uma começando pelo nome da re
 | A frase diz | O que significa | O que fazer |
 |---|---|---|
 | **N publicação(ões)/vídeo(s) com data ausente ou inválida ficaram de fora.** | A rede devolveu uma publicação sem data legível | Confira na rede. Se importar, traga-a pela planilha |
-| **Seguidores: o YouTube (ou o LinkedIn) só informa o número de hoje (dd/mm), não o do fim do ciclo. Confira ou digite o do fim do mês.** | Não havia fotografia do último dia do ciclo, e o sistema usou o número do dia da leitura | Digite o número do fim do mês no bloco **Seguidores no fim do mês** (tarefa 3b), se o tiver |
+| **Seguidores: o YouTube (ou o LinkedIn) só informa o número de hoje e não há foto guardada de dd/mm/aaaa. O campo ficou vazio: digite o número do fim do mês ou use o marco histórico do cliente.** | Mês fechado sem foto, sem foto próxima e sem outro método. O número de hoje **não** é usado | Digite o número do fim do mês no bloco **Seguidores no fim do mês** (tarefa 3b) |
+| **Seguidores: … não tinha o número de dd/mm; foi usado o de dd/mm, a foto mais próxima. Confira.** | Foto de até 3 dias de distância | Compare com o painel da rede |
 
 ### 5. Os seguidores do fim do mês
 
@@ -133,7 +136,7 @@ A leitura traz o número de inscritos ou seguidores da rede e o oferece ao campo
 - **Campo vazio** (ou com o número que a leitura anterior pôs, e que você não mexeu): o sistema **preenche**.
 - **Campo com outro número** (um que você digitou): o sistema **mantém o seu** e pergunta: **"Seguidores do YouTube: o mês tem 1.230 digitado; a leitura trouxe 1.234. Trocar?"**, com os botões **Usar 1.234** e **Manter 1.230**.
 
-Escolha olhando de onde veio o número lido (a observação da leitura diz): o de **fim do mês** (a fotografia da noite do último dia, ou o exato do YouTube Analytics) é o melhor; o **reconstruído** (LinkedIn) é uma boa aproximação; o **do dia da leitura** só vale se o fim do mês e o dia da leitura estão próximos.
+Escolha olhando de onde veio o número lido (a observação da leitura diz): o de **fim do mês** (a fotografia do último dia, ou o exato do YouTube Analytics) é o melhor; a **foto mais próxima** (a revisão diz a data) é boa se a data é perto do fim; o **reconstruído** (LinkedIn) é uma boa aproximação; o **do dia da leitura** só aparece em mês em andamento.
 
 ### 6. Ler de novo, voltar para a planilha, remover a leitura
 
@@ -149,7 +152,7 @@ Na lista **Extratos Importados**, cada arquivo diz de onde vem: a leitura aparec
 
 ### 7. Os avisos na revisão
 
-Abra a **Revisão** do mês. Os avisos que só você vê ficam num **quadro único**, compacto, no alto: **"Avisos da revisão (N)"**. Para o YouTube e o LinkedIn, o que aparece ali é o **aviso das visualizações no lugar do alcance** (veja a próxima seção). Os avisos de seguidores reconstruídos ou do dia da leitura ficam, nas duas redes, **só no resumo da leitura** (passo 4), então confira-os ali.
+Abra a **Revisão** do mês. Os avisos que só você vê ficam num **quadro único**, compacto, no alto: **"Avisos da revisão (N)"**. Para o YouTube e o LinkedIn, o que aparece ali é o **aviso das visualizações no lugar do alcance** (veja a próxima seção). Os avisos de seguidores que não são os do último dia do mês (foto mais próxima, reconstruído, dia da leitura) aparecem **também no quadro**, nas duas redes, além do resumo da leitura (passo 4).
 
 ![Quadro Avisos da revisão com cinco itens, entre eles o aviso do YouTube: visualizações no lugar do alcance]({{ '/assets/img/app/app-98-revisao-quadro-avisos.png' | relative_url }})
 
@@ -197,7 +200,8 @@ Em caso de dúvida, não corrija na mão: **leia de novo no dia certo**, ou volt
 {: .tip }
 
 > **Armadilhas.**
-> - **Reler um mês já emitido muda os números que o cliente recebeu.** Releia **antes** de emitir, nunca depois.
+> - **Reler um mês já emitido muda os dados do mês, mas não o link do cliente**: ele só muda quando você reemitir o relatório (veja a [tarefa 11]({{ '/mes-do-analista/#relatório-emitido-fica-como-foi-emitido' | relative_url }})). Releia **antes** de emitir, não depois.
+> - **Leitura tardia traz números maiores.** As publicações continuam acumulando nos dias seguintes; o relatório diz, no rodapé, **"Publicações lidas em dd/mm"**. Para comparar um mês com o outro, leia sempre na mesma distância do fechamento.
 > - **Não leia no meio do ciclo e emita assim.** O número é o de **agora**: uma leitura anterior ao fim do ciclo traz um mês incompleto.
 > - **Substituir a planilha perde a categoria editorial que vinha nela.** Se a categoria importa para este cliente, mantenha a planilha ou volte a ela.
 > - **Visualização não é alcance.** No YouTube, não compare o número do alcance com o do Instagram como se fossem a mesma coisa.
@@ -238,7 +242,7 @@ Os dados do YouTube **lidos direto da API** passam por uma conferência diária 
 
 Cada aviso, o que ele quer dizer e o que fazer estão na [parte 6]({{ '/administracao/youtube-linkedin/#o-quadro-de-avisos-dos-dados-do-youtube' | relative_url }}).
 
-**Por que isso importa para você.** Um relatório emitido deixa de ser uma fotografia parada: o título de um vídeo pode mudar, e um vídeo apagado no canal sai do relatório mesmo depois de emitido. **Exemplo:** você emitiu o relatório de setembro com 5 vídeos; em outubro o canal apaga um deles, e o link do cliente passa a mostrar 4, com os totais do mês já ajustados.
+**Por que isso importa para você.** Um relatório emitido fica como foi emitido (veja a [tarefa 11]({{ '/mes-do-analista/#relatório-emitido-fica-como-foi-emitido' | relative_url }})), com esta exceção, por regra do Google: o título de um vídeo pode mudar, e um vídeo apagado no canal sai do relatório mesmo depois de emitido, inclusive da foto do relatório. **Exemplo:** você emitiu o relatório de setembro com 5 vídeos; em outubro o canal apaga um deles, e o link do cliente passa a mostrar 4, com os totais do mês já ajustados.
 
 > **O PDF que você já baixou ou enviou não muda.** O link do cliente e um PDF gerado depois mostram o relatório como ele está hoje. Se o cliente guardou um PDF antigo, ele ainda tem o vídeo que saiu. Quando um vídeo some de um relatório que já circulou, avise o cliente e envie o link (ou um PDF novo).
 {: .warning }

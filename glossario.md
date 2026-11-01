@@ -25,6 +25,12 @@ Definições curtas, em ordem alfabética, do jeito que cada termo é usado nest
 
 ## C
 
+**Conferência dos seguidores.** Bloco da aba **Meta** das configurações (só super-administrador) que mostra, por cliente e rede, quantos dias já têm foto de seguidores e ganhos guardados. Só números e datas. Veja [Ligar o Instagram e o Facebook]({{ '/administracao/meta/#conferência-dos-seguidores-aba-meta-só-super-admin' | relative_url }}).
+
+**Conflito de gravação.** Aviso amarelo que aparece quando o mês foi alterado em outra aba ou por outra pessoa depois que você o abriu. A sua alteração não é salva por cima; você escolhe **Recarregar o mês** ou **Salvar a minha mesmo assim**. Veja [Salvar com segurança]({{ '/mes-do-analista/#salvar-com-segurança-duas-pessoas-no-mesmo-mês-e-sair-sem-salvar' | relative_url }}).
+
+**Criação automática (do período).** Chave por cliente, desligada até o super-administrador ligar, que faz o sistema criar o mês e ler as fontes no dia seguinte ao fechamento, e ler de novo três dias depois. Nunca emite. O mês preparado ganha o selo **Criado automaticamente**. Veja [Quando o sistema cria e lê o mês sozinho]({{ '/mes-do-analista/#quando-o-sistema-cria-e-lê-o-mês-sozinho' | relative_url }}).
+
 **Cálculo próprio.** Número que o SocialReport calcula, e que não vem da rede. Com o YouTube, o **score ponderado**, a **taxa de engajamento** e os **totais** (inclusive os que somam o YouTube a outras redes) são cálculo próprio, e o relatório diz isso numa nota no rodapé. Veja [Vídeos do YouTube]({{ '/como-ler-o-relatorio/redes/#vídeos-do-youtube' | relative_url }}).
 
 **Captura de Stories.** Rotina que, a cada 4 horas, guarda os números dos Stories do Instagram que estão no ar, porque a Meta só os informa durante as 24 horas de vida do Story. A leitura do mês inclui os Stories capturados. Veja [Stories: o que a leitura traz]({{ '/mes-do-analista/ler-da-meta/' | relative_url }}#stories-o-que-a-leitura-traz).
@@ -49,6 +55,8 @@ Definições curtas, em ordem alfabética, do jeito que cada termo é usado nest
 
 ## D
 
+**Dia de fechamento.** Dia do mês em que o relatório de um cliente fecha, cadastrado pelo super-administrador. Com fechamento no dia 25, o período vai de 26 do mês anterior a 25, e o mês do relatório é o da data final. Sem ele, vale o mês civil. Veja [Período e fechamento do cliente]({{ '/administracao/#período-e-fechamento-do-cliente' | relative_url }}).
+
 **Destinatários do relatório.** Pessoas do cliente (nome e e-mail, até 20) que recebem o link do relatório por e-mail, pelo botão Compartilhar. Veja [Administração]({{ '/administracao/' | relative_url }}).
 
 ## E
@@ -59,7 +67,7 @@ Definições curtas, em ordem alfabética, do jeito que cada termo é usado nest
 
 ## F
 
-**Fotografia diária de seguidores.** Número de seguidores de cada conta (Instagram e Facebook) que o sistema anota toda noite, para cada cliente ligado à Meta. É o que dá o número do **último dia do mês**. Só existe a partir do dia em que o cliente foi ligado. Veja [Ler da Meta]({{ '/mes-do-analista/ler-da-meta/' | relative_url }}#2-escolha-o-dia-da-leitura).
+**Fotografia (ou foto) de seguidores.** Número de seguidores de cada conta (Instagram, Facebook, YouTube e LinkedIn) que o sistema anota a cada 4 horas, e na hora em que a ligação é confirmada, para cada cliente ligado. É o que dá o número do **último dia do mês**. Só existe a partir do dia em que o cliente foi ligado. Sem a foto do último dia, vale a **foto mais próxima** (até 3 dias de distância, com a data à vista na revisão); sem nenhuma, o campo do mês fechado fica em branco. Veja [Ler da Meta]({{ '/mes-do-analista/ler-da-meta/' | relative_url }}#2-escolha-o-dia-da-leitura).
 
 **Frequência semanal.** Média de publicações por semana. Veja [Comparativo geral]({{ '/como-ler-o-relatorio/redes/' | relative_url }}).
 
@@ -105,6 +113,8 @@ Definições curtas, em ordem alfabética, do jeito que cada termo é usado nest
 
 ## P
 
+**Publicações lidas em dd/mm.** Frase do rodapé de todo slide que diz de quando são as publicações, rede por rede (lida pela integração, ou planilha importada em tal dia). Veja [De quando são os números]({{ '/mes-do-analista/#de-quando-são-os-números-o-rodapé' | relative_url }}).
+
 **Parcial.** Selo dos Indicadores (BI) para um número que inclui o mês em andamento (ou medição do site ou dos cursos que começou no meio do mês). A variação sai em cinza, sem seta de alta ou queda. Veja [Indicadores (BI)]({{ '/mes-do-analista/indicadores/' | relative_url }}).
 
 **Pedido realizado.** Pedido feito na loja ou na doação online; não é pagamento confirmado. Veja [Pedidos e pagamentos]({{ '/conceitos/' | relative_url }}).
@@ -120,6 +130,10 @@ Definições curtas, em ordem alfabética, do jeito que cada termo é usado nest
 **Por mil.** Visitas ao site a cada mil pessoas alcançadas por uma rede. Veja [Das redes ao site]({{ '/como-ler-o-relatorio/site/' | relative_url }}).
 
 ## R
+
+**Reemitir.** Refazer a foto de um relatório já emitido, com o que o mês e o cadastro têm agora. É o único jeito de o link do cliente mostrar uma mudança feita depois da emissão. Pede confirmação, e o servidor registra quando e por quem. O link continua o mesmo.
+
+**Relatório emitido congelado.** O relatório emitido guarda uma foto de si mesmo (números, comparações, textos, meses anteriores e dados do cliente), e o link do cliente mostra essa foto. Mudar uma regra, o cadastro ou editar o mês não a altera. **Ver como emitido** mostra a foto; **Visualizar com as alterações** mostra como ficaria numa reemissão. Veja [Relatório emitido: fica como foi emitido]({{ '/mes-do-analista/#relatório-emitido-fica-como-foi-emitido' | relative_url }}).
 
 **Retenção média (do vídeo).** Quanto de um vídeo do YouTube as pessoas assistiram, em média, em porcentagem. Aparece na lista de vídeos do relatório; não tem relação com o prazo de guarda dos dados. Veja [Vídeos do YouTube]({{ '/como-ler-o-relatorio/redes/#vídeos-do-youtube' | relative_url }}).
 

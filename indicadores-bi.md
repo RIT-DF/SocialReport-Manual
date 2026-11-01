@@ -145,7 +145,7 @@ A decisão: a queda em publicações é real, e o ritmo de crescimento de seguid
 - **O alcance de um período é soma de meses, não pessoas diferentes.** A mesma pessoa pode estar nos três meses do trimestre. Diga "alcance somado de 54 mil", e não "alcançamos 54 mil pessoas". Veja [Alcance]({{ '/conceitos/' | relative_url }}).
 - **Seguidores não se somam.** O cartão mostra o valor do **último** mês com dado. Se esse mês é o em andamento, o número é provisório.
 - **Período diferente, conclusão diferente.** Comparar o 3º trimestre com o 4º, ou janeiro a março com abril a junho, mistura estações do ano. A comparação com o **mesmo período do ano passado** existe justamente para isso.
-- **Número do BI diferente do relatório?** Salve o relatório do mês de novo: é o salvamento que atualiza a base. Se o mês tem rascunho e relatório emitido, vale o emitido.
+- **Número do BI diferente do relatório?** Salve o relatório do mês de novo: é o salvamento que atualiza a base. Se o mês tem rascunho e relatório emitido, vale o emitido, e os números de um mês emitido saem da **foto do relatório emitido**, não do que o mês tem hoje: editar o mês depois de emitido só muda o BI quando você reemitir.
 - **Planilha para o cliente.** Exporte só os meses que ele precisa e diga, no corpo da mensagem, se o último é parcial. A coluna **Observação** ajuda, mas é fácil de passar batido.
 
 ## Quando dá errado

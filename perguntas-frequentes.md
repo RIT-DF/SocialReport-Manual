@@ -194,11 +194,11 @@ Não. Mês sem nenhum dado não conta (nenhuma publicação, nenhum seguidor, e 
 
 ### Criei o mês e apareceu um painel "Leitura das fontes". O que é? Preciso esperar?
 
-É a leitura das fontes que estavam marcadas em **Ler ao criar o mês**: Instagram, Facebook, YouTube, LinkedIn, site e cursos, as que o cliente tem ligadas. Ela corre **em segundo plano**, uma fonte de cada vez, e você **não precisa esperar**: pode abrir outro mês ou outro cliente. Só **não feche a página** até o painel mostrar o resumo. Veja [Ler as fontes ao criar o mês]({{ '/mes-do-analista/#ler-as-fontes-ao-criar-o-mês' | relative_url }}).
+É a leitura das fontes que estavam marcadas em **Ler ao criar o mês**: Instagram, Facebook, YouTube, LinkedIn, site e cursos, as que o cliente tem ligadas. Quem lê é o **servidor**, uma fonte de cada vez, e você **não precisa esperar**: pode abrir outro mês ou outro cliente, ou até fechar a página. O painel mostra o resumo quando você voltar. Veja [Ler as fontes ao criar o mês]({{ '/mes-do-analista/#ler-as-fontes-ao-criar-o-mês' | relative_url }}).
 
 ### Fechei a página antes de a leitura terminar. Perdi o mês?
 
-Não. O mês **fica criado, mas sem a leitura**. Abra o mês e use os botões de sempre: **Ler da Meta**, **Ler do YouTube**, **Ler do LinkedIn**, e na revisão **Atualizar dados do site** e **Atualizar dados dos cursos**.
+Não, e a leitura também não. Ela corre no **servidor** e termina com a página fechada. Ao voltar a **Períodos & Emissão**, o painel **Leitura das fontes** mostra o resultado de cada fonte. Só se o servidor reiniciar no meio e não conseguir retomar a fonte aparece **Com falha**, dizendo que a leitura foi interrompida: aí use o botão de ler da fonte (**Ler da Meta**, **Ler do YouTube**, **Ler do LinkedIn**; na revisão, **Atualizar dados do site** e **Atualizar dados dos cursos**). Se você fechou o painel no **X**, ele não volta.
 
 ### O painel diz que uma fonte falhou e as outras deram certo. O mês está bom?
 
@@ -211,6 +211,42 @@ Há três casos. **Não aparece**: o cliente contratou a rede, mas ninguém a li
 ### A leitura ao criar o mês trouxe poucos números. Por quê?
 
 Quase sempre porque o mês **ainda não terminou**: a leitura traz o que a rede mostra até o dia em que roda (a janela avisa isso). Leia de novo depois que o mês fechar. Em mês antigo, a própria rede pode ter deixado as publicações fora da janela de leitura dela, e a saída é a planilha.
+
+### Salvei uma alteração num relatório já emitido e o cliente continua vendo o texto antigo. É defeito?
+
+Não, é de propósito. O relatório emitido **fica como foi emitido**: o link do cliente mostra uma "foto" guardada na emissão, e nem a sua edição, nem uma mudança de regra, de cadastro ou de outro mês a alteram. Para o cliente ver a mudança, use **Reemitir Relatório** na revisão (o mesmo link passa a mostrar o novo). Para conferir antes, use **Visualizar com as alterações**; para ver o que o cliente vê agora, **Ver como emitido**. Veja [Relatório emitido: fica como foi emitido]({{ '/mes-do-analista/#relatório-emitido-fica-como-foi-emitido' | relative_url }}).
+
+### O rodapé não diz "Publicações lidas em…" no relatório que emiti em outubro. Por quê?
+
+Os relatórios emitidos antes da versão 1.43.1 não têm a frase de data. Ela aparece quando o relatório é **reemitido**. A data é guardada na emissão.
+
+### Por que o mesmo mês tem números maiores quando eu leio mais tarde?
+
+Porque as publicações continuam acumulando alcance, visualizações e interações nos dias seguintes, e a leitura traz o número **do dia em que você lê**. O rodapé diz de quando são. No YouTube, compartilhamentos e retenção média são acumulados até a leitura e crescem ainda mais. Para comparar um mês com outro, leia sempre na mesma distância do fechamento.
+
+### Apareceu uma faixa amarela dizendo que o mês foi alterado em outro lugar. O que faço?
+
+Outra aba (talvez a sua) ou outra pessoa gravou o mês depois que você o abriu, e o sistema **não salvou** a sua alteração para não apagar a do outro. O que você digitou continua na tela. **Recarregar o mês** traz a versão do servidor (e descarta o que você digitou); **Salvar a minha mesmo assim** grava a sua por cima, apagando a do outro. Veja [Salvar com segurança]({{ '/mes-do-analista/#salvar-com-segurança-duas-pessoas-no-mesmo-mês-e-sair-sem-salvar' | relative_url }}).
+
+### O sistema perguntou "Sair sem salvar?". Perco o que fiz?
+
+Se confirmar, sim: há alterações na revisão que ainda não foram salvas. Escolha **Continuar editando**, salve e saia.
+
+### Apareceu um mês que eu não criei, com o selo "Criado automaticamente". Quem fez isso?
+
+O sistema, porque o super-administrador ligou a **criação automática** para esse cliente: no dia seguinte ao fechamento ele cria o mês e lê as fontes, e três dias depois lê de novo, se o mês ainda não estiver emitido. Ele **nunca emite**: a revisão e a emissão são suas, e o painel do mês mostra o que foi lido e o que falhou. Veja [Quando o sistema cria e lê o mês sozinho]({{ '/mes-do-analista/#quando-o-sistema-cria-e-lê-o-mês-sozinho' | relative_url }}).
+
+### Apaguei o mês criado automaticamente. Ele volta?
+
+Não. Mês que o analista apagou não é recriado.
+
+### A janela Novo Período abriu com as datas 26/09 a 25/10. Está certo?
+
+Está, se o cliente fecha no dia 25: o super-administrador cadastrou o **dia de fechamento** dele, e o período vai de 26 do mês anterior a 25, com o mês do relatório sendo o da data final (outubro). Você pode mudar as datas à mão. Sem dia de fechamento, a janela abre no mês civil. Veja [Período e fechamento do cliente]({{ '/administracao/#período-e-fechamento-do-cliente' | relative_url }}).
+
+### Por que o LinkedIn deixou o alcance da conta vazio?
+
+O LinkedIn só informa o alcance da Página por **mês do calendário**. Com o ciclo fora do mês civil (fechamento no dia 25, por exemplo), o campo fica vazio, a leitura avisa, e você digita o valor se precisar dele.
 
 ### Para que servem as abas do modelo de planilha? Preciso preencher todas?
 
@@ -262,7 +298,7 @@ Ficam de fora, e vêm pela **planilha**: os Stories de **antes de a captura come
 
 ### O número de seguidores da leitura não é o do fim do mês. O que eu faço?
 
-A leitura usa, em ordem, a **fotografia** que o sistema tira toda noite (se o cliente já estava ligado no último dia do ciclo), um número **reconstruído** (só no Instagram, e só até 30 dias depois do fim do ciclo) ou, por último, o **número do dia da leitura**. Nos dois últimos, a revisão avisa para conferir. Se você tem o número do fim do mês no painel da rede, **digite-o** no bloco **Seguidores no fim do mês**: o que você digita **nunca é trocado sem a sua confirmação**.
+Para mês **fechado**, a leitura usa, em ordem, a **foto** do último dia (o sistema fotografa os seguidores a cada 4 horas, a partir do dia em que o cliente foi ligado), a **foto mais próxima** (até 3 dias de distância; a revisão diz a data), o total por dia que a rede guardou (Facebook) ou, no Instagram, um número **reconstruído** (até 30 dias depois do fim do ciclo). Sem nenhum deles, o **campo fica em branco**, com aviso: digite o número do fim do mês ou use o marco histórico do cliente. O número de hoje só entra em **mês em andamento**. O que você digita **nunca é trocado sem a sua confirmação**.
 
 ### Posso usar a planilha do Instagram e a leitura da Meta no mesmo mês?
 
