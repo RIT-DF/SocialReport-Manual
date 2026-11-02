@@ -148,6 +148,10 @@ Quando você clica em **Ler da Meta**, a leitura do mês **inclui os Stories cap
 - **Story de antes do início da captura.** Se o cliente foi ligado no dia 12, os Stories do dia 1 ao 11 não foram capturados. A revisão avisa desde quando a captura roda.
 - **Período em que o servidor ficou fora do ar por mais de 24 horas.** Um Story que nasceu e expirou nesse intervalo não foi visto por nenhuma captura.
 
+**Stories da planilha são mantidos.** Se o mês já tinha planilha do Instagram, ao ler a Meta os Stories da planilha anteriores à captura continuam no mês, ao lado das publicações lidas; o que o sistema capturou vale mais, sem repetir, e o resumo da leitura diz quantos vieram da planilha. Ler de novo não acumula, e "Voltar para a planilha" restaura tudo.
+
+**"Alcance não informado".** Quando a Meta devolve o alcance de todas as publicações do Facebook zerado, mas há visualizações, o relatório mostra "Alcance não informado" em vez de "0 contas alcançadas", e esse número não entra na soma do alcance. Uma planilha com zero de verdade numa linha ou outra não muda.
+
 **Story com poucos espectadores.** Quando um Story teve **menos de 5 espectadores**, a Meta **não informa** os números dele. O sistema o inclui mesmo assim, com **alcance e visualizações zerados**, e a observação da leitura diz **"Há N Stories sem visualizações informadas (a Meta não dá os números de Story com menos de 5 espectadores): eles entram com alcance e visualizações zerados."** Zero aí quer dizer "não informado", **não** "ninguém viu". Se esse Story importa e você tem o número no aplicativo da rede, traga-o pela planilha.
 
 > **Armadilha.** Os números de um Story são os da **última captura antes de expirar**, que pode ter sido até 4 horas antes do fim. Pode faltar um pouco do final da vida do Story, e o número da planilha exportada no aplicativo pode ser um pouco maior. Não é defeito: é o intervalo entre as capturas.
