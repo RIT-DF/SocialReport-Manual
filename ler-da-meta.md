@@ -123,7 +123,7 @@ Na lista **Extratos Importados**, cada arquivo diz de onde vem: a leitura aparec
 
 Abra a **Revisão** do mês. Os avisos que só você vê ficam num **quadro único**, compacto, no alto da página, com o título **"Avisos da revisão (N)"** e um item por aviso. O quadro abre aberto, para você não perder nenhum aviso, e **recolhe** com um clique no título (os itens continuam lá, só escondidos). Sem avisos, o quadro não aparece. Quando o mês usa a leitura, ele inclui os avisos sobre o que merece conferência antes de emitir:
 
-![Quadro Avisos da revisão com três itens: falta de seguidores, seguidores reconstruídos do Instagram e do Facebook numa linha só e a contagem de Stories capturados do Instagram]({{ '/assets/img/app/app-98-revisao-quadro-avisos.png' | relative_url }})
+![Quadro Avisos da revisão, numa leitura feita antes da 1.47.1, com três itens: falta de seguidores, o aviso antigo de seguidores reconstruídos do Instagram e do Facebook e a contagem de Stories capturados do Instagram]({{ '/assets/img/app/app-98-revisao-quadro-avisos.png' | relative_url }})
 
 - **"Instagram e Facebook: o número de seguidores foi reconstruído para dd/mm/aaaa ..."** Este aviso só aparece em leituras feitas **antes da 1.47.1**, quando o Instagram calculava o número a partir do de hoje. Esse número saía menor que o real: leia o mês de novo (o campo do Instagram fica em branco, para você digitar o número do fim do mês) ou confira com o painel da rede.
 - **"Instagram e Facebook: o número de seguidores é o da foto mais próxima, de dd/mm/aaaa; a do último dia do mês não estava guardada. Confira."** A foto do último dia faltou, e valeu a de um dia até 3 dias de distância, com a data à vista.
