@@ -72,6 +72,7 @@ Pense como pensaria no dia de exportar a planilha: depois que o ciclo termina, e
 
    - **Substituir** troca as postagens daquela rede pelas lidas. O arquivo da planilha **não é apagado**: fica guardado e deixa de contar (nem para as publicações, nem para seguidores, nem para o alcance da conta, nem para o link público).
    - **Cancelar** não muda **nada**, em nenhuma das redes. A pergunta vale para as duas redes juntas: se quer a leitura só de uma, clique em **Substituir** e depois use **Voltar para a planilha** na outra (passo 5).
+   - Se as postagens da planilha são só **Stories anteriores à captura**, que continuam no mês de qualquer jeito (veja o aviso sobre Stories da planilha, adiante), a pergunta diz isso e o botão é **Atualizar da Meta**, em vez de Substituir. Quando só parte das postagens sai, a pergunta informa quantos Stories continuam.
 3. Terminada a leitura, uma faixa passageira diz **"Leitura da Meta aplicada ao mês."** e o bloco lista o que aconteceu:
 
    ![Bloco Ler da Meta depois da leitura: pergunta sobre seguidores, lista do que foi lido em cada rede e, no pé, o arquivo lido de cada rede com o botão Voltar para a planilha]({{ '/assets/img/app/app-73-meta-leitura-aplicada.png' | relative_url }})
