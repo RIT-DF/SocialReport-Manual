@@ -298,11 +298,11 @@ Ficam de fora, e vêm pela **planilha**: os Stories de **antes de a captura come
 
 ### O número de seguidores da leitura não é o do fim do mês. O que eu faço?
 
-Para mês **fechado**, a leitura usa, em ordem, a **foto** do último dia (o sistema fotografa os seguidores a cada 4 horas, a partir do dia em que o cliente foi ligado), a **foto mais próxima** (até 3 dias de distância; a revisão diz a data), o total por dia que a rede guardou (Facebook) ou, no Instagram, um número **reconstruído** (até 30 dias depois do fim do ciclo). Sem nenhum deles, o **campo fica em branco**, com aviso: digite o número do fim do mês ou use o marco histórico do cliente. O número de hoje só entra em **mês em andamento**. O que você digita **nunca é trocado sem a sua confirmação**.
+Para mês **fechado**, a leitura usa, em ordem, a **foto** do último dia (o sistema fotografa os seguidores a cada 4 horas, a partir do dia em que o cliente foi ligado), a **foto mais próxima** (até 3 dias de distância; a revisão diz a data), ou o total por dia que a rede guardou (Facebook). **O Instagram não reconstrói o número:** o ganho diário que a Meta informa não desconta quem deixou de seguir e daria um valor menor que o real. Sem nenhum deles, o **campo fica em branco**, com aviso: digite o número do fim do mês ou use o marco histórico do cliente. O número de hoje só entra em **mês em andamento**. O que você digita **nunca é trocado sem a sua confirmação**.
 
 ### Posso usar a planilha do Instagram e a leitura da Meta no mesmo mês?
 
-Para a mesma rede, **uma fonte só**: contar as duas duplicaria cada publicação. Se o mês já tem a planilha do Instagram, o sistema pergunta se pode **substituí-la** pela leitura, guarda a planilha e deixa você **voltar para ela** quando quiser. Instagram por uma fonte e Facebook por outra é permitido.
+Para a mesma rede, **uma fonte só**: contar as duas duplicaria cada publicação. Se o mês já tem a planilha do Instagram, o sistema pergunta se pode **substituí-la** pela leitura, guarda a planilha e deixa você **voltar para ela** quando quiser. Instagram por uma fonte e Facebook por outra é permitido. **As publicações da planilha que a Meta não traz (como algumas colaborações) continuam no mês**, desde que a linha tenha o **link** da publicação; as que a Meta traz valem com os **números dela**, sem repetir. Linha da planilha sem link não continua, e o resumo da leitura diz quantas ficaram de fora.
 
 ### A leitura da Meta enxerga quem me segue ou quem comentou?
 
