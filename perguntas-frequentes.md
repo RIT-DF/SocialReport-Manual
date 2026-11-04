@@ -266,6 +266,10 @@ Funciona, como sempre funcionou. As planilhas do modelo antigo, as exportações
 
 ## Sobre a leitura pela Meta
 
+### O que é o botão "Ler tudo"? Preciso clicar em cada fonte?
+
+Não. O **Ler tudo**, no alto do card **Ler automaticamente**, lê todas as fontes ligadas do mês, uma depois da outra. Ele pergunta uma vez se o mês já foi emitido, e a substituição de planilha ou a troca de seguidores aparecem uma de cada vez, só para a fonte que as pede. Ao terminar, um aviso no canto mostra o resultado de cada fonte. Veja [Ler tudo, de uma vez]({{ '/mes-do-analista/#3e-ler-tudo-de-uma-vez' | relative_url }}).
+
 ### O que é "Ler da Meta"? Ainda preciso da planilha?
 
 É a linha da Meta, no card **Ler automaticamente** da página do mês, que traz as publicações do Instagram e do Facebook **direto das contas do cliente**, sem exportar e importar planilha. Ele só existe para o cliente que o super-administrador **ligou à Meta**. A planilha continua valendo e continua necessária para os **Stories de antes da captura**, para a **categoria editorial** e para o TikTok (o YouTube e o LinkedIn têm [o próprio botão]({{ '/mes-do-analista/ler-do-youtube-e-linkedin/' | relative_url }})). Veja [Ler da Meta]({{ '/mes-do-analista/ler-da-meta/' | relative_url }}).

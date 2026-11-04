@@ -23,12 +23,13 @@ Os exemplos e as telas vêm do relatório de outubro de 2026 do **Instituto Hori
 | 3b | [Informar os seguidores de cada rede](#3b-informar-os-seguidores-de-cada-rede) | Períodos & Emissão |
 | 3c | [Ler da Meta, no lugar da planilha](#3c-ler-da-meta-no-lugar-da-planilha) | Períodos & Emissão |
 | 3d | [Ler do YouTube e do LinkedIn, no lugar da planilha](#3d-ler-do-youtube-e-do-linkedin-no-lugar-da-planilha) | Períodos & Emissão |
+| 3e | [Ler tudo, de uma vez](#3e-ler-tudo-de-uma-vez) | Períodos & Emissão |
 | 4 | [Conferir as inconsistências da importação](#4-conferir-as-inconsistências-da-importação) | durante a importação |
 | 5 | [Conferir os números e marcar os posts fora da curva](#5-conferir-os-números-e-marcar-os-posts-fora-da-curva) | Períodos & Emissão |
 | 6 | [Classificar as categorias](#6-classificar-as-categorias) | planilha e cadastro do cliente |
 | 7 | [Revisar o capítulo do site](#7-revisar-o-capítulo-do-site) | Revisão |
 | 7b | [Revisar o capítulo dos cursos](#7b-revisar-o-capítulo-dos-cursos) | Revisão |
-| 8 | [Cuidar do clipping](#8-cuidar-do-clipping-imprensa) | Períodos & Emissão |
+| 8 | [Cuidar do clipping](#8-cuidar-do-clipping-imprensa) | Períodos & Emissão (escanear) e Revisão (aprovar) |
 | 9 | [Gerar e revisar a análise da IA](#9-gerar-e-revisar-a-análise-da-ia) | Revisão |
 | 10 | [Conferir a capa e as imagens dos melhores posts](#10-conferir-a-capa-e-as-imagens-dos-melhores-posts) | Revisão |
 | 11 | [Salvar e emitir o relatório](#11-salvar-e-emitir-o-relatório), com o [relatório emitido congelado](#relatório-emitido-fica-como-foi-emitido) e a [gravação segura](#salvar-com-segurança-duas-pessoas-no-mesmo-mês-e-sair-sem-salvar) | Revisão |
@@ -350,7 +351,7 @@ Quando o número foi lido das redes e não é o do último dia, a lista diz de o
 
 ## 3c. Ler da Meta, no lugar da planilha
 
-**Por que importa.** Para o cliente que o super-administrador **ligou à Meta**, o Instagram e o Facebook do mês podem vir direto das contas: na linha do Instagram ou do Facebook, no card **Ler automaticamente**, um clique em **Ler** traz as publicações, com alcance, visualizações e interações, e oferece o número de seguidores do fim do mês. Não há planilha para exportar, conferir e trocar sem querer por outra. **A planilha continua valendo**, e a categoria editorial, as outras redes e os Stories de antes da captura seguem vindo por ela. Os Stories que o sistema capturou enquanto estavam no ar entram na leitura.
+**Por que importa.** Para o cliente que o super-administrador **ligou à Meta**, o Instagram e o Facebook do mês podem vir direto das contas: na linha do Instagram ou do Facebook, no card **Ler automaticamente**, um clique em **Ler** traz as publicações, com alcance, visualizações e interações, e oferece o número de seguidores do fim do mês. Não há planilha para exportar, conferir e trocar sem querer por outra. **A planilha continua valendo**, e a categoria editorial, as outras redes e os Stories de antes da captura seguem vindo por ela. Os Stories que o sistema capturou enquanto estavam no ar entram na leitura. O Instagram e o Facebook têm cada um a sua linha, e cada linha fala só da própria rede.
 
 Os números da leitura são os **do momento em que você lê** (como exportar a planilha naquele dia), e cada rede usa **uma fonte por mês**: ou a planilha ou a Meta. Substituir a planilha pede confirmação, e dá para **voltar para a planilha**.
 
@@ -371,6 +372,20 @@ Cada rede ligada tem a **sua** linha no card. O passo a passo, os avisos e o que
 
 > **Mês novo?** Crie o mês [sem planilha](#criar-o-mês-sem-planilha): as linhas do YouTube e do LinkedIn, no card **Ler automaticamente**, já aparecem na página dele. Com as redes marcadas em **Ler ao criar o mês**, a leitura corre sozinha ao criar ([veja como](#ler-as-fontes-ao-criar-o-mês)), e a linha de cada rede serve para refazê-la.
 {: .tip }
+
+## 3e. Ler tudo, de uma vez
+
+**Por que importa.** Com várias fontes ligadas, o mês pedia um clique por linha: Instagram, Facebook, YouTube, LinkedIn, site, cursos e imprensa. O botão **Ler tudo**, no alto do card **Ler automaticamente**, faz essa sequência de uma vez. Você clica uma vez e segue com outra coisa enquanto o sistema lê.
+
+**O que ele faz**
+
+- Lê **todas as fontes ligadas** do mês, uma depois da outra, na ordem das linhas do card, com a imprensa por último. São as mesmas leituras de cada linha, com as mesmas regras de cada uma.
+- **Pula** a fonte que não está em condição de ler agora e diz o motivo (por exemplo, a ligação expirada). Uma fonte pulada não para as outras.
+- Quando uma fonte precisa de decisão sua, **a pergunta aparece uma de cada vez**, só para a fonte que a pediu: substituir a planilha pela leitura da Meta, ou trocar o número de seguidores. O sistema espera a sua resposta antes de passar para a fonte seguinte.
+- Enquanto alguma leitura está rodando, o botão mostra **Lendo tudo...** e fica desabilitado.
+- **Mês já emitido:** o **Ler tudo** pede **uma** confirmação só, no início. A leitura não muda o que o cliente vê até você reemitir (veja [Relatório emitido fica como foi emitido](#relatório-emitido-fica-como-foi-emitido)).
+
+**Ao terminar**, um aviso no canto da tela diz o que aconteceu com cada fonte: **lida**, **sem mudança**, **falhou** (com o motivo) ou **pulada** (com o motivo). Uma fonte que falha **não impede** a leitura das outras. A que falhou aparece no aviso, e você a lê de novo pelo botão da própria linha.
 
 ## 4. Conferir as inconsistências da importação
 
@@ -488,10 +503,10 @@ Na revisão, o bloco **Cursos** vem logo depois do bloco do site.
 
 **Por que importa.** O clipping mostra o que a imprensa disse sobre a organização. É uma página opcional, mas, quando existe, é uma das que o conselho e os financiadores mais gostam, porque é prova externa de credibilidade.
 
-Na página do período, o cartão **Repercussão na Imprensa & Clipping** mostra quantas matérias estão **aprovadas** para o relatório, o sentimento favorável e a **síntese da imprensa**.
+A busca de notícias é a linha **Imprensa** do card **Ler automaticamente**, na página do período. Ela aparece quando o cliente tem o **monitoramento de mídia** ativo, e entra também no **Ler tudo** ([tarefa 3e](#3e-ler-tudo-de-uma-vez)). O que a varredura encontrou (o total de matérias **aprovadas** para o relatório, o sentimento favorável e a **síntese da imprensa**) e o botão **Revisar clipping** ficam na **tela de revisão**, logo abaixo dos números do mês.
 
-- **Escanear Notícias na Web** faz a varredura automática de notícias no ciclo, com os termos que o cliente cadastrou (nome, siglas, termos de contexto, termos a ignorar e veículos prioritários).
-- **Revisar Clipping** abre a **curadoria**: você vê as matérias encontradas, escolhe **as que entram** no relatório, **adiciona uma matéria à mão** quando tiver uma reportagem comprovada e confirma com **Confirmar no Relatório**.
+- **Escanear notícias**, na linha Imprensa, faz a varredura automática de notícias no ciclo, com os termos que o cliente cadastrou (nome, siglas, termos de contexto, termos a ignorar e veículos prioritários).
+- **Revisar clipping**, na revisão, abre a **curadoria**: você vê as matérias encontradas, escolhe **as que entram** no relatório, **adiciona uma matéria à mão** quando tiver uma reportagem comprovada e confirma com **Confirmar no Relatório**.
 
 ![Curadoria de notícias na imprensa, sem matérias encontradas, com os botões para buscar e para adicionar uma matéria]({{ '/assets/img/app/app-07-clipping.png' | relative_url }})
 

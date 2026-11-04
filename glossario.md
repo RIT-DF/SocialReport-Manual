@@ -81,11 +81,13 @@ Definições curtas, em ordem alfabética, do jeito que cada termo é usado nest
 
 **Ler ao criar o mês.** Bloco da janela **Novo Período** que lista as fontes ligadas do cliente (Instagram, Facebook, YouTube, LinkedIn, site e cursos), já marcadas. Ao criar o mês, as marcadas são lidas em segundo plano, e o painel **Leitura das fontes** mostra o resultado de cada uma: concluída, recusada ou com falha. Veja [Ler as fontes ao criar o mês]({{ '/mes-do-analista/#ler-as-fontes-ao-criar-o-mês' | relative_url }}).
 
-**Ler automaticamente.** Card da página do mês (Períodos & Emissão) com uma linha por fonte ligada do cliente: Instagram, Facebook, YouTube, LinkedIn, site e cursos. Cada linha tem o botão **Ler** (ou **Ler de novo**). Acima dele fica o número de cada fonte, e logo abaixo vêm os **Indicadores principais do período**.
+**Ler automaticamente.** Card da página do mês (Períodos & Emissão) com uma linha por fonte ligada do cliente: Instagram, Facebook, YouTube, LinkedIn, site, cursos e, com o monitoramento de mídia ativo, Imprensa. Cada linha tem o botão **Ler** (ou **Ler de novo**), e o alto do card tem o botão **Ler tudo**. Acima dele fica o número de cada fonte, e logo abaixo vêm os **Indicadores principais do período**.
 
 **Ler da Meta.** Linha da Meta no card **Ler automaticamente** da página do mês, com o botão **Ler**, que traz as publicações do Instagram e do Facebook direto das contas do cliente, no lugar da planilha, para os clientes ligados à Meta. Os números são os do momento da leitura. Veja [Ler da Meta]({{ '/mes-do-analista/ler-da-meta/' | relative_url }}).
 
 **Ler do YouTube / Ler do LinkedIn.** Linhas do card **Ler automaticamente** da página do mês, uma para cada rede, com o botão **Ler**, que trazem os vídeos do canal e as publicações da Página direto da rede, no lugar da planilha. Veja [Ler do YouTube e do LinkedIn]({{ '/mes-do-analista/ler-do-youtube-e-linkedin/' | relative_url }}).
+
+**Ler tudo.** Botão no alto do card **Ler automaticamente**: lê, uma depois da outra, todas as fontes ligadas do mês. Ao terminar, um aviso no canto mostra o resultado de cada uma. Veja [Ler tudo, de uma vez]({{ '/mes-do-analista/#3e-ler-tudo-de-uma-vez' | relative_url }}).
 
 **Ligação (com a Meta).** A autorização, dada por uma pessoa que administra a Página do cliente, que permite ao sistema ler o Instagram e o Facebook dele. Feita pelo super-administrador, no cadastro do cliente, e renovada quando vence. Veja [Ligar o Instagram e o Facebook]({{ '/administracao/meta/' | relative_url }}).
 
