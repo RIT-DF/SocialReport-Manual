@@ -7,7 +7,7 @@ permalink: /mes-do-analista/ler-do-youtube-e-linkedin/
 
 # Ler do YouTube e do LinkedIn
 
-Esta página é para quem **produz** o relatório. Os botões **Ler do YouTube** e **Ler do LinkedIn**, na página do mês, trazem as publicações **direto do canal e da Página do cliente**, no mesmo formato da planilha, sem você precisar exportar e importar. Eles só aparecem para um cliente que o super-administrador já **ligou** àquela rede (veja a [parte 6]({{ '/administracao/youtube-linkedin/' | relative_url }}), que é dele). O caminho é o mesmo do [Ler da Meta]({{ '/mes-do-analista/ler-da-meta/' | relative_url }}); esta página mostra o que muda em cada rede.
+Esta página é para quem **produz** o relatório. As linhas do YouTube e do LinkedIn, no card **Ler automaticamente** da página do mês (botão **Ler**), trazem as publicações **direto do canal e da Página do cliente**, no mesmo formato da planilha, sem você precisar exportar e importar. Elas só aparecem para um cliente que o super-administrador já **ligou** àquela rede (veja a [parte 6]({{ '/administracao/youtube-linkedin/' | relative_url }}), que é dele). O caminho é o mesmo do [Ler da Meta]({{ '/mes-do-analista/ler-da-meta/' | relative_url }}); esta página mostra o que muda em cada rede.
 
 As telas desta página vêm de uma organização fictícia, o **Instituto Horizonte**, e de simulações do YouTube e do LinkedIn. Nomes, @ e números são inventados.
 
@@ -18,13 +18,13 @@ As telas desta página vêm de uma organização fictícia, o **Instituto Horizo
 
 O fechamento do mês pede planilha de cada rede, no período certo, do cliente certo. A leitura direta tira esses passos do caminho e ainda resolve um número que a planilha quase nunca traz com exatidão: o de **inscritos** (YouTube) ou **seguidores** (LinkedIn) **no fim do mês**.
 
-**Exemplo.** No fechamento de outubro, a analista abre o mês do Instituto Horizonte e clica em **Ler do YouTube**. Entram 5 vídeos, com visualizações, curtidas, comentários, compartilhamentos e retenção de cada um, e o sistema oferece o número de inscritos do fim do mês. Em seguida ela clica em **Ler do LinkedIn**: entram as 5 publicações da Página, e o sistema avisa que um anúncio patrocinado ficou de fora, porque o relatório é do **orgânico**. Ela confere a quantidade com o que vê nas duas redes e segue para a revisão.
+**Exemplo.** No fechamento de outubro, a analista abre o mês do Instituto Horizonte e clica em **Ler** na linha do YouTube. Entram 5 vídeos, com visualizações, curtidas, comentários, compartilhamentos e retenção de cada um, e o sistema oferece o número de inscritos do fim do mês. Em seguida ela clica em **Ler** na linha do LinkedIn: entram as 5 publicações da Página, e o sistema avisa que um anúncio patrocinado ficou de fora, porque o relatório é do **orgânico**. Ela confere a quantidade com o que vê nas duas redes e segue para a revisão.
 
 **Quando continuar na planilha.** A leitura **não substitui** a planilha em tudo:
 
 - **O que é privado ou pago não entra.** No YouTube, vídeos **privados, não listados ou agendados** ficam de fora. No LinkedIn, o anúncio patrocinado fora do feed fica de fora.
 - **A categoria editorial não vem.** As redes não sabem que publicação é "Institucional" ou "Serviço", então as publicações lidas chegam como **Geral**. Veja [a tarefa 6]({{ '/mes-do-analista/#6-classificar-as-categorias' | relative_url }}).
-- **Instagram e Facebook** têm o seu botão, o [Ler da Meta]({{ '/mes-do-analista/ler-da-meta/' | relative_url }}). **TikTok** continua só por planilha.
+- **Instagram e Facebook** têm a sua linha no card, a [Ler da Meta]({{ '/mes-do-analista/ler-da-meta/' | relative_url }}). **TikTok** continua só por planilha.
 - **Cliente que ninguém ligou** não tem o botão.
 - **O LinkedIn só guarda cerca de 12 meses de estatísticas.** Para um mês mais antigo, prefira a planilha.
 
@@ -37,7 +37,7 @@ O fechamento do mês pede planilha de cada rede, no período certo, do cliente c
 | **Números por publicação** | visualizações, curtidas, comentários, compartilhamentos e **retenção** média | alcance, impressões, curtidas, comentários, compartilhamentos e **cliques** |
 | **O número do fim do mês** | **inscritos** do canal | **seguidores** da Página |
 | **Alcance da conta no mês** | não existe | só quando o ciclo é o **mês do calendário** (do dia 1 ao último) |
-| **Botão** | **Ler do YouTube** | **Ler do LinkedIn** |
+| **Botão** | **Ler**, na linha do YouTube | **Ler**, na linha do LinkedIn |
 
 Cada rede tem o **seu** botão, no seu bloco, e as duas leituras são independentes: ler uma não mexe na outra.
 
@@ -45,13 +45,13 @@ Cada rede tem o **seu** botão, no seu bloco, e as duas leituras são independen
 
 1. **Uma fonte por rede, em cada mês.** O YouTube do mês vem **ou** da planilha **ou** da leitura, nunca dos dois: somar os dois contaria cada vídeo duas vezes. Se o mês já tem vídeos de planilha, o sistema pergunta se pode substituí-los (veja o passo 3). A planilha **fica guardada**, e dá para voltar a ela. O mesmo vale para o LinkedIn.
 2. **Os números são os do momento da leitura.** Uma publicação continua acumulando visualizações e interações nos dias seguintes. A leitura traz o que a rede mostra **naquela hora**, e a tela diz: **"lido em dd/mm hh:mm (números acumulados até esse momento)"**. É o mesmo que exportar a planilha naquele dia.
-3. **O mês precisa existir.** Os blocos ficam na página de um mês que já existe. Se o mês ainda não existe, crie-o **sem planilha**: em **Novo Período**, não escolha arquivo e clique em **Criar mês sem planilha** (veja a [tarefa 2]({{ '/mes-do-analista/#criar-o-mês-sem-planilha' | relative_url }})). O mês nasce com **"0 publicações"** e já abre com os blocos **Ler do YouTube** e **Ler do LinkedIn** das redes ligadas. Não é preciso subir uma planilha só para o mês nascer. Com o **YouTube** (e o **LinkedIn**, quando a leitura dele estiver disponível) marcados em **Ler ao criar o mês**, a leitura já corre sozinha logo depois de o mês ser criado (veja [Ler as fontes ao criar o mês]({{ '/mes-do-analista/#ler-as-fontes-ao-criar-o-mês' | relative_url }})); estes botões servem para refazê-la.
+3. **O mês precisa existir.** O card **Ler automaticamente** fica na página de um mês que já existe. Se o mês ainda não existe, crie-o **sem planilha**: em **Novo Período**, não escolha arquivo e clique em **Criar mês sem planilha** (veja a [tarefa 2]({{ '/mes-do-analista/#criar-o-mês-sem-planilha' | relative_url }})). O mês nasce com **"0 publicações"** e já abre com as linhas do YouTube e do LinkedIn, no card **Ler automaticamente**, das redes ligadas. Não é preciso subir uma planilha só para o mês nascer. Com o **YouTube** (e o **LinkedIn**, quando a leitura dele estiver disponível) marcados em **Ler ao criar o mês**, a leitura já corre sozinha logo depois de o mês ser criado (veja [Ler as fontes ao criar o mês]({{ '/mes-do-analista/#ler-as-fontes-ao-criar-o-mês' | relative_url }})); a linha de cada rede serve para refazê-la.
 
 ## Passo a passo
 
 ### 1. Confira o estado da ligação
 
-Em **Períodos & Emissão**, abra o mês. Cada rede ligada ganha um bloco, **Ler do YouTube** e **Ler do LinkedIn**, logo depois do bloco **Ler da Meta** e antes de **Seguidores no fim do mês**.
+Em **Períodos & Emissão**, abra o mês. No card **Ler automaticamente**, cada rede ligada ganha uma linha: **YouTube** e **LinkedIn**, depois da linha da Meta. O card fica antes de **Indicadores principais do período**.
 
 ![Bloco Ler do YouTube na página do mês, com a mensagem YouTube ligado, a explicação de que as visualizações vão no lugar do alcance e o botão Ler do YouTube]({{ '/assets/img/app/app-92-youtube-ler-do-youtube.png' | relative_url }})
 
@@ -82,7 +82,7 @@ Pense como pensaria no dia de exportar a planilha: depois que o ciclo termina, e
 
 ### 3. Leia
 
-1. Clique em **Ler do YouTube** (ou **Ler do LinkedIn**). O botão mostra **"Lendo..."** enquanto o servidor busca, para o **ciclo do período** (veja a [tarefa 2]({{ '/mes-do-analista/#2-criar-o-período-do-mês' | relative_url }})): as datas do ciclo é que mandam, e não o mês do calendário.
+1. Na linha do YouTube (ou do LinkedIn), clique em **Ler**. O botão mostra **"Lendo..."** enquanto o servidor busca, para o **ciclo do período** (veja a [tarefa 2]({{ '/mes-do-analista/#2-criar-o-período-do-mês' | relative_url }})): as datas do ciclo é que mandam, e não o mês do calendário.
 2. **Se o mês já tem postagens vindas de planilha daquela rede**, o bloco pergunta antes de mexer em qualquer coisa: **"Substituir as N postagens do YouTube da planilha "…" pela leitura do YouTube? A planilha fica guardada e dá para voltar a ela."**
    - **Substituir** troca as postagens daquela rede pelas lidas. O arquivo da planilha **não é apagado**: fica guardado e deixa de contar.
    - **Cancelar** não muda **nada**.
@@ -131,7 +131,7 @@ Abaixo vêm as **observações da leitura**, cada uma começando pelo nome da re
 
 ### 5. Os seguidores do fim do mês
 
-A leitura traz o número de inscritos ou seguidores da rede e o oferece ao campo **Seguidores no fim do mês** (tarefa 3b). A regra é a mesma da Meta, de **nunca passar por cima do que você digitou**:
+A leitura traz o número de inscritos ou seguidores da rede e o oferece ao campo de seguidores do mês, em **Indicadores principais do período** (tarefa 3b). A regra é a mesma da Meta, de **nunca passar por cima do que você digitou**:
 
 - **Campo vazio** (ou com o número que a leitura anterior pôs, e que você não mexeu): o sistema **preenche**.
 - **Campo com outro número** (um que você digitou): o sistema **mantém o seu** e pergunta: **"Seguidores do YouTube: o mês tem 1.230 digitado; a leitura trouxe 1.234. Trocar?"**, com os botões **Usar 1.234** e **Manter 1.230**.
@@ -152,7 +152,7 @@ Na lista **Extratos Importados**, cada arquivo diz de onde vem: a leitura aparec
 
 ### 7. Os avisos na revisão
 
-Abra a **Revisão** do mês. Os avisos que só você vê ficam num **quadro único**, compacto, no alto: **"Avisos da revisão (N)"**. Para o YouTube e o LinkedIn, o que aparece ali é o **aviso das visualizações no lugar do alcance** (veja a próxima seção). Os avisos de seguidores que não são os do último dia do mês (foto mais próxima, reconstruído, dia da leitura) aparecem **também no quadro**, nas duas redes, além do resumo da leitura (passo 4).
+Abra a **Revisão** do mês. Os avisos que só você vê ficam atrás do **ícone de avisos ao lado de Emitir**: a lista **"Avisos da revisão (N)"**. Para o YouTube e o LinkedIn, o que aparece ali é o **aviso das visualizações no lugar do alcance** (veja a próxima seção). Os avisos de seguidores que não são os do último dia do mês (foto mais próxima, reconstruído, dia da leitura) aparecem **também na lista**, nas duas redes, além do resumo da leitura (passo 4).
 
 ![Quadro Avisos da revisão com cinco itens, entre eles o aviso do YouTube: visualizações no lugar do alcance]({{ '/assets/img/app/app-98-revisao-quadro-avisos.png' | relative_url }})
 
@@ -221,7 +221,7 @@ Em caso de dúvida, não corrija na mão: **leia de novo no dia certo**, ou volt
 | **O app do YouTube não está configurado (configurações do sistema, aba YouTube).** / **A leitura automática do YouTube ainda não está disponível nesta versão.** | Problema do super-administrador |
 | **Não foi possível baixar o original de "…". Envie a planilha de novo.** (ao voltar para a planilha) | A planilha guardada não pôde ser lida. Importe-a de novo em **Acrescentar Planilha** |
 | **"…" precisa de mapeamento de colunas: envie a planilha de novo pelo "Acrescentar Planilha".** (ao voltar) | Importe a planilha de novo e ligue as colunas, como na tarefa 4 |
-| O bloco **Ler do YouTube** (ou **Ler do LinkedIn**) não aparece | O cliente não foi ligado àquela rede. Fale com o super-administrador |
+| A linha do YouTube (ou do LinkedIn) no card **Ler automaticamente** não aparece | O cliente não foi ligado àquela rede. Fale com o super-administrador |
 
 ## Limites do papel
 

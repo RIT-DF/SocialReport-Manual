@@ -104,7 +104,7 @@ Com o destino **Por e-mail ao administrador**, cada cópia chega por e-mail, com
 Se uma cópia ou um teste de restauração falha, o administrador recebe um e-mail de assunto **"[SocialReport] Cópia de segurança: FALHA na cópia"** (ou **"no teste de restauração"**). Ele diz **o que aconteceu**, em texto curto (sem endereço do banco nem caminho do servidor), **o que isso significa** e **o que fazer**:
 
 - a cópia **daquele horário** não existe, mas as anteriores continuam válidas onde estavam;
-- abra **Configurações do sistema > Cópias de segurança** e leia a mensagem completa no histórico;
+- abra **Configurações do sistema > Segurança > Cópias de segurança** e leia a mensagem completa no histórico;
 - confira o **servidor de e-mail (SMTP)**, o destino escolhido e o espaço livre no servidor;
 - clique em **Fazer cópia agora** (ou **Testar restauração**) para tentar de novo;
 - se repetir, chame o suporte técnico levando a mensagem do e-mail.
@@ -223,10 +223,10 @@ O `saida.dump` é um arquivo de banco de dados do PostgreSQL. **Restaurar** o si
 - **E-mail (SMTP)**: a senha do servidor de e-mail;
 - **Login com Google**: o segredo do cliente Google (depois de salvar, o serviço de login precisa ser recriado, passo do suporte técnico);
 - **Matomo**: o token de leitura e, se usar a conexão automática por código, o token de administração;
-- **Licença do V3RAnalytics** (aba **Matomo**): a licença da instância (veja [Site e plugin]({{ '/site-e-plugin/' | relative_url }}));
+- **Licença do V3RAnalytics** (sub-aba **Matomo e V3RAnalytics**, em **Fontes de dados**): a licença da instância (veja [Site e plugin]({{ '/site-e-plugin/' | relative_url }}));
 - **Moodle de cada cliente** (não é uma aba de Configurações do sistema: fica no **cadastro do cliente**, seção **Plataforma de cursos**, bloco **Acesso ao Moodle**): o token (ou, no jeito do complemento, o **código de conexão**, que se gera de novo na página do complemento no Moodle) de **cada cliente** que tem Moodle. O endereço, o modo de conexão e o id do relatório continuam lá, só a chave precisa ser colada de novo;
-- **Meta (Instagram e Facebook)**: o **segredo do app**, na aba **Meta**, e depois **Renovar ligação** em **cada cliente** ligado, no cadastro do cliente (seção **Redes sociais (Meta)**). A cópia guarda quem estava ligado, mas não a chave: o cadastro mostra "precisa religar" até o login ser refeito (veja [Ligar o Instagram e o Facebook]({{ '/administracao/meta/' | relative_url }}));
-- **YouTube e LinkedIn**: o **segredo do app** de cada rede, na aba **YouTube** e na aba **LinkedIn**, e depois **Religar** em **cada cliente** ligado, no cadastro do cliente (seções **YouTube** e **LinkedIn**). A cópia guarda quem estava ligado, mas não a chave: o cadastro mostra "precisa religar" até o login ser refeito (veja [Ligar o YouTube e o LinkedIn]({{ '/administracao/youtube-linkedin/' | relative_url }}));
+- **Meta (Instagram e Facebook)**: o **segredo do app**, na sub-aba **Meta** (em **Fontes de dados**), e depois **Renovar ligação** em **cada cliente** ligado, no cadastro do cliente (seção **Redes sociais (Meta)**). A cópia guarda quem estava ligado, mas não a chave: o cadastro mostra "precisa religar" até o login ser refeito (veja [Ligar o Instagram e o Facebook]({{ '/administracao/meta/' | relative_url }}));
+- **YouTube e LinkedIn**: o **segredo do app** de cada rede, nas sub-abas **YouTube** e **LinkedIn** (em **Fontes de dados**), e depois **Religar** em **cada cliente** ligado, no cadastro do cliente (seções **YouTube** e **LinkedIn**). A cópia guarda quem estava ligado, mas não a chave: o cadastro mostra "precisa religar" até o login ser refeito (veja [Ligar o YouTube e o LinkedIn]({{ '/administracao/youtube-linkedin/' | relative_url }}));
 - **Cópias de segurança**: uma **senha nova** para as cópias, que depois deve ser provada com **Provar a senha**.
 
 Enquanto isso não for feito, a IA, o envio de e-mail (inclusive o envio do link do relatório ao cliente), o login com Google, a leitura do Matomo, do Moodle, da Meta, do YouTube e do LinkedIn e as cópias ficam desligados, e os plugins V3RAnalytics conectados depois não recebem licença. Os **usuários continuam entrando com as mesmas senhas**.

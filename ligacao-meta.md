@@ -15,9 +15,9 @@ As telas desta página vêm de uma organização fictícia, o **Instituto Horizo
 
 Sem a ligação, todo mês alguém exporta a planilha de cada rede, confere se é a do cliente certo, se é o período certo, e importa. É trabalho repetido, e é nele que se erra: planilha de outro cliente, de outro mês, seguidores esquecidos.
 
-Com a ligação, o analista clica em **Ler da Meta** na página do mês, e o sistema traz as publicações do mês, com alcance, visualizações e interações, no mesmo formato da planilha, mais o número de seguidores do fim do mês. **A planilha continua valendo**: ela segue sendo o caminho para os Stories de antes da captura, para o LinkedIn, o TikTok e o YouTube, e para qualquer cliente que você ainda não ligou. A ligação é uma segunda fonte, que o analista escolhe mês a mês.
+Com a ligação, o analista clica em **Ler** na linha da Meta do card **Ler automaticamente**, na página do mês, e o sistema traz as publicações do mês, com alcance, visualizações e interações, no mesmo formato da planilha, mais o número de seguidores do fim do mês. **A planilha continua valendo**: ela segue sendo o caminho para os Stories de antes da captura, para o LinkedIn, o TikTok e o YouTube, e para qualquer cliente que você ainda não ligou. A ligação é uma segunda fonte, que o analista escolhe mês a mês.
 
-**Exemplo.** No fechamento de outubro, a analista do **Instituto Horizonte** abre o mês e clica em **Ler da Meta**. Em segundos entram 6 publicações do Instagram e 4 do Facebook, com os números de cada uma, e o número de seguidores de 31 de outubro, porque o cliente foi ligado em setembro e o sistema já vinha anotando a contagem todo dia. Ela não precisou exportar as planilhas das duas redes. Os Stories da campanha de outubro entram também, porque o sistema os foi guardando enquanto estavam no ar.
+**Exemplo.** No fechamento de outubro, a analista do **Instituto Horizonte** abre o mês e clica em **Ler** na linha da Meta. Em segundos entram 6 publicações do Instagram e 4 do Facebook, com os números de cada uma, e o número de seguidores de 31 de outubro, porque o cliente foi ligado em setembro e o sistema já vinha anotando a contagem todo dia. Ela não precisou exportar as planilhas das duas redes. Os Stories da campanha de outubro entram também, porque o sistema os foi guardando enquanto estavam no ar.
 
 ## O que a ligação faz, e o que não faz
 
@@ -53,7 +53,7 @@ Apesar do nome de uma delas ter "manage", **nenhuma permite escrever**. O que **
 
 ### 1. Configurar o app da RIT, uma vez
 
-Em **Configurações do Sistema**, abra a aba **Meta**.
+Em **Configurações do Sistema**, abra **Fontes de dados** e a sub-aba **Meta**.
 
 ![Aba Meta das configurações do sistema, com a URI de retorno, o identificador e o segredo do app, a versão da API, o config_id opcional e o botão Testar o app guardado]({{ '/assets/img/app/app-61-meta-aba-configuracao.png' | relative_url }})
 

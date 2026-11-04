@@ -38,7 +38,7 @@ Os exemplos e as telas vêm do relatório de outubro de 2026 do **Instituto Hori
 > **O que é só do super-administrador.** Ligar o site, o Instagram e o Facebook, o YouTube e o LinkedIn de um cliente, configurar a inteligência artificial, o Matomo e as redes (Meta, YouTube e LinkedIn), convidar pessoas e trocar a identidade da organização ficam em "Configurações do Sistema" e no cadastro do cliente, e são tratados na [parte 6]({{ '/administracao/' | relative_url }}) e na [parte 5]({{ '/site-e-plugin/' | relative_url }}). Aqui estão as tarefas de quem monta o relatório.
 {: .note }
 
-> **Onde aparecem as mensagens do sistema.** As confirmações e os resultados passageiros ("salvo", "importado", "lido") aparecem como um aviso discreto no **canto inferior direito** da tela, sem empurrar o conteúdo para baixo. Os de sucesso e os informativos **somem sozinhos em alguns segundos**; deixar o mouse sobre o aviso, ou o foco do teclado nele, segura-o na tela. Os de **erro ficam até você fechar** (no **×** do aviso), para dar tempo de ler. Vários avisos se empilham. O que pede uma decisão sua (as janelas de confirmação), o erro de um campo (junto do campo), os avisos que continuam valendo enquanto o problema existir (como "ligação expirada") e os resumos longos de leitura continuam **no lugar de sempre**, na própria tela.
+> **Onde aparecem as mensagens do sistema.** Os resultados passageiros ("salvo", "importado", "lido") aparecem como um aviso discreto no **canto inferior direito** da tela, sem empurrar o conteúdo para baixo. Os avisos sobre a situação do mês (por exemplo, o do site com números parciais) também ficam no canto, um por assunto, e **somem quando você troca de tela**. Os de sucesso e os informativos **somem sozinhos em alguns segundos**; deixar o mouse sobre o aviso, ou o foco do teclado nele, segura-o na tela. Os de **erro ficam até você fechar** (no **×** do aviso), para dar tempo de ler. Vários avisos se empilham. As confirmações (reemitir, substituir uma planilha, desligar uma rede) abrem numa **janela por cima da página**, nunca como aviso. O que pede uma decisão sua, o erro de um campo (junto do campo), os avisos que continuam valendo enquanto o problema existir (como "ligação expirada") e os resumos longos de leitura continuam **no lugar de sempre**, na própria tela.
 {: .note }
 
 ## 1. Escolher o cliente ativo
@@ -103,12 +103,12 @@ No celular, a janela é a mesma, em uma coluna só: o bloco **Ler ao criar o mê
 **O que acontece quando você clica em Criar mês sem planilha**
 
 1. A janela fecha e o mês aparece na lista de períodos como **"0 publicações · 0 arquivos"**. É assim que um mês vazio se apresenta, e não é erro.
-2. Se havia fontes marcadas em **Ler ao criar o mês**, a leitura delas começa agora, em segundo plano (veja [Ler as fontes ao criar o mês](#ler-as-fontes-ao-criar-o-mês)). Se você desmarcou todas, o mês fica vazio. Em qualquer dos casos, ao abrir o mês, ele abre normalmente. Para cada rede ligada ao cliente você vê o bloco de leitura: **Ler da Meta**, **Ler do YouTube** e **Ler do LinkedIn** (veja as tarefas [3c](#3c-ler-da-meta-no-lugar-da-planilha) e [3d](#3d-ler-do-youtube-e-do-linkedin-no-lugar-da-planilha)). Cliente sem nenhuma rede ligada não tem esses blocos, e aí a saída é a planilha.
+2. Se havia fontes marcadas em **Ler ao criar o mês**, a leitura delas começa agora, em segundo plano (veja [Ler as fontes ao criar o mês](#ler-as-fontes-ao-criar-o-mês)). Se você desmarcou todas, o mês fica vazio. Em qualquer dos casos, ao abrir o mês, ele abre normalmente. Para cada rede ligada ao cliente você vê o card **Ler automaticamente**, com uma linha por fonte ligada (Instagram, Facebook, YouTube e LinkedIn, e site e cursos quando ligados) (veja as tarefas [3c](#3c-ler-da-meta-no-lugar-da-planilha) e [3d](#3d-ler-do-youtube-e-do-linkedin-no-lugar-da-planilha)). Cliente sem nenhuma rede ligada não tem essas linhas, e aí a saída é a planilha.
 3. A planilha continua valendo: **Acrescentar Planilha**, na página do mês, soma uma rede que a leitura não cobre (o TikTok, por exemplo, só entra por planilha).
 
 ![Mês criado sem planilha, com 0 publicações e 0 arquivos na lista e os blocos Ler da Meta e Ler do YouTube na página do mês]({{ '/assets/img/app/app-99-mes-vazio-blocos-leitura.png' | relative_url }})
 
-**Exemplo.** O Instituto Horizonte tem o Instagram e o Facebook ligados à Meta e o LinkedIn ligado. No dia 1º de novembro você cria **outubro de 2026** sem planilha e **desmarca** as fontes do bloco **Ler ao criar o mês**, porque prefere ler uma rede de cada vez. O mês aparece com "0 publicações · 0 arquivos"; você abre, clica em **Ler da Meta** e depois em **Ler do LinkedIn**, e as publicações entram sem arquivo nenhum. (Com as fontes marcadas, que é o padrão, essa leitura já teria corrido sozinha: a próxima seção conta como.)
+**Exemplo.** O Instituto Horizonte tem o Instagram e o Facebook ligados à Meta e o LinkedIn ligado. No dia 1º de novembro você cria **outubro de 2026** sem planilha e **desmarca** as fontes do bloco **Ler ao criar o mês**, porque prefere ler uma rede de cada vez. O mês aparece com "0 publicações · 0 arquivos"; você abre, clica em **Ler** na linha da Meta do card **Ler automaticamente** e depois em **Ler** na linha do LinkedIn, e as publicações entram sem arquivo nenhum. (Com as fontes marcadas, que é o padrão, essa leitura já teria corrido sozinha: a próxima seção conta como.)
 
 **Se o mês já existe.** Criar sem planilha um mês que já está no sistema **não grava nada e não substitui nada**. A janela fecha, a tela abre o mês que estava salvo e mostra, por alguns segundos, o aviso **"Este mês já existe: abrimos o que estava salvo."** É de propósito: você não perde as publicações, os textos nem os seguidores já lançados por apertar o botão sem pensar.
 
@@ -318,7 +318,7 @@ Se o período veio de uma **planilha online**, ele fica ligado a ela, e é poss�
 **Passo a passo**
 
 1. Em **Períodos & Emissão**, abra o mês (o botão do mês na lista).
-2. Role até o bloco **Seguidores no fim de [mês] de [ano]**. Há um campo por rede (**Seguidores do Instagram no fim do mês**, **Seguidores do Facebook no fim do mês**, e assim por diante), com as redes que o mês tem, as do cadastro do cliente e as que já têm número.
+2. Role até o bloco **Indicadores principais do período**, na parte dos seguidores. Há um campo por rede (**Seguidores do Instagram no fim do mês**, **Seguidores do Facebook no fim do mês**, e assim por diante), com as redes que o mês tem, as do cadastro do cliente e as que já têm número.
 3. Digite o total de seguidores de cada rede **no último dia do mês**, como aparece no painel da rede.
 4. Clique em **Salvar seguidores**. Só então o número é gravado: o botão fica desabilitado enquanto você não mudar nada, e a mensagem **"Seguidores gravados."** confirma.
 
@@ -342,15 +342,15 @@ Se o período veio de uma **planilha online**, ele fica ligado a ela, e é poss�
 > - **Uma rede sem número nos dois meses fica de fora do total** do comparativo (veja [Comparativo geral]({{ '/como-ler-o-relatorio/redes/' | relative_url }})).
 {: .tip }
 
-**Quando dá errado.** Na revisão, o quadro **Avisos da revisão** traz um aviso só para você: **"Falta o número de seguidores de [rede] neste mês. Sem ele, o relatório não mostra a base de seguidores nem o comparativo dessa rede. Preencha na tela do mês (Períodos) ou na linha "Seguidores" da planilha."** O aviso não aparece no relatório nem no link público. Volte à tela do mês, preencha e salve.
+**Quando dá errado.** Na revisão, o ícone de avisos ao lado de **Emitir**, com o número de avisos, abre a lista **Avisos da revisão**, que traz um aviso só para você: **"Falta o número de seguidores de [rede] neste mês. Sem ele, o relatório não mostra a base de seguidores nem o comparativo dessa rede. Preencha na tela do mês (Períodos) ou na linha "Seguidores" da planilha."** O aviso não aparece no relatório nem no link público. Volte à tela do mês, preencha e salve.
 
-Quando o número foi lido das redes e não é o do último dia, o quadro diz de onde ele veio: **"Instagram e Facebook: o número de seguidores é o da foto mais próxima, de 29/01/2026; a do último dia do mês não estava guardada. Confira."** A data à vista serve para você comparar com o painel da rede e, se tiver o do fim do mês, digitá-lo. O mesmo aviso vale para YouTube e LinkedIn.
+Quando o número foi lido das redes e não é o do último dia, a lista diz de onde ele veio: **"Instagram e Facebook: o número de seguidores é o da foto mais próxima, de 29/01/2026; a do último dia do mês não estava guardada. Confira."** A data à vista serve para você comparar com o painel da rede e, se tiver o do fim do mês, digitá-lo. O mesmo aviso vale para YouTube e LinkedIn.
 
 ![Quadro Avisos da revisão com três itens: falta de seguidores do LinkedIn, seguidores do Instagram e do Facebook vindos da foto mais próxima, de 29/01/2026, e o aviso dos Stories]({{ '/assets/img/app/app-120-revisao-avisos-seguidores.png' | relative_url }})
 
 ## 3c. Ler da Meta, no lugar da planilha
 
-**Por que importa.** Para o cliente que o super-administrador **ligou à Meta**, o Instagram e o Facebook do mês podem vir direto das contas: um clique em **Ler da Meta** traz as publicações, com alcance, visualizações e interações, e oferece o número de seguidores do fim do mês. Não há planilha para exportar, conferir e trocar sem querer por outra. **A planilha continua valendo**, e a categoria editorial, as outras redes e os Stories de antes da captura seguem vindo por ela. Os Stories que o sistema capturou enquanto estavam no ar entram na leitura.
+**Por que importa.** Para o cliente que o super-administrador **ligou à Meta**, o Instagram e o Facebook do mês podem vir direto das contas: na linha do Instagram ou do Facebook, no card **Ler automaticamente**, um clique em **Ler** traz as publicações, com alcance, visualizações e interações, e oferece o número de seguidores do fim do mês. Não há planilha para exportar, conferir e trocar sem querer por outra. **A planilha continua valendo**, e a categoria editorial, as outras redes e os Stories de antes da captura seguem vindo por ela. Os Stories que o sistema capturou enquanto estavam no ar entram na leitura.
 
 Os números da leitura são os **do momento em que você lê** (como exportar a planilha naquele dia), e cada rede usa **uma fonte por mês**: ou a planilha ou a Meta. Substituir a planilha pede confirmação, e dá para **voltar para a planilha**.
 
@@ -358,18 +358,18 @@ Os números da leitura são os **do momento em que você lê** (como exportar a 
 
 O passo a passo, os avisos e o que fazer quando dá errado estão em [Ler da Meta]({{ '/mes-do-analista/ler-da-meta/' | relative_url }}).
 
-> **Mês novo?** Não precisa subir planilha para ele existir: crie o mês [sem planilha](#criar-o-mês-sem-planilha) e o bloco **Ler da Meta** já está na página dele. Com o Instagram e o Facebook marcados em **Ler ao criar o mês**, a leitura corre sozinha logo depois de criar ([veja como](#ler-as-fontes-ao-criar-o-mês)), e este botão fica para refazer a leitura.
+> **Mês novo?** Não precisa subir planilha para ele existir: crie o mês [sem planilha](#criar-o-mês-sem-planilha) e a linha da Meta, no card **Ler automaticamente**, já está na página dele. Com o Instagram e o Facebook marcados em **Ler ao criar o mês**, a leitura corre sozinha logo depois de criar ([veja como](#ler-as-fontes-ao-criar-o-mês)), e o botão **Ler de novo**, na linha da Meta, fica para refazer a leitura.
 {: .tip }
 
 ## 3d. Ler do YouTube e do LinkedIn, no lugar da planilha
 
-**Por que importa.** Para o cliente que o super-administrador **ligou ao YouTube** ou **ao LinkedIn**, os vídeos e as publicações do mês podem vir direto do canal e da Página: um clique em **Ler do YouTube** (ou **Ler do LinkedIn**) traz os números de cada um e oferece o número de inscritos ou seguidores do fim do mês. Valem as mesmas regras do [Ler da Meta](#3c-ler-da-meta-no-lugar-da-planilha): **uma fonte por rede em cada mês**, números **do momento da leitura**, e a planilha continua valendo e dá para voltar a ela. A diferença que muda a sua leitura do relatório: **o YouTube não informa alcance por vídeo**, e as **visualizações vão no lugar do alcance**, o que o relatório avisa.
+**Por que importa.** Para o cliente que o super-administrador **ligou ao YouTube** ou **ao LinkedIn**, os vídeos e as publicações do mês podem vir direto do canal e da Página: na linha do YouTube ou do LinkedIn, no card **Ler automaticamente**, um clique em **Ler** traz os números de cada um e oferece o número de inscritos ou seguidores do fim do mês. Valem as mesmas regras do [Ler da Meta](#3c-ler-da-meta-no-lugar-da-planilha): **uma fonte por rede em cada mês**, números **do momento da leitura**, e a planilha continua valendo e dá para voltar a ela. A diferença que muda a sua leitura do relatório: **o YouTube não informa alcance por vídeo**, e as **visualizações vão no lugar do alcance**, o que o relatório avisa.
 
 ![Bloco Ler do YouTube na página do mês, com a mensagem YouTube ligado, a explicação de que as visualizações vão no lugar do alcance e o botão Ler do YouTube]({{ '/assets/img/app/app-92-youtube-ler-do-youtube.png' | relative_url }})
 
-Cada rede ligada tem o **seu** bloco. O passo a passo, os avisos e o que fazer quando dá errado estão em [Ler do YouTube e do LinkedIn]({{ '/mes-do-analista/ler-do-youtube-e-linkedin/' | relative_url }}).
+Cada rede ligada tem a **sua** linha no card. O passo a passo, os avisos e o que fazer quando dá errado estão em [Ler do YouTube e do LinkedIn]({{ '/mes-do-analista/ler-do-youtube-e-linkedin/' | relative_url }}).
 
-> **Mês novo?** Crie o mês [sem planilha](#criar-o-mês-sem-planilha): os blocos **Ler do YouTube** e **Ler do LinkedIn** das redes ligadas já aparecem na página dele. Com as redes marcadas em **Ler ao criar o mês**, a leitura corre sozinha ao criar ([veja como](#ler-as-fontes-ao-criar-o-mês)), e estes botões servem para refazê-la.
+> **Mês novo?** Crie o mês [sem planilha](#criar-o-mês-sem-planilha): as linhas do YouTube e do LinkedIn, no card **Ler automaticamente**, já aparecem na página dele. Com as redes marcadas em **Ler ao criar o mês**, a leitura corre sozinha ao criar ([veja como](#ler-as-fontes-ao-criar-o-mês)), e a linha de cada rede serve para refazê-la.
 {: .tip }
 
 ## 4. Conferir as inconsistências da importação
@@ -403,9 +403,9 @@ O que você faz:
 
 **Passo a passo**
 
-1. Na página do período, role até os cartões **Posts, Alcance, Impressões, Engajamento, Ponderado e CTR de cliques**. Confira se batem com o esperado. **O cartão de alcance muda de nome conforme as redes do mês:** com Instagram, Facebook e LinkedIn ele diz **Alcance** ("contas únicas", e a linha de cada rede termina em "contas alcançadas"); num mês **só com YouTube** diz **Visualizações** ("a mesma pessoa pode repetir", e a linha da rede termina em "visualizações"); num mês com YouTube **e** outras redes diz **Alcance e visualizações** ("soma de alcance e visualizações"). É o mesmo aviso do relatório: o YouTube não informa alcance por vídeo, e visualização conta a mesma pessoa mais de uma vez.
-2. Veja **Desempenho por Canal** e **Eficiência por Categoria Editorial**.
-3. Role até o **Extrato Consolidado de Pautas**, a lista de todas as publicações.
+1. Na **Revisão** do mês, confira os cartões **Posts, Alcance, Impressões, Engajamento, Ponderado e CTR de cliques**. Confira se batem com o esperado. **O cartão de alcance muda de nome conforme as redes do mês:** com Instagram, Facebook e LinkedIn ele diz **Alcance** ("contas únicas", e a linha de cada rede termina em "contas alcançadas"); num mês **só com YouTube** diz **Visualizações** ("a mesma pessoa pode repetir", e a linha da rede termina em "visualizações"); num mês com YouTube **e** outras redes diz **Alcance e visualizações** ("soma de alcance e visualizações"). É o mesmo aviso do relatório: o YouTube não informa alcance por vídeo, e visualização conta a mesma pessoa mais de uma vez.
+2. Ainda na revisão, logo antes da narrativa, veja **Desempenho por Canal** e **Eficiência por Categoria Editorial**.
+3. Volte à página do período e role até o **Extrato Consolidado de Pautas**, a lista de todas as publicações.
 4. Clique no selo **Orgânico** de uma linha para trocá-lo por **Anômalo**, e de volta. Para várias de uma vez, marque as linhas e use **Marcar como anômalas** ou **Remover marcação de anômala**.
 
 ![Indicadores do período, com os totais, o desempenho por canal e a eficiência por categoria]({{ '/assets/img/app/app-08-indicadores.png' | relative_url }})
@@ -569,11 +569,11 @@ No alto da revisão há três botões, e cada um faz uma coisa só. Num mês **j
 
 ![Revisão de um mês emitido, com os botões Salvar Alterações, Visualizar com as alterações e Reemitir Relatório, e a faixa azul que diz quando o relatório foi emitido, com os botões Ver como emitido e Reemitir Relatório]({{ '/assets/img/app/app-117-revisao-emitido.png' | relative_url }})
 
-- **Reemitir troca o que o cliente vê.** O botão pede confirmação (**"Reemitir troca o que o cliente vê."**), grava as edições da tela, refaz a foto com o que o mês e o cadastro têm agora e registra quando e por quem. **O link do cliente continua o mesmo.**
+- **Reemitir troca o que o cliente vê.** O botão abre uma janela de confirmação por cima da página (**"Reemitir troca o que o cliente vê."**), grava as edições da tela, refaz a foto com o que o mês e o cadastro têm agora e registra quando e por quem. **O link do cliente continua o mesmo.**
 
 ![Confirmação de reemissão: Reemitir troca o que o cliente vê, com os botões Cancelar e Reemitir e mudar o link do cliente]({{ '/assets/img/app/app-118-reemitir-confirmacao.png' | relative_url }})
 
-- **Reler uma rede, ou atualizar os dados do site ou dos cursos, num mês emitido** muda os dados do mês, mas não o link do cliente. A tela pede confirmação antes (**"Este mês já foi emitido."**), e o servidor recusa a gravação sem ela. A busca automática da revisão não mexe em mês emitido: só avisa que faltam os números.
+- **Reler uma rede, ou atualizar os dados do site ou dos cursos, num mês emitido** muda os dados do mês, mas não o link do cliente. A tela pede confirmação antes, numa janela por cima da página (**"Este mês já foi emitido."**), e o servidor recusa a gravação sem ela. A busca automática da revisão não mexe em mês emitido: só avisa que faltam os números.
 
 ![Aviso Este mês já foi emitido, dizendo que atualizar os dados dos cursos troca os dados do mês, mas o link do cliente continua como foi emitido, com os botões Cancelar e Atualizar os dados do mês]({{ '/assets/img/app/app-119-emitido-confirmar-atualizar.png' | relative_url }})
 

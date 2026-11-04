@@ -20,9 +20,9 @@ As telas desta página vêm de uma organização fictícia, o **Instituto Horizo
 
 Sem a ligação, todo mês alguém exporta a planilha do canal ou da Página, confere se é a do cliente certo e do período certo, e importa. O YouTube e o LinkedIn não têm um relatório único que traga tudo de uma vez, então é um trabalho repetido, e é nele que se erra.
 
-Com a ligação, o analista clica em **Ler do YouTube** (ou **Ler do LinkedIn**) na página do mês, e o sistema traz as publicações do ciclo com os números de cada uma, no mesmo formato da planilha, mais o número de **inscritos** (YouTube) ou **seguidores** (LinkedIn) do fim do mês. **A planilha continua valendo**: ela segue sendo o caminho para o TikTok, para o cliente que você ainda não ligou e para o que a leitura não alcança.
+Com a ligação, o analista clica em **Ler** na linha do YouTube (ou do LinkedIn), no card **Ler automaticamente** da página do mês, e o sistema traz as publicações do ciclo com os números de cada uma, no mesmo formato da planilha, mais o número de **inscritos** (YouTube) ou **seguidores** (LinkedIn) do fim do mês. **A planilha continua valendo**: ela segue sendo o caminho para o TikTok, para o cliente que você ainda não ligou e para o que a leitura não alcança.
 
-**Exemplo.** No fechamento de outubro, a analista do **Instituto Horizonte** abre o mês e clica em **Ler do YouTube**. Em segundos entram 5 vídeos, com visualizações, curtidas, comentários, compartilhamentos e retenção, e o sistema oferece o número de inscritos do fim do mês. Um vídeo que ainda estava privado ficou de fora, e o aviso da leitura disse isso. Ela não exportou nada do YouTube Studio.
+**Exemplo.** No fechamento de outubro, a analista do **Instituto Horizonte** abre o mês e clica em **Ler** na linha do YouTube. Em segundos entram 5 vídeos, com visualizações, curtidas, comentários, compartilhamentos e retenção, e o sistema oferece o número de inscritos do fim do mês. Um vídeo que ainda estava privado ficou de fora, e o aviso da leitura disse isso. Ela não exportou nada do YouTube Studio.
 
 ## O que a ligação faz, e o que não faz
 
@@ -62,7 +62,7 @@ O app do LinkedIn tem uma opção na aba, **Usar rw_organization_admin**, que tr
 
 ### 1. Configurar o app da RIT, uma vez por rede
 
-Em **Configurações do Sistema**, abra a aba **YouTube** (ou **LinkedIn**).
+Em **Configurações do Sistema**, abra **Fontes de dados** e a sub-aba **YouTube** (ou **LinkedIn**).
 
 ![Aba YouTube das configurações do sistema, com a URI de retorno, o ID do cliente OAuth, o segredo guardado, o estado do app e o botão Testar o app guardado]({{ '/assets/img/app/app-78-youtube-aba-configuracao.png' | relative_url }})
 

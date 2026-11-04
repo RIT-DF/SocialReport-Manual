@@ -7,7 +7,7 @@ permalink: /mes-do-analista/ler-da-meta/
 
 # Ler da Meta
 
-Esta página é para quem **produz** o relatório. O botão **Ler da Meta**, na página do mês, traz as publicações do Instagram e do Facebook **direto das contas do cliente**, no mesmo formato que a planilha, sem você precisar exportar e importar a planilha dessas redes. Ele só aparece para um cliente que o super-administrador já **ligou** (veja a [parte 6]({{ '/administracao/meta/' | relative_url }}), que é dele).
+Esta página é para quem **produz** o relatório. Na página do mês, a linha **Instagram** ou **Facebook** do card **Ler automaticamente** (botão **Ler**) traz as publicações do Instagram e do Facebook **direto das contas do cliente**, no mesmo formato que a planilha, sem você precisar exportar e importar a planilha dessas redes. Ele só aparece para um cliente que o super-administrador já **ligou** (veja a [parte 6]({{ '/administracao/meta/' | relative_url }}), que é dele).
 
 As telas desta página vêm de uma organização fictícia, o **Instituto Horizonte**, e de uma simulação da Meta. Nomes, @ e números são inventados.
 
@@ -15,7 +15,7 @@ As telas desta página vêm de uma organização fictícia, o **Instituto Horizo
 
 A planilha exportada é o ponto fraco do fechamento do mês: é preciso lembrar de exportar as duas redes, no período certo, do cliente certo, e importar sem trocar os arquivos. A leitura da Meta tira esses passos do caminho e ainda resolve um número que a planilha nunca trouxe: o de **seguidores no fim do mês**.
 
-**Exemplo.** No fechamento de outubro, a analista abre o mês do Instituto Horizonte e clica em **Ler da Meta**. Entram 6 publicações do Instagram e 4 do Facebook, com alcance, visualizações, curtidas, comentários, compartilhamentos e salvamentos de cada uma, e o sistema oferece 1.515 seguidores para o Instagram. Ela confere a contagem de publicações com o que viu no aplicativo, aceita o número de seguidores e segue para a revisão.
+**Exemplo.** No fechamento de outubro, a analista abre o mês do Instituto Horizonte e clica em **Ler** na linha da Meta. Entram 6 publicações do Instagram e 4 do Facebook, com alcance, visualizações, curtidas, comentários, compartilhamentos e salvamentos de cada uma, e o sistema oferece 1.515 seguidores para o Instagram. Ela confere a contagem de publicações com o que viu no aplicativo, aceita o número de seguidores e segue para a revisão.
 
 **Quando continuar na planilha.** A leitura **não substitui** a planilha em tudo:
 
@@ -28,13 +28,13 @@ A planilha exportada é o ponto fraco do fechamento do mês: é preciso lembrar 
 
 1. **Uma fonte por rede, em cada mês.** O Instagram do mês vem **ou** da planilha **ou** da Meta, nunca dos dois: somar os dois contaria cada publicação duas vezes. Se o mês já tem postagens do Instagram vindas de planilha, o sistema pergunta se pode substituí-las (veja o passo 3). A planilha **fica guardada**, e dá para voltar a ela. **As publicações da planilha que a Meta não traz continuam no mês** (veja o aviso "Publicações da planilha que a Meta não traz", adiante).
 2. **Os números são os do momento da leitura.** Uma publicação continua acumulando alcance e interações nos dias seguintes. A leitura traz o que a Meta mostra **naquela hora**, e a tela diz: **"lido em dd/mm hh:mm (números acumulados até esse momento)"**. É o mesmo que exportar a planilha naquele dia: quem exporta no dia 1º e quem lê no dia 1º veem o mesmo número. Se ler de novo uma semana depois, os números das publicações do fim do mês estarão maiores.
-3. **O mês precisa existir.** O bloco fica na página de um mês que já existe. Se o mês ainda não existe, crie-o **sem planilha**: em **Novo Período**, não escolha arquivo e clique em **Criar mês sem planilha** (veja a [tarefa 2]({{ '/mes-do-analista/#criar-o-mês-sem-planilha' | relative_url }})). O mês nasce com **"0 publicações"** e já abre com o bloco **Ler da Meta**. Não é preciso subir uma planilha só para o mês nascer. Com **Instagram** e **Facebook** marcados em **Ler ao criar o mês**, a leitura já corre sozinha logo depois de o mês ser criado (veja [Ler as fontes ao criar o mês]({{ '/mes-do-analista/#ler-as-fontes-ao-criar-o-mês' | relative_url }})); este botão serve para refazê-la.
+3. **O mês precisa existir.** O bloco fica na página de um mês que já existe. Se o mês ainda não existe, crie-o **sem planilha**: em **Novo Período**, não escolha arquivo e clique em **Criar mês sem planilha** (veja a [tarefa 2]({{ '/mes-do-analista/#criar-o-mês-sem-planilha' | relative_url }})). O mês nasce com **"0 publicações"** e já abre com a linha da Meta no card **Ler automaticamente**. Não é preciso subir uma planilha só para o mês nascer. Com **Instagram** e **Facebook** marcados em **Ler ao criar o mês**, a leitura já corre sozinha logo depois de o mês ser criado (veja [Ler as fontes ao criar o mês]({{ '/mes-do-analista/#ler-as-fontes-ao-criar-o-mês' | relative_url }})); o botão **Ler de novo**, na linha da Meta, serve para refazê-la.
 
 ## Passo a passo
 
 ### 1. Confira o estado da ligação
 
-Em **Períodos & Emissão**, abra o mês (o botão do mês na lista). O bloco **Ler da Meta** fica no alto da página, acima de **Seguidores no fim do mês** e dos **Extratos Importados**.
+Em **Períodos & Emissão**, abra o mês (o botão do mês na lista). O card **Ler automaticamente** fica no alto da página, com a linha da Meta. Logo abaixo vêm **Indicadores principais do período** e os **Extratos Importados**.
 
 ![Bloco Ler da Meta na página do mês, com a mensagem Instagram e Facebook ligados e o botão Ler da Meta]({{ '/assets/img/app/app-71-meta-ler-da-meta.png' | relative_url }})
 
@@ -65,7 +65,7 @@ Pense como pensaria no dia de exportar a planilha: depois que o ciclo termina, e
 
 ### 3. Leia
 
-1. Clique em **Ler da Meta**. O botão mostra **"Lendo..."** enquanto o servidor busca. Ele lê as **duas redes de uma vez** (só o Facebook, quando o cliente não tem Instagram ligado), para o **ciclo do período** (veja a [tarefa 2]({{ '/mes-do-analista/#2-criar-o-período-do-mês' | relative_url }})): as datas do ciclo é que mandam, e não o mês do calendário.
+1. Na linha da Meta do card, clique em **Ler** (ou em **Ler de novo**, se o mês já tem postagens da Meta). O botão mostra **"Lendo..."** enquanto o servidor busca. Ele lê as **duas redes de uma vez** (só o Facebook, quando o cliente não tem Instagram ligado), para o **ciclo do período** (veja a [tarefa 2]({{ '/mes-do-analista/#2-criar-o-período-do-mês' | relative_url }})): as datas do ciclo é que mandam, e não o mês do calendário.
 2. **Se o mês já tem postagens vindas de planilha**, o bloco pergunta antes de mexer em qualquer coisa:
 
    ![Confirmação: Substituir as 13 postagens do Instagram da planilha Instagram_outubro_2026.xlsx pela leitura da Meta? A planilha fica guardada e dá para voltar a ela, e o mesmo para o Facebook, com os botões Substituir e Cancelar]({{ '/assets/img/app/app-72-meta-substituir-planilha.png' | relative_url }})
@@ -102,7 +102,7 @@ Abaixo vêm as **observações da leitura**. Elas explicam o que a Meta não inf
 
 ### 5. Os seguidores do fim do mês
 
-A leitura traz o número de seguidores de cada rede e o oferece ao campo **Seguidores no fim do mês** (tarefa 3b). A regra é de **nunca passar por cima do que você digitou**:
+A leitura traz o número de seguidores de cada rede e o oferece ao campo de seguidores do mês, em **Indicadores principais do período** (tarefa 3b). A regra é de **nunca passar por cima do que você digitou**:
 
 - **Campo vazio** (ou com o número que a leitura anterior pôs, e que você não mexeu): o sistema **preenche**.
 - **Campo com outro número** (um que você digitou): o sistema **mantém o seu** e pergunta: **"Seguidores do Instagram: o mês tem 1.480 digitado; a Meta leu 1.515. Trocar?"**, com os botões **Usar 1.515** e **Manter 1.480**.
@@ -121,7 +121,7 @@ Na lista **Extratos Importados**, cada arquivo diz de onde vem: a leitura aparec
 
 ### 7. Os avisos na revisão
 
-Abra a **Revisão** do mês. Os avisos que só você vê ficam num **quadro único**, compacto, no alto da página, com o título **"Avisos da revisão (N)"** e um item por aviso. O quadro abre aberto, para você não perder nenhum aviso, e **recolhe** com um clique no título (os itens continuam lá, só escondidos). Sem avisos, o quadro não aparece. Quando o mês usa a leitura, ele inclui os avisos sobre o que merece conferência antes de emitir:
+Abra a **Revisão** do mês. Os avisos que só você vê ficam atrás do **ícone de avisos ao lado de Emitir**, que mostra o número de avisos. Ao clicar, a lista **"Avisos da revisão (N)"** traz um item por aviso. Quando o mês usa a leitura, ele inclui os avisos sobre o que merece conferência antes de emitir:
 
 ![Quadro Avisos da revisão, numa leitura feita antes da 1.47.1, com três itens: falta de seguidores, o aviso antigo de seguidores reconstruídos do Instagram e do Facebook e a contagem de Stories capturados do Instagram]({{ '/assets/img/app/app-98-revisao-quadro-avisos.png' | relative_url }})
 
@@ -140,7 +140,7 @@ O mesmo quadro traz os outros avisos da revisão (mês em andamento, falta de se
 
 **Como funciona.** A cada **4 horas** (à 0h, 4h, 8h, 12h, 16h e 20h, no horário de Brasília), o sistema olha os Stories que estão no ar na conta ligada do Instagram e anota os números de cada um. Como um Story fica 24 horas no ar, ele é anotado umas seis vezes; vale a **última captura antes de ele expirar**. Você não faz nada: a captura roda sozinha para todo cliente ligado.
 
-Quando você clica em **Ler da Meta**, a leitura do mês **inclui os Stories capturados dentro do ciclo**, no mesmo formato da planilha, com o tipo **Story**: alcance, visualizações, respostas (que entram na coluna de comentários) e compartilhamentos. O resumo da leitura diz quantos entraram, por exemplo **"Instagram: 4 Stories capturados enquanto estavam no ar; números da última captura antes de expirar."**
+Quando você clica em **Ler** na linha da Meta, a leitura do mês **inclui os Stories capturados dentro do ciclo**, no mesmo formato da planilha, com o tipo **Story**: alcance, visualizações, respostas (que entram na coluna de comentários) e compartilhamentos. O resumo da leitura diz quantos entraram, por exemplo **"Instagram: 4 Stories capturados enquanto estavam no ar; números da última captura antes de expirar."**
 
 **Exemplo.** O Instituto Horizonte foi ligado em setembro. No fechamento de outubro, a analista lê o mês e o resumo do Instagram diz **4 Stories capturados**: os quatro Stories da campanha de outubro entram, com os números que tinham quando expiraram. Ela não precisou exportar nada para eles.
 
@@ -216,7 +216,7 @@ Em caso de dúvida, não corrija na mão: **leia de novo no dia certo**, ou volt
 | **O app da Meta não está configurado (configurações do sistema, aba Meta).** | Problema do super-administrador |
 | **Não foi possível baixar o original de "…". Envie a planilha de novo.** (ao voltar para a planilha) | A planilha guardada não pôde ser lida. Importe-a de novo em **Acrescentar Planilha** |
 | **"…" precisa de mapeamento de colunas: envie a planilha de novo pelo "Acrescentar Planilha".** (ao voltar) | Importe a planilha de novo e ligue as colunas, como na tarefa 4 |
-| O bloco **Ler da Meta** não aparece | O cliente não foi ligado. Fale com o super-administrador |
+| A linha da Meta no card **Ler automaticamente** não aparece | O cliente não foi ligado. Fale com o super-administrador |
 
 ## Limites do papel
 

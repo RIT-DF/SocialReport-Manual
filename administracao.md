@@ -70,8 +70,8 @@ Ao editar, o cadastro tem estas partes:
 - **Canais contratados** (Instagram, Facebook, LinkedIn, TikTok, YouTube).
 - **Marcos históricos anteriores** (opcional): totais de meses passados (por exemplo, seguidores) que ligam os gráficos de tendência e o comparativo desde o primeiro relatório. Também alimentam a tela [Indicadores (BI)]({{ '/mes-do-analista/indicadores/' | relative_url }}), onde esses meses aparecem como **marco histórico (menos detalhado)**. Cadastre os totais com o cuidado que daria a um relatório: um marco errado entra nas somas e nas comparações.
 - **Plataforma de cursos (Moodle):** o acesso ao Moodle do cliente e o site da plataforma no Matomo (veja abaixo).
-- **Redes sociais (Meta):** a ligação do Instagram e do Facebook do cliente, para o analista poder usar **Ler da Meta** (veja [Ligar o Instagram e o Facebook]({{ '/administracao/meta/' | relative_url }})).
-- **YouTube e LinkedIn:** a ligação do canal e da Página do cliente, para o analista poder usar **Ler do YouTube** e **Ler do LinkedIn** (veja [Ligar o YouTube e o LinkedIn]({{ '/administracao/youtube-linkedin/' | relative_url }}); cada rede só funciona depois que o app da RIT for aprovado por ela).
+- **Redes sociais (Meta):** a ligação do Instagram e do Facebook do cliente, para o analista poder usar a linha da Meta no card **Ler automaticamente** (veja [Ligar o Instagram e o Facebook]({{ '/administracao/meta/' | relative_url }})).
+- **YouTube e LinkedIn:** a ligação do canal e da Página do cliente, para o analista poder usar as linhas do YouTube e do LinkedIn no card **Ler automaticamente** (veja [Ligar o YouTube e o LinkedIn]({{ '/administracao/youtube-linkedin/' | relative_url }}); cada rede só funciona depois que o app da RIT for aprovado por ela).
 - **Período e fechamento:** o dia de fechamento do relatório do cliente e a chave de criação automática do período (veja [Período e fechamento do cliente](#período-e-fechamento-do-cliente)).
 - **Fim do contrato:** o campo **Contrato encerrado em** (veja abaixo).
 - **Site:** a ligação com o Matomo (veja a [parte 5]({{ '/site-e-plugin/' | relative_url }})).
@@ -213,7 +213,7 @@ Em **Configurações do Sistema**, abra **Matomo**.
 | **Modelo do e-mail dos usuários criados** | o e-mail do usuário que o sistema cria no Matomo para cada site. `{slug}` vira o nome do cliente (padrão `suporte+{slug}@...`) |
 | **Limite de tráfego de fora do Brasil (%)** | acima dele, a revisão avisa o analista sobre possíveis robôs. Padrão: 30 |
 
-**Licença do V3RAnalytics.** Logo abaixo, o quadro **Licença do V3RAnalytics** guarda a licença **desta instalação**, a mesma para todos os sites de clientes. Cole a licença no campo e clique em **Salvar licença**: como os tokens, ela fica só no servidor e a tela mostra apenas o final. O plugin a recebe sozinho quando um site é conectado pelo código de conexão. **Sem licença cadastrada, o plugin funciona, mas não se atualiza sozinho** (veja [Site e plugin]({{ '/site-e-plugin/' | relative_url }})). A licença **não entra na cópia de segurança**: recadastre-a depois de restaurar.
+**Licença do V3RAnalytics.** O quadro explica em poucas linhas o que é o plugin e traz o botão para baixá-lo e o link **Ver no manual como instalar e conectar**. Nele, o campo de licença guarda a licença **desta instalação**, a mesma para todos os sites de clientes. Cole a licença no campo e clique em **Salvar licença**: como os tokens, ela fica só no servidor e a tela mostra apenas o final. O plugin a recebe sozinho quando um site é conectado pelo código de conexão. **Sem licença cadastrada, o plugin funciona, mas não se atualiza sozinho** (veja [Site e plugin]({{ '/site-e-plugin/' | relative_url }})). A licença **não entra na cópia de segurança**: recadastre-a depois de restaurar.
 
 ![Quadro Licença do V3RAnalytics, com o campo da licença e o botão Salvar licença]({{ '/assets/img/app/app-27-licenca-v3ranalytics.png' | relative_url }})
 
@@ -253,7 +253,7 @@ As cópias do banco de dados do sistema têm página própria: [Cópias de segur
 
 ## Retenção de dados: o que é excluído e quando
 
-A Política de Privacidade promete prazos de guarda. Uma **rotina diária** do sistema os cumpre, na aba **Retenção de dados** das configurações do sistema (só super-admin):
+A Política de Privacidade promete prazos de guarda. Uma **rotina diária** do sistema os cumpre, na sub-aba **Retenção de dados**, em **Segurança**, das configurações do sistema (só super-admin):
 
 | O que | Quando sai |
 |---|---|
@@ -279,7 +279,7 @@ A Política de Privacidade promete prazos de guarda. Uma **rotina diária** do s
 
 ## E-mail e login com Google
 
-Duas outras abas das configurações merecem uma lembrança:
+Duas outras partes das configurações merecem uma lembrança: a aba **E-mail** e a sub-aba **Login com Google**, em **Segurança**:
 
 - **Servidor SMTP:** o servidor que envia os e-mails do sistema (convites, recuperação de acesso, avisos de feedback, cópias de segurança e o envio do link do relatório ao cliente). Todos saem com o mesmo visual: logotipo e cores do SocialReport, o nome da organização (da aba **Organização**) e links para o manual, a privacidade e os termos no rodapé. Informe **servidor, porta, usuário, senha, e-mail remetente** e a **segurança da conexão** (STARTTLS na porta 587, SSL/TLS na 465, ou nenhuma na 25), e use **Testar Envio de E-mail** antes de salvar. Sem SMTP funcionando, convites não chegam.
 - **Autenticação Google:** permite o login pela conta Google. A tela mostra o endereço de redirecionamento que precisa ser cadastrado, **exatamente igual**, nas credenciais do Google Cloud (senão aparece o erro `redirect_uri_mismatch`). Depois de salvar as credenciais, pode ser necessário **recriar o serviço de autenticação** no servidor para que ele leia a configuração nova; peça a quem opera o servidor.
@@ -289,10 +289,10 @@ Duas outras abas das configurações merecem uma lembrança:
 - [ ] Só quem precisa tem acesso, com o papel mínimo; ex-membros estão revogados.
 - [ ] Pelo menos dois provedores de IA ativos, com chaves testadas.
 - [ ] Matomo: endereço, token de leitura (só de visualização) e, se for usar o código de conexão, token de administração.
-- [ ] Meta (se for usar a leitura do Instagram e do Facebook): app configurado e testado na aba **Meta** e clientes ligados (veja [Ligar o Instagram e o Facebook]({{ '/administracao/meta/' | relative_url }})).
-- [ ] YouTube e LinkedIn (quando o app da RIT for aprovado pela rede): app configurado e testado nas abas **YouTube** e **LinkedIn** e clientes ligados (veja [Ligar o YouTube e o LinkedIn]({{ '/administracao/youtube-linkedin/' | relative_url }})).
+- [ ] Meta (se for usar a leitura do Instagram e do Facebook): app configurado e testado na sub-aba **Meta** (em **Fontes de dados**) e clientes ligados (veja [Ligar o Instagram e o Facebook]({{ '/administracao/meta/' | relative_url }})).
+- [ ] YouTube e LinkedIn (quando o app da RIT for aprovado pela rede): app configurado e testado nas sub-abas **YouTube** e **LinkedIn** (em **Fontes de dados**) e clientes ligados (veja [Ligar o YouTube e o LinkedIn]({{ '/administracao/youtube-linkedin/' | relative_url }})).
 - [ ] SMTP testado: um convite de teste chega.
-- [ ] Licença do V3RAnalytics cadastrada na aba **Matomo** (sem ela, os plugins não se atualizam sozinhos).
+- [ ] Licença do V3RAnalytics cadastrada na sub-aba **Matomo e V3RAnalytics**, em **Fontes de dados** (sem ela, os plugins não se atualizam sozinhos).
 - [ ] Segredos (chaves de IA, senha do e-mail, tokens, licença, segredos dos apps da Meta, do YouTube e do LinkedIn) guardados num cofre, porque a cópia de segurança não os leva.
 - [ ] Organização: nome e site conferidos no rodapé de um relatório.
 - [ ] Cópias de segurança configuradas, com a senha guardada num cofre e **provada** (botão **Provar a senha**), e um teste de restauração feito (veja [Cópias de segurança]({{ '/copias-de-seguranca/' | relative_url }})).

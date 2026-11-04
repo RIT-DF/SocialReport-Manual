@@ -268,7 +268,7 @@ Funciona, como sempre funcionou. As planilhas do modelo antigo, as exportações
 
 ### O que é "Ler da Meta"? Ainda preciso da planilha?
 
-É o botão que traz as publicações do Instagram e do Facebook **direto das contas do cliente**, sem exportar e importar planilha. Ele só existe para o cliente que o super-administrador **ligou à Meta**. A planilha continua valendo e continua necessária para os **Stories de antes da captura**, para a **categoria editorial** e para o TikTok (o YouTube e o LinkedIn têm [o próprio botão]({{ '/mes-do-analista/ler-do-youtube-e-linkedin/' | relative_url }})). Veja [Ler da Meta]({{ '/mes-do-analista/ler-da-meta/' | relative_url }}).
+É a linha da Meta, no card **Ler automaticamente** da página do mês, que traz as publicações do Instagram e do Facebook **direto das contas do cliente**, sem exportar e importar planilha. Ele só existe para o cliente que o super-administrador **ligou à Meta**. A planilha continua valendo e continua necessária para os **Stories de antes da captura**, para a **categoria editorial** e para o TikTok (o YouTube e o LinkedIn têm [o próprio botão]({{ '/mes-do-analista/ler-do-youtube-e-linkedin/' | relative_url }})). Veja [Ler da Meta]({{ '/mes-do-analista/ler-da-meta/' | relative_url }}).
 
 ### Voltei do login da Meta e a tela diz "Falta um passo: confirme a Página". O que faço?
 
@@ -316,7 +316,7 @@ Porque **desligar apaga a ligação só dentro do SocialReport**. A autorizaçã
 
 ### O que são "Ler do YouTube" e "Ler do LinkedIn"? Ainda preciso da planilha?
 
-São os botões que trazem os vídeos do canal e as publicações da Página do LinkedIn **direto das contas do cliente**, como o **Ler da Meta** faz com o Instagram e o Facebook. Só existem para o cliente que o super-administrador **ligou** àquela rede, e **cada rede só funciona depois que o app da RIT for aprovado por ela** (o do LinkedIn estava em análise em 30/10/2026). Até lá, e para o TikTok e os clientes não ligados, a planilha continua sendo o caminho. Veja [Ler do YouTube e do LinkedIn]({{ '/mes-do-analista/ler-do-youtube-e-linkedin/' | relative_url }}).
+São as linhas, no card **Ler automaticamente**, que trazem os vídeos do canal e as publicações da Página do LinkedIn **direto das contas do cliente**, como o **Ler da Meta** faz com o Instagram e o Facebook. Só existem para o cliente que o super-administrador **ligou** àquela rede, e **cada rede só funciona depois que o app da RIT for aprovado por ela** (o do LinkedIn estava em análise em 30/10/2026). Até lá, e para o TikTok e os clientes não ligados, a planilha continua sendo o caminho. Veja [Ler do YouTube e do LinkedIn]({{ '/mes-do-analista/ler-do-youtube-e-linkedin/' | relative_url }}).
 
 ### Por que o YouTube não tem alcance? O que é "Visualizações" com asterisco?
 
@@ -362,7 +362,7 @@ A equipe liga o site no cadastro do cliente, na seção "Site", escolhendo o sit
 
 ### O plugin do site não se atualiza sozinho. Por quê?
 
-Provavelmente a instalação do SocialReport não tem a **licença do V3RAnalytics** cadastrada (Configurações do sistema, aba Matomo). Sem ela o plugin mede normalmente, mas não se atualiza sozinho. Veja [Site e plugin]({{ '/site-e-plugin/' | relative_url }}).
+Provavelmente a instalação do SocialReport não tem a **licença do V3RAnalytics** cadastrada (Configurações do sistema, Fontes de dados, Matomo e V3RAnalytics). Sem ela o plugin mede normalmente, mas não se atualiza sozinho. Veja [Site e plugin]({{ '/site-e-plugin/' | relative_url }}).
 
 ### O que é o V3RAnalytics? É gratuito?
 

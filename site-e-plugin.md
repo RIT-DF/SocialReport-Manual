@@ -79,7 +79,7 @@ O plugin avisa quando conecta. Em seguida, o SocialReport faz o resto: cria o si
 | código **vencido** | passaram as 24 horas | peça um novo |
 | **muitas tentativas** | houve vários erros seguidos | espere um pouco e tente de novo com o código certo |
 
-**A licença do plugin vem junto.** Se o super-administrador cadastrou a **licença do V3RAnalytics** em **Configurações do Sistema > Matomo** (veja a [parte 6]({{ '/administracao/' | relative_url }})), o SocialReport a entrega ao plugin na mesma conexão, e o plugin avisa **"Licença do V3RAnalytics ativada automaticamente"**. Quem cuida do site não precisa colar nada.
+**A licença do plugin vem junto.** Se o super-administrador cadastrou a **licença do V3RAnalytics** em **Configurações do Sistema > Fontes de dados > Matomo e V3RAnalytics** (veja a [parte 6]({{ '/administracao/' | relative_url }})), o SocialReport a entrega ao plugin na mesma conexão, e o plugin avisa **"Licença do V3RAnalytics ativada automaticamente"**. Quem cuida do site não precisa colar nada.
 
 ![Quadro Licença do V3RAnalytics nas configurações do Matomo, com o campo da licença e o botão Salvar licença]({{ '/assets/img/app/app-27-licenca-v3ranalytics.png' | relative_url }})
 
